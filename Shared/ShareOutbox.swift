@@ -2,6 +2,8 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import Foundation
+import ImageIO
+import UIKit
 
 /// What you shared with the agent from another app, kept in the app group
 /// until the plugin acknowledges it: the share extension sends it at once, and
@@ -50,5 +52,29 @@ nonisolated enum ShareOutbox {
     /// The small image of a share's photo, by its place among the shared items.
     static func thumbnail(share: String, item: Int) -> URL? {
         root?.appending(path: "thumbnails").appending(path: share).appending(path: "\(item).jpg")
+    }
+
+    static func keepThumbnail(_ data: Data, share: String, item: Int) {
+        guard let url = thumbnail(share: share, item: item) else { return }
+        try? FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+        try? data.write(to: url)
+    }
+
+    /// A picture in any format ImageIO reads, as a share carries it: a JPEG
+    /// at most 2048 px on its longest side, and its small image.
+    static func photo(_ data: Data) -> (jpeg: Data, thumbnail: Data?)? {
+        guard let jpeg = downsampled(data, side: 2048) else { return nil }
+        return (jpeg, downsampled(data, side: 300))
+    }
+
+    private static func downsampled(_ data: Data, side: Int) -> Data? {
+        guard let source = CGImageSourceCreateWithData(data as CFData, nil) else { return nil }
+        let options: [CFString: Any] = [
+            kCGImageSourceCreateThumbnailFromImageAlways: true,
+            kCGImageSourceCreateThumbnailWithTransform: true,
+            kCGImageSourceThumbnailMaxPixelSize: side,
+        ]
+        guard let image = CGImageSourceCreateThumbnailAtIndex(source, 0, options as CFDictionary) else { return nil }
+        return UIImage(cgImage: image).jpegData(compressionQuality: 0.8)
     }
 }

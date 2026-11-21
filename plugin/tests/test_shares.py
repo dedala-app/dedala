@@ -55,3 +55,13 @@ def test_a_blob_gone_from_the_relay_is_said_missing(tmp_path):
     event = share(id="S-2", items=[{"type": "image", "item": 0, "blobs": ["gone"]}])
     kept = asyncio.run(shares.keep(tmp_path, event, fetch))
     assert "did not arrive" in shares.told(kept) and shares.images(kept) == []
+
+
+def test_photos_sent_in_the_chat_are_told_as_such(tmp_path):
+    event = share(id="S-3", conversation="trip", text="", **{"from": "chat"}, items=[{"type": "image", "item": 0, "blobs": ["b2"]},
+                                                                                  {"type": "image", "item": 1, "blobs": ["b2"]}])
+    kept = asyncio.run(shares.keep(tmp_path, event, fetch))
+    assert kept["conversation"] == "trip" and len(shares.images(kept)) == 2
+    assert shares.told(kept).startswith("[app: he sent 2 photos in the chat, with no words:\n- a photo, attached")
+    kept = asyncio.run(shares.keep(tmp_path, share(id="S-4", text="Which one?", **{"from": "chat"}, items=[{"type": "image", "item": 0, "blobs": ["b2"]}]), fetch))
+    assert shares.told(kept).startswith("Which one?\n\n[app: he sent a photo in the chat with the message above:")

@@ -155,13 +155,14 @@ struct SelectingText: UIViewRepresentable {
 struct Composer: View {
     var placeholder = "Message"
     var onStop: (() -> Void)?
-    let onSend: (String) -> Void
+    let onSend: (String, [ChatPhoto]) -> Void
 
     @State private var text = ""
+    @State private var photos: [ChatPhoto] = []
     @FocusState private var focused: Bool
 
     private var empty: Bool {
-        text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && photos.isEmpty
     }
 
     private var stops: Bool {
@@ -171,15 +172,46 @@ struct Composer: View {
     var body: some View {
         GlassEffectContainer(spacing: 8) {
             HStack(alignment: .bottom, spacing: 8) {
-                TextField(placeholder, text: $text, axis: .vertical)
-                    .lineLimit(1...6)
-                    .focused($focused)
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 11)
-                    .frame(minHeight: 44)
-                    .contentShape(.rect(cornerRadius: 22, style: .continuous))
-                    .onTapGesture { focused = true }
-                    .glassEffect(.regular.interactive(), in: .rect(cornerRadius: 22, style: .continuous))
+                Menu {
+                    Button("Photo Library", systemImage: "photo.on.rectangle") { pick("library") }
+                    if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                        Button("Camera", systemImage: "camera") { pick("camera") }
+                    }
+                } label: {
+                    Label("Add Photos", systemImage: "plus")
+                        .labelStyle(.iconOnly)
+                        .font(.body.weight(.semibold))
+                        .frame(width: 44, height: 44)
+                        .contentShape(.circle)
+                }
+                .foregroundStyle(.primary)
+                .glassEffect(.regular.interactive(), in: .circle)
+                .disabled(photos.count >= ChatPhoto.most)
+                VStack(alignment: .leading, spacing: 0) {
+                    if !photos.isEmpty {
+                        ScrollView(.horizontal) {
+                            HStack(spacing: 6) {
+                                ForEach(photos) { photo in
+                                    PickedPhoto(photo: photo) {
+                                        withAnimation(.snappy) { photos.removeAll { $0.id == photo.id } }
+                                    }
+                                }
+                            }
+                            .padding(.horizontal, 10)
+                            .padding(.top, 10)
+                        }
+                        .scrollIndicators(.hidden)
+                    }
+                    TextField(placeholder, text: $text, axis: .vertical)
+                        .lineLimit(1...6)
+                        .focused($focused)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 11)
+                        .frame(minHeight: 44)
+                        .contentShape(.rect)
+                        .onTapGesture { focused = true }
+                }
+                .glassEffect(.regular.interactive(), in: .rect(cornerRadius: 22, style: .continuous))
                 Button {
                     if stops { onStop?() } else { send() }
                 } label: {
@@ -202,11 +234,19 @@ struct Composer: View {
         .padding(.bottom, 8)
     }
 
+    private func pick(_ source: String) {
+        Task {
+            let picked = await ChatPhoto.pick(source, limit: ChatPhoto.most - photos.count)
+            withAnimation(.snappy) { photos += picked.prefix(max(0, ChatPhoto.most - photos.count)) }
+        }
+    }
+
     private func send() {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty else { return }
-        onSend(trimmed)
+        guard !trimmed.isEmpty || !photos.isEmpty else { return }
+        onSend(trimmed, photos)
         text = ""
+        photos = []
     }
 }
 

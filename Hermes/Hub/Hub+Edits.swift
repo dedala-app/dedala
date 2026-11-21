@@ -203,6 +203,7 @@ extension Hub {
         }
         ShareOutbox.acknowledge(Set(ShareOutbox.waiting().compactMap { $0["id"]?.string }))
         outgoing.waiting().forEach(emit)
+        Task { await uploadShares() }
     }
 
     /// The plugin has these events. Their answers were applied just before;

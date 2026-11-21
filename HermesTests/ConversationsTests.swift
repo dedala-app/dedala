@@ -26,6 +26,22 @@ struct ConversationsTests {
         #expect(main.first { $0.id == id }?.text == "Redrawn")
     }
 
+    @Test func photosYouSendAreDrawnAtOnceAndSaidBackInPlace() {
+        let conversations = Conversations()
+        var sent: [(JSONValue, [Data])] = []
+        conversations.onShare = { sent.append(($0, $1)) }
+        let photos = [ChatPhoto(jpeg: Data([1]), thumbnail: Data([2])), ChatPhoto(jpeg: Data([3, 4]), thumbnail: Data([5]))]
+        conversations.send("Which one?", photos: photos, in: Conversations.main)
+        let event = sent.first?.0
+        let share = event?["id"]?.string ?? ""
+        #expect(event?["kind"] == "share" && event?["from"] == "chat" && event?["items"]?.array?.count == 2)
+        #expect(sent.first?.1 == [Data([1]), Data([3, 4])])
+        #expect(conversations.messages(in: Conversations.main).last?.shared?.map(\.item) == [0, 1])
+        conversations.receive(.object(["op": "say", "id": .string("share-\(share)"), "conversation": "main", "from": "you", "text": "Which one?",
+                                       "share": .string(share), "shared": [.object(["type": "image", "item": .number(0)]), .object(["type": "image", "item": .number(1)])]]))
+        #expect(conversations.messages(in: Conversations.main).filter { $0.share == share }.count == 1)
+    }
+
     @Test func aCardSaidAgainAfterYouWroteComesBackAtTheEnd() {
         let conversations = Conversations()
         let id = "chronometer-\(UUID().uuidString)"

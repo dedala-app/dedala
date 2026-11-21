@@ -79,7 +79,7 @@ targets:
         INFOPLIST_KEY_CFBundleDisplayName: Dedala
         INFOPLIST_KEY_NSSupportsLiveActivities: YES
         INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates: YES
-        INFOPLIST_KEY_NSCameraUsageDescription: To scan the pairing code your assistant shows, and to take a photo a page asks for.
+        INFOPLIST_KEY_NSCameraUsageDescription: To scan the pairing code your assistant shows, and to take a photo for a page or a message.
         INFOPLIST_KEY_NSMicrophoneUsageDescription: To hear what you tell your assistant when you hold its pill, or dictate on a page.
         INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: To write down what you say, on the phone.
         INFOPLIST_KEY_NSFaceIDUsageDescription: Your assistant asks for Face ID before acting on sensitive things.

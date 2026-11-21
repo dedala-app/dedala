@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import Foundation
-import ImageIO
 import Observation
 import OSLog
 import UIKit
@@ -103,10 +102,7 @@ final class ShareModel {
             return await blobs(Data(text.utf8)).map { .object(["type": "text", "blobs": $0]) }
         case .image(let jpeg, let thumbnail):
             guard let uploaded = await blobs(jpeg) else { return nil }
-            if let thumbnail, let url = ShareOutbox.thumbnail(share: share, item: index) {
-                try? FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
-                try? thumbnail.write(to: url)
-            }
+            if let thumbnail { ShareOutbox.keepThumbnail(thumbnail, share: share, item: index) }
             return .object(["type": "image", "item": .number(Double(index)), "mime": "image/jpeg", "blobs": uploaded])
         case .file(let name, let type, let data):
             guard let uploaded = await blobs(data) else { return nil }
@@ -201,10 +197,7 @@ final class ShareModel {
     }
 
     private static func resized(_ data: Data) async -> (jpeg: Data, thumbnail: Data?)? {
-        await Task.detached {
-            guard let jpeg = downsampled(data, side: 2048) else { return nil }
-            return (jpeg, downsampled(data, side: 300))
-        }.value
+        await Task.detached { ShareOutbox.photo(data) }.value
     }
 
     /// Signal hands over the image it holds archived, a property list of a
@@ -265,16 +258,5 @@ final class ShareModel {
             try? entry.write(to: url)
         }
         #endif
-    }
-
-    nonisolated private static func downsampled(_ data: Data, side: Int) -> Data? {
-        guard let source = CGImageSourceCreateWithData(data as CFData, nil) else { return nil }
-        let options: [CFString: Any] = [
-            kCGImageSourceCreateThumbnailFromImageAlways: true,
-            kCGImageSourceCreateThumbnailWithTransform: true,
-            kCGImageSourceThumbnailMaxPixelSize: side,
-        ]
-        guard let image = CGImageSourceCreateThumbnailAtIndex(source, 0, options as CFDictionary) else { return nil }
-        return UIImage(cgImage: image).jpegData(compressionQuality: 0.8)
     }
 }

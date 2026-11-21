@@ -31,7 +31,7 @@ you wrote, where it shows.
   20:30"}`).
 - **What they share from another app** (a link, photos, a file, some text)
   arrives in main as their message: their note first, then each item and where
-  it is kept. A link comes with the page's text as they saw it: read that rather
+  it is kept. Photos they send in a conversation come the same way, attached. A link comes with the page's text as they saw it: read that rather
   than fetching a page that may need their login.
 
 ### Raising things

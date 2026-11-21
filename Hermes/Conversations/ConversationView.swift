@@ -175,8 +175,12 @@ struct ConversationView<Header: View>: View {
         }
         .animation(.snappy, value: atBottom)
         .safeAreaBar(edge: .bottom) {
-            Composer(placeholder: conversation == Conversations.main ? "Message \(agent.name)" : "About \(conversations.topic(conversation)?.title ?? "this")", onStop: working ? { conversations.stop(conversation) } : nil) { text in
-                conversations.send(text, in: conversation)
+            Composer(placeholder: conversation == Conversations.main ? "Message \(agent.name)" : "About \(conversations.topic(conversation)?.title ?? "this")", onStop: working ? { conversations.stop(conversation) } : nil) { text, photos in
+                if photos.isEmpty {
+                    conversations.send(text, in: conversation)
+                } else {
+                    conversations.send(text, photos: photos, in: conversation)
+                }
             }
         }
     }

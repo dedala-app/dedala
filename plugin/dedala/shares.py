@@ -3,7 +3,8 @@
 
 """What he shares from another app on his phone, through the share sheet: a
 link (with the page's text as Safari showed it), photos, files or text, and a
-note saying what he wants done with it. Each share is kept under
+note saying what he wants done with it; and photos he sends with a message in
+the app's chat, which come the same way (`from: "chat"`). Each share is kept under
 `shared/<id>/` before the agent hears of it, so a share sent twice (the app
 sends again what was not acknowledged) is handled once."""
 
@@ -58,6 +59,8 @@ async def keep(root: Path, event: dict, fetch: Callable[[str], Awaitable[Optiona
         items.append(item)
     kept = {"id": identifier, "conversation": event.get("conversation") or "main", "text": str(event.get("text") or "").strip(),
             "at": event.get("at"), "folder": str(folder), "items": items}
+    if event.get("from") == "chat":
+        kept["from"] = "chat"
     manifest.write_text(json.dumps(kept, ensure_ascii=False, indent=1))
     return kept
 
@@ -99,5 +102,11 @@ def told(kept: dict) -> str:
         else:
             line = f"- some text, kept at {item.get('path') or 'nowhere'}"
         lines.append(line + missing)
-    return (f"{kept['text']}\n\n[app: he shared this from another app on his phone, with the note above:\n"
-            + "\n".join(lines) + f"\nAll of it is kept in {kept['folder']}]")
+    listed = "\n".join(lines) + f"\nAll of it is kept in {kept['folder']}]"
+    if kept.get("from") == "chat":
+        count = len(kept["items"])
+        what = "a photo" if count == 1 else f"{count} photos"
+        if not kept["text"]:
+            return f"[app: he sent {what} in the chat, with no words:\n{listed}"
+        return f"{kept['text']}\n\n[app: he sent {what} in the chat with the message above:\n{listed}"
+    return f"{kept['text']}\n\n[app: he shared this from another app on his phone, with the note above:\n{listed}"

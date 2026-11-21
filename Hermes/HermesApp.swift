@@ -64,6 +64,7 @@ struct HermesApp: App {
             if let message { router?.show(message, in: Conversations.main) }
         }
         conversations.onEvent = { [weak hub] event in hub?.enqueue(event) }
+        conversations.onShare = { [weak hub] event, photos in hub?.sendShare(event, photos: photos) }
         conversations.reading = { [weak router] in router?.chatOpen == true ? router?.path.last : nil }
         activities.report = { [weak hub] event in hub?.enqueue(event) }
         ActionRunner.openPage = { [weak router, weak hub] id in

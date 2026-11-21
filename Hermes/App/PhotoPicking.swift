@@ -3,10 +3,11 @@
 
 import PhotosUI
 import UIKit
+import UniformTypeIdentifiers
 
 /// A photo taken or picked for a `Photo` input: saved as a JPEG the page can
 /// show and an edit can carry, under the app's `outbound` folder until the
-/// edit is acknowledged.
+/// edit is acknowledged. Photos for a message are picked here too.
 @MainActor
 enum PhotoPicking {
     static let longestSide: CGFloat = 1600
@@ -19,9 +20,23 @@ enum PhotoPicking {
     /// `camera` or `library`; the picture as the state holds it, nil when none was chosen.
     static func pick(_ source: String) async -> JSONValue? {
         guard let presenter = UIApplication.shared.connectedScenes.compactMap({ ($0 as? UIWindowScene)?.keyWindow?.rootViewController }).first else { return nil }
-        let image: UIImage? = source == "camera" ? await camera(from: presenter.top) : await library(from: presenter.top)
+        let image: UIImage? = source == "camera" ? await camera(from: presenter.top) : await libraryImage(from: presenter.top)
         guard let image else { return nil }
         return keep(image)
+    }
+
+    /// `camera` or `library`, up to `limit` from the library, in the order you
+    /// picked them: each picture as it was taken, in its own format.
+    static func pictures(_ source: String, limit: Int) async -> [Data] {
+        guard let presenter = UIApplication.shared.connectedScenes.compactMap({ ($0 as? UIWindowScene)?.keyWindow?.rootViewController }).first else { return [] }
+        if source == "camera" {
+            return await camera(from: presenter.top).flatMap { $0.jpegData(compressionQuality: 0.9) }.map { [$0] } ?? []
+        }
+        var found: [Data] = []
+        for provider in await library(from: presenter.top, limit: limit) {
+            if let data = await data(of: provider) { found.append(data) }
+        }
+        return found
     }
 
     /// The picture as the state holds it: `{local, name, size, type}`.
@@ -47,16 +62,30 @@ enum PhotoPicking {
         }
     }
 
-    private static func library(from presenter: UIViewController) async -> UIImage? {
+    private static func library(from presenter: UIViewController, limit: Int) async -> [NSItemProvider] {
         var configuration = PHPickerConfiguration()
         configuration.filter = .images
-        configuration.selectionLimit = 1
+        configuration.selectionLimit = limit
+        configuration.selection = .ordered
         return await withCheckedContinuation { continuation in
             let picker = PHPickerViewController(configuration: configuration)
-            let delegate = LibraryDelegate { image in continuation.resume(returning: image) }
+            let delegate = LibraryDelegate { providers in continuation.resume(returning: providers) }
             picker.delegate = delegate
             objc_setAssociatedObject(picker, &LibraryDelegate.key, delegate, .OBJC_ASSOCIATION_RETAIN)
             presenter.present(picker, animated: true)
+        }
+    }
+
+    private static func libraryImage(from presenter: UIViewController) async -> UIImage? {
+        guard let provider = await library(from: presenter, limit: 1).first, provider.canLoadObject(ofClass: UIImage.self) else { return nil }
+        return await withCheckedContinuation { continuation in
+            provider.loadObject(ofClass: UIImage.self) { object, _ in continuation.resume(returning: object as? UIImage) }
+        }
+    }
+
+    private static func data(of provider: NSItemProvider) async -> Data? {
+        await withCheckedContinuation { continuation in
+            _ = provider.loadDataRepresentation(forTypeIdentifier: UTType.image.identifier) { data, _ in continuation.resume(returning: data) }
         }
     }
 }
@@ -88,22 +117,13 @@ private final class CameraDelegate: NSObject, UIImagePickerControllerDelegate, U
 
 private final class LibraryDelegate: NSObject, PHPickerViewControllerDelegate {
     static var key = 0
-    private var done: ((UIImage?) -> Void)?
+    private var done: (([NSItemProvider]) -> Void)?
 
-    init(done: @escaping (UIImage?) -> Void) { self.done = done }
+    init(done: @escaping ([NSItemProvider]) -> Void) { self.done = done }
 
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         picker.dismiss(animated: true)
-        guard let provider = results.first?.itemProvider, provider.canLoadObject(ofClass: UIImage.self) else {
-            done?(nil)
-            done = nil
-            return
-        }
-        let done = self.done
-        self.done = nil
-        provider.loadObject(ofClass: UIImage.self) { object, _ in
-            let image = object as? UIImage
-            Task { @MainActor in done?(image) }
-        }
+        done?(results.map(\.itemProvider))
+        done = nil
     }
 }

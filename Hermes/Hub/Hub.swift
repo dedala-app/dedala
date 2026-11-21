@@ -96,6 +96,7 @@ final class Hub {
     @ObservationIgnored let captures = Captures()
     /// What the agent must get of your edits, until the plugin acknowledges it.
     @ObservationIgnored let outgoing = Outgoing()
+    @ObservationIgnored var uploadingShares = false
     @ObservationIgnored let fileSync = FileSync()
     @ObservationIgnored private var previews: [JSONValue] = []
     @ObservationIgnored private var reporting: Task<Void, Never>?

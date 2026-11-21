@@ -134,6 +134,7 @@ final class Conversations {
     private(set) var presence: [String: Presence] = [:]
     @ObservationIgnored private var presenceStamps: [String: UUID] = [:]
     @ObservationIgnored var onEvent: ((JSONValue) -> Void)?
+    @ObservationIgnored var onShare: ((JSONValue, [Data]) -> Void)?
     @ObservationIgnored var reading: () -> String? = { nil }
 
     static let main = "main"
@@ -208,6 +209,27 @@ final class Conversations {
         }
         append(message, to: conversation)
         onEvent?(.object(["kind": "message", "conversation": .string(conversation), "text": .string(text), "yours": .string(message.id), "at": JSONValue.iso(.now)]))
+        Storage.flush()
+    }
+
+    /// Your words with photos: drawn at once from the photos' small images,
+    /// and sent as a share (protocol.md, Events: `share`), the photos as the
+    /// JPEGs beside it. The plugin says it back under the same id.
+    func send(_ text: String, photos: [ChatPhoto], in conversation: String) {
+        let share = UUID().uuidString
+        for (index, photo) in photos.enumerated() {
+            ShareOutbox.keepThumbnail(photo.thumbnail, share: share, item: index)
+        }
+        var message = Message(id: "share-\(share)", who: .you, at: .now, text: text)
+        message.shared = photos.indices.map { SharedItem(type: "image", size: photos[$0].jpeg.count, item: $0) }
+        message.share = share
+        if case .working = presence(in: conversation) {
+            message.note = "Arrives after his current step"
+        }
+        append(message, to: conversation)
+        let items: [JSONValue] = photos.indices.map { .object(["type": "image", "item": .number(Double($0)), "mime": "image/jpeg"]) }
+        onShare?(.object(["kind": "share", "id": .string(share), "conversation": .string(conversation), "text": .string(text), "from": "chat",
+                          "items": .array(items), "at": JSONValue.iso(.now)]), photos.map(\.jpeg))
         Storage.flush()
     }
 
