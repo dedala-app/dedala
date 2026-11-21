@@ -132,6 +132,30 @@ def faults(card: dict, width: float, components: dict | None = None, derived: di
     return found, notes
 
 
+# A widget's width, height and WidgetKit's margin around its content, by size, on the smaller iPhones (393 pt
+# wide): what fits these fits the larger phones' too.
+WIDGETS = {"small": (158.0, 158.0, 16.0), "medium": (338.0, 158.0, 16.0), "large": (338.0, 354.0, 16.0),
+           "rectangular": (160.0, 72.0, 0.0), "circular": (72.0, 72.0, 0.0), "inline": (234.0, 26.0, 0.0)}
+
+
+def widget(component: str, data: dict, family: str, display: dict | None = None, components: dict | None = None,
+           stores: dict | None = None) -> list[str]:
+    """What would look broken in a widget at one size: the component laid out as the widget extension draws it,
+    over the store's value with `family` in scope, then held to the widget's height."""
+    width, height, margin = WIDGETS[family]
+    props = {**data, "data": data, "family": family}
+    card = {"view": {component: props}, "data": {**data, "family": family}, "stores": stores or {}}
+    layout.set_text_size((display or {}).get("textSize") or "large")
+    room = (width - 2 * margin, height - 2 * margin)
+    engine = layout.Engine(card, components, room[0], page=True)
+    engine.run()
+    found, _ = faults(card, room[0], components, page=True)
+    tall = engine.root.frame[3] if engine.root is not None and engine.root.frame else 0.0
+    if tall > room[1] + 0.5:
+        found.append(f"it is {tall:.0f} pt tall where the widget holds {room[1]:.0f}: the bottom is cut")
+    return [f"{fault} (at {family})" for fault in found]
+
+
 def widths(display: dict | None, page: bool = False) -> tuple[float, ...]:
     """The phone's card width when it reported one (`cardWidth`), else the widths phones give cards; for a page, the
     width of its content (`pageWidth` less the page's margins)."""

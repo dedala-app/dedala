@@ -182,6 +182,7 @@ open it can also run them itself, which is handy for trying a design:
 | `{"kind": "job", "job", "action"}` | you ran (`run`), paused (`pause`) or resumed (`resume`) one of the agent's jobs in Activity |
 | `{"kind": "loved", "card", "conversation", "text", "view", "data", "capture", …}` | you long-pressed a card and chose "Love it": the card as it stands. The plugin puts it in the agent's card bank (`bank/` in the drawing-cards skill) and tells the agent |
 | `{"kind": "activity-report", "id", "shown", "issues", "regions", "captures"}` | the app redrew a running activity when it opened and something did not fit; once per design |
+| `{"kind": "widgets", "placed": {"<widget id>": ["medium", "rectangular"]}}` | where you placed the agent's widgets, by size, as iOS lists them: sent when the app opens or wakes and the list changed. The plugin keeps it (`placed` in `app_widget`'s list) and tells the agent when a widget is placed at a size it does not draw |
 | `{"kind": "activity-token", "id", "token"}` | the update token of an activity the app started |
 
 Through the relay, `capture` is `{"blob", "type": "image/jpeg"}`: the image as a

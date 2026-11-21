@@ -75,6 +75,14 @@ def _renamed(before: Optional[str], after: Optional[str]) -> str:
     return f"[app: he took back the name {before} he gave you in the app: it shows your own name again. Answer in one short line at most.]"
 
 
+def _undrawn(undrawn: dict[str, list[str]]) -> str:
+    """What the agent is told when he places a widget at a size it does not draw."""
+    placed = "; ".join(f"{name} at {', '.join(sizes)}" for name, sizes in undrawn.items())
+    return (f"[app: he placed widgets at sizes they do not draw: {placed}. Until they do, the widget shows that you are "
+            "making it fit. Add those sizes to the widget's families with app_widget, the component varying its look with "
+            "If on $family. Say it in one short line at most.]")
+
+
 def _conversation_of(card: Optional[str]) -> str:
     spec = current.cards.get(card or "") if current else None
     return spec["conversation"] if spec else "main"
@@ -786,6 +794,9 @@ class Server:
         elif kind == "arrangement":
             if renamed := self.link.arranged(event):
                 await self._deliver("main", _renamed(*renamed))
+        elif kind == "widgets":
+            if undrawn := self.link.placed(event.get("placed") or {}):
+                await self._deliver("main", _undrawn(undrawn))
         elif kind == "display":
             self.link.state["display"] = {key: value for key, value in event.items() if key != "kind"}
             display = self.link.state["display"]

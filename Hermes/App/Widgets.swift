@@ -87,4 +87,25 @@ extension Hub {
     func snapshotAllWidgets() {
         widgets.keys.forEach(snapshot)
     }
+
+    /// Tells the agent where his widgets are placed and at which sizes, from
+    /// iOS's own list of the Dedala widgets on the Home Screen and the Lock
+    /// Screen, each time that list changed.
+    func reportPlacements() async {
+        guard let placed = try? await WidgetCenter.shared.currentConfigurations() else { return }
+        let order = ["small", "medium", "large", "rectangular", "circular", "inline"]
+        var sizes: [String: Set<String>] = [:]
+        for info in placed where info.kind == WidgetSnapshots.kind {
+            guard let file = Snapshots.shown(info.widgetConfigurationIntent(of: PickWidgetIntent.self)) else { continue }
+            let id = widgets.keys.first { WidgetSnapshots.url($0)?.lastPathComponent == "\(file).json" } ?? file
+            sizes[id, default: []].insert(info.family.name)
+        }
+        let report = JSONValue.object(sizes.mapValues { found in .array(order.filter(found.contains).map(JSONValue.string)) })
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .sortedKeys
+        let written = String(decoding: (try? encoder.encode(report)) ?? Data(), as: UTF8.self)
+        guard written != UserDefaults.standard.string(forKey: "placedWidgets") else { return }
+        UserDefaults.standard.set(written, forKey: "placedWidgets")
+        enqueue(.object(["kind": "widgets", "placed": report]))
+    }
 }

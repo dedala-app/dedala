@@ -858,6 +858,17 @@ class Link:
         after = event.get("name")
         return (before, after) if before != after else None
 
+    def placed(self, placed: dict) -> dict[str, list[str]]:
+        """Where he placed the agent's widgets, by size, as iOS lists them; the
+        sizes newly placed that a widget does not draw, by widget."""
+        widgets = self.state.get("artifacts", {}).get("widget", {})
+        before = self.state.get("placed", {})
+        self.state["placed"] = {name: sizes for name, sizes in placed.items() if isinstance(sizes, list)}
+        self._save()
+        return {name: undrawn for name, sizes in self.state["placed"].items() if name in widgets
+                if (undrawn := [size for size in sizes if size not in (widgets[name].get("families") or ("small", "medium", "large"))
+                                and size not in before.get(name, [])])}
+
     def arrangement(self) -> list[dict]:
         try:
             kept = json.loads((self.home / "phone.json").read_text())

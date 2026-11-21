@@ -84,6 +84,14 @@ def look(card: dict, display: dict | None, components: dict, derived: dict | Non
         return preview.look(card, display, components, derived, png, page)
 
 
+def widget(component: str, data: dict, families: list[str], display: dict | None, components: dict, stores: dict) -> list[str]:
+    """What would look broken in a widget at each of its sizes; raises when the
+    twin cannot lay it out. Blocking: run it in a thread."""
+    preview = _load()
+    with _lock:
+        return [fault for family in families for fault in preview.twincheck.widget(component, data, family, display, components, stores)]
+
+
 def measured(change):
     """`change` applied to the twin's measured symbols (layout.MEASURED), between
     two layouts; raises when the twin cannot load here."""

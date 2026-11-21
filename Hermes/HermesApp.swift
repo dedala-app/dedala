@@ -140,6 +140,7 @@ struct HermesApp: App {
                     delegate.onWake = { [weak hub, weak relay] in
                         let came = await relay?.fetchMailbox() ?? false
                         hub?.snapshotAllWidgets()
+                        await hub?.reportPlacements()
                         return came
                     }
                     await Listener.prepare()
@@ -178,6 +179,7 @@ struct HermesApp: App {
                     #endif
                     hub.enqueue(Display.event)
                     activities.review { report, captures in hub.record(report, captures: captures) }
+                    Task { await hub.reportPlacements() }
                 }
         }
     }

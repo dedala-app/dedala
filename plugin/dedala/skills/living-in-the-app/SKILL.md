@@ -183,7 +183,8 @@ inputs, no scrolling, no long lists. A `Button` that opens a page, a screen or a
 conversation opens the app there. Vary the look with `If` on `$family`
 (`small`, `medium`, `large` on the Home Screen; `rectangular`, `circular`,
 `inline` on the Lock Screen, drawn in one tint: about three short lines, a
-number or a `Gauge`, one `Text`).
+number or a `Gauge`, one `Text`). Each size is laid out before it leaves, and
+you are told when they place a widget at a size it does not draw.
 
 ## What you cannot do
 

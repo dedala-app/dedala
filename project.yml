@@ -129,7 +129,9 @@ targets:
         excludes:
           - Info.plist
           - "*.entitlements"
-      - Shared
+      - path: Shared
+        excludes:
+          - WidgetChoice.swift
       - Hermes/UI
       - path: plugin/dedala/helpers.js
         buildPhase: resources

@@ -7,11 +7,15 @@ own, declared so its records show in the phone's Search, read back as the
 phone sees it, removed; a record of a declared store can be handed to him in
 the conversation."""
 
+import asyncio
 import difflib
+import logging
 from pathlib import Path
 
 from . import analysis, checks, session
 from .stores import DECLARATION, records_of
+
+logger = logging.getLogger(__name__)
 
 SAMPLE = 20
 
@@ -196,6 +200,20 @@ LOCK_SCREEN = ("rectangular", "circular", "inline")
 FAMILIES = HOME_SCREEN + LOCK_SCREEN
 
 
+async def _widget_faults(link, store: str, component: str, families: list[str]) -> list[str]:
+    """The twin's look at a widget in each of its sizes; nothing when the twin
+    cannot lay it out here."""
+    from . import twin
+
+    value = link.stores.read(store)
+    try:
+        return await asyncio.to_thread(twin.widget, component, value if isinstance(value, dict) else {}, families,
+                                       link.state.get("display"), link.state.get("artifacts", {}).get("components") or {}, checks.all_stores())
+    except Exception as error:
+        logger.warning("[app] the twin could not lay out the widget %s: %s", component, error)
+        return []
+
+
 async def widget(args: dict, **_) -> str:
     """`app_widget`: a Home Screen or Lock Screen widget, a component over a store."""
     link = session.link()
@@ -203,8 +221,11 @@ async def widget(args: dict, **_) -> str:
     widgets = artifacts.get("widget", {})
     name = args.get("id")
     if not name:
-        return session.answer({"widgets": [{key: value for key, value in op.items() if key != "op"} for op in widgets.values()],
-                               "note": "He adds a widget on his Home Screen or Lock Screen himself and picks one of these by name"})
+        placed = link.state.get("placed", {})
+        return session.answer({"widgets": [{"id": key, **{field: value for field, value in op.items() if field != "op"}, "placed": placed.get(key, [])}
+                                           for key, op in widgets.items()],
+                               "note": "He adds a widget on his Home Screen or Lock Screen himself and picks one of these by name; "
+                                       "placed is where it is now, by size"})
     if args.get("remove"):
         if name not in widgets:
             return session.answer({"error": f"There is no widget {name}"})
@@ -224,11 +245,17 @@ async def widget(args: dict, **_) -> str:
         return session.answer({"error": f"The component {component} is not defined: define it first (app_ops define), reading the store's fields as $data"})
     if any(family not in FAMILIES for family in families):
         return session.answer({"error": f"families are among {', '.join(FAMILIES)}"})
+    if problems := await _widget_faults(link, store, component, families):
+        return session.answer({"error": "Not sent: laid out here as his phone will draw it, the widget would look broken. "
+                                        "Fix the component (vary it with If on $family) or offer fewer sizes, then send it again",
+                               "problems": problems})
     op = {"op": "widget", "id": name, "store": store, "component": component, "families": families}
     checked = await session.on_gateway(link.send_and_check([op]))
     screens = " or ".join(screen for screen, sizes in (("Home Screen", HOME_SCREEN), ("Lock Screen", LOCK_SCREEN)) if set(sizes) & set(families))
+    undrawn = [size for size in link.state.get("placed", {}).get(name, []) if size not in families]
     return session.answer({"widget": {key: value for key, value in op.items() if key != "op"},
-                           "then": f"He adds the widget on his {screens} and picks it by name; it redraws as the store changes", **checked})
+                           "then": f"He adds the widget on his {screens} and picks it by name; it redraws as the store changes",
+                           **({"undrawn": f"He placed it at {', '.join(undrawn)} too, which it still does not draw"} if undrawn else {}), **checked})
 
 
 async def token(args: dict, **_) -> str:

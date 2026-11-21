@@ -110,6 +110,17 @@ async def test_the_name_he_gives_the_agent_is_kept_and_its_changes_told(relay, t
     await link.stop()
 
 
+async def test_where_he_placed_the_widgets_is_kept_and_a_size_they_do_not_draw_told_once(relay, tmp_path):
+    link, phone = await paired(relay, tmp_path)
+    link.state["artifacts"]["widget"] = {"todos": {"op": "widget", "id": "todos", "store": "day", "component": "T", "families": ["medium"]},
+                                         "old": {"op": "widget", "id": "old", "store": "day", "component": "T"}}
+    assert link.placed({"todos": ["medium"], "old": ["small"]}) == {}
+    assert link.placed({"todos": ["medium", "rectangular"], "old": ["small"]}) == {"todos": ["rectangular"]}
+    assert link.placed({"todos": ["medium", "rectangular"], "old": ["small"], "gone": ["large"]}) == {}
+    assert link.state["placed"]["todos"] == ["medium", "rectangular"]
+    await link.stop()
+
+
 async def test_what_a_phone_paired_again_draws_is_not_the_agent_s_to_fix(relay, tmp_path):
     link, phone = await paired(relay, tmp_path)
     await link.send([{"op": "say", "id": "bill", "text": "Pay?", "card": {"view": {"Text": "x"}}}])

@@ -137,6 +137,19 @@ def test_a_page_is_laid_out_as_it_is_with_no_card_around_it():
     assert engine.root.kind == "Text"
 
 
+def test_a_widget_is_held_to_the_height_of_each_size():
+    components = {"Todos": {"props": [], "body": {"VStack": [
+        {"Text": "Outline TODOs", "font": "headline"},
+        {"ForEach": "$data.items", "content": {"Text": "$item", "font": "subheadline"}}], "alignment": "leading"}}}
+    data = {"items": ["Fix the key figures", "Expand on bark marks", "Clarify the ten trees", "A contraction", "Figure 4"]}
+    assert twincheck.widget("Todos", data, "large", None, components) == []
+    cut = twincheck.widget("Todos", data, "rectangular", None, components)
+    assert len(cut) == 1 and "where the widget holds 72: the bottom is cut (at rectangular)" in cut[0]
+    short = {"Todos": {"props": [], "body": {"If": "family == 'rectangular'", "then": {"Text": "${count(data.items)} to do"},
+                                             "else": components["Todos"]["body"]}}}
+    assert twincheck.widget("Todos", data, "rectangular", None, short) == []
+
+
 def test_a_card_the_twin_cannot_lay_out_raises_and_check_says_so():
     card = {"VStack": [{"Sparkline": [1, 2]}]}
     with pytest.raises(layout.UnknownView):

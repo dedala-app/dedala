@@ -19,40 +19,11 @@ struct HermesWidget: Widget {
     }
 }
 
-struct WidgetChoice: AppEntity {
-    static let typeDisplayRepresentation: TypeDisplayRepresentation = "Widget"
-    static let defaultQuery = WidgetQuery()
-
-    let id: String
-    var displayRepresentation: DisplayRepresentation { DisplayRepresentation(title: "\(id)") }
-}
-
-struct WidgetQuery: EntityQuery {
-    func entities(for identifiers: [String]) async throws -> [WidgetChoice] {
-        identifiers.map(WidgetChoice.init)
-    }
-
-    func suggestedEntities() async throws -> [WidgetChoice] {
-        Snapshots.ids().map(WidgetChoice.init)
-    }
-
-    func defaultResult() async -> WidgetChoice? {
-        Snapshots.ids().first.map(WidgetChoice.init)
-    }
-}
-
-struct PickWidgetIntent: WidgetConfigurationIntent {
-    static let title: LocalizedStringResource = "Widget"
-    static let description = IntentDescription("Which of the agent's widgets to show.")
-
-    @Parameter(title: "Widget")
-    var widget: WidgetChoice?
-}
-
 struct Entry: TimelineEntry {
     let date: Date
     let snapshot: JSONValue?
     let wanted: String?
+    var agent = "Your assistant"
 }
 
 struct Provider: AppIntentTimelineProvider {
@@ -71,26 +42,8 @@ struct Provider: AppIntentTimelineProvider {
     }
 
     private func entry(_ configuration: PickWidgetIntent, at date: Date) -> Entry {
-        let wanted = configuration.widget?.id ?? Snapshots.ids().first
-        return Entry(date: date, snapshot: wanted.flatMap(Snapshots.load), wanted: wanted)
-    }
-}
-
-/// The snapshot files the app writes in the App Group.
-nonisolated enum Snapshots {
-    static var folder: URL? {
-        FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: HermesActivityAttributes.group)?
-            .appending(path: "widgets", directoryHint: .isDirectory)
-    }
-
-    static func ids() -> [String] {
-        guard let folder, let names = try? FileManager.default.contentsOfDirectory(atPath: folder.path) else { return [] }
-        return names.filter { $0.hasSuffix(".json") }.map { String($0.dropLast(5)) }.sorted()
-    }
-
-    static func load(_ id: String) -> JSONValue? {
-        guard let folder, let data = try? Data(contentsOf: folder.appending(path: "\(id).json")) else { return nil }
-        return try? JSONValue.parse(data)
+        let wanted = Snapshots.shown(configuration)
+        return Entry(date: date, snapshot: wanted.flatMap(Snapshots.load), wanted: wanted, agent: PairingStore.load()?.agentName ?? "Your assistant")
     }
 }
 
@@ -112,10 +65,10 @@ struct WidgetEntryView: View {
     @ViewBuilder private var content: some View {
         if let snapshot = entry.snapshot, let name = snapshot["component"]?.string {
             let families = (snapshot["families"]?.array ?? []).compactMap(\.string)
-            if families.isEmpty ? !Self.lockScreen.contains(familyName) : families.contains(familyName) {
-                NodeView(node: .object([name: Self.props(snapshot["data"] ?? .null, family: familyName)]), scope: scope(snapshot))
+            if families.isEmpty ? !WidgetFamily.lockScreen.contains(family.name) : families.contains(family.name) {
+                NodeView(node: .object([name: Self.props(snapshot["data"] ?? .null, family: family.name)]), scope: scope(snapshot))
             } else {
-                missing("Not drawn at this size")
+                missing("\(entry.agent) is making this one fit")
             }
         } else {
             missing(entry.wanted.map { "No snapshot for \($0) yet" } ?? "Ask your assistant for a widget")
@@ -138,8 +91,6 @@ struct WidgetEntryView: View {
         }
     }
 
-    static let lockScreen: Set<String> = ["rectangular", "circular", "inline"]
-
     /// The component's props: the store's value's fields, the whole value as
     /// `data`, and the widget's `family`.
     static func props(_ data: JSONValue, family: String) -> JSONValue {
@@ -152,20 +103,9 @@ struct WidgetEntryView: View {
     private func scope(_ snapshot: JSONValue) -> Scope {
         let components = snapshot["components"]?.object ?? [:]
         let context = CardContext(cardID: "widget:\(snapshot["id"]?.string ?? "")", component: { components[$0].flatMap(ComponentDefinition.init) }, onSend: { _, _ in })
-        var scope = Scope(values: ["family": .string(familyName)], boxes: [], context: context, data: snapshot["data"]?.object ?? [:])
+        var scope = Scope(values: ["family": .string(family.name)], boxes: [], context: context, data: snapshot["data"]?.object ?? [:])
         scope.stores = snapshot["stores"]?.object ?? [:]
         scope.probes = false
         return scope
-    }
-
-    private var familyName: String {
-        switch family {
-        case .systemSmall: "small"
-        case .systemLarge, .systemExtraLarge: "large"
-        case .accessoryRectangular: "rectangular"
-        case .accessoryCircular: "circular"
-        case .accessoryInline: "inline"
-        default: "medium"
-        }
     }
 }
