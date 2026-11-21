@@ -6,7 +6,7 @@ import HermesOrg
 
 /// Org and Markdown read into the org-element tree (native/, the Rust library
 /// the app links): `{"type", …properties, "children"}` nodes with their byte
-/// range in the text. What `org()` and `markdown()` give Hermes UI and what
+/// range in the text. What `org()` and `markdown()` give Dedala UI and what
 /// the `File` view draws; a text is parsed once and remembered.
 nonisolated enum OrgTree {
     private static let remembered = NSCache<NSString, Box>()

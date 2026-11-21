@@ -54,7 +54,7 @@ def test_a_command_is_named_by_its_program_and_what_it_is_given():
 
 def test_a_tool_at_work_is_said_as_the_step_it_will_leave():
     assert running("terminal", {"command": "cd /tmp && python3 wm_today.py"}) == ("Running wm_today.py", "terminal")
-    assert running("read_file", {"path": "/var/lib/hermes/skills/drawing-cards/hermes-ui.md"}) == ("Reading hermes-ui.md", "doc.text")
+    assert running("read_file", {"path": "/var/lib/hermes/skills/drawing-cards/dedala-ui.md"}) == ("Reading dedala-ui.md", "doc.text")
     assert running("execute_code", {"code": "# count today's runs\nprint(1)"})[0] == "Running code: count today's runs"
     assert running("app_page", {"id": "windmill"}) is None and running("mcp_windmill_run", {}) is None and running("tool_search", {}) is None
 

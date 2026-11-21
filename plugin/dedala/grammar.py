@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2026 Julien Malka
 # SPDX-License-Identifier: MIT
 
-"""Hermes UI checked before it leaves: the shape mistakes the phone would only
+"""Dedala UI checked before it leaves: the shape mistakes the phone would only
 find while drawing, when it is open to say so. The names are the app's own
 (grammar.json, kept equal to the app by its tests)."""
 
@@ -55,7 +55,7 @@ def _node(node, path: str, components: set[str], found: list[str], depth: int) -
     key = keys[0]
     here = f"{path}.{key}"
     if key not in VIEWS and key not in FLOW and key not in components:
-        found.append(f"{here}: unknown view '{key}' (not a Hermes UI view nor a defined component)")
+        found.append(f"{here}: unknown view '{key}' (not a Dedala UI view nor a defined component)")
         return
     if key in components:
         return

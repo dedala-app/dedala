@@ -58,8 +58,8 @@ between your phone and your agent. The relay's code is in this repository.
 
 The app and the agent speak the protocol in [docs/protocol.md](docs/protocol.md).
 Cards and pages are written in a JSON language the app draws as native views,
-described in [docs/hermes-ui.md](docs/hermes-ui.md), with examples in
-[docs/hermes-ui/examples](docs/hermes-ui/examples).
+described in [docs/dedala-ui.md](docs/dedala-ui.md), with examples in
+[docs/dedala-ui/examples](docs/dedala-ui/examples).
 
 ## The repository
 

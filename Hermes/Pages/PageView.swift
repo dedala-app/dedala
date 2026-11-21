@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-/// A page the agent made: a Hermes UI view bound to the server's stores, kept
+/// A page the agent made: a Dedala UI view bound to the server's stores, kept
 /// up to date by whatever updates those stores. In the bar, swiped sideways,
 /// its content slides to the next page under its buttons, which stay.
 ///

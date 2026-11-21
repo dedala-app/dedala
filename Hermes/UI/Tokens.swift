@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-/// Design tokens: how names in a Hermes UI tree become colours, fonts and
+/// Design tokens: how names in a Dedala UI tree become colours, fonts and
 /// alignments.
 enum Tokens {
     static func color(_ value: JSONValue?) -> Color? {

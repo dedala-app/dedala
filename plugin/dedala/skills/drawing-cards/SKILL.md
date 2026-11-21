@@ -1,11 +1,11 @@
 ---
 name: drawing-cards
-description: How to draw Hermes UI cards in the user's app well - what to draw for a kind of answer, how the check and the reviewer judge it, how to update it, and the lessons drawing has taught. Use before drawing any card, and whenever app_card holds one back, the phone reports a problem, or a card comes back flagged.
+description: How to draw Dedala UI cards in the user's app well - what to draw for a kind of answer, how the check and the reviewer judge it, how to update it, and the lessons drawing has taught. Use before drawing any card, and whenever app_card holds one back, the phone reports a problem, or a card comes back flagged.
 ---
 
 # Drawing cards
 
-A card is a Hermes UI tree: the language is `references/hermes-ui.md` beside
+A card is a Dedala UI tree: the language is `references/dedala-ui.md` beside
 this skill, with working cards in `references/examples/`. Draw freely, any layout, any composition.
 This skill is about drawing well and noticing when you did not.
 
@@ -126,7 +126,7 @@ before the card that draws it, or `components` with `app_page`).
 
 ## Scripts
 
-A card or page can carry a script (`hermes-ui.md`, Scripts) when it has to stay
+A card or page can carry a script (`dedala-ui.md`, Scripts) when it has to stay
 right on its own or answer taps without a round trip: a countdown that changes
 phase, a split as people are toggled, a chronometer (`references/examples/09-stopwatch.json`).
 

@@ -3,7 +3,7 @@
 
 import Foundation
 
-/// The expression language of Hermes UI: paths, literals, arithmetic,
+/// The expression language of Dedala UI: paths, literals, arithmetic,
 /// comparisons, logic, the ternary and a handful of functions.
 indirect enum Expression {
     case literal(JSONValue)

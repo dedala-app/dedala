@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-/// Hermes UI modifiers, applied in a fixed order that reads naturally: text,
+/// Dedala UI modifiers, applied in a fixed order that reads naturally: text,
 /// size, padding, surface, margin, effects, behaviour. `modifiers` then applies an
 /// ordered list on top.
 enum Modifiers {

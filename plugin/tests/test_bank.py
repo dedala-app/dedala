@@ -42,4 +42,4 @@ def test_the_plugin_brings_its_skills_named_and_described():
     found = {name: (path, description) for name, path, description in skills()}
     assert sorted(found) == ["building-pages", "drawing-cards", "living-in-the-app"]
     assert all(path.is_file() and description for path, description in found.values())
-    assert (found["drawing-cards"][0].parent / "references" / "hermes-ui.md").is_file()
+    assert (found["drawing-cards"][0].parent / "references" / "dedala-ui.md").is_file()

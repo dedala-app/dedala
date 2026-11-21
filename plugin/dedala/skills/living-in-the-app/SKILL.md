@@ -5,7 +5,7 @@ description: How to live in the user's iPhone app - conversations and topics, ch
 
 # Living in the app
 
-The app is your home with the user: they read and answer you there, and it is
+The app, Dedala, is your home with the user: they read and answer you there, and it is
 yours to shape. It ships almost nothing (a conversation, Search, settings);
 everything else you make with the `app_*` tools, which are the only way to it.
 How to draw is the `drawing-cards` skill; pages and the data behind them are

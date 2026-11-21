@@ -2,7 +2,7 @@
 
 The contract between the app and an agent. The agent sends **ops**; the app sends
 back **events**. When the app is not running, the agent reaches the phone by
-**push**. Views inside ops are written in [Hermes UI](hermes-ui.md).
+**push**. Views inside ops are written in [Dedala UI](dedala-ui.md).
 
 The app ships no screens of its own beyond a conversation, Search and
 settings. Everything else (pages, screens, cards, the data they show, Live
@@ -54,7 +54,7 @@ still applies.
 
 | Op | |
 |---|---|
-| `{"op": "say", "conversation", "id", "text", "card", "topic", "record", "night", "at"}` | a message. `card` is `{view, data, state, script, derive}` in Hermes UI (`script` and `derive`: see Scripts there). `topic` makes it a link to that topic (use it in `main` to point at a topic). `record` (`{store, id}`) hands you a record of a declared store, drawn under the line with its title; a tap opens its screen (Data). `night` is `{remembered, overnight}`: the boundary between two days. `from: "you"` makes it yours, drawn as if you had written it: words of yours that reached the agent another way (a voice note). `shared` (`[{type, url, title, name, size, text, item}]`) with `share` (its id) is what you shared from another app with those words, drawn above them: links and files as rows, photos from the small images the share extension left under that id. `notice` (`{title, symbol, details, warning}`) instead of `text` is Hermes speaking for itself, a command's reply or a warning, drawn as an event between messages. `steps` (`[{text, symbol, failed}]`, added by the plugin) is what the agent did before saying it, shown as a quiet "4 steps" line that opens on a tap. An `id` the app already has replaces that message where it is when you have not written since, else moves it to the end of `conversation` as a new message |
+| `{"op": "say", "conversation", "id", "text", "card", "topic", "record", "night", "at"}` | a message. `card` is `{view, data, state, script, derive}` in Dedala UI (`script` and `derive`: see Scripts there). `topic` makes it a link to that topic (use it in `main` to point at a topic). `record` (`{store, id}`) hands you a record of a declared store, drawn under the line with its title; a tap opens its screen (Data). `night` is `{remembered, overnight}`: the boundary between two days. `from: "you"` makes it yours, drawn as if you had written it: words of yours that reached the agent another way (a voice note). `shared` (`[{type, url, title, name, size, text, item}]`) with `share` (its id) is what you shared from another app with those words, drawn above them: links and files as rows, photos from the small images the share extension left under that id. `notice` (`{title, symbol, details, warning}`) instead of `text` is Hermes speaking for itself, a command's reply or a warning, drawn as an event between messages. `steps` (`[{text, symbol, failed}]`, added by the plugin) is what the agent did before saying it, shown as a quiet "4 steps" line that opens on a tap. An `id` the app already has replaces that message where it is when you have not written since, else moves it to the end of `conversation` as a new message |
 | `{"op": "patch", "id", "data", "view", "state", "say"}` | updates the card of message `id`: merges `data` (`null` removes a key), replaces `view`, `script`, `derive` or the text. Keeps its place and your input; changes animate. `state` sets those state values over yours. A new text (`say`) once you have written below it moves it to the end, as a `say` of the same id would |
 | `{"op": "presence", "conversation", "typing", "since", "steps", "doing", "symbol", "tokens"}` | the agent's turn as it happens, refreshed every couple of seconds: `steps` done so far (`[{text, symbol, failed}]`, said in the present, "Reading notes.org", where the `say` that ends the turn says "Read notes.org"), what it is `doing` now ("Reading Marta's email", "Thinking", "Building a page") with the SF `symbol` of the tool at work when there is one (the pill shows the symbol, three dots without), the `tokens` it wrote, since when. Shown where the answer will appear. Neither `typing` nor `doing` means idle; any `say` clears it |
 | `{"op": "topic", "id", "title", "symbol", "color", "outcome", "closed"}` | opens a topic, or updates it. `closed: true` files it under Closed |
@@ -87,14 +87,14 @@ A store is one of three shapes, said by `kind`:
 | `kind` | The file | `data` |
 |---|---|---|
 | (none) | JSON, any value | the value |
-| `text` | a text file (Org, Markdown, plain) | `{path, name, exists, text, updated}`; the phone adds `sync` (`pending`, `synced`, `failed`) and `error`. Its structure is read on the phone: `org(text)` and `markdown(text)` (hermes-ui.md, Expressions) |
+| `text` | a text file (Org, Markdown, plain) | `{path, name, exists, text, updated}`; the phone adds `sync` (`pending`, `synced`, `failed`) and `error`. Its structure is read on the phone: `org(text)` and `markdown(text)` (dedala-ui.md, Expressions) |
 | `folder` | a folder of files | `[{id, name, path, title, tags, updated, identifier?, date?, signature?, links, backlinks, text? or file?}]`, one record per file (dotfiles and dot-folders left out, and what the store's `ignore` patterns name: `app_data {id, ignore: ["npins/", "*.nix"]}`, kept in `dedala/ignore.json`), `id` its path inside the folder (`2026/notes.org`). A text file (Org, Markdown, plain) carries `text`, `title` from `#+title` or the first heading, `tags` from `#+filetags`, `identifier`, `date` (ISO) and `signature` from the Org keywords, Markdown front matter or a Denote file name. Any other file (a PDF, an image, a document) carries `file`, its attachment, drawn by `{"File": …}`, with `size`, and its `title`, `tags`, `identifier`, `date`, `signature` from a Denote name (`20260101T090000==phd--tosem-paper__paper.pdf`), else the title is its stem. `links` are the ids of the records a text file links to (`[[denote:ID]]`, `[[id:UUID]]`, `[[file:…]]`, Markdown `[…](x.pdf)` and `[[wikilinks]]`), `backlinks` the ids of the records that link to it, a PDF's too; the phone adds `sync` and `error` to each |
 
 A store whose value is a list of objects with an `id` holds **records**. A
 record's `file` field, a path on the agent's machine, is an attachment: the
 plugin sends the file sealed and the phone keeps it, so a page reads
 `$documents[0].file` as `{path, name, format, ready, size, store, id}` and
-draws it with `{"File": "$it.file"}` (Hermes UI). A **declaration** makes a
+draws it with `{"File": "$it.file"}` (Dedala UI). A **declaration** makes a
 store's records findable: the phone's Search lists them under `name`, with
 `symbol`, each shown by `title` and `subtitle` (expressions over the record,
 `"$name"`), found by them and by `words` (`["$email", "$text"]`), and opened
@@ -112,14 +112,14 @@ as the screen named `screen` with `{"id": the record's id}`; without a
 
 | Op | |
 |---|---|
-| `{"op": "page", "id", "title", "symbol", "view", "toolbar", "state", "script", "derive", "focus"}` | creates or replaces a page (`toolbar`: up to three Buttons or Menus for its bar, Hermes UI, Screens); it reads stores by name and has no data of its own. A new page joins the end of the bar and is announced in the main conversation; you order the bar and hide pages in Search. `focus: true` opens it. Every page op is answered by a `rendered` event with `page` instead of `card`: the app draws the page off screen at the phone's width and full height (up to 4000pt) and reports and captures it like a card. `{"op": "page", "id", "remove": true}` deletes it. The plugin adds `maintained_by` and `handled_by`, the ids of the cron jobs that keep it up to date and handle what you do on it; the phone ignores them |
+| `{"op": "page", "id", "title", "symbol", "view", "toolbar", "state", "script", "derive", "focus"}` | creates or replaces a page (`toolbar`: up to three Buttons or Menus for its bar, Dedala UI, Screens); it reads stores by name and has no data of its own. A new page joins the end of the bar and is announced in the main conversation; you order the bar and hide pages in Search. `focus: true` opens it. Every page op is answered by a `rendered` event with `page` instead of `card`: the app draws the page off screen at the phone's width and full height (up to 4000pt) and reports and captures it like a card. `{"op": "page", "id", "remove": true}` deletes it. The plugin adds `maintained_by` and `handled_by`, the ids of the cron jobs that keep it up to date and handle what you do on it; the phone ignores them |
 | `{"op": "upkeep", "page", "state"}` | how a page is kept up to date, from the plugin, which reads the cron job the agent linked to it (`app_page` `maintained_by`): `{schedule, last, next, status, error, paused, missing, refreshing, watching, checked}`. A job with a change detector (`watching`) checks at each tick (`checked`) and runs the agent only when what it watches changed (`last`). The page shows when it was updated and will be next, and warns when an update failed or, once synced, is overdue. No `state`: nothing maintains it anymore |
 | `{"op": "synced"}` | from the plugin each time the app comes online, after the state of every maintained page and the background work: what the app shows is now the agent's, and pages can say an update is overdue |
 | `{"op": "background", "jobs", "runs"}` | what the agent does on his own, from the plugin, which reads Hermes cron and sees each run's tool calls and stream: `jobs` `[{id, name, schedule, next, last, status, error, paused, done, silent, page, watching, checked}]` (`done`: a one-time job that ran and will not run again), `runs` (the last 20, without a change detector's ticks that woke no agent) `[{id, job, name, started, finished, status: running/ok/failed, error, steps, tokens, doing}]`. Sent when it changes, every 2 seconds at most while a run is under way. The app shows it in Activity |
 | `{"op": "check", "id"}` | last in a batch whose result a tool waits for: the app answers with a `checked` event carrying that id and the errors of the batch, empty when all of it applied. The plugin adds it when the app is open; a batch without it reports only its errors (`errors`) |
 | `{"op": "acked", "ids", "failed", "answers"}` | the plugin has these events (`edits`, `file`, `command` and `share`, by id): the app stops sending them again. `answers` maps an id to the ops that settle it, applied before the ack: the store as its file now holds it after an edit, a folder record after a line edit, a command's outcome with the stores it wrote, a share said back as your message. `failed` maps an id to why it was refused, shown on the store's pages until the next edit, or under `$commands.<name>`. An event sent again is answered the same way and never made twice |
-| `{"op": "command", "name", "status", "result", "error", "at", "duration", "args"}` | what came of a command you ran: `done` with the program's `result` (its stdout, JSON when it is) or `failed` with why. The phone keeps the last run of each command under `$commands.<name>` (Hermes UI, Time and live values) |
-| `{"op": "define", "components": {…}, "scripts": {…}}` | components and shared script modules for cards and pages (see Hermes UI); a component with a `title` opens as a screen, with `toolbar` buttons in its bar (Hermes UI, Screens); `null` deletes one |
+| `{"op": "command", "name", "status", "result", "error", "at", "duration", "args"}` | what came of a command you ran: `done` with the program's `result` (its stdout, JSON when it is) or `failed` with why. The phone keeps the last run of each command under `$commands.<name>` (Dedala UI, Time and live values) |
+| `{"op": "define", "components": {…}, "scripts": {…}}` | components and shared script modules for cards and pages (see Dedala UI); a component with a `title` opens as a screen, with `toolbar` buttons in its bar (Dedala UI, Screens); `null` deletes one |
 
 ### Widgets
 
@@ -135,7 +135,7 @@ as the screen named `screen` with `{"id": the record's id}`; without a
 
 ### Live Activities
 
-An activity's **design** is a set of Hermes UI regions over its data:
+An activity's **design** is a set of Dedala UI regions over its data:
 
 ```json
 {"views": {"lock": …, "lockCompact": …, "leading": …, "trailing": …, "center": …,
@@ -191,7 +191,7 @@ from `/captures`.
 `issues` are measured, not guessed: an element sticking out, text cut short of
 the height it needs, a view collapsed to nothing, a tap target under 28pt. Each
 names the node by its path, e.g. `VStack › 2.HStack › 1.Text`. How the agent uses
-them is its drawing skill, [docs/hermes-ui/skill/SKILL.md](hermes-ui/skill/SKILL.md).
+them is its drawing skill, [docs/dedala-ui/skill/SKILL.md](dedala-ui/skill/SKILL.md).
 
 ## Push
 

@@ -7,7 +7,7 @@ import SwiftUI
 import UIKit
 
 /// A file drawn natively by its format: PDF pages, Markdown and Org rendered,
-/// an image, plain text. What `{"File": …}` draws (Hermes UI) once the file
+/// an image, plain text. What `{"File": …}` draws (Dedala UI) once the file
 /// is on the phone.
 struct FileReader: View {
     let url: URL

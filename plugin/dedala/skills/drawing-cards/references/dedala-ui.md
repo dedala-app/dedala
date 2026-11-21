@@ -1,4 +1,4 @@
-# Hermes UI
+# Dedala UI
 
 The language an agent uses to draw on the phone. A card is a tree of nodes written
 in JSON; the app interprets it with real SwiftUI views. Nothing is compiled or
@@ -370,7 +370,7 @@ The helpers only know what the app defines. What a record's own fields mean
 (an amount, a due date) is for the agent's modules.
 
 **Checked before it reaches the phone.** The plugin runs every script on the
-Hermes machine first, in a JavaScript engine with the same inputs: derived values
+agent's machine first, in a JavaScript engine with the same inputs: derived values
 on the card's data and first state, with a sample of each live value; handlers
 on the examples the agent gives (`"examples": [{"run": "ask", "state": {…}, "now": "…"}]`),
 or once on the first state. A script that throws, runs out of time or returns
@@ -548,4 +548,4 @@ so the app draws it as a `VStack` and says so in the rendered report's issues.
 
 Cards travel in messages (`say`, `patch`), pages in `page` ops, components in
 `define`. What each op carries and what comes back is in [protocol.md](protocol.md);
-how to draw well with the reports is the skill, `docs/hermes-ui/skill/SKILL.md`.
+how to draw well with the reports is the skill, `docs/dedala-ui/skill/SKILL.md`.

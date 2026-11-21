@@ -5,7 +5,7 @@ import ActivityKit
 import SwiftUI
 import WidgetKit
 
-/// Every region of an agent's activity is one Hermes UI node from its design:
+/// Every region of an agent's activity is one Dedala UI node from its design:
 /// `lock` (with `lockCompact` when it does not fit the lock screen), `leading`,
 /// `trailing`, `center`, `bottom`, `compactLeading`, `compactTrailing` and
 /// `minimal`, drawn over the latest data.

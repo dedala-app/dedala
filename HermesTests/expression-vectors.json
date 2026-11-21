@@ -1,5 +1,5 @@
 {
- "about": "Hermes UI expressions as the phone evaluates them (Hermes/UI/Expression.swift): the layout twin must agree. Nothing here depends on the clock or the locale. A text left null is not compared: how a number with decimals reads follows the phone's locale.",
+ "about": "Dedala UI expressions as the phone evaluates them (Hermes/UI/Expression.swift): the layout twin must agree. Nothing here depends on the clock or the locale. A text left null is not compared: how a number with decimals reads follows the phone's locale.",
  "scope": {
   "a": 1,
   "b": 2,

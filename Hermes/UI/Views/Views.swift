@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-/// Every view Hermes UI has, by its name: what reads its arguments from a
+/// Every view Dedala UI has, by its name: what reads its arguments from a
 /// node. This table is the list of views; what each reads is its arguments.
 enum Views {
     typealias Make = (inout Reader) -> any ViewSpec

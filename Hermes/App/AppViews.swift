@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-/// The Hermes UI views drawn from what the app holds: the agent's face, the
+/// The Dedala UI views drawn from what the app holds: the agent's face, the
 /// cards he said and the files it keeps, for his pages and cards.
 enum AppViews {
     /// They take what they draw from with them: a page is also drawn away

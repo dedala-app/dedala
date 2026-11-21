@@ -14,7 +14,7 @@ private func json(_ text: String) throws -> JSONValue {
     try JSONValue.parse(Data(text.utf8))
 }
 
-@Suite("Hermes UI expressions")
+@Suite("Dedala UI expressions")
 @MainActor
 struct ExpressionTests {
     @Test("References keep their type")
@@ -49,7 +49,7 @@ struct ExpressionTests {
     }
 }
 
-@Suite("Hermes UI trees")
+@Suite("Dedala UI trees")
 @MainActor
 struct TreeTests {
     @Test("Children expanded from ForEach and If never share an identity")

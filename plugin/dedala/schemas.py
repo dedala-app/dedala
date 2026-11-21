@@ -12,7 +12,7 @@ from . import activities, cards, commands, data, pages, records, session
 
 # System-prompt platform hint (PlatformEntry.platform_hint); cached-prompt bytes, keep stable.
 PLATFORM_HINT = (
-    "You are in your user's iPhone app, your home: a native app you shape yourself with the app_* tools. "
+    "You are in Dedala, your user's iPhone app and your home: a native app you shape yourself with the app_* tools. "
     "Your plain replies appear as chat bubbles, with inline Markdown (bold, italic, links). Whenever an answer "
     "has a shape - a score, a choice to make, a place, a time, things to compare, a document to act on - draw "
     "it as a card with app_card rather than describing it: load the drawing-cards skill first, then read the "
@@ -35,10 +35,10 @@ FROM_FILE = {"type": "string", "description": "A JSON file holding this call's a
 TOOLS = [
     (cards.card, {
         "name": "app_card",
-        "description": "Say something in the app with a Hermes UI card under it (load the drawing-cards skill first). The card is laid out here as his phone will draw it, at his text size and width, and a designer reviews the picture: if anything is cut or the review says FIX, it is not sent and you get the problems or the critique; send the whole card again with app_card on the same id. It reaches him once, finished: when it passes, or as it stands after the third try. Problems only the phone sees come later, as a message.",
+        "description": "Say something in the app with a Dedala UI card under it (load the drawing-cards skill first). The card is laid out here as his phone will draw it, at his text size and width, and a designer reviews the picture: if anything is cut or the review says FIX, it is not sent and you get the problems or the critique; send the whole card again with app_card on the same id. It reaches him once, finished: when it passes, or as it stands after the third try. Problems only the phone sees come later, as a message.",
         "parameters": {"type": "object", "properties": {
             "text": {"type": "string", "description": "The line above the card"},
-            "view": {**OBJECT, "description": "The card, a Hermes UI node"},
+            "view": {**OBJECT, "description": "The card, a Dedala UI node"},
             "data": {**OBJECT, "description": "Values the view reads with $name"},
             "state": {**OBJECT, "description": "Initial local state"},
             "script": {"type": "string", "description": "JavaScript functions computing on the phone from what is already there: data, state, now, and the live values waiting, running, today, pages, commands (see Scripts in the drawing-cards skill). No network, no clock"},
@@ -74,7 +74,7 @@ TOOLS = [
             "id": {"type": "string", "description": "Stable page id, e.g. steering-committee"},
             "title": {"type": "string"},
             "symbol": {"type": "string", "description": "SF Symbol for the tab"},
-            "view": {**OBJECT, "description": "The page, a Hermes UI node; usually a VStack of your components. Required for a new page"},
+            "view": {**OBJECT, "description": "The page, a Dedala UI node; usually a VStack of your components. Required for a new page"},
             "components": {**OBJECT, "description": "Components to define or redefine: {Name: {props, body}}, with a title for one that opens as a screen ({\"show\": Name} on a row), and a toolbar for buttons in its bar ([{Button, symbol, action}], up to 3, Menus too); null deletes one that no page or component draws"},
             "toolbar": {"type": "array", "items": OBJECT, "description": "Buttons in the page's bar beside the app's own: up to 3 Buttons or Menus with a symbol and an action, run in the page's scope ([] removes them)"},
             "state": {**OBJECT, "description": "Initial local state"},

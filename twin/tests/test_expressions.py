@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2026 Julien Malka
 # SPDX-License-Identifier: MIT
 
-"""The twin evaluates Hermes UI expressions as the phone does: the vectors are
+"""The twin evaluates Dedala UI expressions as the phone does: the vectors are
 the phone's own (HermesTests/expression-vectors.json, checked there against the
 interpreter)."""
 

@@ -3,7 +3,7 @@
 
 import Foundation
 
-/// Any JSON value. Hermes UI trees, card data and state are all made of these.
+/// Any JSON value. Dedala UI trees, card data and state are all made of these.
 nonisolated enum JSONValue: Hashable, Sendable, Codable {
     case null
     case bool(Bool)

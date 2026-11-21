@@ -11,7 +11,7 @@ sys.path.insert(0, str(ROOT / "plugin"))
 from dedala.checks import remarks  # noqa: E402
 from dedala.grammar import check_ops, idle, problems  # noqa: E402
 
-EXAMPLES = sorted((ROOT / "docs" / "hermes-ui" / "examples").rglob("*.json"))
+EXAMPLES = sorted((ROOT / "docs" / "dedala-ui" / "examples").rglob("*.json"))
 
 
 def test_every_example_is_sound():

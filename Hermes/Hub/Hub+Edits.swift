@@ -8,7 +8,7 @@ import Foundation
 /// store you changed comes back from the plugin as its file now holds it,
 /// just before the plugin confirms your edit.
 extension Hub {
-    /// `{"store": id, …}` (docs/hermes-ui.md, Actions): a patch merged into a
+    /// `{"store": id, …}` (docs/dedala-ui.md, Actions): a patch merged into a
     /// JSON store or `replace`, a record patched by `id`, added with `add` or
     /// removed with `remove`, kept to tell the agent once you stop. On a text
     /// store, or on a file of a folder store named by `id`, line edits, shown

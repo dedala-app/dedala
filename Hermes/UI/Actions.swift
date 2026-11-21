@@ -5,7 +5,7 @@ import LocalAuthentication
 import SwiftUI
 import UIKit
 
-/// Runs Hermes UI actions: state changes and haptics on the card, phone
+/// Runs Dedala UI actions: state changes and haptics on the card, phone
 /// actions through system URLs, and `send` back to the agent.
 enum ActionRunner {
     static var openPage: ((String) -> Void)?

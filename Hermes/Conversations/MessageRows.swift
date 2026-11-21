@@ -162,7 +162,7 @@ struct StepsTrace: View {
     }
 }
 
-/// A Hermes UI card inside a conversation; its actions go back to the agent,
+/// A Dedala UI card inside a conversation; its actions go back to the agent,
 /// and what it draws is reported back like any card. Long press to flag it.
 struct InlineCard: View {
     /// Its share of the conversation's column.

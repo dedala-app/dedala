@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-/// A Hermes UI view as decoded from its JSON, once: every string in it is
+/// A Dedala UI view as decoded from its JSON, once: every string in it is
 /// already read as the text, reference or expression it is, every argument
 /// already taken by the view that has it. Drawing walks this, not the JSON.
 indirect enum Node {

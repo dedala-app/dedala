@@ -121,7 +121,7 @@ var h = (function () {
     },
     percent: function (x) { return Math.round(x * 100) + ' %' },
 
-    // A note read as its org-element tree (hermes-ui.md, The tree of a text):
+    // A note read as its org-element tree (dedala-ui.md, The tree of a text):
     // the whole tree, or the nodes of one type. __orgParse is the host's.
     org: function (text, type) { return tree(text, 'org', type) },
     markdown: function (text, type) { return tree(text, 'markdown', type) },

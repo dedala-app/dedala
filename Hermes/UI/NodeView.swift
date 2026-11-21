@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-/// Draws a Hermes UI view given as JSON: decoded once (see Tree), drawn from
+/// Draws a Dedala UI view given as JSON: decoded once (see Tree), drawn from
 /// what it decodes to.
 struct NodeView: View {
     let node: JSONValue
