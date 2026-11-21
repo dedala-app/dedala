@@ -100,16 +100,6 @@ async def test_a_phone_paired_again_gets_the_conversation_and_the_arrangement(re
     await link.stop()
 
 
-async def test_the_name_he_gives_the_agent_is_kept_and_its_changes_told(relay, tmp_path):
-    link, phone = await paired(relay, tmp_path)
-    assert link.arranged({"kind": "arrangement", "pinned": []}) is None
-    assert link.arranged({"kind": "arrangement", "pinned": [], "name": "Jo"}) == (None, "Jo")
-    assert link.arranged({"kind": "arrangement", "pinned": ["today"], "name": "Jo"}) is None
-    assert link.arrangement() == [{"op": "arrangement", "pinned": ["today"], "name": "Jo"}]
-    assert link.arranged({"kind": "arrangement", "pinned": ["today"]}) == ("Jo", None)
-    await link.stop()
-
-
 async def test_where_he_placed_the_widgets_is_kept_and_a_size_they_do_not_draw_told_once(relay, tmp_path):
     link, phone = await paired(relay, tmp_path)
     link.state["artifacts"]["widget"] = {"todos": {"op": "widget", "id": "todos", "store": "day", "component": "T", "families": ["medium"]},

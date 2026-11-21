@@ -14,9 +14,9 @@ from dedala import seal
 from dedala.link import Link, pair
 
 
-async def test_pairing_sends_the_profile_first(relay, tmp_path):
+async def test_pairing_sends_the_agent_s_name_in_its_profile_store(relay, tmp_path):
     link, phone = await paired(relay, tmp_path)
-    assert (await phone.ops())[0] == {"op": "profile", "name": "Jacques"}
+    assert {"op": "store", "id": "profile", "data": {"name": "Jacques"}} in await phone.ops()
     await link.stop()
 
 
@@ -30,7 +30,7 @@ async def test_what_the_agent_built_is_sent_again_in_order(relay, tmp_path):
     ])
     await link.replay()
     replayed = (await phone.ops())[-5:]
-    assert [op["op"] for op in replayed] == ["profile", "store", "store", "page", "history"]
+    assert [op["op"] for op in replayed] == ["store", "store", "store", "page", "history"]
     assert replayed[2]["declare"] == {"name": "People", "title": "$name"} and replayed[2]["data"][0]["name"] == "Marta"
     assert [message["text"] for message in replayed[4]["messages"]] == ["not an artifact"]
     await link.stop()
@@ -315,7 +315,7 @@ async def test_a_phone_paired_while_the_gateway_was_away_starts_from_nothing(rel
     assert link.state["seq_out"] > 1
     await link.start()
     await until(lambda: link.state.get("pairing") == link.identity.data["pairing"] and link.state["seq_out"] == 1)
-    assert [op["op"] for op in await second.ops()] == ["profile", "page"]
+    assert [op["op"] for op in await second.ops()] == ["store", "page"]
     await link.stop()
 
 
@@ -341,7 +341,6 @@ def test_what_the_agent_builds_is_files_and_the_numbering_is_kept_apart(tmp_path
                   {"op": "define", "components": {"Tile": {"body": {"Text": "t"}}}, "scripts": {"m": "return {}"}},
                   {"op": "buttons", "kinds": {"bill": [{"id": "paid", "title": "Paid"}]}},
                   {"op": "widget", "id": "glance", "store": "day", "component": "Tile", "families": ["small"]},
-                  {"op": "profile", "name": "Jacques", "face": {"hair": "short"}},
                   {"op": "assets", "assets": {"logo": "https://x/logo.png"}}])
     assert json.loads((tmp_path / "pages" / "day.json").read_text()) == {"title": "Day", "view": {"Text": "x"}}
     assert json.loads((tmp_path / "components" / "Tile.json").read_text()) == {"body": {"Text": "t"}}
@@ -349,7 +348,6 @@ def test_what_the_agent_builds_is_files_and_the_numbering_is_kept_apart(tmp_path
     assert json.loads((tmp_path / "buttons.json").read_text()) == {"bill": [{"id": "paid", "title": "Paid"}]}
     assert json.loads((tmp_path / "widgets" / "glance.json").read_text()) == {"store": "day", "component": "Tile", "families": ["small"]}
     assert json.loads((tmp_path / "assets.json").read_text()) == {"logo": "https://x/logo.png"}
-    assert json.loads((tmp_path / "profile.json").read_text())["face"] == {"hair": "short"}
     again = Link(tmp_path, "http://relay", "token", "Jacques")
     assert again.state["seq_out"] == 41 and again.state["artifacts"]["store"]["ol"]["data"] == {"score": "2-1"}
     assert sorted(again.state["artifacts"]["page"]) == ["day", "ol"] and again.state["artifacts"]["widget"]["glance"]["component"] == "Tile"

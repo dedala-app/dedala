@@ -26,7 +26,7 @@ Both sides connect out. The Hermes machine opens no port and needs no domain.
 | Access | Agents register with an invite token issued on the relay's host |
 | Devices | One per agent for now, to keep the scope small. Pairing a new device revokes the previous one |
 | History | Hermes keeps its own history and memory; the plugin keeps the app's conversations as the phone drew them, in `dedala/conversations.jsonl` (every `say`, `patch`, `receipt` and `topic` sent, what you wrote, answered and loved). The first pairing makes the app Hermes's home channel and starts a new session; a phone paired again gets the conversations back (`history` ops) and the session goes on |
-| Artifacts | On pairing, the plugin sends how you arranged the app on the last phone (`arrangement`: the bar, tab names, page settings, the face you made), then the profile, assets, components and scripts, stores, pages, the vault, kinds and items, then the conversations, so a reinstalled phone gets everything back. The Live Activities that were running start again from where their stores are; the phone ends the ones a previous pairing left, which nothing could update |
+| Artifacts | On pairing, the plugin sends how you arranged the app on the last phone (`arrangement`: the bar, tab names, page settings), then the assets, components and scripts, stores, pages, the vault, kinds and items, then the conversations, so a reinstalled phone gets everything back. The Live Activities that were running start again from where their stores are; the phone ends the ones a previous pairing left, which nothing could update |
 | Notifications | Full text, decrypted on the phone by a notification service extension |
 | Retention | Undelivered messages are kept 7 days |
 
@@ -62,7 +62,7 @@ Every later request carries its bearer token. The relay stores tokens hashed.
    and hands `{device_key, mac, name}` to the plugin.
 5. The plugin checks `mac` with `proof`. The relay never saw `proof`, so it
    cannot substitute its own key. The plugin then sends how you arranged the
-   app, the agent's artifacts (`profile`, `define`, every `page` with its
+   app, the agent's artifacts (`define`, every `page` with its
    `store`, the activity designs and every `vault` item with its versions) and
    the conversations, starts the Live Activities that were running, and, the
    first time, tells Hermes that the app is now the home channel and starts a

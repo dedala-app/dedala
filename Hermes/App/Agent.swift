@@ -4,77 +4,42 @@
 import Observation
 import SwiftUI
 
-/// Who the app talks to: the name and face the agent gives itself with
-/// `{"op": "profile", "name", "avatar": {"asset"}}`, and the name and face you
-/// gave him, which win over his.
+/// Who the app talks to: its name and face, from the store `profile`
+/// (protocol.md, Who the agent is), which the agent and you both write.
 @Observable
 final class Agent {
-    private(set) var ownName: String
-    private(set) var givenName: String?
-    private(set) var avatar: String?
+    private(set) var name: String
     private(set) var look: AvatarLook?
-
-    var name: String { givenName ?? ownName }
+    /// The picture the profile names, once the phone holds it; the last one
+    /// stays while a new one is on its way.
+    private(set) var picture: UIImage?
+    @ObservationIgnored private var pictureURL: URL?
 
     init() {
-        let saved = UserDefaults.standard
-        ownName = saved.string(forKey: "agentName") ?? "Assistant"
-        givenName = saved.string(forKey: "agentGivenName")
-        avatar = saved.string(forKey: "agentAvatar")
-        look = saved.data(forKey: "agentLook").flatMap { try? JSONDecoder().decode(AvatarLook.self, from: $0) }
+        name = PairingStore.load()?.agentName ?? "Assistant"
     }
 
-    func apply(_ op: JSONValue) {
-        if let name = op["name"]?.string, !name.isEmpty {
-            ownName = name
-            UserDefaults.standard.set(name, forKey: "agentName")
-            PairingStore.rename(self.name)
-        }
-        if let asset = op["avatar"]?["asset"]?.string {
-            avatar = asset
-            UserDefaults.standard.set(asset, forKey: "agentAvatar")
-        }
+    /// The name the pairing code gave, until the profile comes.
+    func paired(_ name: String) {
+        self.name = name
     }
 
-    /// The name you gave him; empty or nil gives him back his own.
-    func setGivenName(_ name: String?) {
-        let name = name?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let given = name?.isEmpty == false ? name : nil
-        guard given != givenName else { return }
-        givenName = given
-        UserDefaults.standard.set(given, forKey: "agentGivenName")
-        PairingStore.rename(self.name)
-        onChoice?()
-    }
-
-    /// The face you made for him; nil gives him back his own.
-    func setLook(_ look: AvatarLook?) {
-        self.look = look
-        UserDefaults.standard.set(look.flatMap { try? JSONEncoder().encode($0) }, forKey: "agentLook")
-        onChoice?()
-    }
-
-    @ObservationIgnored var onChoice: (() -> Void)?
-
-    /// The name and face you gave him, as they go to the agent's machine with
-    /// how you arranged the app.
-    var choices: [String: JSONValue] {
-        var choices: [String: JSONValue] = [:]
-        if let look = look.flatMap({ try? JSONEncoder().encode($0) }).flatMap({ try? JSONValue.parse($0) }) {
-            choices["look"] = look
+    /// The profile as the phone shows it, and its picture's file when here.
+    func show(_ profile: JSONValue?, picture url: URL?) {
+        if let given = profile?["name"]?.string?.trimmingCharacters(in: .whitespacesAndNewlines), !given.isEmpty, given != name {
+            name = given
+            PairingStore.rename(given)
         }
-        if let givenName { choices["name"] = .string(givenName) }
-        return choices
-    }
-
-    /// The name and face you gave him on a phone paired before.
-    func takeChoices(_ op: JSONValue) {
-        if let value = op["look"], let look = try? JSONDecoder().decode(AvatarLook.self, from: value.data()), look != self.look {
-            setLook(look)
+        let look = profile?["look"].flatMap { $0.object == nil ? nil : AvatarLook($0, over: AvatarLook.derived(from: name)) }
+        if look != self.look { self.look = look }
+        guard profile?["picture"].map({ $0 != .null }) == true else {
+            pictureURL = nil
+            if picture != nil { picture = nil }
+            return
         }
-        if let name = op["name"]?.string {
-            setGivenName(name)
-        }
+        guard let url, url != pictureURL, let image = UIImage(contentsOfFile: url.path) else { return }
+        pictureURL = url
+        picture = image
     }
 
     /// A look that comes over his mood for a moment: a wink, a glance up at
@@ -110,22 +75,20 @@ enum AgentMood {
     case glancing, sleepy, winking, surprised
 }
 
-/// The agent's face: the one you made for him, else his own picture, else an
-/// Avataaars face drawn from his name.
+/// The agent's face: its picture, else its drawn look, else a face drawn
+/// from its name.
 struct AgentFace: View {
     @Environment(Agent.self) private var agent
     var mood = AgentMood.idle
 
     var body: some View {
-        if let look = agent.look {
-            AvataaarFace(mood: mood, look: look)
-        } else if let asset = agent.avatar, let image = Assets.shared.image(asset) {
-            Image(uiImage: image)
+        if let picture = agent.picture {
+            Image(uiImage: picture)
                 .resizable()
                 .scaledToFill()
                 .clipShape(.circle)
         } else {
-            AvataaarFace(mood: mood, look: AvatarLook.derived(from: agent.name))
+            AvataaarFace(mood: mood, look: agent.look ?? AvatarLook.derived(from: agent.name))
         }
     }
 }

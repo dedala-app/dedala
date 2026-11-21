@@ -70,6 +70,7 @@ def test_a_patch_and_his_edit_are_made_to_the_file_as_it_stands(tmp_path):
 
 def test_the_phone_is_sent_what_it_does_not_have_and_only_that(tmp_path):
     link = Link(tmp_path, "http://relay", "token", "Jacques")
+    assert link.unsent_stores() == [{"op": "store", "id": "profile", "data": {"name": "Jacques"}}]
     link._record([{"op": "store", "id": "trip", "data": {"days": 3}}])
     assert link.unsent_stores() == []
     link.stores.path("trip").write_text('{"days": 4}')

@@ -4,11 +4,12 @@
 import SwiftUI
 
 /// Making the agent's face, as in the Memoji editor: the face alive at the
-/// top with his name under it, one part at a time below, each choice shown on
-/// the face itself. Every choice is kept at once; Reset gives him back his own
-/// face, an empty name his own name.
+/// top with its name under it, one part at a time below, each choice shown on
+/// the face itself; or a picture instead. Every choice is written at once to
+/// the store `profile`, which the agent writes too.
 struct AvatarEditor: View {
     @Environment(Agent.self) private var agent
+    @Environment(Hub.self) private var hub
     @State private var look: AvatarLook?
     @State private var part = Part.skin
     @State private var name = ""
@@ -22,20 +23,26 @@ struct AvatarEditor: View {
     var body: some View {
         let look = self.look ?? agent.look ?? AvatarLook.derived(from: agent.name)
         VStack(spacing: 0) {
-            AvataaarFace(look: look)
-                .frame(width: 160, height: 160)
-                .background(PosterWash().clipShape(.circle))
-                .clipShape(.circle)
-                .padding(.top, 12)
-            TextField(agent.ownName, text: $name)
+            Group {
+                if self.look == nil, let picture = agent.picture {
+                    Image(uiImage: picture).resizable().scaledToFill()
+                } else {
+                    AvataaarFace(look: look)
+                }
+            }
+            .frame(width: 160, height: 160)
+            .background(PosterWash().clipShape(.circle))
+            .clipShape(.circle)
+            .padding(.top, 12)
+            TextField("Name", text: $name)
                 .font(.title2.weight(.semibold))
                 .multilineTextAlignment(.center)
                 .textInputAutocapitalization(.words)
                 .autocorrectionDisabled()
                 .submitLabel(.done)
                 .focused($naming)
-                .onSubmit { agent.setGivenName(name) }
-                .onChange(of: naming) { if !naming { agent.setGivenName(name) } }
+                .onSubmit(rename)
+                .onChange(of: naming) { if !naming { rename() } }
                 .padding(.horizontal, 32)
                 .padding(.vertical, 12)
             Picker("Part", selection: $part) {
@@ -53,15 +60,20 @@ struct AvatarEditor: View {
         }
         .navigationTitle("Name and face")
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear { name = agent.givenName ?? "" }
-        .onDisappear { agent.setGivenName(name) }
+        .onAppear { name = agent.name }
+        .onDisappear(perform: rename)
         .toolbar {
             ToolbarItemGroup(placement: .topBarTrailing) {
                 Button("Shuffle", systemImage: "dice") { pick(AvatarLook.random()) }
-                Menu("More", systemImage: "ellipsis") {
-                    Button("Reset to \(agent.ownName)'s own face", systemImage: "arrow.counterclockwise", role: .destructive) {
-                        agent.setLook(nil)
-                        self.look = nil
+                Menu("Picture", systemImage: "photo") {
+                    Button("Choose Photo", systemImage: "photo.on.rectangle") { choosePicture("library") }
+                    if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                        Button("Take Photo", systemImage: "camera") { choosePicture("camera") }
+                    }
+                    if agent.picture != nil {
+                        Button("Remove Picture", systemImage: "trash", role: .destructive) {
+                            pick(agent.look ?? AvatarLook.derived(from: agent.name))
+                        }
                     }
                 }
             }
@@ -134,7 +146,25 @@ struct AvatarEditor: View {
 
     private func pick(_ next: AvatarLook) {
         withAnimation(.snappy) { look = next }
-        agent.setLook(next)
+        write(["look": next.json, "picture": .null])
+    }
+
+    private func choosePicture(_ source: String) {
+        Task {
+            guard let picked = await PhotoPicking.pick(source) else { return }
+            look = nil
+            write(["picture": picked.merging(.object(["name": .string("picture-\(Int(Date.now.timeIntervalSince1970)).jpg")]))])
+        }
+    }
+
+    private func rename() {
+        let given = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !given.isEmpty, given != agent.name else { return }
+        write(["name": .string(given)])
+    }
+
+    private func write(_ fields: [String: JSONValue]) {
+        try? hub.edit(.object(fields.merging(["store": .string(Hub.profile)]) { $1 }), from: Hub.profile)
     }
 }
 

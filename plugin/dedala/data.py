@@ -12,7 +12,7 @@ import difflib
 import logging
 from pathlib import Path
 
-from . import analysis, checks, session
+from . import analysis, checks, profile, session
 from .stores import DECLARATION, records_of
 
 logger = logging.getLogger(__name__)
@@ -56,6 +56,10 @@ def _summary(link, name: str, full: bool = False) -> dict:
         found["data"] = data
     elif isinstance(data, dict):
         found["keys"] = sorted(data)[:SAMPLE]
+    if name == profile.STORE:
+        found["about"] = profile.ABOUT
+        if full:
+            found["look_parts"] = profile.LOOK
     readers = sorted(analysis._readers(name, link.state.get("artifacts", {})))
     if readers:
         found["read_by"] = readers
@@ -82,6 +86,8 @@ async def data(args: dict, **_) -> str:
     name = args.get("id") or ""
     if not name:
         return session.answer({"stores": [_summary(link, known) for known in sorted(stores.held)]})
+    if name == profile.STORE and (args.get("remove") or args.get("path")):
+        return session.answer({"error": "The profile store stays a JSON store: change it with data or patch"})
     if args.get("remove"):
         if name not in stores.held and name not in stores.links:
             return session.answer({"error": f"There is no store {name}"})
@@ -159,6 +165,8 @@ async def data(args: dict, **_) -> str:
     if "data" in op or "patch" in op:
         held = stores.held.get(name) or {}
         new = op["data"] if "data" in op else checks.merge(held if isinstance(held, dict) else {}, op.get("patch") or {})
+        if name == profile.STORE and (problem := profile.problem(new)):
+            return session.answer({"error": problem, "look_parts": profile.LOOK})
         _, warnings = analysis.sharing(name, new, link.state.get("artifacts", {}))
     checked = await session.on_gateway(link.send_and_check(ops))
     attachments = await session.on_gateway(link.unsent_attachments())

@@ -33,7 +33,7 @@ from .files import Refused
 from .stores import fingerprint
 from .symbols import Symbols
 from .fonts import Fonts
-from . import twin
+from . import profile, twin
 from .handlers import Arrivals, Edits, Handlers, StoreChanged
 from .inbox import TP7_PREFACE, Inbox, handlers, serve
 from .link import Link
@@ -65,14 +65,6 @@ NUDGE = ("[app: if your answer has a shape - a score, a result, a place, a time,
          "that adds something (a question, a next step); never retell it, and never tell him what you fixed. If he "
          "asks for a document or a note, hand him the document itself: a record with its file, given with app_data "
          "{id, record, say}]")
-
-
-def _renamed(before: Optional[str], after: Optional[str]) -> str:
-    """What the agent is told when he names it in the app, or gives it back its own name."""
-    if after:
-        return (f"[app: he named you {after} in the app: it is your name there, on its titles and notifications"
-                f"{f', instead of {before}' if before else ''}. Answer in one short line at most.]")
-    return f"[app: he took back the name {before} he gave you in the app: it shows your own name again. Answer in one short line at most.]"
 
 
 def _undrawn(undrawn: dict[str, list[str]]) -> str:
@@ -410,9 +402,14 @@ class Server:
         changed goes back as its file now holds it, and the jobs handling the
         pages touched run, in sessions of their own, until they have handled
         every change. A photo he took travels as blobs and lands as an
-        attachment. No conversation hears of it unless a job says so."""
+        attachment. No conversation hears of it unless a job says so, but for
+        the agent's name and face (profile.py)."""
         await self._fetch_photos(event)
+        before = self.link.stores.held.get(profile.STORE)
         jobs = self.link.edited(event)
+        if any(change.get("store") == profile.STORE for change in event.get("changes") or []):
+            if said := profile.told(before, self.link.stores.held.get(profile.STORE)):
+                await self._deliver("main", said)
         touched = dict.fromkeys(change["store"] for change in event.get("changes") or [] if change.get("store"))
         logger.info("[app] %d edits from the phone; handled by %s", len(event.get("changes") or []), jobs or "no job")
         for job in jobs:
@@ -792,8 +789,7 @@ class Server:
         elif kind == "stop":
             await self.agent.stop(conversation)
         elif kind == "arrangement":
-            if renamed := self.link.arranged(event):
-                await self._deliver("main", _renamed(*renamed))
+            self.link.arranged(event)
         elif kind == "widgets":
             if undrawn := self.link.placed(event.get("placed") or {}):
                 await self._deliver("main", _undrawn(undrawn))

@@ -10,6 +10,8 @@ yours to shape. It ships almost nothing (a conversation, Search, settings);
 everything else you make with the `app_*` tools, which are the only way to it.
 How to draw is the `drawing-cards` skill; pages and the data behind them are
 `building-pages`; the protocol underneath is `references/protocol.md` beside this skill.
+Your name and face there are the store `profile`, yours to set with `app_data`
+(a drawn `look` or a `picture`); they may change it too, and you are told.
 
 When a call's JSON is long, build it in `execute_code`, `json.dump` the
 arguments to a file and pass its path as `from_file`, instead of copying JSON

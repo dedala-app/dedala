@@ -321,6 +321,19 @@ struct AvatarLook: Codable, Equatable, Hashable {
         )
     }
 
+    /// The look as the profile store holds it: every part, `none` for no
+    /// hair, beard or glasses.
+    var json: JSONValue {
+        .object([
+            "skin": .string(skin), "top": .string(top ?? Self.none), "hairColor": .string(hairColor), "hatColor": .string(hatColor),
+            "facialHair": .string(facialHair ?? Self.none), "facialHairColor": .string(facialHairColor),
+            "accessories": .string(accessories ?? Self.none), "accessoriesColor": .string(accessoriesColor),
+            "clothing": .string(clothing), "clothesColor": .string(clothesColor), "clothingGraphic": .string(clothingGraphic),
+        ])
+    }
+
+    static let none = "none"
+
     private struct Seeded: RandomNumberGenerator {
         var state: UInt64
 
@@ -328,5 +341,27 @@ struct AvatarLook: Codable, Equatable, Hashable {
             state = state &* 6364136223846793005 &+ 1442695040888963407
             return state ^ (state >> 33)
         }
+    }
+}
+
+extension AvatarLook {
+    /// The parts the profile store gives, over `base` for those it leaves out
+    /// or names wrongly.
+    init(_ value: JSONValue, over base: AvatarLook) {
+        func part(_ key: String, _ known: [String], _ fallback: String) -> String {
+            value[key]?.string.flatMap { known.contains($0) ? $0 : nil } ?? fallback
+        }
+        func optional(_ key: String, _ known: [String], _ fallback: String?) -> String? {
+            guard let given = value[key]?.string else { return fallback }
+            return given == Self.none ? nil : known.contains(given) ? given : fallback
+        }
+        self.init(skin: part("skin", Self.skins, base.skin), top: optional("top", Self.hairs, base.top),
+                  hairColor: part("hairColor", Self.hairColors, base.hairColor), hatColor: part("hatColor", Self.fabrics, base.hatColor),
+                  facialHair: optional("facialHair", Self.beards, base.facialHair),
+                  facialHairColor: part("facialHairColor", Self.hairColors, base.facialHairColor),
+                  accessories: optional("accessories", Self.glasses, base.accessories),
+                  accessoriesColor: part("accessoriesColor", Self.fabrics, base.accessoriesColor),
+                  clothing: part("clothing", Self.clothes, base.clothing), clothesColor: part("clothesColor", Self.fabrics, base.clothesColor),
+                  clothingGraphic: part("clothingGraphic", Self.graphics, base.clothingGraphic))
     }
 }

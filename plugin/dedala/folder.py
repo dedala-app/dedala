@@ -4,7 +4,7 @@
 """The app is a directory. Everything the agent builds is a file under
 dedala/, readable and writable by anything on this machine: pages,
 components, scripts, commands, widgets, the button sets, the assets, the
-profile, the Search declarations. The tools write these files; so may the
+Search declarations. The tools write these files; so may the
 agent's editor, a program, or git. The plugin watches them as it watches the
 stores, and what changes is checked and sent to the phone."""
 
@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 # What each kind of thing is on disk: a folder of files, or one file.
 FOLDERS = {"page": ("pages", ".json"), "components": ("components", ".json"), "scripts": ("scripts", ".js"),
            "command": ("commands", ".json"), "widget": ("widgets", ".json")}
-SINGLE = {"buttons": "buttons.json", "assets": "assets.json", "profile": "profile.json", "search": "search.json",
+SINGLE = {"buttons": "buttons.json", "assets": "assets.json", "search": "search.json",
           "tokens": "tokens.json", "triggers": "triggers.json"}
 KINDS = (*FOLDERS, *SINGLE)
 
@@ -174,13 +174,11 @@ class AppFiles:
             return {"op": "buttons", "kinds": self.loaded["buttons"]} if self.loaded["buttons"] else None
         if kind == "assets":
             return {"op": "assets", "assets": self.loaded["assets"]} if self.loaded["assets"] else None
-        if kind == "profile":
-            return {"op": "profile", **self.loaded["profile"]}
         return None
 
-    def replay(self, name: str) -> list[dict]:
+    def replay(self) -> list[dict]:
         """Everything, in the order a new phone takes it."""
-        ops = [{"op": "profile", "name": name, **self.loaded["profile"]}]
+        ops = []
         if self.loaded["assets"]:
             ops.append({"op": "assets", "assets": self.loaded["assets"]})
         if self.loaded["components"] or self.loaded["scripts"]:

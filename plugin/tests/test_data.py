@@ -162,6 +162,7 @@ def test_the_link_sends_a_folder_store_whole_once_then_record_by_record(tmp_path
     notes.mkdir()
     (notes / "a.org").write_text("* A\n")
     kept = link(tmp_path)
+    kept.unsent_stores()
     kept.stores.link("notes", str(notes))
     kept.stores_written()
     first = kept.unsent_stores()
@@ -222,7 +223,7 @@ def test_the_tool_writes_links_declares_reads_and_hands_a_record(monkeypatch, tm
     monkeypatch.setattr(kept, "unsent_attachments", nothing)
     kept.state["artifacts"]["components"] = {"Person": {"props": ["id"], "title": "$id", "body": {"Text": "x"}}}
     call = lambda args: json.loads(asyncio.run(dedala.data.data(args)))  # noqa: E731
-    assert call({})["stores"] == []
+    assert [store["id"] for store in call({})["stores"]] == ["profile"]
     assert "There is no store people" in call({"id": "people"})["error"]
     written = call({"id": "people", "data": [{"id": "theo", "name": "Théo"}], "name": "People", "symbol": "person", "screen": "Person", "title": "$name"})
     assert written["store"]["records"] == 1 and written["store"]["declared"]["screen"] == "Person"
@@ -245,7 +246,7 @@ def test_the_tool_writes_links_declares_reads_and_hands_a_record(monkeypatch, tm
     folder = call({"id": "notes", "path": str(notes), "name": "Notes", "title": "$title", "words": ["$text"]})
     assert folder["store"]["kind"] == "folder" and folder["store"]["files"] == [{"id": "a.org", "title": "A", "tags": [], "updated": folder["store"]["files"][0]["updated"]}]
     listed = call({})["stores"]
-    assert sorted(store["id"] for store in listed) == ["daily", "notes", "people"]
+    assert sorted(store["id"] for store in listed) == ["daily", "notes", "people", "profile"]
     assert call({"id": "notes", "remove": True})["note"].startswith("The file stays") and notes.exists() and "notes" not in kept.stores.held
     assert call({"id": "people", "remove": True})["removed"] == "people" and not kept.stores.path("people").exists()
     assert sent[-1] == [{"op": "store", "id": "people", "data": None}]
@@ -344,7 +345,7 @@ async def test_a_store_the_relay_refused_is_not_remembered_as_sent(tmp_path):
         pass
     assert monkey["calls"] == 1 and "notes" not in link.state.get("stores_sent", {})
     assert link.stores.held["notes"] == {"big": "x"}
-    assert [op["id"] for op in link.unsent_stores()] == ["notes"]
+    assert [op["id"] for op in link.unsent_stores()] == ["profile", "notes"]
 
 
 def test_a_folder_store_reads_front_matter_and_links_between_its_files(tmp_path):

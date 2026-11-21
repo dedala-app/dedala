@@ -9,7 +9,8 @@ it: what anything else writes (an editor, a script, a job with no model, a
 flow, a command) reaches the phone like the agent's own change. A file that
 stops being JSON changes nothing: the store keeps what it last held, and why
 is kept for the agent. A declaration makes a store's records findable on the
-phone; a record's `file` is an attachment the phone keeps."""
+phone; a record's `file` is an attachment the phone keeps, and so is the
+profile's `picture` (profile.py)."""
 
 import fnmatch
 import json
@@ -21,6 +22,7 @@ import urllib.parse
 from pathlib import Path
 from typing import Optional
 
+from . import profile
 from .files import Refused, digest, edit, form, read, write
 
 TEXT_SUFFIXES = {".org", ".md", ".markdown", ".txt", ".text"}
@@ -568,11 +570,14 @@ class Stores:
     # Attachments
 
     def attachments(self, name: str) -> list[tuple[str, Path]]:
-        """The files the records of a store name, by record."""
+        """The files the records of a store name, by record, and the profile's picture."""
         found = []
         for item in records_of(self.held.get(name)) or []:
             if isinstance(item.get("file"), str) and item["file"]:
                 found.append((item["id"], Path(item["file"]).expanduser()))
+        held = self.held.get(name)
+        if name == profile.STORE and isinstance(held, dict) and isinstance(held.get("picture"), str) and held["picture"]:
+            found.append(("picture", Path(held["picture"]).expanduser()))
         return found
 
     @staticmethod

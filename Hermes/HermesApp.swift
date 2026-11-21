@@ -34,7 +34,8 @@ struct HermesApp: App {
 
         hub.onConversation = { [weak conversations] op in conversations?.receive(op) }
         hub.cardSpec = { [weak conversations] id in conversations?.card(id) }
-        hub.onProfile = { [weak agent] op in agent?.apply(op) }
+        hub.onProfile = { [weak agent] profile, picture in agent?.show(profile, picture: picture) }
+        agent.show(hub.stores[Hub.profile], picture: hub.profilePicture(hub.stores[Hub.profile]))
         ActionRunner.edit = { [weak hub] patch, source in
             do {
                 try hub?.edit(patch, from: source)
@@ -86,12 +87,9 @@ struct HermesApp: App {
         AppViews.install(conversations: conversations, agent: agent, hub: hub, relay: relay)
         relay.onOps = { [weak hub] ops in hub?.receive(ops) }
         relay.onPaired = { [weak agent] name in
-            agent?.apply(.object(["name": .string(name)]))
+            agent?.paired(name)
             activities.endAll()
         }
-        hub.choices = { [weak agent] in agent?.choices ?? [:] }
-        hub.onArrangement = { [weak agent] op in agent?.takeChoices(op) }
-        agent.onChoice = { [weak hub] in hub?.arrangementChanged() }
         relay.onCaughtUp = { [weak hub] in hub?.resend() }
         hub.onEmit = { [weak relay] event in relay?.queue(event) }
         relay.capture = { [weak hub] key in hub?.captureData(key) }

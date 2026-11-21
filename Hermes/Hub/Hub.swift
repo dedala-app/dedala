@@ -36,8 +36,6 @@ final class Hub {
     @ObservationIgnored private var arrangementSent: JSONValue?
     @ObservationIgnored private var arranging: Task<Void, Never>?
     /// The face you made for the agent, which goes with how you arranged the app.
-    @ObservationIgnored var choices: () -> [String: JSONValue] = { [:] }
-    @ObservationIgnored var onArrangement: ((JSONValue) -> Void)?
     private(set) var log: [LogEntry] = []
     /// What pages and cards read under each store's name: the store as the
     /// agent's machine holds it with your edits it has not confirmed made to
@@ -59,7 +57,8 @@ final class Hub {
     private(set) var pageFocus: String?
     private(set) var pageFocusRequests = 0
     @ObservationIgnored var onConversation: ((JSONValue) -> Void)?
-    @ObservationIgnored var onProfile: ((JSONValue) -> Void)?
+    /// The store `profile` as the phone shows it, and its picture's file when here.
+    @ObservationIgnored var onProfile: ((JSONValue?, URL?) -> Void)?
     @ObservationIgnored var onBackground: ((JSONValue) -> Void)?
     @ObservationIgnored var onPageCreated: ((String, String) -> Void)?
     /// A tab to show, from the drive server, for looking at the app from the Mac.
@@ -246,9 +245,6 @@ final class Hub {
         case "presence", "topic", "receipt", "history":
             onConversation?(op)
             return nil
-        case "profile":
-            onProfile?(op)
-            return nil
         case "arrangement":
             arrange(op)
             return nil
@@ -403,7 +399,21 @@ final class Hub {
     func show(_ data: JSONValue?, as store: String) {
         stores[store] = data
         storeUpdated[store] = .now
+        if store == Self.profile { onProfile?(data, profilePicture(data)) }
         if !widgets.isEmpty, !loading { snapshotWidgets(reading: store) }
+    }
+
+    static let profile = "profile"
+
+    /// The agent's picture as the phone holds it: the one you just chose, or
+    /// the file the plugin described, asked for when it is not here.
+    func profilePicture(_ profile: JSONValue?) -> URL? {
+        guard let picture = profile?["picture"] else { return nil }
+        if let local = picture["local"]?.string { return URL(fileURLWithPath: local) }
+        guard picture.string != nil else { return nil }
+        if let url = attachments.url(Self.profile, "picture") { return url }
+        attachments.request(Self.profile, "picture")
+        return nil
     }
 
     // MARK: - Pages and the bar
@@ -584,7 +594,6 @@ final class Hub {
         tabNames = (op["tabNames"]?.object ?? [:]).compactMapValues(\.string)
         pageStates = (op["pageStates"]?.object ?? [:]).mapValues { ($0.object ?? [:]).compactMapValues(\.object) }
         arranged = Set((op["pages"]?.array ?? []).compactMap(\.string)).subtracting(pages.map(\.id))
-        onArrangement?(op)
         save()
     }
 
@@ -595,13 +604,12 @@ final class Hub {
         arranging = Task { [weak self] in
             try? await Task.sleep(for: .seconds(3))
             guard !Task.isCancelled, let self else { return }
-            var arrangement: [String: JSONValue] = [
+            let arrangement: [String: JSONValue] = [
                 "kind": "arrangement", "pinned": .array(pinned.map(JSONValue.string)),
                 "tabNames": .object(tabNames.mapValues(JSONValue.string)),
                 "pageStates": .object(pageStates.mapValues { .object($0.mapValues(JSONValue.object)) }),
                 "pages": .array(pages.map { .string($0.id) }),
             ]
-            arrangement.merge(choices()) { kept, _ in kept }
             guard JSONValue.object(arrangement) != arrangementSent else { return }
             arrangementSent = .object(arrangement)
             emit(.object(arrangement))

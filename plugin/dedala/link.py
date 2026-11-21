@@ -23,7 +23,7 @@ import aiohttp
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
 
-from . import seal
+from . import profile, seal
 from .grammar import removed
 from .files import Refused
 from .folder import AppFiles
@@ -51,7 +51,7 @@ PHONE_CLOSED = ("The phone is closed, so these are not checked yet: it applies t
                 "apply comes back to you as a message")
 PHONE_SILENT = (f"The phone did not answer in {CHECK_WAIT} seconds, so these are not checked: what it cannot apply comes "
                 "back to you as a message")
-ARTIFACT_OPS = ("profile", "define", "page", "store", "assets", "buttons", "widget")
+ARTIFACT_OPS = ("define", "page", "store", "assets", "buttons", "widget")
 
 
 class Refusal(RuntimeError):
@@ -148,6 +148,8 @@ class Link:
         self.state["artifacts"] = self.app.loaded
         self.app.loaded["store"] = {}
         self.stores = Stores(home / "stores", self.app)
+        if profile.STORE not in self.stores.held and self.stores.kind(profile.STORE) is None:
+            self.stores.put(profile.STORE, {"name": name})
         self._mirror(list(self.stores.held))
         self.journal = Journal(home / "conversations.jsonl")
         self.replayed: set[tuple[str, str]] = set()
@@ -567,8 +569,6 @@ class Link:
                 else:
                     kinds[name] = buttons
             app.write("buttons", None, kinds)
-        elif kind == "profile":
-            app.write("profile", None, {**app.loaded["profile"], **{key: value for key, value in op.items() if key != "op"}})
         elif kind == "assets":
             app.write("assets", None, {**app.loaded["assets"], **(op.get("assets") or {})})
 
@@ -850,13 +850,9 @@ class Link:
         self.state.setdefault("changes_handled", {})[job] = upto
         self._save()
 
-    def arranged(self, event: dict) -> Optional[tuple[Optional[str], Optional[str]]]:
-        """How he arranged the app on the phone, kept for the next phone; the
-        name he gives the agent there, before and after, when it changed."""
-        before = (self.arrangement() or [{}])[0].get("name")
-        write(self.home / "phone.json", {key: event[key] for key in ("pinned", "tabNames", "pageStates", "pages", "look", "name") if key in event})
-        after = event.get("name")
-        return (before, after) if before != after else None
+    def arranged(self, event: dict) -> None:
+        """How he arranged the app on the phone, kept for the next phone."""
+        write(self.home / "phone.json", {key: event[key] for key in ("pinned", "tabNames", "pageStates", "pages") if key in event})
 
     def placed(self, placed: dict) -> dict[str, list[str]]:
         """Where he placed the agent's widgets, by size, as iOS lists them; the
@@ -881,7 +877,7 @@ class Link:
         first, so the pages coming in take their places, what the agent built,
         then the conversations."""
         self.state["assets_sent"] = {}
-        ops = self.arrangement() + self.app.replay(self.name)
+        ops = self.arrangement() + self.app.replay()
         ops += [op for name in self.stores.held for op in self.stores.ops(name)] + self.app.after_stores()
         ops += self.journal.history(self.state.get("topics", {}))
         self._stores_sent(list(self.stores.held))

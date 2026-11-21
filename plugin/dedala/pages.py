@@ -244,7 +244,7 @@ async def page(args: dict, **_) -> str:
 
 # What app_ops sends, and the tool that sends each of the others: what it
 # checks (a card's layout, a page's data, a job that exists) is not skipped.
-OPS = {"define", "assets", "receipt", "profile", "say", "notify", "buttons"}
+OPS = {"define", "assets", "receipt", "say", "notify", "buttons"}
 SENT_BY = {"page": "app_page", "patch": "app_patch", "store": "app_data", "attachment": "app_data",
            "topic": "app_topic", "activity": "app_activity", "preview": "app_activity"}
 
