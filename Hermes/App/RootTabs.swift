@@ -21,28 +21,34 @@ struct RootTabs: View {
         let fixed = Array(bar.prefix(Self.fixed))
         let moving = router.recent.flatMap { bar.contains($0) && !fixed.contains($0) ? $0 : nil } ?? bar.dropFirst(Self.fixed).first
         let tabs = fixed + (moving.map { [$0] } ?? [])
-        TabView(selection: Binding(get: { router.tab.flatMap { tabs.contains($0) || $0 == Router.search ? $0 : nil } ?? tabs.first ?? Router.search },
-                                   set: { router.tab = $0 })) {
-            ForEach(fixed.enumerated().map(BarTab.init)) { item in
-                Tab(value: item.page) {
-                    Self.screen(item.page)
-                } label: {
-                    TabIcon(title: hub.tabName(item.page), symbol: hub.symbol(item.page))
-                }
-            }
-            ForEach(moving.map { [$0] } ?? [], id: \.self) { id in
-                Tab(value: id) {
-                    Self.screen(id)
-                } label: {
-                    TabIcon(title: hub.tabName(id), symbol: hub.symbol(id))
-                }
-            }
-            Tab("Search", systemImage: "magnifyingglass", value: Router.search, role: .search) {
+        Group {
+            if tabs.isEmpty {
                 SearchView()
+            } else {
+                TabView(selection: Binding(get: { router.tab.flatMap { tabs.contains($0) || $0 == Router.search ? $0 : nil } ?? tabs.first ?? Router.search },
+                                           set: { router.tab = $0 })) {
+                    ForEach(fixed.enumerated().map(BarTab.init)) { item in
+                        Tab(value: item.page) {
+                            Self.screen(item.page)
+                        } label: {
+                            TabIcon(title: hub.tabName(item.page), symbol: hub.symbol(item.page))
+                        }
+                    }
+                    ForEach(moving.map { [$0] } ?? [], id: \.self) { id in
+                        Tab(value: id) {
+                            Self.screen(id)
+                        } label: {
+                            TabIcon(title: hub.tabName(id), symbol: hub.symbol(id))
+                        }
+                    }
+                    Tab("Search", systemImage: "magnifyingglass", value: Router.search, role: .search) {
+                        SearchView()
+                    }
+                }
+                .tabBarMinimizeBehavior(.onScrollDown)
+                .tabViewSearchActivation(.searchTabSelection)
             }
         }
-        .tabBarMinimizeBehavior(.onScrollDown)
-        .tabViewSearchActivation(.searchTabSelection)
         .onChange(of: router.tab, initial: true) {
             router.pillFolded = false
             if let tab = router.tab, tab != Router.search, !fixed.contains(tab), bar.contains(tab) { router.recent = tab }

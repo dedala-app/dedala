@@ -34,8 +34,8 @@ struct SearchView: View {
             .searchable(text: $query, isPresented: $searching, prompt: "Pages, records, messages")
             .searchPresentationToolbarBehavior(.avoidHidingContent)
             .navigationTitle("Search")
+            .agentPill(hidden: searching)
         }
-        .agentPill(hidden: searching)
     }
 
     // MARK: - Nothing typed
