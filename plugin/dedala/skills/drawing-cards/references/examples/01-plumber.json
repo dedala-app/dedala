@@ -1,0 +1,145 @@
+{
+  "op": "say",
+  "id": "plumber",
+  "text": "Marc can come on Thursday to fix the kitchen tap. Pick a slot and I'll confirm with him.",
+  "card": {
+    "view": {
+      "Card": [
+        {
+          "HStack": [
+            {
+              "Image": "wrench.and.screwdriver.fill",
+              "font": "title3",
+              "foregroundStyle": "white",
+              "frame": {
+                "width": 44,
+                "height": 44
+              },
+              "background": {
+                "gradient": [
+                  "blue",
+                  "indigo"
+                ],
+                "direction": "diagonal"
+              },
+              "clipShape": "circle"
+            },
+            {
+              "VStack": [
+                {
+                  "HStack": [
+                    {
+                      "Text": "$name",
+                      "font": "headline"
+                    },
+                    {
+                      "Label": [
+                        "${rating}",
+                        "star.fill"
+                      ],
+                      "font": "subheadline.semibold",
+                      "foregroundStyle": "orange"
+                    }
+                  ],
+                  "spacing": 8
+                },
+                {
+                  "Text": "$trade · ${format(price, 'currency:EUR')} call-out",
+                  "font": "subheadline",
+                  "foregroundStyle": "secondary",
+                  "lineLimit": 1
+                }
+              ],
+              "alignment": "leading",
+              "spacing": 2
+            },
+            {
+              "Spacer": {}
+            },
+            {
+              "Button": "Call",
+              "symbol": "phone.fill",
+              "labelStyle": "iconOnly",
+              "style": "glass",
+              "action": {
+                "call": "$phone"
+              }
+            }
+          ],
+          "spacing": 12
+        },
+        {
+          "Map": {
+            "markers": [
+              {
+                "lat": "$lat",
+                "lon": "$lon",
+                "title": "$address",
+                "symbol": "house.fill",
+                "color": "blue"
+              }
+            ]
+          },
+          "height": 140
+        },
+        {
+          "Text": "Thursday 29 October",
+          "font": "subheadline.semibold",
+          "foregroundStyle": "secondary"
+        },
+        {
+          "Picker": "Slot",
+          "bind": "$slot",
+          "options": "$slots",
+          "style": "segmented"
+        },
+        {
+          "HStack": [
+            {
+              "Button": "Confirm ${slot}",
+              "style": "prominent",
+              "action": {
+                "send": {
+                  "intent": "book",
+                  "slot": "$slot"
+                },
+                "say": "Thursday at ${slot} works."
+              },
+              "frame": {
+                "maxWidth": "infinity"
+              }
+            },
+            {
+              "Button": "Not this week",
+              "style": "glass",
+              "action": {
+                "send": {
+                  "intent": "later"
+                }
+              }
+            }
+          ],
+          "spacing": 8
+        }
+      ]
+    },
+    "data": {
+      "name": "Marc Dupuis",
+      "trade": "Plumber",
+      "rating": 4.8,
+      "price": 85,
+      "address": "12 rue des Lilas",
+      "lat": 48.8722,
+      "lon": 2.3889,
+      "phone": "+33 6 12 34 56 78",
+      "slots": [
+        "09:00",
+        "11:00",
+        "14:30"
+      ]
+    },
+    "state": {
+      "slot": "11:00"
+    }
+  }
+}

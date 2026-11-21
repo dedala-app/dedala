@@ -1,0 +1,140 @@
+{
+ "doc-01-plumber": {
+  "faults": [],
+  "notes": []
+ },
+ "doc-02-flight": {
+  "faults": [
+   "the button “Directions to CDG” does not fit on one line (113 pt of room) (at 348 pt wide)",
+   "the button “Boarding pass” does not fit on one line (99 pt of room) (at 348 pt wide)"
+  ],
+  "notes": []
+ },
+ "doc-03-energy": {
+  "faults": [],
+  "notes": []
+ },
+ "doc-04-dinner": {
+  "faults": [],
+  "notes": []
+ },
+ "doc-05-lights": {
+  "faults": [
+   "the button “Save scene” does not fit on one line (46 pt of room) (at 348 pt wide)"
+  ],
+  "notes": []
+ },
+ "doc-06-lisbon": {
+  "faults": [
+   "“MAAT and the riverside walk” is cut: it needs 2 lines and shows 1 (at 348 pt wide)",
+   "“Pastéis de Belém, before the queue” is cut: it needs 2 lines and shows 1 (at 395 pt wide)"
+  ],
+  "notes": []
+ },
+ "doc-07-email": {
+  "faults": [
+   "“Agence des Lilas · marta@agence-lilas.fr” is cut: it needs 2 lines and shows 1 (at 348 pt wide)",
+   "the button “Show whole email” is a small tap target: 128×18 pt, under 28 (at 348 pt wide)"
+  ],
+  "notes": [
+   "“Hi Julien, Please find attached version…” shows 3 of its 16 lines (at 348 pt wide)",
+   "“Hi Julien, Please find attached version…” shows 3 of its 15 lines (at 395 pt wide)"
+  ]
+ },
+ "doc-08-reminder": {
+  "faults": [
+   "“Lease v3 – updated notice period” is cut: it needs 2 lines and shows 1 (at 348 pt wide)"
+  ],
+  "notes": []
+ },
+ "run-design-guide-apps-31-stopwatch-card-19768045": {
+  "faults": [],
+  "notes": []
+ },
+ "run-design-guide-apps-32-tally-card-48553274": {
+  "faults": [],
+  "notes": []
+ },
+ "run-design-guide-heldout-21-flight-card-89461152": {
+  "faults": [
+   "the label “Leave by 12:26” wraps onto 2 lines (at 348 pt wide)"
+  ],
+  "notes": []
+ },
+ "run-design-guide-heldout-23-packing-card-83167006": {
+  "faults": [
+   "“Laptop and charger are already in the b…” is cut: it needs 3 lines and shows 2 (at 348 pt wide)"
+  ],
+  "notes": []
+ },
+ "run-design-guide-heldout-24-budget-card-85655571": {
+  "faults": [],
+  "notes": []
+ },
+ "run-design-guide-heldout-26-quote-card-96273802": {
+  "faults": [
+   "“fastest, earliest start, 10-year warran…” is cut: it needs 3 lines and shows 2 (at 348 pt wide)",
+   "the button “Hansen Tag” does not fit on one line (45 pt of room) (at 348 pt wide)",
+   "the button “Nordtag” does not fit on one line (45 pt of room) (at 348 pt wide)",
+   "the button “Jensen & Søn” does not fit on one line (45 pt of room) (at 348 pt wide)",
+   "the button “Hansen Tag” does not fit on one line (61 pt of room) (at 395 pt wide)",
+   "the button “Nordtag” does not fit on one line (61 pt of room) (at 395 pt wide)",
+   "the button “Jensen & Søn” does not fit on one line (61 pt of room) (at 395 pt wide)"
+  ],
+  "notes": []
+ },
+ "run-design-guide-heldout-27-workout-card-57892230": {
+  "faults": [],
+  "notes": []
+ },
+ "run-design-guide-heldout-28-parcel-card-27856319": {
+  "faults": [],
+  "notes": []
+ },
+ "run-design-guide-heldout-29-plumber-card-83149996": {
+  "faults": [],
+  "notes": []
+ },
+ "run-night-final-apps-31-stopwatch-card-43513468": {
+  "faults": [],
+  "notes": []
+ },
+ "run-night-final-apps-32-tally-card-10848755": {
+  "faults": [],
+  "notes": []
+ },
+ "run-night-final-heldout-21-flight-card-09638983": {
+  "faults": [
+   "the label “Leave by 6:46” wraps onto 2 lines (at 348 pt wide)"
+  ],
+  "notes": []
+ },
+ "run-night-final-heldout-23-packing-card-47518929": {
+  "faults": [],
+  "notes": []
+ },
+ "run-night-final-heldout-24-budget-card-41684880": {
+  "faults": [],
+  "notes": []
+ },
+ "run-night-final-heldout-26-quote-card-25693527": {
+  "faults": [
+   "“Best balance of price, speed and warran…” is cut: it needs 3 lines and shows 2 (at 348 pt wide)"
+  ],
+  "notes": []
+ },
+ "run-night-final-heldout-27-workout-card-83397601": {
+  "faults": [],
+  "notes": []
+ },
+ "run-night-final-heldout-28-parcel-card-28382779": {
+  "faults": [
+   "“Out for delivery” is cut: it needs 2 lines and shows 1 (at 348 pt wide)"
+  ],
+  "notes": []
+ },
+ "run-night-final-heldout-29-plumber-card-33911929": {
+  "faults": [],
+  "notes": []
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Stopwatch",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "If": "startedAt",
+      "then": {
+       "Text": {
+        "timer": "$startedAt"
+       },
+       "font": "largeTitle.bold",
+       "monospacedDigit": true
+      },
+      "else": {
+       "Text": "0:00",
+       "font": "largeTitle.bold",
+       "monospacedDigit": true,
+       "foregroundStyle": "secondary"
+      }
+     },
+     {
+      "Text": "Running",
+      "font": "title3",
+      "foregroundStyle": "secondary"
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Text": "$shown",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "Elapsed",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "ForEach": "$laps",
+    "as": "l",
+    "content": {
+     "If": "l.id",
+     "then": {
+      "HStack": [
+       {
+        "If": "l.symbol",
+        "then": {
+         "Image": "$l.symbol",
+         "foregroundStyle": "secondary"
+        }
+       },
+       {
+        "VStack": [
+         {
+          "Text": "$l.label"
+         },
+         {
+          "If": "l.detail",
+          "then": {
+           "Text": "$l.detail",
+           "font": "footnote",
+           "foregroundStyle": "secondary",
+           "lineLimit": 3
+          }
+         }
+        ],
+        "alignment": "leading",
+        "spacing": 1
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "If": "l.trailing",
+        "then": {
+         "Text": "$l.trailing",
+         "font": "subheadline",
+         "foregroundStyle": "secondary",
+         "lineLimit": 2,
+         "multilineTextAlignment": "trailing"
+        }
+       },
+       {
+        "If": "l.id",
+        "then": {
+         "Image": "chevron.right",
+         "foregroundStyle": "tertiary"
+        }
+       }
+      ],
+      "spacing": 8,
+      "onTap": {
+       "send": {
+        "choice": "$l.id"
+       },
+       "say": "$l.label"
+      },
+      "frame": {
+       "minHeight": 44
+      }
+     },
+     "else": {
+      "HStack": [
+       {
+        "If": "l.symbol",
+        "then": {
+         "Image": "$l.symbol",
+         "foregroundStyle": "secondary"
+        }
+       },
+       {
+        "VStack": [
+         {
+          "Text": "$l.label"
+         },
+         {
+          "If": "l.detail",
+          "then": {
+           "Text": "$l.detail",
+           "font": "footnote",
+           "foregroundStyle": "secondary",
+           "lineLimit": 3
+          }
+         }
+        ],
+        "alignment": "leading",
+        "spacing": 1
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "If": "l.trailing",
+        "then": {
+         "Text": "$l.trailing",
+         "font": "subheadline",
+         "foregroundStyle": "secondary",
+         "lineLimit": 2,
+         "multilineTextAlignment": "trailing"
+        }
+       },
+       {
+        "If": "l.id",
+        "then": {
+         "Image": "chevron.right",
+         "foregroundStyle": "tertiary"
+        }
+       }
+      ],
+      "spacing": 8
+     }
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Button": "${state.running ? 'Stop' : 'Start'}",
+      "style": "borderedProminent",
+      "action": {
+       "run": "toggle"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Lap",
+      "style": "borderedProminent",
+      "action": {
+       "run": "lap"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Reset",
+      "style": "bordered",
+      "action": {
+       "run": "reset"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      },
+      "role": "destructive"
+     }
+    ],
+    "spacing": 8
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {},
+ "state": {
+  "running": false,
+  "startedAt": null,
+  "elapsed": 0,
+  "laps": [],
+  "lastLap": 0
+ },
+ "script": "const pad=(n,w)=>String(n).padStart(w,'0');\nfunction fmt(ms){const c=Math.floor(ms/10);return pad(Math.floor(c/6000),2)+':'+pad(Math.floor(c/100)%60,2)+'.'+pad(c%100,2);}\nconst T=(now)=>new Date(now).getTime();\nfunction toggle({state,now}){ if(state.running) return stop({state,now}); return start({state,now}); }\nfunction start({state,now}){ const t=T(now); return {state:{...state,running:true,startedAt:new Date(t-state.elapsed).toISOString()}}; }\nfunction stop({state,now}){ const e=T(now)-new Date(state.startedAt).getTime(); return {state:{...state,running:false,elapsed:e,startedAt:null}}; }\nfunction lap({state,now}){ if(!state.running) return {say:'Start the stopwatch first'}; const total=T(now)-new Date(state.startedAt).getTime(); const n=state.laps.length+1; const row={label:'Lap '+n, detail:'Total '+fmt(total), trailing:fmt(total-state.lastLap)}; return {state:{...state,lastLap:total,laps:[row,...state.laps]}}; }\nfunction reset({state}){ return {state:{running:false,startedAt:null,elapsed:0,laps:[],lastLap:0}}; }\nfunction derived_shown(input) { const {data, state, now, args} = input; return (state.running ? 'Running' : fmt(state.elapsed)) }",
+ "derive": {
+  "shown": "derived_shown"
+ }
+}

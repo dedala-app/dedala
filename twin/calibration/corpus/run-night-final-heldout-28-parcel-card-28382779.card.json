@@ -1,0 +1,172 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Framework parcel, PN 3391 2204 11",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark.circle.fill",
+      "foregroundStyle": "green",
+      "font": "title2"
+     },
+     {
+      "Text": "Out for delivery",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "expected today before 18:00",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Out for delivery since 08:05 today",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Signature required, so someone must be home to sign",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Shipped Thursday 22 October from Taipei",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark.circle.fill",
+      "foregroundStyle": "green"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Shipped from Taipei",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "Thursday 22 October",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "alignment": "top",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark.circle.fill",
+      "foregroundStyle": "green"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Arrived Frankfurt hub",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "25 October, 06:12",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "alignment": "top",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark.circle.fill",
+      "foregroundStyle": "green"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Customs cleared",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "26 October, 14:30",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "alignment": "top",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Image": "circle.inset.filled",
+      "foregroundStyle": "blue"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Out for delivery",
+        "font": "body.bold"
+       },
+       {
+        "Text": "Today, 08:05. Expected before 18:00",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "alignment": "top",
+    "spacing": 8
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {},
+ "state": {}
+}

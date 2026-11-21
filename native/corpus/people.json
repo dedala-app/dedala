@@ -1,0 +1,63 @@
+{
+  "type": "org-data",
+  "begin": 0,
+  "end": 154,
+  "title": "Ada Lindqvist",
+  "keywords": {
+    "TITLE": "Ada Lindqvist",
+    "DATE": "[2026-01-07 mer. 17:08]",
+    "FILETAGS": ":people:",
+    "IDENTIFIER": "20260107T170819"
+  },
+  "children": [
+    {
+      "type": "section",
+      "begin": 0,
+      "end": 154,
+      "children": [
+        {
+          "type": "keyword",
+          "begin": 0,
+          "end": 28,
+          "key": "TITLE",
+          "value": "Ada Lindqvist"
+        },
+        {
+          "type": "keyword",
+          "begin": 28,
+          "end": 66,
+          "key": "DATE",
+          "value": "[2026-01-07 mer. 17:08]"
+        },
+        {
+          "type": "keyword",
+          "begin": 66,
+          "end": 89,
+          "key": "FILETAGS",
+          "value": ":people:"
+        },
+        {
+          "type": "keyword",
+          "begin": 89,
+          "end": 120,
+          "key": "IDENTIFIER",
+          "value": "20260107T170819"
+        },
+        {
+          "type": "paragraph",
+          "begin": 120,
+          "end": 154,
+          "text": "Coordinator of the reading group.",
+          "children": [
+            {
+              "type": "plain-text",
+              "begin": 120,
+              "end": 153,
+              "value": "Coordinator of the reading group."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

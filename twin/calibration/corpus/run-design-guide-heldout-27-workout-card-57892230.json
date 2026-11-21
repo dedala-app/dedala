@@ -1,0 +1,167 @@
+{
+ "frames": [
+  {
+   "h": 375.6424153645833,
+   "y": 0.012125651041685614,
+   "view": "Card",
+   "path": "Card",
+   "w": 347.79999999999995,
+   "x": 0
+  },
+  {
+   "x": 16,
+   "h": 343.6424153645833,
+   "view": "VStack",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack",
+   "y": 16.012125651041686
+  },
+  {
+   "h": 18,
+   "view": "Text",
+   "y": 16.012125651041686,
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "w": 184,
+   "x": 16
+  },
+  {
+   "x": 16,
+   "h": 40.66666666666666,
+   "y": 42.012125651041686,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "w": 308.3333333333333,
+   "view": "HStack"
+  },
+  {
+   "x": 16,
+   "h": 26,
+   "y": 53.67879231770834,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Image",
+   "w": 26,
+   "view": "Image"
+  },
+  {
+   "y": 42.012125651041686,
+   "h": 40.66666666666666,
+   "view": "Text",
+   "w": 91.33333333333331,
+   "x": 50,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text"
+  },
+  {
+   "h": 24,
+   "y": 55.345458984375014,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 3.Text",
+   "w": 175,
+   "x": 149.33333333333331
+  },
+  {
+   "x": 16,
+   "view": "Text",
+   "y": 90.67879231770834,
+   "h": 18,
+   "path": "Card \u203a 1.VStack \u203a 3.Text",
+   "w": 266.3333333333333
+  },
+  {
+   "y": 116.67879231770834,
+   "view": "Text",
+   "h": 18,
+   "w": 282.3333333333333,
+   "path": "Card \u203a 1.VStack \u203a 4.Text",
+   "x": 16
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 5.Gauge",
+   "h": 46.97574869791666,
+   "y": 142.67879231770834,
+   "w": 315.79999999999995,
+   "x": 16,
+   "view": "Gauge"
+  },
+  {
+   "h": 18,
+   "view": "HStack",
+   "y": 197.654541015625,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack",
+   "x": 16
+  },
+  {
+   "view": "Text",
+   "h": 18,
+   "y": 197.654541015625,
+   "w": 33.333333333333314,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 2.Text",
+   "x": 298.46666666666664
+  },
+  {
+   "y": 223.654541015625,
+   "h": 28,
+   "view": "Toggle",
+   "w": 315.79999999999995,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[0] \u203a 1.Toggle"
+  },
+  {
+   "w": 315.79999999999995,
+   "h": 28,
+   "y": 259.654541015625,
+   "view": "Toggle",
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[1] \u203a 1.Toggle"
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[2] \u203a 1.Toggle",
+   "h": 28,
+   "view": "Toggle",
+   "w": 315.79999999999995,
+   "x": 16,
+   "y": 295.654541015625
+  },
+  {
+   "w": 315.79999999999995,
+   "y": 331.654541015625,
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[3] \u203a 1.Toggle",
+   "x": 16,
+   "view": "Toggle",
+   "h": 28
+  }
+ ],
+ "issues": [],
+ "kind": "rendered",
+ "at": "2026-10-27T20:05:36Z",
+ "card": "run-design-guide-heldout-27-workout-card-57892230",
+ "capture": "run-design-guide-heldout-27-workout-card-57892230-30.png",
+ "size": [
+  348,
+  376
+ ],
+ "diagnostics": [],
+ "derived": {
+  "itemsLeft": 1,
+  "rows": [
+   {
+    "id": "tue",
+    "done": true,
+    "label": "Tue 8 km"
+   },
+   {
+    "id": "thu",
+    "done": true,
+    "label": "Thu 6 km"
+   },
+   {
+    "id": "sat",
+    "done": true,
+    "label": "Sat 14 km long run"
+   },
+   {
+    "id": "sun",
+    "done": false,
+    "label": "Sun 5 km recovery"
+   }
+  ]
+ }
+}

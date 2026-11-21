@@ -1,0 +1,398 @@
+{
+ "at": "2026-10-27T20:05:01Z",
+ "diagnostics": [],
+ "size": [
+  348,
+  344
+ ],
+ "kind": "rendered",
+ "frames": [
+  {
+   "view": "Carousel",
+   "path": "Carousel",
+   "y": 1.4210854715202004e-14,
+   "x": 0,
+   "w": 347.79999999999995,
+   "h": 344
+  },
+  {
+   "view": "VStack",
+   "y": 0,
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack",
+   "x": 0,
+   "w": 305.94666666666666,
+   "h": 344
+  },
+  {
+   "view": "ZStack",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 1.ZStack",
+   "y": 12,
+   "x": 12,
+   "h": 150,
+   "w": 281.94666666666666
+  },
+  {
+   "view": "Image",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 1.ZStack \u203a 1.Image",
+   "y": 12,
+   "x": 12,
+   "w": 281.94666666666666,
+   "h": 150
+  },
+  {
+   "view": "Gradient",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 1.ZStack \u203a 2.Gradient",
+   "y": 12,
+   "x": 12,
+   "w": 281.94666666666666,
+   "h": 150
+  },
+  {
+   "view": "VStack",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 1.ZStack \u203a 3.VStack",
+   "y": 12,
+   "x": 12,
+   "w": 281.94666666666666,
+   "h": 150
+  },
+  {
+   "view": "Text",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 1.ZStack \u203a 3.VStack \u203a 1.Text",
+   "y": 107.66666666666667,
+   "x": 26,
+   "w": 50.33333333333333,
+   "h": 14.333333333333329
+  },
+  {
+   "view": "Text",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 1.ZStack \u203a 3.VStack \u203a 2.Text",
+   "y": 124,
+   "x": 26,
+   "w": 182,
+   "h": 24
+  },
+  {
+   "view": "HStack",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack",
+   "y": 174,
+   "h": 18,
+   "w": 264.66666666666663,
+   "x": 12
+  },
+  {
+   "view": "Text",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack \u203a 1.Text",
+   "y": 174,
+   "x": 12,
+   "w": 48,
+   "h": 18
+  },
+  {
+   "view": "Image",
+   "y": 174.5,
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack \u203a 2.Image",
+   "h": 17,
+   "w": 22,
+   "x": 70
+  },
+  {
+   "view": "Text",
+   "y": 174,
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack \u203a 3.Text",
+   "h": 18,
+   "x": 102,
+   "w": 174.66666666666663
+  },
+  {
+   "view": "HStack",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack",
+   "y": 204,
+   "h": 38,
+   "x": 12,
+   "w": 212.66666666666666
+  },
+  {
+   "view": "Text",
+   "y": 214,
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack \u203a 1.Text",
+   "h": 18,
+   "w": 48,
+   "x": 12
+  },
+  {
+   "view": "Image",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack \u203a 2.Image",
+   "y": 212,
+   "h": 22,
+   "w": 22,
+   "x": 70
+  },
+  {
+   "view": "Text",
+   "y": 204,
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack \u203a 3.Text",
+   "x": 102,
+   "h": 38,
+   "w": 122.66666666666666
+  },
+  {
+   "view": "HStack",
+   "y": 254,
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack",
+   "x": 12,
+   "w": 257.3333333333333,
+   "h": 38
+  },
+  {
+   "view": "Text",
+   "y": 264,
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 1.Text",
+   "h": 18,
+   "w": 48,
+   "x": 12
+  },
+  {
+   "view": "Image",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 2.Image",
+   "y": 264.8333333333333,
+   "x": 70,
+   "w": 22,
+   "h": 16.333333333333314
+  },
+  {
+   "view": "Text",
+   "y": 254,
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 3.Text",
+   "x": 102,
+   "w": 167.33333333333331,
+   "h": 38
+  },
+  {
+   "view": "HStack",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 3.HStack",
+   "y": 304,
+   "h": 28,
+   "w": 281.94666666666666,
+   "x": 12
+  },
+  {
+   "view": "Label",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 3.HStack \u203a 1.Label",
+   "y": 309.5,
+   "h": 17,
+   "x": 12,
+   "w": 80.33333333333333
+  },
+  {
+   "view": "Button",
+   "path": "Carousel \u203a 1.ForEach[0] \u203a 1.VStack \u203a 3.HStack \u203a 3.Button",
+   "y": 304,
+   "h": 28,
+   "w": 73,
+   "x": 220.94666666666666
+  },
+  {
+   "view": "VStack",
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack",
+   "y": 0,
+   "x": 317.9466666666666,
+   "w": 305.9466666666666,
+   "h": 333.6666666666667
+  },
+  {
+   "view": "ZStack",
+   "y": 12,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack",
+   "x": 329.9466666666666,
+   "w": 281.9466666666666,
+   "h": 150
+  },
+  {
+   "view": "Image",
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 1.Image",
+   "y": 12,
+   "x": 329.9466666666666,
+   "w": 281.9466666666666,
+   "h": 150
+  },
+  {
+   "view": "Gradient",
+   "y": 12,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 2.Gradient",
+   "x": 329.9466666666666,
+   "w": 281.9466666666666,
+   "h": 150
+  },
+  {
+   "view": "VStack",
+   "y": 12,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 3.VStack",
+   "x": 329.9466666666666,
+   "w": 281.9466666666666,
+   "h": 150
+  },
+  {
+   "view": "Text",
+   "y": 107.66666666666667,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 3.VStack \u203a 1.Text",
+   "x": 343.9466666666666,
+   "h": 14.333333333333329,
+   "w": 74.33333333333331
+  },
+  {
+   "view": "Text",
+   "y": 124,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 3.VStack \u203a 2.Text",
+   "x": 343.9466666666666,
+   "w": 169,
+   "h": 24
+  },
+  {
+   "view": "HStack",
+   "y": 174,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack",
+   "h": 23.333333333333343,
+   "w": 208.66666666666663,
+   "x": 329.9466666666666
+  },
+  {
+   "view": "Text",
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack \u203a 1.Text",
+   "y": 176.66666666666666,
+   "x": 329.9466666666666,
+   "w": 48,
+   "h": 18
+  },
+  {
+   "view": "Image",
+   "y": 174,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack \u203a 2.Image",
+   "x": 387.9466666666666,
+   "w": 22,
+   "h": 23.333333333333343
+  },
+  {
+   "view": "Text",
+   "y": 176.66666666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack \u203a 3.Text",
+   "x": 419.9466666666666,
+   "w": 118.66666666666663,
+   "h": 18
+  },
+  {
+   "view": "HStack",
+   "y": 209.33333333333334,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack",
+   "x": 329.9466666666666,
+   "h": 38,
+   "w": 263.66666666666663
+  },
+  {
+   "view": "Text",
+   "y": 219.33333333333334,
+   "x": 329.9466666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack \u203a 1.Text",
+   "w": 48,
+   "h": 18
+  },
+  {
+   "view": "Image",
+   "y": 218.83333333333334,
+   "x": 387.9466666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack \u203a 2.Image",
+   "w": 22,
+   "h": 19
+  },
+  {
+   "view": "Text",
+   "y": 209.33333333333334,
+   "x": 419.9466666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack \u203a 3.Text",
+   "w": 173.66666666666663,
+   "h": 38
+  },
+  {
+   "view": "HStack",
+   "y": 259.33333333333337,
+   "x": 329.9466666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack",
+   "w": 276,
+   "h": 22.333333333333314
+  },
+  {
+   "view": "Text",
+   "y": 261.50000000000006,
+   "x": 329.9466666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 1.Text",
+   "w": 48,
+   "h": 18
+  },
+  {
+   "view": "Image",
+   "y": 259.33333333333337,
+   "x": 387.9466666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 2.Image",
+   "w": 22,
+   "h": 22.333333333333314
+  },
+  {
+   "view": "Text",
+   "y": 261.50000000000006,
+   "x": 419.9466666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 3.Text",
+   "w": 186,
+   "h": 18
+  },
+  {
+   "view": "HStack",
+   "y": 293.6666666666667,
+   "x": 329.9466666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 3.HStack",
+   "w": 281.9466666666666,
+   "h": 28
+  },
+  {
+   "view": "Label",
+   "y": 299.1666666666667,
+   "x": 329.9466666666666,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 3.HStack \u203a 1.Label",
+   "w": 79.66666666666663,
+   "h": 17
+  },
+  {
+   "view": "Button",
+   "y": 293.6666666666667,
+   "x": 538.8933333333332,
+   "path": "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 3.HStack \u203a 3.Button",
+   "w": 73,
+   "h": 28
+  }
+ ],
+ "card": "doc-06-lisbon",
+ "capture": "doc-06-lisbon-6.png",
+ "issues": [
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack sticks out of the card: 276pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack sticks out of the card: 264pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 1.Image sticks out of the card: 264pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 2.Gradient sticks out of the card: 264pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 3.VStack sticks out of the card: 264pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 3.VStack \u203a 1.Text sticks out of the card: 70pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 1.ZStack \u203a 3.VStack \u203a 2.Text sticks out of the card: 165pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack sticks out of the card: 190pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack \u203a 1.Text sticks out of the card: 30pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack \u203a 2.Image sticks out of the card: 62pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[0] \u203a 1.HStack \u203a 3.Text sticks out of the card: 190pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack sticks out of the card: 245pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack \u203a 1.Text sticks out of the card: 30pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack \u203a 2.Image sticks out of the card: 62pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[1] \u203a 1.HStack \u203a 3.Text sticks out of the card: 245pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack sticks out of the card: 258pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 1.Text sticks out of the card: 30pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 2.Image sticks out of the card: 62pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 3.Text sticks out of the card: 258pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 3.HStack sticks out of the card: 264pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 3.HStack \u203a 1.Label sticks out of the card: 61pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 3.HStack \u203a 3.Button sticks out of the card: 264pt past the right edge",
+  "Carousel \u203a 1.ForEach[1] \u203a 1.VStack \u203a 2.ForEach[2] \u203a 1.HStack \u203a 3.Text is cut: shows 18pt of the 38pt it needs"
+ ]
+}

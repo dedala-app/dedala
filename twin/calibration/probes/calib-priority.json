@@ -1,0 +1,325 @@
+{
+ "frames": [
+  {
+   "w": 348,
+   "path": "Card",
+   "h": 3829.333333333333,
+   "view": "Card",
+   "y": 2.2737367544323206e-13,
+   "x": -0.10000000000002274
+  },
+  {
+   "y": 16.000000000000227,
+   "path": "Card \u203a 1.VStack",
+   "h": 3797.333333333333,
+   "view": "VStack",
+   "w": 316.3333333333333,
+   "x": 15.899999999999977
+  },
+  {
+   "y": 16.000000000000227,
+   "h": 306.3333333333333,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack",
+   "view": "HStack",
+   "w": 316,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 308,
+   "h": 64.33333333333331,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack \u203a 1.Text",
+   "view": "Text",
+   "y": 137.00000000000023,
+   "x": 15.899999999999977
+  },
+  {
+   "y": 16.000000000000227,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack \u203a 2.Text",
+   "h": 306.3333333333333,
+   "view": "Text",
+   "w": 0,
+   "x": 331.9
+  },
+  {
+   "x": 15.899999999999977,
+   "path": "Card \u203a 1.VStack \u203a 10.HStack",
+   "h": 1560.333333333333,
+   "view": "HStack",
+   "y": 2161,
+   "w": 316
+  },
+  {
+   "x": 15.899999999999977,
+   "h": 20.333333333333485,
+   "path": "Card \u203a 1.VStack \u203a 10.HStack \u203a 1.Text",
+   "view": "Text",
+   "y": 2931,
+   "w": 308
+  },
+  {
+   "w": 0,
+   "path": "Card \u203a 1.VStack \u203a 10.HStack \u203a 2.Text",
+   "h": 1560.333333333333,
+   "view": "Text",
+   "y": 2161,
+   "x": 331.9
+  },
+  {
+   "w": 309.66666666666663,
+   "path": "Card \u203a 1.VStack \u203a 11.VStack",
+   "h": 80,
+   "view": "VStack",
+   "y": 3733.333333333333,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 309.66666666666663,
+   "h": 20.333333333333485,
+   "path": "Card \u203a 1.VStack \u203a 11.VStack \u203a 1.Text",
+   "view": "Text",
+   "y": 3740.833333333333,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 210.33333333333331,
+   "path": "Card \u203a 1.VStack \u203a 11.VStack \u203a 2.Text",
+   "h": 20.333333333333485,
+   "view": "Text",
+   "y": 3763.1666666666665,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 146,
+   "path": "Card \u203a 1.VStack \u203a 11.VStack \u203a 3.Text",
+   "h": 20.333333333333485,
+   "view": "Text",
+   "y": 3785.5,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 316,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "h": 306.3333333333333,
+   "view": "HStack",
+   "y": 334.33333333333354,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 275,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Text",
+   "h": 64.33333333333331,
+   "view": "Text",
+   "y": 455.33333333333354,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 23.666666666666686,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Image",
+   "h": 18.333333333333314,
+   "view": "Image",
+   "y": 478.33333333333354,
+   "x": 298.9
+  },
+  {
+   "y": 334.33333333333354,
+   "h": 306.3333333333333,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 3.Text",
+   "view": "Text",
+   "w": 1.3333333333333144,
+   "x": 330.56666666666666
+  },
+  {
+   "y": 652.6666666666669,
+   "h": 306.33333333333337,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack",
+   "view": "HStack",
+   "w": 316,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 0,
+   "h": 306.33333333333337,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Text",
+   "view": "Text",
+   "y": 652.6666666666669,
+   "x": 15.899999999999977
+  },
+  {
+   "x": 23.899999999999977,
+   "h": 64.33333333333337,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 2.Text",
+   "view": "Text",
+   "y": 773.6666666666669,
+   "w": 308
+  },
+  {
+   "y": 971.0000000000002,
+   "h": 526.3333333333333,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack",
+   "x": 15.899999999999977,
+   "view": "HStack",
+   "w": 316
+  },
+  {
+   "y": 1202.0000000000002,
+   "h": 64.33333333333326,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 1.Text",
+   "x": 15.899999999999977,
+   "view": "Text",
+   "w": 291
+  },
+  {
+   "y": 971.0000000000002,
+   "h": 526.3333333333333,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 2.Text",
+   "x": 314.9,
+   "view": "Text",
+   "w": 9
+  },
+  {
+   "y": 1081.0000000000002,
+   "h": 306.33333333333326,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 3.Text",
+   "x": 331.9,
+   "view": "Text",
+   "w": 0
+  },
+  {
+   "w": 316.3333333333333,
+   "x": 15.899999999999977,
+   "y": 1509.3333333333335,
+   "view": "HStack",
+   "path": "Card \u203a 1.VStack \u203a 5.HStack",
+   "h": 306.33333333333326
+  },
+  {
+   "w": 309.66666666666663,
+   "h": 64.33333333333326,
+   "y": 1630.3333333333335,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 1.Text",
+   "x": 15.899999999999977
+  },
+  {
+   "w": 5.666666666666686,
+   "x": 326.5666666666666,
+   "y": 1509.3333333333335,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 3.Text",
+   "h": 306.33333333333326
+  },
+  {
+   "w": 316,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack",
+   "y": 1827.6666666666667,
+   "view": "HStack",
+   "h": 78.33333333333326,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 154,
+   "x": 15.899999999999977,
+   "y": 1849.6666666666667,
+   "view": "Button",
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 1.Button",
+   "h": 34.33333333333326
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 2.Button",
+   "w": 154,
+   "y": 1827.6666666666667,
+   "view": "Button",
+   "h": 78.33333333333326,
+   "x": 177.89999999999998
+  },
+  {
+   "x": 15.899999999999977,
+   "w": 316,
+   "y": 1918,
+   "view": "HStack",
+   "h": 78.33333333333326,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack"
+  },
+  {
+   "w": 154,
+   "x": 15.899999999999977,
+   "y": 1918,
+   "view": "Button",
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 1.Button",
+   "h": 78.33333333333326
+  },
+  {
+   "w": 154,
+   "x": 177.89999999999998,
+   "y": 1940,
+   "view": "Button",
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 2.Button",
+   "h": 34.33333333333326
+  },
+  {
+   "w": 316,
+   "h": 64.33333333333326,
+   "y": 2008.3333333333333,
+   "view": "HStack",
+   "path": "Card \u203a 1.VStack \u203a 8.HStack",
+   "x": 15.899999999999977
+  },
+  {
+   "w": 154,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 1.Text",
+   "y": 2030.3333333333333,
+   "view": "Text",
+   "h": 20.333333333333258,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 154,
+   "x": 177.89999999999998,
+   "y": 2008.3333333333333,
+   "view": "Text",
+   "h": 64.33333333333326,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 2.Text"
+  },
+  {
+   "w": 316,
+   "h": 64.33333333333348,
+   "y": 2084.6666666666665,
+   "view": "HStack",
+   "path": "Card \u203a 1.VStack \u203a 9.HStack",
+   "x": 15.899999999999977
+  },
+  {
+   "w": 154,
+   "path": "Card \u203a 1.VStack \u203a 9.HStack \u203a 1.Text",
+   "y": 2084.6666666666665,
+   "view": "Text",
+   "h": 64.33333333333348,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 154,
+   "path": "Card \u203a 1.VStack \u203a 9.HStack \u203a 2.Text",
+   "y": 2106.6666666666665,
+   "view": "Text",
+   "h": 20.333333333333485,
+   "x": 177.89999999999998
+  }
+ ],
+ "card": "calib-priority",
+ "diagnostics": [],
+ "size": [
+  348,
+  3829
+ ],
+ "kind": "rendered",
+ "issues": [
+  "Card \u203a 1.VStack \u203a 1.HStack \u203a 2.Text collapsed to 0\u00d7306",
+  "Card \u203a 1.VStack \u203a 10.HStack \u203a 2.Text collapsed to 0\u00d71560",
+  "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Text collapsed to 0\u00d7306",
+  "Card \u203a 1.VStack \u203a 4.HStack \u203a 3.Text collapsed to 0\u00d7306",
+  "Card \u203a 1.VStack \u203a 11.VStack \u203a 1.Text is cut: shows 20pt of the 64pt it needs",
+  "Card \u203a 1.VStack \u203a 11.VStack \u203a 1.Text is squeezed: 309pt wide where its line needs 661pt, so it is truncated or clipped; give it room (fixedSize, layoutPriority) or shorten what is beside it",
+  "The card is 3829pt tall but only 617pt of the conversation show between its header and the message field, so it never fits on screen at once; make it shorter or split it"
+ ],
+ "capture": "calib-priority-1.png"
+}

@@ -1,0 +1,918 @@
+{
+  "type": "org-data",
+  "begin": 0,
+  "end": 3456,
+  "title": "Field guide revision plan",
+  "keywords": {
+    "TITLE": "Field guide revision plan",
+    "DATE": "[2026-05-12 mar. 12:00]",
+    "FILETAGS": ":project:",
+    "IDENTIFIER": "20260512T120000",
+    "SIGNATURE": "book"
+  },
+  "children": [
+    {
+      "type": "section",
+      "begin": 0,
+      "end": 153,
+      "children": [
+        {
+          "type": "keyword",
+          "begin": 0,
+          "end": 40,
+          "key": "TITLE",
+          "value": "Field guide revision plan"
+        },
+        {
+          "type": "keyword",
+          "begin": 40,
+          "end": 78,
+          "key": "DATE",
+          "value": "[2026-05-12 mar. 12:00]"
+        },
+        {
+          "type": "keyword",
+          "begin": 78,
+          "end": 102,
+          "key": "FILETAGS",
+          "value": ":project:"
+        },
+        {
+          "type": "keyword",
+          "begin": 102,
+          "end": 132,
+          "key": "IDENTIFIER",
+          "value": "20260512T120000"
+        },
+        {
+          "type": "keyword",
+          "begin": 132,
+          "end": 153,
+          "key": "SIGNATURE",
+          "value": "book"
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 153,
+      "end": 3294,
+      "level": 1,
+      "title": "Reviews",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 155,
+          "end": 162,
+          "value": "Reviews"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "headline",
+          "begin": 164,
+          "end": 2427,
+          "level": 2,
+          "title": "[2/6] Reviewer 1 (Major Revision)",
+          "objects": [
+            {
+              "type": "statistics-cookie",
+              "begin": 167,
+              "end": 172,
+              "value": "[2/6]"
+            },
+            {
+              "type": "plain-text",
+              "begin": 172,
+              "end": 200,
+              "value": " Reviewer 1 (Major Revision)"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "headline",
+              "begin": 202,
+              "end": 875,
+              "level": 3,
+              "title": "Justify or replace the photo-only identification method",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 211,
+                  "end": 266,
+                  "value": "Justify or replace the photo-only identification method"
+                }
+              ],
+              "todoKeyword": "TODO",
+              "todoType": "todo",
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 267,
+                  "end": 875,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 267,
+                      "end": 568,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 281,
+                          "end": 555,
+                          "text": "The main concern with the guide is the photo-only identification approach. It relies on the reader's eye and the light of the moment, which does not seem appropriate for species that differ only by the underside of the leaf, compared to a traditional key with measurements.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 281,
+                              "end": 554,
+                              "value": "The main concern with the guide is the photo-only identification approach. It relies on the reader's eye and the light of the moment, which does not seem appropriate for species that differ only by the underside of the leaf, compared to a traditional key with measurements."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "quote-block",
+                      "begin": 568,
+                      "end": 693,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 582,
+                          "end": 680,
+                          "text": "Photo identification gives no agreement between readers (unconvinced that it is appropriate here)",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 582,
+                              "end": 679,
+                              "value": "Photo identification gives no agreement between readers (unconvinced that it is appropriate here)"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "begin": 693,
+                      "end": 875,
+                      "text": "Following the suggestion of the reviewer, we have added a measurement for every step of the key. We continue to believe photographs are the right way into the guide for beginners.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 693,
+                          "end": 872,
+                          "value": "Following the suggestion of the reviewer, we have added a measurement for every step of the key. We continue to believe photographs are the right way into the guide for beginners."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "headline",
+              "begin": 875,
+              "end": 1286,
+              "level": 3,
+              "title": "Reconsider the season-only first sorting step",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 884,
+                  "end": 929,
+                  "value": "Reconsider the season-only first sorting step"
+                }
+              ],
+              "todoKeyword": "DONE",
+              "todoType": "done",
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 930,
+                  "end": 1286,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 931,
+                      "end": 1104,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 945,
+                          "end": 1091,
+                          "text": "While the general sorting was reasonable, there is concern regarding sorting by season alone first, which may leave out plants that flower twice.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 945,
+                              "end": 1090,
+                              "value": "While the general sorting was reasonable, there is concern regarding sorting by season alone first, which may leave out plants that flower twice."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "begin": 1104,
+                      "end": 1258,
+                      "text": "While we indeed sort by season first, we have been very conservative: a plant that flowers twice appears in both seasons, and the index points to both.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1104,
+                          "end": 1255,
+                          "value": "While we indeed sort by season first, we have been very conservative: a plant that flowers twice appears in both seasons, and the index points to both."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "begin": 1258,
+                      "end": 1286,
+                      "text": "Voir si à reconsidérer",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1258,
+                          "end": 1282,
+                          "value": "Voir si à reconsidérer"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "headline",
+              "begin": 1286,
+              "end": 1607,
+              "level": 3,
+              "title": "Expand on \"traces left on the bark\"",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 1295,
+                  "end": 1330,
+                  "value": "Expand on \"traces left on the bark\""
+                }
+              ],
+              "todoKeyword": "TODO",
+              "todoType": "todo",
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 1331,
+                  "end": 1607,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 1331,
+                      "end": 1510,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1345,
+                          "end": 1497,
+                          "text": "Some details are unclear. First, expanding on the reading of bark marks would help, since it is announced in chapter 2 and only explained in chapter 5.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1345,
+                              "end": 1496,
+                              "value": "Some details are unclear. First, expanding on the reading of bark marks would help, since it is announced in chapter 2 and only explained in chapter 5."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "plain-list",
+                      "begin": 1510,
+                      "end": 1607,
+                      "listType": "unordered",
+                      "children": [
+                        {
+                          "type": "item",
+                          "begin": 1510,
+                          "end": 1606,
+                          "bullet": "-",
+                          "indent": 0,
+                          "text": "There is a forward reference in 2.1.1 to the bark marks that is explained later, maybe fix it",
+                          "contentBegin": 1512,
+                          "contentEnd": 1605,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "begin": 1512,
+                              "end": 1606,
+                              "text": "There is a forward reference in 2.1.1 to the bark marks that is explained later, maybe fix it",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 1512,
+                                  "end": 1605,
+                                  "value": "There is a forward reference in 2.1.1 to the bark marks that is explained later, maybe fix it"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "headline",
+              "begin": 1607,
+              "end": 2015,
+              "level": 3,
+              "title": "Clarify \"10 most common trees\" reasoning and coverage",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 1616,
+                  "end": 1669,
+                  "value": "Clarify \"10 most common trees\" reasoning and coverage"
+                }
+              ],
+              "todoKeyword": "TODO",
+              "todoType": "todo",
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 1670,
+                  "end": 2015,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 1671,
+                      "end": 1828,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1685,
+                          "end": 1815,
+                          "text": "Additionally, it is unclear why the guide covers only the 10 most common trees, and what share of a typical walk these amount to.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1685,
+                              "end": 1814,
+                              "value": "Additionally, it is unclear why the guide covers only the 10 most common trees, and what share of a typical walk these amount to."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "begin": 1828,
+                      "end": 2015,
+                      "text": "We have clarified this in the book. As table N shows, the 10 most common trees already cover nine trees in ten on the walks we recorded, counted from the photos named IMG2041 onwards.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1828,
+                          "end": 1998,
+                          "value": "We have clarified this in the book. As table N shows, the 10 most common trees already cover nine trees in ten on the walks we recorded, counted from the photos named IMG"
+                        },
+                        {
+                          "type": "subscript",
+                          "begin": 1998,
+                          "end": 2003,
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1999,
+                              "end": 2003,
+                              "value": "2041"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "plain-text",
+                          "begin": 2003,
+                          "end": 2012,
+                          "value": " onwards."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "headline",
+              "begin": 2015,
+              "end": 2136,
+              "level": 3,
+              "title": "Fix contraction (p.6 line 29)",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 2024,
+                  "end": 2053,
+                  "value": "Fix contraction (p.6 line 29)"
+                }
+              ],
+              "todoKeyword": "TODO",
+              "todoType": "todo",
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 2054,
+                  "end": 2136,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 2054,
+                      "end": 2136,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 2068,
+                          "end": 2122,
+                          "text": "Pg 6, line 29: avoid contractions \"don't\" to \"do not\"",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2068,
+                              "end": 2121,
+                              "value": "Pg 6, line 29: avoid contractions \"don't\" to \"do not\""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "headline",
+              "begin": 2136,
+              "end": 2427,
+              "level": 3,
+              "title": "Reposition and redesign the key figures (Fig 1 & 2)",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 2145,
+                  "end": 2196,
+                  "value": "Reposition and redesign the key figures (Fig 1 & 2)"
+                }
+              ],
+              "todoKeyword": "DONE",
+              "todoType": "done",
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 2197,
+                  "end": 2427,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 2198,
+                      "end": 2344,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 2212,
+                          "end": 2331,
+                          "text": "In terms of presentation, it would have been better to place the figures of the key closer to the text that uses them.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2212,
+                              "end": 2330,
+                              "value": "In terms of presentation, it would have been better to place the figures of the key closer to the text that uses them."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "begin": 2344,
+                      "end": 2427,
+                      "text": "We have additionally taken into account the reviewer's presentation suggestions.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 2344,
+                          "end": 2424,
+                          "value": "We have additionally taken into account the reviewer's presentation suggestions."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 2427,
+          "end": 3294,
+          "level": 2,
+          "title": "[1/4] Reviewer 2 (Major Revision)",
+          "objects": [
+            {
+              "type": "statistics-cookie",
+              "begin": 2430,
+              "end": 2435,
+              "value": "[1/4]"
+            },
+            {
+              "type": "plain-text",
+              "begin": 2435,
+              "end": 2463,
+              "value": " Reviewer 2 (Major Revision)"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "headline",
+              "begin": 2465,
+              "end": 2750,
+              "level": 3,
+              "title": "Address the \"surface-level\" descriptions critique",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 2474,
+                  "end": 2523,
+                  "value": "Address the \"surface-level\" descriptions critique"
+                }
+              ],
+              "todoKeyword": "DONE",
+              "todoType": "done",
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 2524,
+                  "end": 2750,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 2525,
+                      "end": 2660,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 2539,
+                          "end": 2647,
+                          "text": "The descriptions stay at the surface: leaf shape and colour, but little about habitat or what grows nearby.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2539,
+                              "end": 2646,
+                              "value": "The descriptions stay at the surface: leaf shape and colour, but little about habitat or what grows nearby."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "begin": 2660,
+                      "end": 2750,
+                      "text": "Each entry now has a habitat paragraph and the three plants most often found next to it.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 2660,
+                          "end": 2748,
+                          "value": "Each entry now has a habitat paragraph and the three plants most often found next to it."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "headline",
+              "begin": 2750,
+              "end": 2955,
+              "level": 3,
+              "title": "Use \"edible\" the same way throughout the book",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 2759,
+                  "end": 2804,
+                  "value": "Use \"edible\" the same way throughout the book"
+                }
+              ],
+              "todoKeyword": "TODO",
+              "todoType": "todo",
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 2805,
+                  "end": 2955,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 2805,
+                      "end": 2955,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 2819,
+                          "end": 2942,
+                          "text": "The word \"edible\" is used for plants that are safe raw, safe cooked, and safe in small amounts. Please choose one meaning.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2819,
+                              "end": 2941,
+                              "value": "The word \"edible\" is used for plants that are safe raw, safe cooked, and safe in small amounts. Please choose one meaning."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "headline",
+              "begin": 2955,
+              "end": 3176,
+              "level": 3,
+              "title": "WONTFIX Link the key (Fig 1) to the recipes (Fig 2)",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 2959,
+                  "end": 3010,
+                  "value": "WONTFIX Link the key (Fig 1) to the recipes (Fig 2)"
+                }
+              ],
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 3011,
+                  "end": 3176,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 3011,
+                      "end": 3112,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 3025,
+                          "end": 3099,
+                          "text": "It would help to link each species in the key to the recipes that use it.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 3025,
+                              "end": 3098,
+                              "value": "It would help to link each species in the key to the recipes that use it."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "begin": 3112,
+                      "end": 3176,
+                      "text": "Out of scope for a field guide; the companion website does it.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 3112,
+                          "end": 3174,
+                          "value": "Out of scope for a field guide; the companion website does it."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "headline",
+              "begin": 3176,
+              "end": 3294,
+              "level": 3,
+              "title": "Improve Figure 4 color scheme",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 3185,
+                  "end": 3214,
+                  "value": "Improve Figure 4 color scheme"
+                }
+              ],
+              "todoKeyword": "TODO",
+              "todoType": "todo",
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 3215,
+                  "end": 3294,
+                  "children": [
+                    {
+                      "type": "quote-block",
+                      "begin": 3215,
+                      "end": 3294,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 3229,
+                          "end": 3280,
+                          "text": "Figure 4 is hard to read for colour-blind readers.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 3229,
+                              "end": 3279,
+                              "value": "Figure 4 is hard to read for colour-blind readers."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 3294,
+      "end": 3456,
+      "level": 1,
+      "title": "High level stuff",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 3296,
+          "end": 3312,
+          "value": "High level stuff"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "section",
+          "begin": 3313,
+          "end": 3456,
+          "children": [
+            {
+              "type": "plain-list",
+              "begin": 3314,
+              "end": 3456,
+              "listType": "unordered",
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 3314,
+                  "end": 3456,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "Quantitative analysis of the walks",
+                  "contentBegin": 3316,
+                  "contentEnd": 3350,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 3316,
+                      "end": 3351,
+                      "text": "Quantitative analysis of the walks",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 3316,
+                          "end": 3350,
+                          "value": "Quantitative analysis of the walks"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "plain-list",
+                      "begin": 3351,
+                      "end": 3456,
+                      "listType": "ordered",
+                      "children": [
+                        {
+                          "type": "item",
+                          "begin": 3351,
+                          "end": 3374,
+                          "bullet": "1)",
+                          "indent": 2,
+                          "text": "Seasonal analysis",
+                          "contentBegin": 3356,
+                          "contentEnd": 3373,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "begin": 3356,
+                              "end": 3374,
+                              "text": "Seasonal analysis",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 3356,
+                                  "end": 3373,
+                                  "value": "Seasonal analysis"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "begin": 3374,
+                          "end": 3431,
+                          "bullet": "2)",
+                          "indent": 2,
+                          "text": "Frequency of each species + weighted by walk length",
+                          "contentBegin": 3379,
+                          "contentEnd": 3430,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "begin": 3379,
+                              "end": 3431,
+                              "text": "Frequency of each species + weighted by walk length",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 3379,
+                                  "end": 3430,
+                                  "value": "Frequency of each species + weighted by walk length"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "begin": 3431,
+                          "end": 3456,
+                          "bullet": "3)",
+                          "indent": 2,
+                          "text": "Town vs countryside",
+                          "contentBegin": 3436,
+                          "contentEnd": 3455,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "begin": 3436,
+                              "end": 3456,
+                              "text": "Town vs countryside",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 3436,
+                                  "end": 3455,
+                                  "value": "Town vs countryside"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+ "components": {
+  "BookRow": {
+   "props": {
+    "book": null
+   },
+   "body": {
+    "HStack": [
+     {
+      "Image": "${book.done ? 'checkmark.circle.fill' : 'circle'}",
+      "font": "title2",
+      "foregroundStyle": "${book.done ? 'accent' : 'tertiary'}",
+      "contentTransition": "symbol"
+     },
+     {
+      "Text": "$book.title",
+      "font": "body",
+      "foregroundStyle": "${book.done ? 'secondary' : 'primary'}"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "spacing": 12,
+    "padding": {
+     "vertical": 11
+    },
+    "onTap": {
+     "edit": {
+      "store": "reading",
+      "id": "$book.id",
+      "done": "${!book.done}"
+     },
+     "haptic": "light"
+    },
+    "accessibilityLabel": "${book.title}, ${book.done ? 'read' : 'not read'}"
+   }
+  },
+  "DayRow": {
+   "props": {
+    "event": null
+   },
+   "body": {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "$event.time",
+        "font": "subheadline.semibold",
+        "monospacedDigit": true,
+        "foregroundStyle": "${event.tag ? 'orange' : 'secondary'}"
+       },
+       {
+        "If": "event.was",
+        "then": {
+         "Text": "~~${event.was}~~",
+         "font": "caption2",
+         "monospacedDigit": true,
+         "foregroundStyle": "secondary"
+        }
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 0,
+      "frame": {
+       "width": 46,
+       "alignment": "leading"
+      }
+     },
+     {
+      "Capsule": {},
+      "fill": "$event.color",
+      "frame": {
+       "width": 4,
+       "height": 36
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "$event.title",
+        "font": "body.semibold"
+       },
+       {
+        "If": "event.place",
+        "then": {
+         "Text": "$event.place",
+         "font": "footnote",
+         "foregroundStyle": "secondary"
+        }
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 2
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "If": "event.tag",
+      "then": {
+       "Text": "$event.tag",
+       "font": "caption.bold",
+       "foregroundStyle": "orange",
+       "fixedSize": true,
+       "padding": {
+        "horizontal": 8,
+        "vertical": 4
+       },
+       "background": "orange@0.15",
+       "clipShape": "capsule"
+      }
+     }
+    ],
+    "spacing": 10
+   }
+  }
+ },
+ "reading": {
+  "title": "Reading",
+  "view": {
+   "VStack": [
+    {
+     "Card": [
+      {
+       "ForEach": "$reading",
+       "as": "b",
+       "content": {
+        "VStack": [
+         {
+          "If": "index > 0",
+          "then": {
+           "Divider": {},
+           "padding": {
+            "leading": 40
+           }
+          }
+         },
+         {
+          "BookRow": {
+           "book": "$b"
+          }
+         }
+        ],
+        "spacing": 0
+       }
+      }
+     ],
+     "spacing": 0
+    },
+    {
+     "Text": "${count(filter(reading, 'done'))} of ${count(reading)} read",
+     "font": "footnote",
+     "foregroundStyle": "secondary",
+     "padding": {
+      "leading": 16
+     }
+    }
+   ],
+   "spacing": 10
+  },
+  "stores": {
+   "reading": [
+    {
+     "id": "periodic-table",
+     "title": "The Periodic Table",
+     "done": true
+    },
+    {
+     "id": "piranesi",
+     "title": "Piranesi",
+     "done": false
+    },
+    {
+     "id": "dispossessed",
+     "title": "The Dispossessed",
+     "done": false
+    }
+   ]
+  }
+ },
+ "week": {
+  "title": "This week",
+  "view": {
+   "VStack": [
+    {
+     "If": "week.alert",
+     "then": {
+      "VStack": [
+       {
+        "HStack": [
+         {
+          "Face": 22
+         },
+         {
+          "Text": "$week.agent",
+          "font": "footnote.semibold"
+         },
+         {
+          "Text": "${ago(week.alert.at)}",
+          "font": "footnote",
+          "foregroundStyle": "secondary"
+         },
+         {
+          "Spacer": {}
+         }
+        ],
+        "spacing": 6
+       },
+       {
+        "HStack": [
+         {
+          "Image": "$week.alert.symbol",
+          "font": "headline",
+          "foregroundStyle": "white",
+          "frame": {
+           "width": 40,
+           "height": 40
+          },
+          "background": "orange",
+          "clipShape": "circle"
+         },
+         {
+          "VStack": [
+           {
+            "Text": "$week.alert.title",
+            "font": "headline"
+           },
+           {
+            "Text": "$week.alert.detail",
+            "font": "subheadline",
+            "foregroundStyle": "secondary"
+           }
+          ],
+          "alignment": "leading",
+          "spacing": 1
+         },
+         {
+          "Spacer": {}
+         }
+        ],
+        "spacing": 12
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 10,
+      "padding": 16,
+      "background": "orange@0.2",
+      "clipShape": 22,
+      "transition": "move:top"
+     }
+    },
+    {
+     "VStack": [
+      {
+       "HStack": [
+        {
+         "Text": "Today",
+         "font": "title3.bold"
+        },
+        {
+         "Spacer": {}
+        },
+        {
+         "Text": "$week.day",
+         "font": "subheadline",
+         "foregroundStyle": "secondary"
+        }
+       ],
+       "alignment": "firstTextBaseline"
+      },
+      {
+       "Card": [
+        {
+         "ForEach": "$week.events",
+         "as": "e",
+         "content": {
+          "DayRow": {
+           "event": "$e"
+          }
+         }
+        }
+       ],
+       "spacing": 14
+      }
+     ],
+     "alignment": "leading",
+     "spacing": 10
+    }
+   ],
+   "spacing": 22
+  },
+  "stores": {
+   "week": {
+    "events": [
+     {
+      "id": "dentist",
+      "time": "09:30",
+      "title": "Dentist",
+      "place": "rue Paradis",
+      "color": "teal"
+     },
+     {
+      "id": "review",
+      "time": "14:00",
+      "title": "Review with Inès",
+      "place": "",
+      "color": "indigo"
+     },
+     {
+      "id": "train",
+      "time": "19:16",
+      "title": "Train to Lyon",
+      "place": "Platform 7",
+      "color": "orange",
+      "was": "19:04",
+      "tag": "12 min late"
+     }
+    ],
+    "alert": {
+     "symbol": "tram.fill",
+     "title": "Your train is 12 minutes late",
+     "detail": "Now 19:16, platform 7",
+     "at": "@SINCE@"
+    },
+    "day": "",
+    "agent": ""
+   }
+  },
+  "upkeep": {
+   "job": "week-refresh",
+   "schedule": "every 20m",
+   "last": "@SINCE@"
+  }
+ }
+}

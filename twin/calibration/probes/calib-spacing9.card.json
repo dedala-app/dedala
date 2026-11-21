@@ -1,0 +1,299 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 40,
+       "height": 40
+      }
+     },
+     {
+      "VStack": [
+       {
+        "HStack": [
+         {
+          "Text": "Marta Lopez",
+          "font": "headline"
+         },
+         {
+          "Spacer": {}
+         },
+         {
+          "Text": "09:41",
+          "font": "subheadline"
+         }
+        ]
+       },
+       {
+        "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "HStack": [
+         {
+          "Text": "Marta Lopez",
+          "font": "headline"
+         },
+         {
+          "Spacer": {}
+         },
+         {
+          "Text": "09:41",
+          "font": "subheadline"
+         }
+        ]
+       },
+       {
+        "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "HStack": [
+         {
+          "Text": "Marta Lopez",
+          "font": "headline"
+         },
+         {
+          "Spacer": {}
+         },
+         {
+          "Text": "09:41",
+          "font": "subheadline"
+         }
+        ]
+       },
+       {
+        "Text": "Short",
+        "font": "subheadline"
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Only one line",
+        "font": "subheadline"
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Line A",
+        "font": "subheadline"
+       },
+       {
+        "Text": "Line B",
+        "font": "subheadline"
+       },
+       {
+        "Text": "Line C",
+        "font": "subheadline"
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "VStack": [
+     {
+      "Text": "In a tall frame",
+      "font": "subheadline"
+     }
+    ],
+    "frame": {
+     "height": 60
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Two",
+      "font": "subheadline"
+     },
+     {
+      "Text": "In a tall frame",
+      "font": "subheadline"
+     }
+    ],
+    "frame": {
+     "height": 60
+    }
+   },
+   {
+    "Text": "Text in a tall frame",
+    "font": "subheadline",
+    "frame": {
+     "height": 60
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "HStack": [
+         {
+          "Text": "Marta Lopez",
+          "font": "headline"
+         },
+         {
+          "Spacer": {}
+         },
+         {
+          "Text": "09:41",
+          "font": "subheadline"
+         }
+        ]
+       },
+       {
+        "Text": "Short",
+        "font": "subheadline"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Face": 48
+     },
+     {
+      "VStack": [
+       {
+        "HStack": [
+         {
+          "Text": "Marta Lopez",
+          "font": "headline"
+         },
+         {
+          "Spacer": {}
+         },
+         {
+          "Text": "09:41",
+          "font": "subheadline"
+         }
+        ]
+       },
+       {
+        "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "HStack": [
+         {
+          "Text": "Marta Lopez",
+          "font": "headline"
+         },
+         {
+          "Spacer": {}
+         },
+         {
+          "Text": "09:41",
+          "font": "subheadline"
+         }
+        ]
+       },
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   }
+  ],
+  "spacing": 10
+ },
+ "state": {
+  "on": true
+ }
+}

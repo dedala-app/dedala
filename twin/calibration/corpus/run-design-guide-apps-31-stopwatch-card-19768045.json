@@ -1,0 +1,121 @@
+{
+ "size": [
+  348,
+  199
+ ],
+ "at": "2026-10-27T20:05:23Z",
+ "card": "run-design-guide-apps-31-stopwatch-card-19768045",
+ "capture": "run-design-guide-apps-31-stopwatch-card-19768045-21.png",
+ "derived": {
+  "shown": "00:00.00"
+ },
+ "frames": [
+  {
+   "view": "Card",
+   "y": 1.4210854715202004e-14,
+   "x": 0,
+   "w": 347.79999999999995,
+   "path": "Card",
+   "h": 199.33333333333331
+  },
+  {
+   "path": "Card \u203a 1.VStack",
+   "view": "VStack",
+   "x": 16,
+   "y": 16.000000000000014,
+   "h": 167.33333333333331,
+   "w": 315.79999999999995
+  },
+  {
+   "h": 18,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "w": 73,
+   "view": "Text",
+   "y": 16.000000000000014
+  },
+  {
+   "h": 40.66666666666667,
+   "w": 156,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "y": 42.000000000000014,
+   "x": 16,
+   "view": "HStack"
+  },
+  {
+   "h": 40.66666666666667,
+   "x": 16,
+   "view": "Text",
+   "y": 42.000000000000014,
+   "w": 76,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.If(else) \u203a 1.Text"
+  },
+  {
+   "h": 24,
+   "x": 100,
+   "view": "Text",
+   "y": 55.33333333333334,
+   "w": 72,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text"
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 3.HStack",
+   "y": 90.66666666666669,
+   "x": 16,
+   "h": 40.66666666666666,
+   "view": "HStack",
+   "w": 229.33333333333331
+  },
+  {
+   "h": 40.66666666666666,
+   "y": 90.66666666666669,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Text",
+   "view": "Text",
+   "w": 151.66666666666666
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 2.Text",
+   "y": 104.00000000000001,
+   "x": 175.66666666666666,
+   "h": 23.999999999999986,
+   "view": "Text",
+   "w": 69.66666666666666
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 5.HStack",
+   "y": 139.33333333333334,
+   "x": 16,
+   "h": 44,
+   "view": "HStack",
+   "w": 315.79999999999995
+  },
+  {
+   "h": 44,
+   "y": 139.33333333333334,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 1.Button",
+   "x": 16,
+   "w": 99.93333333333332,
+   "view": "Button"
+  },
+  {
+   "h": 44,
+   "y": 139.33333333333334,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 2.Button",
+   "x": 123.93333333333334,
+   "w": 99.93333333333331,
+   "view": "Button"
+  },
+  {
+   "h": 44,
+   "y": 139.33333333333334,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 3.Button",
+   "view": "Button",
+   "x": 231.86666666666665,
+   "w": 99.93333333333331
+  }
+ ],
+ "issues": [],
+ "kind": "rendered",
+ "diagnostics": []
+}

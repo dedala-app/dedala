@@ -1,0 +1,328 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Paul Anderson",
+    "font": "largeTitle"
+   },
+   {
+    "Text": "Hello world",
+    "font": "largeTitle"
+   },
+   {
+    "Text": "380 kr",
+    "font": "largeTitle"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "largeTitle"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "largeTitle"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Text": "Hello world",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Text": "380 kr",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "title"
+   },
+   {
+    "Text": "Hello world",
+    "font": "title"
+   },
+   {
+    "Text": "380 kr",
+    "font": "title"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "title"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "title"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "title.bold"
+   },
+   {
+    "Text": "Hello world",
+    "font": "title.bold"
+   },
+   {
+    "Text": "380 kr",
+    "font": "title.bold"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "title.bold"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "title.bold"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "title2"
+   },
+   {
+    "Text": "Hello world",
+    "font": "title2"
+   },
+   {
+    "Text": "380 kr",
+    "font": "title2"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "title2"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "title2"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "title2.bold"
+   },
+   {
+    "Text": "Hello world",
+    "font": "title2.bold"
+   },
+   {
+    "Text": "380 kr",
+    "font": "title2.bold"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "title2.bold"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "title2.bold"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "title3"
+   },
+   {
+    "Text": "Hello world",
+    "font": "title3"
+   },
+   {
+    "Text": "380 kr",
+    "font": "title3"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "title3"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "title3"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "title3.bold"
+   },
+   {
+    "Text": "Hello world",
+    "font": "title3.bold"
+   },
+   {
+    "Text": "380 kr",
+    "font": "title3.bold"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "title3.bold"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "title3.bold"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "headline"
+   },
+   {
+    "Text": "Hello world",
+    "font": "headline"
+   },
+   {
+    "Text": "380 kr",
+    "font": "headline"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "headline"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "headline"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "body"
+   },
+   {
+    "Text": "Hello world",
+    "font": "body"
+   },
+   {
+    "Text": "380 kr",
+    "font": "body"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "body"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "body"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "body.bold"
+   },
+   {
+    "Text": "Hello world",
+    "font": "body.bold"
+   },
+   {
+    "Text": "380 kr",
+    "font": "body.bold"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "body.bold"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "body.bold"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "subheadline"
+   },
+   {
+    "Text": "Hello world",
+    "font": "subheadline"
+   },
+   {
+    "Text": "380 kr",
+    "font": "subheadline"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "subheadline"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "subheadline"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "subheadline.semibold"
+   },
+   {
+    "Text": "Hello world",
+    "font": "subheadline.semibold"
+   },
+   {
+    "Text": "380 kr",
+    "font": "subheadline.semibold"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "subheadline.semibold"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "subheadline.semibold"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "footnote"
+   },
+   {
+    "Text": "Hello world",
+    "font": "footnote"
+   },
+   {
+    "Text": "380 kr",
+    "font": "footnote"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "footnote"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "footnote"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "caption"
+   },
+   {
+    "Text": "Hello world",
+    "font": "caption"
+   },
+   {
+    "Text": "380 kr",
+    "font": "caption"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "caption"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "caption"
+   },
+   {
+    "Text": "Paul Anderson",
+    "font": "caption.bold"
+   },
+   {
+    "Text": "Hello world",
+    "font": "caption.bold"
+   },
+   {
+    "Text": "380 kr",
+    "font": "caption.bold"
+   },
+   {
+    "Text": "Leave by 12:26",
+    "font": "caption.bold"
+   },
+   {
+    "Text": "Marc Dupuis",
+    "font": "caption.bold"
+   }
+  ],
+  "spacing": 0,
+  "alignment": "leading"
+ }
+}

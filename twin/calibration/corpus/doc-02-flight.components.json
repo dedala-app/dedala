@@ -1,0 +1,162 @@
+{
+ "StatusPill": {
+  "props": {
+   "text": "",
+   "tint": "green"
+  },
+  "body": {
+   "Text": "$text",
+   "font": "caption.bold",
+   "foregroundStyle": "$tint",
+   "padding": {
+    "horizontal": 8,
+    "vertical": 4
+   },
+   "background": "${tint + '@0.15'}",
+   "clipShape": "capsule"
+  }
+ },
+ "Flight": {
+  "props": {
+   "number": "",
+   "airline": "",
+   "from": "",
+   "fromCity": "",
+   "to": "",
+   "toCity": "",
+   "departs": null,
+   "arrives": null,
+   "gate": null,
+   "seat": "",
+   "status": "On time"
+  },
+  "body": {
+   "Card": [
+    {
+     "HStack": [
+      {
+       "Label": [
+        "$airline \u00b7 $number",
+        "airplane"
+       ],
+       "font": "subheadline.semibold",
+       "foregroundStyle": "secondary"
+      },
+      {
+       "Spacer": {}
+      },
+      {
+       "StatusPill": {
+        "text": "$status",
+        "tint": "${status == 'On time' ? 'green' : status == 'Boarding' ? 'blue' : 'orange'}"
+       }
+      }
+     ]
+    },
+    {
+     "HStack": [
+      {
+       "VStack": [
+        {
+         "Text": "$from",
+         "font": {
+          "size": 40,
+          "weight": "bold",
+          "design": "rounded"
+         }
+        },
+        {
+         "Text": "$fromCity",
+         "font": "caption",
+         "foregroundStyle": "secondary"
+        }
+       ],
+       "alignment": "leading",
+       "spacing": 0
+      },
+      {
+       "VStack": [
+        {
+         "Image": "airplane",
+         "font": "title3",
+         "foregroundStyle": "accent"
+        },
+        {
+         "Text": "${date(departs, 'time')} \u2013 ${date(arrives, 'time')}",
+         "font": "caption2",
+         "foregroundStyle": "secondary"
+        }
+       ],
+       "spacing": 4,
+       "maxWidth": "infinity"
+      },
+      {
+       "VStack": [
+        {
+         "Text": "$to",
+         "font": {
+          "size": 40,
+          "weight": "bold",
+          "design": "rounded"
+         }
+        },
+        {
+         "Text": "$toCity",
+         "font": "caption",
+         "foregroundStyle": "secondary"
+        }
+       ],
+       "alignment": "trailing",
+       "spacing": 0
+      }
+     ]
+    },
+    {
+     "Divider": {}
+    },
+    {
+     "Grid": [
+      [
+       {
+        "Text": "Departs in",
+        "font": "caption",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "Gate",
+        "font": "caption",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "Seat",
+        "font": "caption",
+        "foregroundStyle": "secondary"
+       }
+      ],
+      [
+       {
+        "Text": {
+         "countdown": "$departs"
+        },
+        "font": "title3.bold.rounded",
+        "monospacedDigit": true
+       },
+       {
+        "Text": "${gate ? gate : '\u2014'}",
+        "font": "title3.bold.rounded",
+        "foregroundStyle": "${gate ? 'primary' : 'tertiary'}",
+        "contentTransition": "numericText"
+       },
+       {
+        "Text": "$seat",
+        "font": "title3.bold.rounded"
+       }
+      ]
+     ],
+     "hSpacing": 28,
+     "vSpacing": 2
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,350 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Image": "calendar"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+       },
+       {
+        "Text": "detail",
+        "font": "footnote"
+       }
+      ],
+      "alignment": "leading"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Wed 8:30",
+      "font": "subheadline"
+     },
+     {
+      "Image": "chevron.right"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "calendar"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+       },
+       {
+        "Text": "detail",
+        "font": "footnote"
+       }
+      ],
+      "alignment": "leading"
+     },
+     {
+      "Text": "Wed 8:30",
+      "font": "subheadline"
+     },
+     {
+      "Image": "chevron.right"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Wed 8:30",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+       }
+      ],
+      "alignment": "leading"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Wed 8:30",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "calendar"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Wed 8:30",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Wed 8:30",
+      "font": "subheadline"
+     },
+     {
+      "Image": "chevron.right"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Image": "chevron.right"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "calendar"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Wed 8:30",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+       }
+      ],
+      "alignment": "leading"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+       }
+      ],
+      "alignment": "leading"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+       }
+      ],
+      "alignment": "leading"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding",
+      "font": "subheadline"
+     },
+     {
+      "Image": "chevron.right"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+       }
+      ],
+      "alignment": "leading"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Wed 8:30"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+       }
+      ],
+      "alignment": "leading"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Wed8:30",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Wed8:30",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x",
+       "music.note"
+      ]
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x",
+       "music.note"
+      ]
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x",
+       "music.note"
+      ],
+      "font": "title2.bold"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ }
+}

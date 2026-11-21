@@ -1,0 +1,205 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "frame": {
+       "width": 108.6
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "frame": {
+       "width": 108.4
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "frame": {
+       "width": 108.32
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "frame": {
+       "width": 108.28
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "frame": {
+       "width": 108.2
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "frame": {
+       "width": 108.0
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "frame": {
+       "width": 180.701
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "frame": {
+       "width": 180.501
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "frame": {
+       "width": 180.421
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "frame": {
+       "width": 180.381
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "frame": {
+       "width": 180.301
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "frame": {
+       "width": 180.101
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps",
+      "frame": {
+       "width": 204.308
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps",
+      "frame": {
+       "width": 204.108
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps",
+      "frame": {
+       "width": 204.028
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps",
+      "frame": {
+       "width": 203.988
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps",
+      "frame": {
+       "width": 203.908
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps",
+      "frame": {
+       "width": 203.708
+      },
+      "lineLimit": 3
+     }
+    ]
+   }
+  ],
+  "spacing": 4
+ }
+}

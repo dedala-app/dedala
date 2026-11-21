@@ -1,0 +1,75 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Tally: people in the room tonight",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "$count",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "people in the room",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Button": "+1",
+      "style": "borderedProminent",
+      "action": {
+       "run": "plus"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "\u22121",
+      "style": "borderedProminent",
+      "action": {
+       "run": "minus"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Reset",
+      "style": "bordered",
+      "action": {
+       "run": "reset"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      },
+      "role": "destructive"
+     }
+    ],
+    "spacing": 8
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {},
+ "state": {
+  "count": 0
+ },
+ "script": "function plus({state}) { return {state: {count: state.count + 1}}; }\nfunction minus({state}) { return {state: {count: Math.max(0, state.count - 1)}}; }\nfunction reset() { return {state: {count: 0}}; }"
+}

@@ -1,0 +1,276 @@
+{
+ "kind": "rendered",
+ "diagnostics": [],
+ "size": [
+  348,
+  3775
+ ],
+ "capture": "calib-priority2-2.png",
+ "frames": [
+  {
+   "path": "Card",
+   "view": "Card",
+   "h": 3775.333333333333,
+   "y": 2.2737367544323206e-13,
+   "w": 348,
+   "x": -0.10000000000002274
+  },
+  {
+   "path": "Card \u203a 1.VStack",
+   "view": "VStack",
+   "h": 3743.333333333333,
+   "y": 16.000000000000227,
+   "w": 316.33333333333337,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 1.HStack",
+   "view": "HStack",
+   "h": 262.3333333333333,
+   "y": 16.000000000000227,
+   "w": 316,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 16,
+   "view": "Text",
+   "h": 262.3333333333333,
+   "y": 16.000000000000227,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack \u203a 1.Text",
+   "x": 15.899999999999977
+  },
+  {
+   "x": 15.899999999999977,
+   "view": "HStack",
+   "h": 988.333333333333,
+   "y": 2771,
+   "path": "Card \u203a 1.VStack \u203a 10.HStack",
+   "w": 316.33333333333337
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 10.HStack \u203a 1.Text",
+   "view": "Text",
+   "h": 64.33333333333348,
+   "y": 3233,
+   "w": 291,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 4.666666666666686,
+   "view": "Text",
+   "h": 988.333333333333,
+   "y": 2771,
+   "path": "Card \u203a 1.VStack \u203a 10.HStack \u203a 2.Text",
+   "x": 314.9
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 10.HStack \u203a 3.Text",
+   "view": "Text",
+   "h": 306.3333333333335,
+   "y": 3112,
+   "w": 4.666666666666686,
+   "x": 327.56666666666666
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "view": "HStack",
+   "h": 306.3333333333333,
+   "y": 290.33333333333354,
+   "w": 316,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 308,
+   "view": "Color",
+   "h": 20,
+   "y": 433.5000000000002,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Color",
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text",
+   "view": "Text",
+   "h": 306.3333333333333,
+   "y": 290.33333333333354,
+   "w": 0,
+   "x": 331.9
+  },
+  {
+   "x": 15.899999999999977,
+   "view": "HStack",
+   "h": 306.33333333333337,
+   "y": 608.6666666666669,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack",
+   "w": 316
+  },
+  {
+   "w": 0,
+   "view": "Text",
+   "h": 306.33333333333337,
+   "y": 608.6666666666669,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Text",
+   "x": 15.899999999999977
+  },
+  {
+   "x": 23.899999999999977,
+   "view": "Color",
+   "h": 20,
+   "y": 751.8333333333335,
+   "w": 308,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 2.Color"
+  },
+  {
+   "w": 306.6666666666667,
+   "view": "HStack",
+   "h": 64.33333333333337,
+   "y": 927.0000000000002,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack",
+   "x": 15.899999999999977
+  },
+  {
+   "x": 15.899999999999977,
+   "view": "Text",
+   "h": 64.33333333333337,
+   "y": 927.0000000000002,
+   "w": 275,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 1.Text"
+  },
+  {
+   "x": 298.9,
+   "view": "Image",
+   "h": 18.33333333333337,
+   "y": 950.0000000000002,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 2.Image",
+   "w": 23.666666666666686
+  },
+  {
+   "w": 316,
+   "view": "HStack",
+   "h": 64.33333333333337,
+   "y": 1003.3333333333336,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack",
+   "x": 15.899999999999977
+  },
+  {
+   "w": 308,
+   "view": "Text",
+   "h": 64.33333333333337,
+   "y": 1003.3333333333336,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 1.Text",
+   "x": 15.899999999999977
+  },
+  {
+   "w": 0,
+   "view": "Text",
+   "h": 20.333333333333258,
+   "y": 1025.3333333333335,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 2.Text",
+   "x": 331.9
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 6.HStack",
+   "view": "HStack",
+   "h": 64.33333333333326,
+   "y": 1079.666666666667,
+   "w": 316,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 308,
+   "view": "Text",
+   "h": 64.33333333333326,
+   "y": 1079.666666666667,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 1.Text",
+   "x": 15.899999999999977
+  },
+  {
+   "x": 331.9,
+   "view": "Color",
+   "h": 20,
+   "y": 1101.8333333333337,
+   "w": 0,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 2.Color"
+  },
+  {
+   "x": 15.899999999999977,
+   "view": "HStack",
+   "h": 64.33333333333326,
+   "y": 1156.0000000000002,
+   "w": 316,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack"
+  },
+  {
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 1.Text",
+   "y": 1156.0000000000002,
+   "h": 64.33333333333326,
+   "x": 15.899999999999977,
+   "w": 257
+  },
+  {
+   "view": "Color",
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 2.Color",
+   "y": 1178.166666666667,
+   "x": 280.9,
+   "h": 20,
+   "w": 51
+  },
+  {
+   "view": "HStack",
+   "path": "Card \u203a 1.VStack \u203a 8.HStack",
+   "h": 526.3333333333333,
+   "x": 15.899999999999977,
+   "y": 1232.3333333333335,
+   "w": 316
+  },
+  {
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 1.Text",
+   "h": 64.33333333333326,
+   "y": 1463.3333333333335,
+   "x": 15.899999999999977,
+   "w": 308
+  },
+  {
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 2.Text",
+   "h": 526.3333333333333,
+   "x": 331.9,
+   "y": 1232.3333333333335,
+   "w": 0
+  },
+  {
+   "view": "HStack",
+   "path": "Card \u203a 1.VStack \u203a 9.HStack",
+   "y": 1770.6666666666667,
+   "x": 15.899999999999977,
+   "h": 988.3333333333333,
+   "w": 316
+  },
+  {
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 9.HStack \u203a 1.Text",
+   "y": 2232.6666666666665,
+   "x": 15.899999999999977,
+   "h": 64.33333333333348,
+   "w": 308
+  },
+  {
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 9.HStack \u203a 2.Text",
+   "y": 1770.6666666666667,
+   "h": 988.3333333333333,
+   "x": 331.9,
+   "w": 0
+  }
+ ],
+ "card": "calib-priority2",
+ "issues": [
+  "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text collapsed to 0\u00d7306",
+  "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Text collapsed to 0\u00d7306",
+  "Card \u203a 1.VStack \u203a 5.HStack \u203a 2.Text collapsed to 0\u00d720",
+  "Card \u203a 1.VStack \u203a 8.HStack \u203a 2.Text collapsed to 0\u00d7526",
+  "Card \u203a 1.VStack \u203a 9.HStack \u203a 2.Text collapsed to 0\u00d7988",
+  "The card is 3775pt tall but only 617pt of the conversation show between its header and the message field, so it never fits on screen at once; make it shorter or split it"
+ ]
+}

@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: 2026 Julien Malka
+# SPDX-License-Identifier: MIT
+
+[project]
+name = "hermes-plugin-dedala"
+version = "0.1.0"
+description = "Hermes Agent platform plugin: the Dedala iPhone app"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+# Installed into Hermes's environment by `hermes plugins install` and enable. Every one is
+# a ready wheel on Linux: the plugin's own native code (the Org reader, ICU's text
+# boundaries, QuickJS) is a WebAssembly module, downloaded once (native.py), which wasmtime runs.
+dependencies = [
+    "aiohttp>=3.9,<4",
+    "cryptography>=42",
+    "qrcode>=7.4,<9",
+    "uharfbuzz>=0.39,<1",
+    "fonttools>=4.47,<5",
+    "wasmtime>=40,<60",
+]
+
+# Hermes loads the plugin from this folder; it is not installed as a distribution.
+[tool.uv]
+package = false

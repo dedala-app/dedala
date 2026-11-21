@@ -1,0 +1,330 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Roof repair quote",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Jensen & S\u00f8n",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "fastest, earliest start, 10-year warranty",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Text": "",
+      "frame": {
+       "width": 84
+      }
+     },
+     {
+      "Text": "Hansen Tag",
+      "font": "subheadline.bold",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "Nordtag",
+      "font": "subheadline.bold",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "Jensen & S\u00f8n",
+      "font": "subheadline.bold",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "multilineTextAlignment": "center"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Price",
+      "font": "footnote",
+      "foregroundStyle": "secondary",
+      "frame": {
+       "width": 84,
+       "alignment": "leading"
+      },
+      "lineLimit": 1
+     },
+     {
+      "Text": "68,000 kr",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "54,500 kr",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "61,000 kr",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Duration",
+      "font": "footnote",
+      "foregroundStyle": "secondary",
+      "frame": {
+       "width": 84,
+       "alignment": "leading"
+      },
+      "lineLimit": 1
+     },
+     {
+      "Text": "3 weeks",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "5 weeks",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "2 weeks",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Start",
+      "font": "footnote",
+      "foregroundStyle": "secondary",
+      "frame": {
+       "width": 84,
+       "alignment": "leading"
+      },
+      "lineLimit": 1
+     },
+     {
+      "Text": "10 Nov",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "2 Dec",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "4 Nov",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Warranty",
+      "font": "footnote",
+      "foregroundStyle": "secondary",
+      "frame": {
+       "width": 84,
+       "alignment": "leading"
+      },
+      "lineLimit": 1
+     },
+     {
+      "Text": "10 years",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "5 years",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     },
+     {
+      "Text": "10 years",
+      "font": "subheadline",
+      "frame": {
+       "maxWidth": "infinity"
+      },
+      "lineLimit": 2,
+      "monospacedDigit": true,
+      "multilineTextAlignment": "center"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "",
+      "frame": {
+       "width": 84
+      }
+     },
+     {
+      "Button": "Hansen Tag",
+      "style": "borderedProminent",
+      "action": {
+       "send": {
+        "about": "roof-repair-quote",
+        "choice": "Hansen Tag",
+        "values": {
+         "Price": "68,000 kr",
+         "Duration": "3 weeks",
+         "Start": "10 Nov",
+         "Warranty": "10 years"
+        }
+       },
+       "say": "Hansen Tag"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Nordtag",
+      "style": "borderedProminent",
+      "action": {
+       "send": {
+        "about": "roof-repair-quote",
+        "choice": "Nordtag",
+        "values": {
+         "Price": "54,500 kr",
+         "Duration": "5 weeks",
+         "Start": "2 Dec",
+         "Warranty": "5 years"
+        }
+       },
+       "say": "Nordtag"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Jensen & S\u00f8n",
+      "style": "borderedProminent",
+      "action": {
+       "send": {
+        "about": "roof-repair-quote",
+        "choice": "Jensen & S\u00f8n",
+        "values": {
+         "Price": "61,000 kr",
+         "Duration": "2 weeks",
+         "Start": "4 Nov",
+         "Warranty": "10 years"
+        }
+       },
+       "say": "Jensen & S\u00f8n"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     }
+    ],
+    "spacing": 8
+   },
+   {
+    "Label": [
+     "Take Jensen & S\u00f8n: two good reviews from neighbours back them.",
+     "lightbulb"
+    ],
+    "font": "footnote.bold",
+    "lineLimit": 3
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {
+  "about": "roof-repair-quote"
+ },
+ "state": {}
+}

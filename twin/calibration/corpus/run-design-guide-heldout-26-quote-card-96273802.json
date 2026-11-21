@@ -1,0 +1,313 @@
+{
+ "frames": [
+  {
+   "w": 347.79999999999995,
+   "path": "Card",
+   "y": 0.12674967447918561,
+   "x": 0,
+   "view": "Card",
+   "h": 390.4131673177083
+  },
+  {
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack",
+   "y": 16.126749674479186,
+   "x": 16,
+   "view": "VStack",
+   "h": 358.4131673177083
+  },
+  {
+   "w": 119,
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "y": 16.126749674479186,
+   "x": 16,
+   "view": "Text",
+   "h": 18
+  },
+  {
+   "w": 311.66666666666663,
+   "y": 42.126749674479186,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "x": 16,
+   "view": "HStack",
+   "h": 53
+  },
+  {
+   "w": 152.66666666666666,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Text",
+   "y": 42.126749674479186,
+   "x": 16,
+   "view": "Text",
+   "h": 28.666666666666657
+  },
+  {
+   "w": 150.99999999999997,
+   "y": 46.126749674479186,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text",
+   "x": 176.66666666666666,
+   "view": "Text",
+   "h": 49
+  },
+  {
+   "w": 315.79999999999995,
+   "y": 103.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack",
+   "x": 16,
+   "view": "HStack",
+   "h": 38
+  },
+  {
+   "w": 84,
+   "y": 115.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Text",
+   "x": 16,
+   "view": "Text",
+   "h": 14
+  },
+  {
+   "w": 69.26666666666665,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 2.Text",
+   "y": 103.12674967447919,
+   "x": 108,
+   "view": "Text",
+   "h": 38
+  },
+  {
+   "w": 69.26666666666665,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 3.Text",
+   "y": 113.12674967447919,
+   "x": 185.26666666666665,
+   "view": "Text",
+   "h": 18
+  },
+  {
+   "w": 69.26666666666665,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 4.Text",
+   "y": 103.12674967447919,
+   "x": 262.5333333333333,
+   "view": "Text",
+   "h": 38
+  },
+  {
+   "w": 315.79999999999995,
+   "y": 149.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack",
+   "x": 16,
+   "view": "HStack",
+   "h": 18
+  },
+  {
+   "w": 84,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 1.Text",
+   "y": 150.29341634114584,
+   "x": 16,
+   "view": "Text",
+   "h": 15.666666666666657
+  },
+  {
+   "w": 69.26666666666665,
+   "y": 149.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 2.Text",
+   "x": 108,
+   "view": "Text",
+   "h": 18
+  },
+  {
+   "w": 69.26666666666665,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 3.Text",
+   "y": 149.12674967447919,
+   "x": 185.26666666666665,
+   "view": "Text",
+   "h": 18
+  },
+  {
+   "w": 69.26666666666665,
+   "y": 149.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 4.Text",
+   "x": 262.5333333333333,
+   "view": "Text",
+   "h": 18
+  },
+  {
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack",
+   "y": 175.12674967447919,
+   "x": 16,
+   "view": "HStack",
+   "h": 18
+  },
+  {
+   "w": 84,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 1.Text",
+   "y": 176.29341634114584,
+   "x": 16,
+   "view": "Text",
+   "h": 15.666666666666657
+  },
+  {
+   "w": 69.26666666666665,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 2.Text",
+   "y": 175.12674967447919,
+   "x": 108,
+   "view": "Text",
+   "h": 18
+  },
+  {
+   "w": 69.26666666666665,
+   "y": 175.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 3.Text",
+   "x": 185.26666666666665,
+   "view": "Text",
+   "h": 18
+  },
+  {
+   "w": 69.26666666666665,
+   "y": 175.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 4.Text",
+   "x": 262.5333333333333,
+   "view": "Text",
+   "h": 18
+  },
+  {
+   "w": 315.79999999999995,
+   "y": 201.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack",
+   "x": 16,
+   "view": "HStack",
+   "h": 18
+  },
+  {
+   "w": 84,
+   "h": 15.666666666666657,
+   "view": "Text",
+   "y": 202.29341634114584,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 1.Text"
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 2.Text",
+   "h": 18,
+   "view": "Text",
+   "y": 201.12674967447919,
+   "x": 108,
+   "w": 69.26666666666665
+  },
+  {
+   "w": 69.26666666666665,
+   "y": 201.12674967447919,
+   "h": 18,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 3.Text",
+   "view": "Text",
+   "x": 185.26666666666665
+  },
+  {
+   "view": "Text",
+   "y": 201.12674967447919,
+   "h": 18,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 4.Text",
+   "x": 262.5333333333333,
+   "w": 69.26666666666665
+  },
+  {
+   "w": 315.79999999999995,
+   "h": 18,
+   "y": 227.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack",
+   "x": 16,
+   "view": "HStack"
+  },
+  {
+   "x": 16,
+   "view": "Text",
+   "y": 228.29341634114584,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 1.Text",
+   "h": 15.666666666666657,
+   "w": 84
+  },
+  {
+   "y": 227.12674967447919,
+   "h": 18,
+   "view": "Text",
+   "w": 69.26666666666665,
+   "x": 108,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 2.Text"
+  },
+  {
+   "w": 69.26666666666665,
+   "y": 227.12674967447919,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 3.Text",
+   "x": 185.26666666666665,
+   "h": 18
+  },
+  {
+   "w": 69.26666666666665,
+   "h": 18,
+   "y": 227.12674967447919,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 4.Text",
+   "view": "Text",
+   "x": 262.5333333333333
+  },
+  {
+   "w": 315.79999999999995,
+   "view": "HStack",
+   "h": 78.33333333333331,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack",
+   "x": 16,
+   "y": 253.12674967447919
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 1.Text",
+   "h": 14,
+   "view": "Text",
+   "y": 285.29341634114587,
+   "x": 16,
+   "w": 84
+  },
+  {
+   "view": "Button",
+   "y": 253.12674967447919,
+   "h": 78.33333333333331,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 2.Button",
+   "w": 69.26666666666665,
+   "x": 108
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 3.Button",
+   "view": "Button",
+   "y": 264.1267496744792,
+   "h": 56.333333333333314,
+   "x": 185.26666666666665,
+   "w": 69.33333333333331
+  },
+  {
+   "h": 78.33333333333331,
+   "y": 253.12674967447919,
+   "view": "Button",
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 4.Button",
+   "x": 262.59999999999997,
+   "w": 69.19999999999999
+  },
+  {
+   "view": "Label",
+   "y": 339.4600830078125,
+   "h": 35.079833984375,
+   "w": 298.99999999999994,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 9.Label"
+  }
+ ],
+ "issues": [
+  "Card \u203a 1.VStack \u203a 3.HStack \u203a 2.Text is a few characters broken across 2 lines; keep it on one (fixedSize, layoutPriority, a smaller font, or less beside it)",
+  "Card \u203a 1.VStack \u203a 3.HStack \u203a 4.Text is a few characters broken across 2 lines; keep it on one (fixedSize, layoutPriority, a smaller font, or less beside it)"
+ ],
+ "diagnostics": [],
+ "at": "2026-10-27T20:05:35Z",
+ "card": "run-design-guide-heldout-26-quote-card-96273802",
+ "kind": "rendered",
+ "size": [
+  348,
+  390
+ ],
+ "capture": "run-design-guide-heldout-26-quote-card-96273802-29.png"
+}

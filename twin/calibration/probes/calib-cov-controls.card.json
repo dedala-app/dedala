@@ -1,0 +1,376 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": [
+     "Warm",
+     "Read",
+     "Film"
+    ]
+   },
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": [
+     "Warm",
+     "Read",
+     "Film"
+    ],
+    "style": "segmented"
+   },
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": [
+     "Warm",
+     "Read",
+     "Film",
+     "Night",
+     "Day"
+    ],
+    "style": "palette"
+   },
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": [
+     "Warm",
+     "Read",
+     "Film"
+    ],
+    "style": "wheel"
+   },
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": [
+     "Warm",
+     "Read",
+     "Film"
+    ],
+    "style": "inline"
+   },
+   {
+    "Picker": "A much longer picker label that wraps",
+    "bind": "$scene",
+    "options": [
+     "Warm"
+    ]
+   },
+   {
+    "DatePicker": "When",
+    "bind": "$when"
+   },
+   {
+    "DatePicker": "When",
+    "bind": "$when",
+    "components": "date"
+   },
+   {
+    "DatePicker": "When",
+    "bind": "$when",
+    "components": "time"
+   },
+   {
+    "DatePicker": "When",
+    "bind": "$when",
+    "style": "graphical"
+   },
+   {
+    "DatePicker": "When",
+    "bind": "$when",
+    "style": "wheel"
+   },
+   {
+    "DatePicker": "When",
+    "bind": "$when",
+    "style": "compact"
+   },
+   {
+    "Gauge": 0.4
+   },
+   {
+    "Gauge": 0.4,
+    "style": "bar"
+   },
+   {
+    "Gauge": 0.4,
+    "style": "circular"
+   },
+   {
+    "Gauge": 0.4,
+    "style": "capacity"
+   },
+   {
+    "Gauge": 0.4,
+    "label": "Battery"
+   },
+   {
+    "Gauge": 0.4,
+    "label": "Battery",
+    "current": "40%"
+   },
+   {
+    "Gauge": 0.4,
+    "min": 0,
+    "max": 100,
+    "current": "40"
+   },
+   {
+    "ProgressView": 0.4
+   },
+   {
+    "ProgressView": 0.4,
+    "label": "Loading"
+   },
+   {
+    "ProgressView": null
+   },
+   {
+    "ProgressView": 0.4,
+    "style": "circular"
+   },
+   {
+    "Button": "Go",
+    "symbol": "car.fill",
+    "action": {
+     "send": {}
+    },
+    "style": "bordered"
+   },
+   {
+    "Button": "Go",
+    "symbol": "car.fill",
+    "action": {
+     "send": {}
+    },
+    "style": "prominent",
+    "controlSize": "large"
+   },
+   {
+    "Button": "Go",
+    "symbol": "car.fill",
+    "action": {
+     "send": {}
+    },
+    "style": "glass",
+    "controlSize": "small"
+   },
+   {
+    "Button": "Go",
+    "symbol": "car.fill",
+    "action": {
+     "send": {}
+    },
+    "labelStyle": "iconOnly",
+    "style": "bordered"
+   },
+   {
+    "Button": "A long button label that might wrap in a bordered style The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "action": {
+     "send": {}
+    },
+    "style": "bordered"
+   },
+   {
+    "Button": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "action": {
+     "send": {}
+    },
+    "style": "prominent",
+    "maxWidth": "infinity"
+   },
+   {
+    "Button": "Go",
+    "action": {
+     "send": {}
+    },
+    "style": "bordered",
+    "controlSize": "mini"
+   },
+   {
+    "Button": "Go",
+    "action": {
+     "send": {}
+    },
+    "controlSize": "large"
+   },
+   {
+    "Button": "Go",
+    "action": {
+     "send": {}
+    },
+    "controlSize": "small"
+   },
+   {
+    "Label": [
+     "Directions The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+     "car.fill"
+    ]
+   },
+   {
+    "Label": [
+     "Icon only",
+     "car.fill"
+    ],
+    "labelStyle": "iconOnly"
+   },
+   {
+    "Label": [
+     "Title only",
+     "car.fill"
+    ],
+    "labelStyle": "titleOnly"
+   },
+   {
+    "Label": [
+     "Big label",
+     "car.fill"
+    ],
+    "font": "title"
+   },
+   {
+    "Label": [
+     "Small",
+     "car.fill"
+    ],
+    "font": "caption2"
+   },
+   {
+    "Label": [
+     "Large scale",
+     "car.fill"
+    ],
+    "imageScale": "large"
+   },
+   {
+    "Link": "Open The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "url": "https://example.com"
+   },
+   {
+    "Link": "Open",
+    "url": "https://example.com",
+    "symbol": "safari"
+   },
+   {
+    "Toggle": "A toggle whose label is long enough to wrap onto a second line The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "bind": "$on"
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on",
+    "controlSize": "mini"
+   },
+   {
+    "Slider": "Level",
+    "bind": "$level",
+    "in": [
+     0,
+     10
+    ],
+    "step": 1
+   },
+   {
+    "Slider": "",
+    "bind": "$level"
+   },
+   {
+    "Stepper": "Guests The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "bind": "$guests",
+    "in": [
+     1,
+     8
+    ]
+   },
+   {
+    "TextField": "Reply",
+    "bind": "$reply",
+    "multiline": true
+   },
+   {
+    "TextField": "Typed",
+    "bind": "$typed"
+   },
+   {
+    "TextField": "Reply",
+    "bind": "$typed",
+    "multiline": true
+   },
+   {
+    "Chart": [
+     {
+      "type": "bar",
+      "data": [
+       {
+        "x": "a",
+        "y": 1
+       },
+       {
+        "x": "b",
+        "y": 2
+       }
+      ],
+      "x": "x",
+      "y": "y"
+     }
+    ],
+    "height": 120
+   },
+   {
+    "Chart": [
+     {
+      "type": "line",
+      "data": [
+       {
+        "x": 1,
+        "y": 1
+       },
+       {
+        "x": 2,
+        "y": 3
+       }
+      ],
+      "x": "x",
+      "y": "y"
+     }
+    ]
+   },
+   {
+    "Map": {
+     "markers": [
+      {
+       "lat": 48.85,
+       "lon": 2.35,
+       "title": "Paris"
+      }
+     ]
+    },
+    "height": 120
+   },
+   {
+    "Face": 40
+   },
+   {
+    "Face": 72
+   },
+   {
+    "Divider": {},
+    "padding": {
+     "vertical": 4
+    }
+   }
+  ],
+  "spacing": 10
+ },
+ "state": {
+  "on": true,
+  "scene": "Warm",
+  "when": "2026-10-28T10:00:00Z",
+  "level": 5,
+  "guests": 2,
+  "reply": "",
+  "typed": "Some typed text that is long enough to wrap in the field The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+ }
+}

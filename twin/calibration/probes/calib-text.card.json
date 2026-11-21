@@ -1,0 +1,151 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Hello world",
+    "font": "largeTitle"
+   },
+   {
+    "Text": "Hello world",
+    "font": "title"
+   },
+   {
+    "Text": "Hello world",
+    "font": "title2"
+   },
+   {
+    "Text": "Hello world",
+    "font": "title3"
+   },
+   {
+    "Text": "Hello world",
+    "font": "headline"
+   },
+   {
+    "Text": "Hello world",
+    "font": "body"
+   },
+   {
+    "Text": "Hello world",
+    "font": "callout"
+   },
+   {
+    "Text": "Hello world",
+    "font": "subheadline"
+   },
+   {
+    "Text": "Hello world",
+    "font": "footnote"
+   },
+   {
+    "Text": "Hello world",
+    "font": "caption"
+   },
+   {
+    "Text": "Hello world",
+    "font": "caption2"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "largeTitle"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "title3"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "caption"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 2
+   },
+   {
+    "Text": "Hello world",
+    "font": {
+     "size": 40,
+     "weight": "bold",
+     "design": "rounded"
+    }
+   },
+   {
+    "Text": "Hello world",
+    "font": "body.bold"
+   },
+   {
+    "Text": "Hello world",
+    "font": "body",
+    "bold": true
+   },
+   {
+    "Text": "Hello world",
+    "font": "body.rounded"
+   },
+   {
+    "Text": "Hello world",
+    "font": "body.monospaced"
+   },
+   {
+    "Text": "Hello world",
+    "font": "body.italic"
+   },
+   {
+    "Text": "HELLO WORLD",
+    "font": "body"
+   },
+   {
+    "Text": "Hello **bold** and *italic* world",
+    "font": "body"
+   },
+   {
+    "Text": "8:43:39",
+    "font": "title3.bold.rounded",
+    "monospacedDigit": true
+   },
+   {
+    "Text": "",
+    "font": "body"
+   },
+   {
+    "Text": "Line one\nLine two",
+    "font": "body"
+   },
+   {
+    "Text": "Hello world",
+    "font": "body",
+    "tracking": 2
+   },
+   {
+    "Text": "hello world",
+    "font": "body",
+    "textCase": "uppercase"
+   },
+   {
+    "Text": "Hello world",
+    "font": "body",
+    "padding": true
+   },
+   {
+    "Text": "Hello world",
+    "font": "body",
+    "padding": {
+     "horizontal": 8,
+     "vertical": 4
+    }
+   }
+  ],
+  "spacing": 0,
+  "alignment": "leading"
+ }
+}

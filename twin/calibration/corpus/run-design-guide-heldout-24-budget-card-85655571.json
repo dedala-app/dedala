@@ -1,0 +1,286 @@
+{
+ "issues": [],
+ "size": [
+  348,
+  412
+ ],
+ "kind": "rendered",
+ "card": "run-design-guide-heldout-24-budget-card-85655571",
+ "at": "2026-10-27T20:05:32Z",
+ "capture": "run-design-guide-heldout-24-budget-card-85655571-27.png",
+ "frames": [
+  {
+   "x": -0.10000000000002274,
+   "y": 0,
+   "view": "Card",
+   "path": "Card",
+   "h": 412.3333333333333,
+   "w": 348
+  },
+  {
+   "path": "Card \u203a 1.VStack",
+   "y": 16,
+   "view": "VStack",
+   "x": 15.899999999999977,
+   "h": 380.3333333333333,
+   "w": 316.3333333333333
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "y": 16,
+   "view": "Text",
+   "w": 109.33333333333333,
+   "h": 18,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "y": 42,
+   "view": "HStack",
+   "w": 316.3333333333333,
+   "h": 62.33333333333333,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Image",
+   "y": 53.99999999999999,
+   "view": "Image",
+   "x": 15.899999999999977,
+   "h": 24.666666666666664,
+   "w": 27.33333333333333
+  },
+  {
+   "y": 42,
+   "w": 105.66666666666667,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text",
+   "view": "Text",
+   "h": 40.66666666666666,
+   "x": 51.233333333333306
+  },
+  {
+   "y": 55.33333333333333,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 3.Text",
+   "view": "Text",
+   "w": 167.33333333333331,
+   "h": 49,
+   "x": 164.89999999999998
+  },
+  {
+   "y": 112.33333333333333,
+   "w": 281.3333333333333,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 3.Text",
+   "h": 17.999999999999986,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 4.Text",
+   "y": 138.33333333333331,
+   "view": "Text",
+   "w": 316,
+   "h": 38,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 316,
+   "path": "Card \u203a 1.VStack \u203a 5.VStack",
+   "y": 184.33333333333331,
+   "view": "VStack",
+   "h": 36,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 5.VStack \u203a 1.HStack",
+   "x": 15.899999999999977,
+   "view": "HStack",
+   "y": 184.33333333333331,
+   "h": 18,
+   "w": 316
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 5.VStack \u203a 1.HStack \u203a 1.Text",
+   "y": 184.33333333333331,
+   "view": "Text",
+   "x": 15.899999999999977,
+   "h": 18,
+   "w": 66.33333333333333
+  },
+  {
+   "y": 184.33333333333331,
+   "w": 107.33333333333331,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 5.VStack \u203a 1.HStack \u203a 3.Text",
+   "h": 18,
+   "x": 224.56666666666666
+  },
+  {
+   "y": 204.33333333333331,
+   "path": "Card \u203a 1.VStack \u203a 5.VStack \u203a 2.Gauge",
+   "x": 15.899999999999977,
+   "view": "Gauge",
+   "h": 16,
+   "w": 316
+  },
+  {
+   "y": 228.33333333333331,
+   "path": "Card \u203a 1.VStack \u203a 6.VStack",
+   "view": "VStack",
+   "w": 316,
+   "h": 36,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 6.VStack \u203a 1.HStack",
+   "x": 15.899999999999977,
+   "view": "HStack",
+   "y": 228.33333333333331,
+   "h": 18,
+   "w": 316
+  },
+  {
+   "y": 228.33333333333331,
+   "path": "Card \u203a 1.VStack \u203a 6.VStack \u203a 1.HStack \u203a 1.Text",
+   "view": "Text",
+   "x": 15.899999999999977,
+   "h": 18,
+   "w": 69.33333333333333
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 6.VStack \u203a 1.HStack \u203a 3.Text",
+   "w": 107.33333333333331,
+   "view": "Text",
+   "y": 228.33333333333331,
+   "h": 18,
+   "x": 224.56666666666666
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 6.VStack \u203a 2.Gauge",
+   "x": 15.899999999999977,
+   "view": "Gauge",
+   "y": 248.33333333333331,
+   "h": 16,
+   "w": 316
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.VStack",
+   "y": 272.3333333333333,
+   "view": "VStack",
+   "w": 316,
+   "h": 36,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.VStack \u203a 1.HStack",
+   "y": 272.3333333333333,
+   "view": "HStack",
+   "w": 316,
+   "h": 18,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.VStack \u203a 1.HStack \u203a 1.Text",
+   "y": 272.3333333333333,
+   "view": "Text",
+   "x": 15.899999999999977,
+   "h": 18,
+   "w": 66.33333333333333
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.VStack \u203a 1.HStack \u203a 3.Text",
+   "y": 272.3333333333333,
+   "view": "Text",
+   "w": 85,
+   "h": 18,
+   "x": 246.89999999999998
+  },
+  {
+   "y": 292.3333333333333,
+   "x": 15.899999999999977,
+   "path": "Card \u203a 1.VStack \u203a 7.VStack \u203a 2.Gauge",
+   "view": "Gauge",
+   "h": 16,
+   "w": 316
+  },
+  {
+   "y": 316.3333333333333,
+   "x": 15.899999999999977,
+   "view": "VStack",
+   "path": "Card \u203a 1.VStack \u203a 8.VStack",
+   "h": 36,
+   "w": 316
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 8.VStack \u203a 1.HStack",
+   "w": 316,
+   "view": "HStack",
+   "y": 316.3333333333333,
+   "h": 18,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 8.VStack \u203a 1.HStack \u203a 1.Text",
+   "y": 316.3333333333333,
+   "view": "Text",
+   "w": 94,
+   "h": 18,
+   "x": 15.899999999999977
+  },
+  {
+   "y": 316.3333333333333,
+   "path": "Card \u203a 1.VStack \u203a 8.VStack \u203a 1.HStack \u203a 3.Text",
+   "w": 107.33333333333331,
+   "view": "Text",
+   "h": 18,
+   "x": 224.56666666666666
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 8.VStack \u203a 2.Gauge",
+   "y": 336.3333333333333,
+   "view": "Gauge",
+   "w": 316,
+   "h": 16,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 9.VStack",
+   "w": 316,
+   "view": "VStack",
+   "y": 360.3333333333333,
+   "h": 36,
+   "x": 15.899999999999977
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 9.VStack \u203a 1.HStack",
+   "x": 15.899999999999977,
+   "view": "HStack",
+   "y": 360.3333333333333,
+   "h": 18,
+   "w": 316
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 9.VStack \u203a 1.HStack \u203a 1.Text",
+   "y": 360.3333333333333,
+   "view": "Text",
+   "w": 39,
+   "h": 18,
+   "x": 15.899999999999977
+  },
+  {
+   "w": 107.33333333333331,
+   "view": "Text",
+   "x": 224.56666666666666,
+   "h": 18,
+   "path": "Card \u203a 1.VStack \u203a 9.VStack \u203a 1.HStack \u203a 3.Text",
+   "y": 360.3333333333333
+  },
+  {
+   "w": 316,
+   "x": 15.899999999999977,
+   "view": "Gauge",
+   "h": 16,
+   "path": "Card \u203a 1.VStack \u203a 9.VStack \u203a 2.Gauge",
+   "y": 380.3333333333333
+  }
+ ],
+ "diagnostics": []
+}

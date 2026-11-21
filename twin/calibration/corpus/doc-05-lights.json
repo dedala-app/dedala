@@ -1,0 +1,150 @@
+{
+ "at": "2026-10-27T20:05:00Z",
+ "diagnostics": [],
+ "size": [
+  348,
+  418
+ ],
+ "card": "doc-05-lights",
+ "kind": "rendered",
+ "frames": [
+  {
+   "h": 418.3333333333333,
+   "x": 0,
+   "w": 347.79999999999995,
+   "y": 0,
+   "path": "Card",
+   "view": "Card"
+  },
+  {
+   "h": 220,
+   "x": 16,
+   "y": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.ZStack",
+   "view": "ZStack"
+  },
+  {
+   "h": 180,
+   "w": 180,
+   "y": 36,
+   "x": 83.89999999999998,
+   "path": "Card \u203a 1.ZStack \u203a 1.Circle",
+   "view": "Circle"
+  },
+  {
+   "h": 172,
+   "x": 107.73333333333332,
+   "w": 132.33333333333331,
+   "y": 40,
+   "view": "VStack",
+   "path": "Card \u203a 1.ZStack \u203a 2.VStack"
+  },
+  {
+   "h": 97.33333333333334,
+   "x": 107.73333333333332,
+   "y": 40,
+   "w": 90,
+   "path": "Card \u203a 1.ZStack \u203a 2.VStack \u203a 1.Image",
+   "view": "Image"
+  },
+  {
+   "h": 40.66666666666666,
+   "x": 107.73333333333332,
+   "y": 145.33333333333334,
+   "w": 81.66666666666666,
+   "path": "Card \u203a 1.ZStack \u203a 2.VStack \u203a 2.Text",
+   "view": "Text"
+  },
+  {
+   "h": 18,
+   "w": 132.33333333333331,
+   "y": 194,
+   "x": 107.73333333333332,
+   "path": "Card \u203a 1.ZStack \u203a 2.VStack \u203a 3.Text",
+   "view": "Text"
+  },
+  {
+   "h": 31,
+   "w": 315.79999999999995,
+   "y": 252,
+   "x": 16,
+   "view": "Slider",
+   "path": "Card \u203a 2.Slider"
+  },
+  {
+   "h": 31,
+   "x": 16,
+   "y": 299,
+   "w": 315.79999999999995,
+   "view": "Picker",
+   "path": "Card \u203a 3.Picker"
+  },
+  {
+   "h": 56.333333333333314,
+   "w": 315.79999999999995,
+   "y": 346,
+   "x": 16,
+   "view": "GlassGroup",
+   "path": "Card \u203a 4.GlassGroup"
+  },
+  {
+   "h": 56,
+   "w": 56,
+   "y": 346.1666666666667,
+   "x": 16,
+   "path": "Card \u203a 4.GlassGroup \u203a 1.Button",
+   "view": "Button"
+  },
+  {
+   "h": 56,
+   "w": 56,
+   "y": 346.3333333333333,
+   "x": 16,
+   "path": "Card \u203a 4.GlassGroup \u203a 1.ButtonImage",
+   "view": "Image"
+  },
+  {
+   "h": 56,
+   "x": 84,
+   "y": 346.1666666666667,
+   "w": 56,
+   "path": "Card \u203a 4.GlassGroup \u203a 2.Button",
+   "view": "Button"
+  },
+  {
+   "h": 56,
+   "x": 84,
+   "y": 346.3333333333333,
+   "w": 56,
+   "path": "Card \u203a 4.GlassGroup \u203a 2.ButtonImage",
+   "view": "Image"
+  },
+  {
+   "h": 56,
+   "w": 56,
+   "x": 152,
+   "y": 346.1666666666667,
+   "view": "Button",
+   "path": "Card \u203a 4.GlassGroup \u203a 3.Button"
+  },
+  {
+   "h": 56,
+   "x": 152,
+   "y": 346.3333333333333,
+   "w": 56,
+   "path": "Card \u203a 4.GlassGroup \u203a 3.ButtonImage",
+   "view": "Image"
+  },
+  {
+   "h": 56.333333333333314,
+   "x": 262.1333333333333,
+   "w": 69.66666666666663,
+   "y": 346,
+   "path": "Card \u203a 4.GlassGroup \u203a 5.Button",
+   "view": "Button"
+  }
+ ],
+ "capture": "doc-05-lights-5.png",
+ "issues": []
+}

@@ -1,0 +1,231 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas - marta@agence-lilas.fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 martaagencelilasfr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence lilas fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agencelilas.fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta agence-lilas.fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas marta@agence-lilas.fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and more words here",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr \u00b7 more",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Lilas marta@agence-lilas.fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "marta@agence-lilas.fr Agence des Lilas and more words",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   }
+  ],
+  "spacing": 10
+ }
+}

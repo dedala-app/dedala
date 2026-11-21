@@ -1,0 +1,1 @@
+../plugin/dedala/skills/living-in-the-app/references/protocol.md

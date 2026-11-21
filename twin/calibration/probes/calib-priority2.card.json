@@ -1,0 +1,130 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "Show the summary"
+     },
+     {
+      "Spacer": 300
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Color": "red",
+      "height": 20,
+      "maxWidth": "infinity",
+      "layoutPriority": 1
+     },
+     {
+      "Text": "Show the summary"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Show the summary"
+     },
+     {
+      "Color": "red",
+      "height": 20,
+      "maxWidth": "infinity",
+      "layoutPriority": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Image": "car.fill"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Text": "Show the summary",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Color": "red",
+      "height": 20,
+      "maxWidth": "infinity"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Color": "red",
+      "height": 20,
+      "minWidth": 40,
+      "maxWidth": "infinity"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Text": "Arrived at the Frankfurt hub"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Text": "Arrived at the Frankfurt hub and then went on to Munich"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Text": "Arrived at the Frankfurt hub and then went on to Munich"
+     },
+     {
+      "Text": "Show the summary"
+     }
+    ]
+   }
+  ],
+  "alignment": "leading",
+  "spacing": 12
+ }
+}

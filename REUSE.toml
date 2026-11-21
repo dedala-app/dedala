@@ -1,0 +1,83 @@
+# SPDX-FileCopyrightText: 2026 Julien Malka
+# SPDX-License-Identifier: CC0-1.0
+
+version = 1
+SPDX-PackageName = "dedala"
+SPDX-PackageSupplier = "Julien Malka"
+SPDX-PackageDownloadLocation = "https://github.com/dedala-app/dedala"
+
+[[annotations]]
+path = [
+  "Hermes/**.plist",
+  "Hermes/**.entitlements",
+  "Hermes/**.json",
+  "HermesNotifications/**",
+  "HermesShare/**",
+  "HermesSpotlight/**",
+  "HermesWidgets/**",
+  "Shared/**",
+  "tools/ExportOptions.plist",
+  "vendor/dicebear/package.json",
+]
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Julien Malka"
+SPDX-License-Identifier = "AGPL-3.0-or-later"
+
+[[annotations]]
+path = [
+  "plugin/**.json",
+  "plugin/**.md",
+  "native/Cargo.lock",
+  "native/include/module.modulemap",
+]
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Julien Malka"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "native/notices/foldhash.txt"
+precedence = "override"
+SPDX-FileCopyrightText = "2024 Orson Peters"
+SPDX-License-Identifier = "Zlib"
+
+[[annotations]]
+path = "native/notices/icu4x.txt"
+precedence = "override"
+SPDX-FileCopyrightText = "2020-2024 Unicode, Inc."
+SPDX-License-Identifier = "Unicode-3.0"
+
+[[annotations]]
+path = "plugin/dedala/twin/hyphenation/hyph-en-us.tex"
+precedence = "override"
+SPDX-FileCopyrightText = "1990, 2004, 2005 Gerard D.C. Kuiken"
+SPDX-License-Identifier = "LicenseRef-hyph-en-us"
+
+[[annotations]]
+path = "Hermes/App/avataaars.js"
+precedence = "override"
+SPDX-FileCopyrightText = ["Florian Körner (DiceBear)", "Pablo Stanley (Avataaars)"]
+SPDX-License-Identifier = "MIT AND LicenseRef-Avataaars"
+
+[[annotations]]
+path = [
+  "twin/calibration/**",
+  "twin/tests/faults.json",
+  "native/corpus/**",
+  "HermesTests/**.json",
+  "docs/demo/**",
+]
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Julien Malka"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ["vendor/dicebear/LICENSE.md", "LICENSES/**"]
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Julien Malka"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "Hermes/AppIcon.icon/**"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Julien Malka"
+SPDX-License-Identifier = "LicenseRef-Dedala-Brand"

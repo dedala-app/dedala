@@ -1,0 +1,368 @@
+{
+ "card": "calib-spacing11",
+ "diagnostics": [],
+ "capture": "calib-spacing11-12.png",
+ "kind": "rendered",
+ "frames": [
+  {
+   "y": 0,
+   "h": 946,
+   "view": "Card",
+   "path": "Card",
+   "x": 0,
+   "w": 347.79999999999995
+  },
+  {
+   "view": "VStack",
+   "y": 16,
+   "h": 914,
+   "path": "Card \u203a 1.VStack",
+   "w": 315.3333333333333,
+   "x": 16
+  },
+  {
+   "view": "HStack",
+   "h": 56,
+   "y": 16,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack",
+   "w": 314,
+   "x": 16
+  },
+  {
+   "view": "Circle",
+   "h": 56,
+   "y": 16,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack \u203a 1.Circle",
+   "w": 56,
+   "x": 16
+  },
+  {
+   "view": "Text",
+   "h": 20,
+   "y": 34,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack \u203a 2.Text",
+   "w": 250,
+   "x": 80
+  },
+  {
+   "view": "HStack",
+   "h": 56,
+   "y": 610,
+   "path": "Card \u203a 1.VStack \u203a 10.HStack",
+   "w": 314,
+   "x": 16
+  },
+  {
+   "view": "Circle",
+   "x": 16,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 10.HStack \u203a 1.Circle",
+   "w": 56,
+   "y": 610
+  },
+  {
+   "view": "Text",
+   "h": 20,
+   "y": 628,
+   "path": "Card \u203a 1.VStack \u203a 10.HStack \u203a 2.Text",
+   "w": 250,
+   "x": 80
+  },
+  {
+   "view": "HStack",
+   "h": 56,
+   "y": 676,
+   "path": "Card \u203a 1.VStack \u203a 11.HStack",
+   "w": 311.3333333333333,
+   "x": 16
+  },
+  {
+   "view": "Circle",
+   "y": 676,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 11.HStack \u203a 1.Circle",
+   "w": 56,
+   "x": 16
+  },
+  {
+   "x": 80,
+   "h": 18,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 11.HStack \u203a 2.Text",
+   "w": 247.33333333333331,
+   "y": 695
+  },
+  {
+   "view": "HStack",
+   "h": 56,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 12.HStack",
+   "w": 311.3333333333333,
+   "y": 742
+  },
+  {
+   "view": "Circle",
+   "x": 16,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 12.HStack \u203a 1.Circle",
+   "w": 56,
+   "y": 742
+  },
+  {
+   "view": "Text",
+   "h": 18,
+   "y": 761,
+   "path": "Card \u203a 1.VStack \u203a 12.HStack \u203a 2.Text",
+   "w": 247.33333333333331,
+   "x": 80
+  },
+  {
+   "view": "HStack",
+   "h": 56,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 13.HStack",
+   "w": 250.33333333333331,
+   "y": 808
+  },
+  {
+   "view": "Circle",
+   "x": 16,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 13.HStack \u203a 1.Circle",
+   "w": 56,
+   "y": 808
+  },
+  {
+   "y": 827,
+   "view": "Text",
+   "h": 18,
+   "path": "Card \u203a 1.VStack \u203a 13.HStack \u203a 2.Text",
+   "w": 186.33333333333331,
+   "x": 80
+  },
+  {
+   "view": "HStack",
+   "x": 16,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 14.HStack",
+   "w": 311.66666666666663,
+   "y": 874
+  },
+  {
+   "view": "Circle",
+   "h": 56,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 14.HStack \u203a 1.Circle",
+   "w": 56,
+   "y": 874
+  },
+  {
+   "view": "Text",
+   "h": 20,
+   "y": 892,
+   "path": "Card \u203a 1.VStack \u203a 14.HStack \u203a 2.Text",
+   "w": 247.66666666666663,
+   "x": 80
+  },
+  {
+   "view": "HStack",
+   "y": 82,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "w": 310,
+   "x": 16
+  },
+  {
+   "view": "Circle",
+   "y": 82,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Circle",
+   "w": 56,
+   "x": 16
+  },
+  {
+   "y": 100,
+   "h": 20,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text",
+   "w": 246,
+   "x": 80
+  },
+  {
+   "view": "HStack",
+   "x": 16,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack",
+   "w": 312.3333333333333,
+   "y": 148
+  },
+  {
+   "x": 16,
+   "view": "Circle",
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Circle",
+   "w": 56,
+   "y": 148
+  },
+  {
+   "view": "Text",
+   "h": 18,
+   "x": 80,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 2.Text",
+   "w": 248.33333333333331,
+   "y": 167
+  },
+  {
+   "view": "HStack",
+   "y": 214,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack",
+   "w": 315,
+   "x": 16
+  },
+  {
+   "y": 214,
+   "h": 56,
+   "view": "Circle",
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 1.Circle",
+   "w": 56,
+   "x": 16
+  },
+  {
+   "view": "Text",
+   "h": 18,
+   "x": 80,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 2.Text",
+   "w": 251,
+   "y": 233
+  },
+  {
+   "x": 16,
+   "h": 56,
+   "view": "HStack",
+   "path": "Card \u203a 1.VStack \u203a 5.HStack",
+   "w": 314.3333333333333,
+   "y": 280
+  },
+  {
+   "view": "Circle",
+   "h": 56,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 1.Circle",
+   "w": 56,
+   "y": 280
+  },
+  {
+   "view": "Text",
+   "y": 298,
+   "h": 20,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 2.Text",
+   "w": 250.33333333333331,
+   "x": 80
+  },
+  {
+   "view": "HStack",
+   "h": 56,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack",
+   "w": 315.3333333333333,
+   "y": 346
+  },
+  {
+   "view": "Circle",
+   "x": 16,
+   "h": 56,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 1.Circle",
+   "w": 56,
+   "y": 346
+  },
+  {
+   "view": "Text",
+   "h": 18,
+   "x": 80,
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 2.Text",
+   "w": 251.33333333333331,
+   "y": 365
+  },
+  {
+   "y": 412,
+   "h": 56,
+   "view": "HStack",
+   "path": "Card \u203a 1.VStack \u203a 7.HStack",
+   "w": 314,
+   "x": 16
+  },
+  {
+   "y": 412,
+   "h": 56,
+   "view": "Circle",
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 1.Circle",
+   "w": 56,
+   "x": 16
+  },
+  {
+   "w": 250,
+   "view": "Text",
+   "x": 80,
+   "y": 431,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 2.Text",
+   "h": 18
+  },
+  {
+   "w": 313,
+   "view": "HStack",
+   "x": 16,
+   "y": 478,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack",
+   "h": 56
+  },
+  {
+   "w": 56,
+   "view": "Circle",
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 1.Circle",
+   "y": 478,
+   "h": 56
+  },
+  {
+   "w": 249,
+   "view": "Text",
+   "x": 80,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 2.Text",
+   "y": 496,
+   "h": 20
+  },
+  {
+   "w": 314,
+   "view": "HStack",
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 9.HStack",
+   "y": 544,
+   "h": 56
+  },
+  {
+   "w": 56,
+   "view": "Circle",
+   "x": 16,
+   "y": 544,
+   "path": "Card \u203a 1.VStack \u203a 9.HStack \u203a 1.Circle",
+   "h": 56
+  },
+  {
+   "w": 250,
+   "view": "Text",
+   "x": 80,
+   "path": "Card \u203a 1.VStack \u203a 9.HStack \u203a 2.Text",
+   "y": 562,
+   "h": 20
+  }
+ ],
+ "size": [
+  348,
+  946
+ ],
+ "issues": [
+  "The card is 946pt tall but only 617pt of the conversation show between its header and the message field, so it never fits on screen at once; make it shorter or split it"
+ ],
+ "at": "2026-10-27T21:49:09Z"
+}

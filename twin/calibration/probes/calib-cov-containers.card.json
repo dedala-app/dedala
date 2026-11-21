@@ -1,0 +1,394 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Carousel": [
+     {
+      "Text": "Page one The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Text": "Two"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Three"
+       },
+       {
+        "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Carousel": [
+     {
+      "Text": "Short"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ],
+    "pageWidth": 0.6,
+    "spacing": 20
+   },
+   {
+    "ScrollView": [
+     {
+      "VStack": [
+       {
+        "Text": "Row"
+       },
+       {
+        "Text": "Two"
+       }
+      ]
+     },
+     {
+      "Text": "Three"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ],
+    "axis": "horizontal",
+    "spacing": 6
+   },
+   {
+    "ScrollView": [
+     {
+      "Text": "A"
+     },
+     {
+      "Text": "B"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ]
+   },
+   {
+    "ScrollView": [
+     {
+      "ScrollView": [
+       {
+        "Text": "nested"
+       },
+       {
+        "Text": "scroll"
+       }
+      ],
+      "axis": "horizontal"
+     },
+     {
+      "Text": "below"
+     }
+    ]
+   },
+   {
+    "DisclosureGroup": "Collapsed",
+    "content": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ]
+   },
+   {
+    "DisclosureGroup": "Expanded",
+    "content": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     }
+    ],
+    "expanded": true
+   },
+   {
+    "Section": "Header",
+    "content": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Text": "B"
+     }
+    ],
+    "footer": "Footer The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+   },
+   {
+    "Section": "Header only",
+    "content": [
+     {
+      "Text": "x"
+     }
+    ]
+   },
+   {
+    "Columns": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Text": "B"
+     },
+     {
+      "Text": "C"
+     },
+     {
+      "Text": "D"
+     },
+     {
+      "Text": "E"
+     }
+    ],
+    "minWidth": 90
+   },
+   {
+    "Columns": [
+     {
+      "Text": "A"
+     },
+     {
+      "Text": "B"
+     },
+     {
+      "Text": "C"
+     }
+    ],
+    "count": 3,
+    "spacing": 4
+   },
+   {
+    "Grid": [
+     [
+      "A",
+      "Bbbbb",
+      "C"
+     ],
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     [
+      "Dddddd",
+      "E",
+      "F"
+     ]
+    ]
+   },
+   {
+    "Grid": [
+     [
+      "A",
+      "B"
+     ],
+     [
+      "C",
+      "D"
+     ]
+    ],
+    "hSpacing": 20,
+    "vSpacing": 10
+   },
+   {
+    "ZStack": [
+     {
+      "RoundedRectangle": 8,
+      "fill": "blue",
+      "frame": {
+       "width": 120,
+       "height": 60
+      }
+     },
+     {
+      "Text": "TL"
+     }
+    ],
+    "alignment": "topLeading"
+   },
+   {
+    "ZStack": [
+     {
+      "RoundedRectangle": 8,
+      "fill": "blue",
+      "frame": {
+       "width": 120,
+       "height": 60
+      }
+     },
+     {
+      "Text": "BR"
+     }
+    ],
+    "alignment": "bottomTrailing"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "A"
+     },
+     {
+      "Text": "B"
+     }
+    ],
+    "frame": {
+     "maxWidth": "infinity",
+     "alignment": "trailing"
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "A"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ],
+    "frame": {
+     "width": 200,
+     "height": 100,
+     "alignment": "bottomLeading"
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "frame": {
+     "maxWidth": "infinity",
+     "alignment": "trailing"
+    },
+    "multilineTextAlignment": "trailing"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "A"
+     },
+     {
+      "Spacer": {
+       "minLength": 40
+      }
+     },
+     {
+      "Text": "B"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ],
+    "alignment": "firstTextBaseline"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Big",
+      "font": "largeTitle"
+     },
+     {
+      "Text": "small"
+     }
+    ],
+    "alignment": "lastTextBaseline"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Fixed The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "fixedSize": "horizontal"
+     },
+     {
+      "Text": "x"
+     }
+    ]
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "padding": {
+     "top": 10,
+     "leading": 30
+    },
+    "background": "blue"
+   },
+   {
+    "Text": "Overlay",
+    "overlay": {
+     "Circle": {},
+     "frame": {
+      "width": 8,
+      "height": 8
+     }
+    },
+    "padding": 8
+   },
+   {
+    "VStack": [
+     {
+      "Text": "offset"
+     },
+     {
+      "Text": "below"
+     }
+    ],
+    "offset": {
+     "x": 20,
+     "y": 5
+    }
+   },
+   {
+    "Group": [
+     {
+      "Text": "G1"
+     },
+     {
+      "Text": "G2"
+     }
+    ],
+    "padding": 10,
+    "background": "blue"
+   },
+   {
+    "GlassGroup": [
+     {
+      "Button": "A",
+      "action": {
+       "send": {}
+      },
+      "style": "glass"
+     },
+     {
+      "Button": "B The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "action": {
+       "send": {}
+      },
+      "style": "glass"
+     }
+    ]
+   }
+  ],
+  "spacing": 10
+ },
+ "state": {
+  "on": true
+ }
+}

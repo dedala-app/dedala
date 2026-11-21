@@ -1,0 +1,316 @@
+{
+ "view": {
+  "Card": [
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "This week",
+        "font": "subheadline.semibold",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "HStack": [
+         {
+          "Text": "${format(sum(thisWeek, 'kwh'), 'number:1')}",
+          "font": {
+           "size": 44,
+           "weight": "bold",
+           "design": "rounded"
+          }
+         },
+         {
+          "Text": "kWh",
+          "font": "title3.semibold",
+          "foregroundStyle": "secondary"
+         }
+        ],
+        "alignment": "firstTextBaseline",
+        "spacing": 4
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 0
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Label": [
+       "${format(1 - sum(thisWeek, 'kwh') / sum(lastWeek, 'kwh'), 'percent')}",
+       "arrow.down.right"
+      ],
+      "font": "headline",
+      "foregroundStyle": "green",
+      "padding": {
+       "horizontal": 10,
+       "vertical": 6
+      },
+      "background": "green@0.12",
+      "clipShape": "capsule"
+     }
+    ]
+   },
+   {
+    "Chart": [
+     {
+      "type": "bar",
+      "data": "$thisWeek",
+      "x": "day",
+      "y": "kwh",
+      "color": "accent"
+     },
+     {
+      "type": "line",
+      "data": "$lastWeek",
+      "x": "day",
+      "y": "kwh",
+      "color": "gray@0.6",
+      "smooth": true
+     },
+     {
+      "type": "rule",
+      "value": "${avg(thisWeek, 'kwh')}",
+      "color": "orange"
+     }
+    ],
+    "yAxis": false,
+    "height": 150
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "fill": "accent",
+      "width": 8,
+      "height": 8
+     },
+     {
+      "Text": "This week"
+     },
+     {
+      "Capsule": {},
+      "fill": "gray@0.6",
+      "width": 14,
+      "height": 3
+     },
+     {
+      "Text": "Last week"
+     },
+     {
+      "Capsule": {},
+      "fill": "orange",
+      "width": 14,
+      "height": 2
+     },
+     {
+      "Text": "Average"
+     }
+    ],
+    "spacing": 6,
+    "font": "caption",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "Divider": {}
+   },
+   {
+    "Columns": [
+     {
+      "VStack": [
+       {
+        "Gauge": "$battery",
+        "current": "${round(battery * 100)}",
+        "style": "capacity",
+        "tint": "green"
+       },
+       {
+        "Text": "Battery",
+        "font": "caption",
+        "foregroundStyle": "secondary"
+       }
+      ],
+      "spacing": 6
+     },
+     {
+      "VStack": [
+       {
+        "Gauge": "$solar",
+        "in": [
+         0,
+         6
+        ],
+        "current": "$solar",
+        "style": "circular",
+        "tint": {
+         "gradient": [
+          "yellow",
+          "orange"
+         ]
+        }
+       },
+       {
+        "Text": "Solar kW",
+        "font": "caption",
+        "foregroundStyle": "secondary"
+       }
+      ],
+      "spacing": 6
+     },
+     {
+      "VStack": [
+       {
+        "Gauge": "$indoor",
+        "in": [
+         16,
+         26
+        ],
+        "current": "${indoor}\u00b0",
+        "style": "circular",
+        "tint": "orange"
+       },
+       {
+        "Text": "Indoors",
+        "font": "caption",
+        "foregroundStyle": "secondary"
+       }
+      ],
+      "spacing": 6
+     }
+    ],
+    "count": 3
+   },
+   {
+    "Divider": {}
+   },
+   {
+    "HStack": [
+     {
+      "Chart": [
+       {
+        "type": "sector",
+        "data": "$uses",
+        "x": "use",
+        "y": "share",
+        "innerRadius": 0.62
+       }
+      ],
+      "legend": false,
+      "width": 110,
+      "height": 110
+     },
+     {
+      "VStack": [
+       {
+        "ForEach": "$uses",
+        "as": "u",
+        "content": {
+         "HStack": [
+          {
+           "Text": "$u.use"
+          },
+          {
+           "Spacer": {}
+          },
+          {
+           "Text": "${u.share}%",
+           "foregroundStyle": "secondary",
+           "monospacedDigit": true
+          }
+         ]
+        }
+       }
+      ],
+      "spacing": 6,
+      "font": "subheadline"
+     }
+    ],
+    "spacing": 20
+   }
+  ]
+ },
+ "data": {
+  "thisWeek": [
+   {
+    "day": "Mon",
+    "kwh": 6.2
+   },
+   {
+    "day": "Tue",
+    "kwh": 5.8
+   },
+   {
+    "day": "Wed",
+    "kwh": 6.4
+   },
+   {
+    "day": "Thu",
+    "kwh": 5.1
+   },
+   {
+    "day": "Fri",
+    "kwh": 4.9
+   },
+   {
+    "day": "Sat",
+    "kwh": 5.0
+   },
+   {
+    "day": "Sun",
+    "kwh": 4.6
+   }
+  ],
+  "lastWeek": [
+   {
+    "day": "Mon",
+    "kwh": 6.9
+   },
+   {
+    "day": "Tue",
+    "kwh": 6.6
+   },
+   {
+    "day": "Wed",
+    "kwh": 7.1
+   },
+   {
+    "day": "Thu",
+    "kwh": 6.0
+   },
+   {
+    "day": "Fri",
+    "kwh": 5.7
+   },
+   {
+    "day": "Sat",
+    "kwh": 6.2
+   },
+   {
+    "day": "Sun",
+    "kwh": 5.9
+   }
+  ],
+  "uses": [
+   {
+    "use": "Heating",
+    "share": 46
+   },
+   {
+    "use": "Kitchen",
+    "share": 22
+   },
+   {
+    "use": "Laundry",
+    "share": 14
+   },
+   {
+    "use": "Other",
+    "share": 18
+   }
+  ],
+  "battery": 0.72,
+  "solar": 3.4,
+  "indoor": 20.5
+ }
+}

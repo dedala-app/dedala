@@ -1,0 +1,98 @@
+{
+ "capture": "run-night-final-apps-31-stopwatch-card-43513468-57.png",
+ "at": "2026-10-27T20:06:16Z",
+ "frames": [
+  {
+   "h": 172.33333333333331,
+   "y": 1.4210854715202004e-14,
+   "path": "Card",
+   "x": 0,
+   "view": "Card",
+   "w": 347.79999999999995
+  },
+  {
+   "h": 140.33333333333331,
+   "y": 16.000000000000014,
+   "path": "Card \u203a 1.VStack",
+   "x": 16,
+   "w": 315.79999999999995,
+   "view": "VStack"
+  },
+  {
+   "y": 16.000000000000014,
+   "h": 18,
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "x": 16,
+   "view": "Text",
+   "w": 73
+  },
+  {
+   "h": 62.33333333333333,
+   "y": 42.000000000000014,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "x": 16,
+   "view": "HStack",
+   "w": 299.3333333333333
+  },
+  {
+   "h": 40.66666666666667,
+   "y": 42.000000000000014,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Text",
+   "view": "Text",
+   "w": 151.66666666666666
+  },
+  {
+   "h": 49,
+   "y": 55.33333333333334,
+   "x": 175.66666666666666,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text",
+   "w": 139.66666666666666,
+   "view": "Text"
+  },
+  {
+   "y": 112.33333333333334,
+   "h": 44,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack",
+   "view": "HStack",
+   "w": 315.79999999999995
+  },
+  {
+   "y": 112.33333333333334,
+   "h": 44,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 1.Button",
+   "x": 16,
+   "w": 99.93333333333332,
+   "view": "Button"
+  },
+  {
+   "h": 44,
+   "y": 112.33333333333334,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 2.Button",
+   "x": 123.93333333333334,
+   "w": 99.93333333333331,
+   "view": "Button"
+  },
+  {
+   "h": 44,
+   "y": 112.33333333333334,
+   "path": "Card \u203a 1.VStack \u203a 4.HStack \u203a 3.Button",
+   "x": 231.86666666666665,
+   "view": "Button",
+   "w": 99.93333333333331
+  }
+ ],
+ "size": [
+  348,
+  172
+ ],
+ "diagnostics": [],
+ "derived": {
+  "lapRows": [],
+  "shown": "00:00.00"
+ },
+ "kind": "rendered",
+ "issues": [],
+ "card": "run-night-final-apps-31-stopwatch-card-43513468"
+}

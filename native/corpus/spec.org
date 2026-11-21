@@ -1,0 +1,101 @@
+#+title:      Every kind of thing
+#+date:       [2026-11-08 dim. 00:30]
+#+filetags:   :spec:test:
+#+identifier: 20261108T003000
+#+TODO: TODO NEXT WAIT(w) | DONE CANCELLED
+#+signature: =sig=
+
+Text before the first headline, with *bold*, /italic/, _underline_, +struck+,
+=verbatim= and ~code~, an entity \alpha, a footnote[fn:1], a link
+[[https://orgmode.org][Org]] and a bare [[denote:20260107T170819]], a timestamp
+<2026-11-08 Sun 10:00-11:30> and a cookie [1/3].
+
+* TODO [#A] Headline with everything                            :tag1:tag2:
+SCHEDULED: <2026-11-10 Tue .+1w> DEADLINE: <2026-11-12 Thu -2d> CLOSED: [2026-11-07 Sat 23:59]
+:PROPERTIES:
+:ID:       9f1c-1234
+:CUSTOM_ID: everything
+:END:
+A paragraph wrapped
+over two lines.
+
+- [ ] An unchecked item that wraps
+  onto the next line
+- [X] A checked item
+- [-] A partly done item
+  - nested item
+- A plain item :: with a tag
+1. first numbered
+2. [@5] fifth numbered
+
+| Project | Hours |
+|---------+-------|
+| TOSEM   |   2.5 |
+| Admin   |   0.5 |
+#+TBLFM: @>$2=vsum(@I..@II)
+
+#+NAME: example
+#+BEGIN_SRC python :results output
+print("hello")
+#+END_SRC
+
+#+BEGIN_QUOTE
+Quoted /words/.
+#+END_QUOTE
+
+#+BEGIN_EXAMPLE
+raw example
+#+END_EXAMPLE
+
+#+BEGIN_VERSE
+roses are red
+violets are blue
+#+END_VERSE
+
+#+BEGIN_CENTER
+centered
+#+END_CENTER
+
+#+BEGIN_EXPORT html
+<b>html</b>
+#+END_EXPORT
+
+#+BEGIN_COMMENT
+a comment block
+#+END_COMMENT
+
+#+BEGIN: clocktable :scope file
+| Headline | Time |
+#+END:
+
+#+BEGIN_note
+a special block
+#+END_note
+
+: fixed width line
+# a comment line
+-----
+
+:LOGBOOK:
+CLOCK: [2026-11-07 Sat 10:00]--[2026-11-07 Sat 11:30] =>  1:30
+CLOCK: [2026-11-08 Sun 09:00]
+:END:
+
+<<target>> and <<<radio>>> and {{{title}}} and src_python{1+1} and @@html:<i>x</i>@@ and $x^2$ and a\\
+line break. Super^script and sub_{script}.
+
+** DONE Done child                                                  :ARCHIVE:
+CLOSED: [2026-11-07 Sat 12:00]
+Child text.
+
+** WAIT Waiting child
+*** Deeper
+Deep text.
+
+* COMMENT Commented headline
+Hidden.
+
+* Second top headline
+Plain.
+
+[fn:1] The footnote text.

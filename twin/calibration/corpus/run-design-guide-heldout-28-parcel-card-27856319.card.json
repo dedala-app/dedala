@@ -1,0 +1,190 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Parcel from Framework",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Out for delivery",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "Expected today, before 18:00",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Signature required, so someone must be home to sign",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark.circle.fill",
+      "foregroundStyle": "green"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Shipped from Taipei",
+        "foregroundStyle": "secondary"
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Thu 22 Oct",
+      "font": "footnote",
+      "foregroundStyle": "secondary",
+      "lineLimit": 1
+     }
+    ],
+    "alignment": "top",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark.circle.fill",
+      "foregroundStyle": "green"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Arrived Frankfurt hub",
+        "foregroundStyle": "secondary"
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Sun 25 Oct, 06:12",
+      "font": "footnote",
+      "foregroundStyle": "secondary",
+      "lineLimit": 1
+     }
+    ],
+    "alignment": "top",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark.circle.fill",
+      "foregroundStyle": "green"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Customs cleared",
+        "foregroundStyle": "secondary"
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Mon 26 Oct, 14:30",
+      "font": "footnote",
+      "foregroundStyle": "secondary",
+      "lineLimit": 1
+     }
+    ],
+    "alignment": "top",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Image": "circle.inset.filled",
+      "foregroundStyle": "blue"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Out for delivery",
+        "font": "body.bold"
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Tue 27 Oct, 08:05",
+      "font": "footnote",
+      "foregroundStyle": "secondary",
+      "lineLimit": 1
+     }
+    ],
+    "alignment": "top",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Image": "circle",
+      "foregroundStyle": "tertiary"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Delivered",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "Needs a signature",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "alignment": "top",
+    "spacing": 8
+   },
+   {
+    "Text": "Tracking PN 3391 2204 11",
+    "font": "footnote",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {},
+ "state": {}
+}

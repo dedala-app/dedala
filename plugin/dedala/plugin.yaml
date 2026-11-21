@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: 2026 Julien Malka
+# SPDX-License-Identifier: MIT
+
+name: dedala
+label: Dedala
+kind: platform
+version: 0.1.0
+description: >
+  The iPhone app as a home for the agent: conversations, cards, pages, stores
+  and Live Activities, reached through an end-to-end encrypted relay.
+requires_env: []
+provides_tools:
+  - app_card
+  - app_patch
+  - app_page
+  - app_ops
+  - app_data
+  - app_topic
+  - app_activity
+  - app_search
+  - app_events
+  - app_command
+  - app_widget
+  - app_token

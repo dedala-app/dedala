@@ -1,0 +1,114 @@
+{"op": "page", "id": "ol", "title": "OL", "symbol": "soccerball", "store": "ol", "view": {"VStack": [
+
+  {"HStack": [
+    {"ZStack": [
+      {"Circle": {}, "fill": {"gradient": ["blue", "#0B2A6B"], "direction": "diagonal"}},
+      {"Image": "soccerball", "font": {"size": 28, "weight": "semibold"}, "foregroundStyle": "white"},
+      {"Circle": {}, "stroke": "red", "lineWidth": 3}
+    ], "frame": {"width": 60, "height": 60}},
+    {"VStack": [
+      {"Text": "$ol.team", "font": "title2.bold"},
+      {"Text": "${ol.league.name} · ${ol.league.position == 1 ? '1st' : ol.league.position + 'th'} · ${ol.league.points} pts", "font": "subheadline", "foregroundStyle": "secondary"}
+    ], "alignment": "leading", "spacing": 2},
+    {"Spacer": {}}
+  ], "spacing": 14, "padding": {"top": 8}},
+
+  {"If": "ol.live", "then": {"Card": [
+    {"HStack": [
+      {"Label": ["LIVE", "dot.radiowaves.left.and.right"], "font": "caption.bold", "foregroundStyle": "white", "symbolEffect": "variableColor", "padding": {"horizontal": 8, "vertical": 4}, "background": "red", "clipShape": "capsule"},
+      {"Text": "${ol.live.competition} · simulated replay", "font": "caption", "foregroundStyle": "secondary"},
+      {"Spacer": {}},
+      {"Text": "${ol.live.minute}'", "font": "headline.monospaced", "foregroundStyle": "red", "contentTransition": "numericText"}
+    ]},
+    {"HStack": [
+      {"Text": "$ol.live.home", "font": "headline", "frame": {"maxWidth": "infinity", "alignment": "leading"}},
+      {"HStack": [
+        {"Text": "${ol.live.homeScore}", "font": {"size": 48, "weight": "heavy", "design": "rounded"}, "contentTransition": "numericText"},
+        {"Text": "–", "font": {"size": 36, "weight": "light"}, "foregroundStyle": "tertiary"},
+        {"Text": "${ol.live.awayScore}", "font": {"size": 48, "weight": "heavy", "design": "rounded"}, "contentTransition": "numericText"}
+      ], "spacing": 8},
+      {"Text": "$ol.live.away", "font": "headline", "frame": {"maxWidth": "infinity", "alignment": "trailing"}}
+    ]},
+    {"VStack": [
+      {"ForEach": "$ol.live.events", "as": "e", "content": {"HStack": [
+        {"Text": "${e.minute}'", "font": "subheadline.monospaced", "foregroundStyle": "secondary", "frame": {"width": 36, "alignment": "leading"}},
+        {"Image": "$e.symbol", "foregroundStyle": "$e.color", "frame": {"width": 22}},
+        {"Text": "$e.text", "font": "subheadline"}
+      ], "spacing": 8, "transition": "move:top"}}
+    ], "alignment": "leading", "spacing": 8}
+  ], "spacing": 14, "transition": "scale"}},
+
+  {"If": "!ol.live", "then": {"Card": [
+    {"HStack": [
+      {"Text": "Last match", "font": "subheadline.semibold", "foregroundStyle": "secondary"},
+      {"Spacer": {}},
+      {"Text": "${ol.last.competition} · ${date(ol.last.date, 'day')}", "font": "subheadline", "foregroundStyle": "secondary"}
+    ]},
+    {"HStack": [
+      {"Text": "$ol.last.home", "font": "headline", "frame": {"maxWidth": "infinity", "alignment": "leading"}},
+      {"Text": "${ol.last.homeScore} – ${ol.last.awayScore}", "font": {"size": 40, "weight": "heavy", "design": "rounded"}},
+      {"Text": "$ol.last.away", "font": "headline", "frame": {"maxWidth": "infinity", "alignment": "trailing"}}
+    ]},
+    {"HStack": [{"Spacer": {}}, {"Text": "${ol.last.result == 'W' ? 'Win' : ol.last.result == 'D' ? 'Draw' : 'Defeat'}", "font": "caption.bold", "foregroundStyle": "white", "padding": {"horizontal": 10, "vertical": 4}, "background": "${ol.last.result == 'W' ? 'green' : ol.last.result == 'D' ? 'gray' : 'red'}", "clipShape": "capsule"}, {"Spacer": {}}]}
+  ], "spacing": 12}},
+
+  {"Card": [
+    {"Text": "Next match", "font": "subheadline.semibold", "foregroundStyle": "secondary"},
+    {"HStack": [
+      {"VStack": [
+        {"Text": "OL – $ol.next.opponent", "font": "title3.bold"},
+        {"Text": "${ol.next.comp} · ${date(ol.next.date, 'weekday')} ${date(ol.next.date, 'date')}", "font": "subheadline", "foregroundStyle": "secondary"},
+        {"If": "!ol.next.kickoffKnown", "then": {"Label": ["Kick-off time not confirmed yet", "clock.badge.questionmark"], "font": "footnote", "foregroundStyle": "orange"}}
+      ], "alignment": "leading", "spacing": 3},
+      {"Spacer": {}},
+      {"VStack": [
+        {"Text": {"countdown": "$ol.next.date"}, "font": "headline.monospaced"},
+        {"Text": "to go", "font": "caption", "foregroundStyle": "secondary"}
+      ], "alignment": "trailing", "spacing": 0}
+    ]},
+    {"Button": "Remind me before kick-off", "symbol": "bell", "style": "glass", "maxWidth": "infinity", "action": {"send": {"intent": "remind-kickoff", "match": "OL–PSG"}, "say": "Remind me before kick-off."}}
+  ], "spacing": 10},
+
+  {"Section": "Form", "content": [
+    {"HStack": [
+      {"ForEach": "$ol.results", "as": "r", "content": {"VStack": [
+        {"Text": "$r.result", "font": "subheadline.bold.rounded", "foregroundStyle": "white", "frame": {"width": 36, "height": 36}, "background": "${r.result == 'W' ? 'green' : r.result == 'D' ? 'gray' : 'red'}", "clipShape": "circle",
+         "overlay": {"Image": "questionmark.circle.fill", "font": "footnote", "foregroundStyle": "orange", "background": {"Circle": {}, "fill": "background"}, "visible": "!r.sure", "offset": {"x": 4, "y": -4}}, "overlayAlignment": "topTrailing"},
+        {"Text": "${date(r.date, 'day')}", "font": "caption2", "foregroundStyle": "secondary", "lineLimit": 1}
+      ], "spacing": 4, "frame": {"maxWidth": "infinity"}}}
+    ], "spacing": 4}
+  ]},
+
+  {"Section": "Results", "content": [{"Card": [
+    {"ForEach": "$ol.results", "as": "r", "content": {"HStack": [
+      {"VStack": [
+        {"Text": "${r.venue == 'home' ? 'vs' : 'at'} $r.opponent", "font": "body.semibold"},
+        {"Text": "${r.comp ? r.comp + ' · ' : ''}${date(r.date, 'date')}", "font": "footnote", "foregroundStyle": "secondary"}
+      ], "alignment": "leading", "spacing": 1},
+      {"Spacer": {}},
+      {"If": "!r.sure", "then": {"Image": "questionmark.circle", "foregroundStyle": "orange", "accessibilityLabel": "Unconfirmed"}},
+      {"Text": "$r.score", "font": "headline.rounded", "monospacedDigit": true},
+      {"Text": "$r.result", "font": "caption.bold", "foregroundStyle": "white", "frame": {"width": 24, "height": 24}, "background": "${r.result == 'W' ? 'green' : r.result == 'D' ? 'gray' : 'red'}", "clipShape": "circle"}
+    ], "spacing": 10}}
+  ], "spacing": 12}]},
+
+  {"Section": "Ligue 1", "content": [{"Card": [
+    {"Grid": [
+      [{"Text": "#"}, {"Text": "Club"}, {"Text": "P"}, {"Text": "GD"}, {"Text": "Pts"}],
+      {"Divider": {}},
+      {"ForEach": "$ol.league.table", "as": "t", "content": [
+        [
+          {"Text": "$t.pos", "foregroundStyle": "secondary", "monospacedDigit": true},
+          {"Text": "$t.team", "fontWeight": "${t.us ? 'bold' : 'regular'}", "foregroundStyle": "${t.us ? 'accent' : 'primary'}", "frame": {"maxWidth": "infinity", "alignment": "leading"}},
+          {"Text": "$t.played", "monospacedDigit": true},
+          {"Text": "$t.gd", "monospacedDigit": true},
+          {"Text": "$t.pts", "font": "body.bold", "monospacedDigit": true}
+        ]
+      ]}
+    ], "hSpacing": 14, "vSpacing": 10, "font": "subheadline"}
+  ]}]},
+
+  {"Text": "$ol.sources", "font": "caption", "foregroundStyle": "tertiary"},
+  {"Label": ["A script updates this page every hour; I add a word after each match.", "arrow.triangle.2.circlepath"], "font": "caption", "foregroundStyle": "tertiary"}
+
+], "spacing": 22, "alignment": "leading"}}

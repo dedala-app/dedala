@@ -1,0 +1,148 @@
+{
+  "op": "say",
+  "id": "chronometer",
+  "text": "Here's a chronometer: it keeps running with the app closed.",
+  "card": {
+    "view": {
+      "Card": {
+        "VStack": [
+          {
+            "HStack": [
+              {
+                "Text": "Chronometer",
+                "font": "caption.bold",
+                "foregroundStyle": "secondary"
+              },
+              {
+                "Spacer": {}
+              },
+              {
+                "Text": "${running ? 'Running' : (acc > 0 ? 'Paused' : 'Ready')}",
+                "font": "caption.bold",
+                "foregroundStyle": "${running ? 'green' : 'secondary'}"
+              }
+            ],
+            "frame": {
+              "maxWidth": "infinity"
+            }
+          },
+          {
+            "If": "running",
+            "then": {
+              "Text": {
+                "timer": "$anchor"
+              },
+              "font": "largeTitle.bold",
+              "lineLimit": 1,
+              "monospacedDigit": true
+            },
+            "else": {
+              "Text": "$elapsed",
+              "font": "largeTitle.bold",
+              "lineLimit": 1,
+              "monospacedDigit": true
+            }
+          },
+          {
+            "HStack": [
+              {
+                "Button": "${running ? 'Pause' : 'Start'}",
+                "action": {
+                  "run": "toggle"
+                },
+                "style": "borderedProminent",
+                "tint": "${running ? 'orange' : 'green'}",
+                "frame": {
+                  "maxWidth": "infinity"
+                }
+              },
+              {
+                "Button": "Lap",
+                "action": {
+                  "run": "lap"
+                },
+                "style": "bordered",
+                "tint": "indigo",
+                "frame": {
+                  "maxWidth": "infinity"
+                }
+              },
+              {
+                "Button": "Reset",
+                "action": {
+                  "run": "reset"
+                },
+                "style": "bordered",
+                "tint": "red",
+                "frame": {
+                  "maxWidth": "infinity"
+                }
+              }
+            ],
+            "spacing": 10,
+            "frame": {
+              "maxWidth": "infinity"
+            }
+          },
+          {
+            "If": "count(laps) > 0",
+            "then": {
+              "ScrollView": [
+                {
+                  "VStack": [
+                    {
+                      "ForEach": "$laps",
+                      "as": "lap",
+                      "content": {
+                        "HStack": [
+                          {
+                            "Text": "Lap ${lap.n}",
+                            "font": "subheadline",
+                            "foregroundStyle": "secondary"
+                          },
+                          {
+                            "Spacer": {}
+                          },
+                          {
+                            "Text": "$lap.diff",
+                            "font": "subheadline",
+                            "foregroundStyle": "secondary",
+                            "monospacedDigit": true
+                          },
+                          {
+                            "Text": "$lap.t",
+                            "font": "subheadline.semibold",
+                            "monospacedDigit": true
+                          }
+                        ],
+                        "frame": {
+                          "maxWidth": "infinity"
+                        }
+                      }
+                    }
+                  ],
+                  "spacing": 4
+                }
+              ],
+              "frame": {
+                "maxHeight": 132
+              }
+            }
+          }
+        ],
+        "alignment": "center",
+        "spacing": 18
+      }
+    },
+    "state": {
+      "running": false,
+      "acc": 0,
+      "anchor": null,
+      "laps": []
+    },
+    "script": "function fmt(ms) {\n  const tenths = Math.floor(ms / 100)\n  const h = Math.floor(tenths / 36000), m = Math.floor(tenths / 600) % 60, s = Math.floor(tenths / 10) % 60, d = tenths % 10\n  const two = n => (n < 10 ? '0' : '') + n\n  return (h > 0 ? h + ':' + two(m) : two(m)) + ':' + two(s) + '.' + d\n}\nfunction elapsed({state}) { return fmt(state.acc || 0) }\nfunction toggle({state, now}) {\n  if (state.running) {\n    return {state: {running: false, anchor: null, acc: Math.max(0, Date.parse(now) - Date.parse(state.anchor))}, haptic: 'light'}\n  }\n  return {state: {running: true, anchor: new Date(Date.parse(now) - (state.acc || 0)).toISOString()}, haptic: 'light'}\n}\nfunction lap({state, now}) {\n  if (!state.running || !state.anchor) return null\n  const total = Date.parse(now) - Date.parse(state.anchor)\n  const laps = state.laps || []\n  const diff = laps.length ? total - laps[0].totalMs : total\n  const record = {id: 'lap' + (laps.length + 1), n: laps.length + 1, totalMs: total, t: fmt(total), diff: '+' + fmt(diff)}\n  return {state: {laps: [record].concat(laps)}, haptic: 'selection'}\n}\nfunction reset({state}) {\n  if (!state.running && !state.acc && !(state.laps || []).length) return null\n  return {state: {running: false, anchor: null, acc: 0, laps: []}, haptic: 'warning'}\n}",
+    "derive": {
+      "elapsed": "elapsed"
+    }
+  }
+}

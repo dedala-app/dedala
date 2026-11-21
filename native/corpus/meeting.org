@@ -1,0 +1,24 @@
+#+title:      Réunion d'équipe — accueil de Léa et Karim
+#+date:       [2026-11-04 mer. 14:59]
+#+filetags:   :meetings:bakery:
+
+Réunion de l'atelier Pain Perdu, 14:59–15:59. [Enregistrement](https://example.org/recordings/2f6c1a90-team-meeting)
+
+Note : je n'apparais pas dans la liste des participants — c'est l'enregistrement de la réunion, pas ma présence.
+
+* Les deux arrivées
+- *Léa Moreau*, responsable de production. Boulangère, puis cheffe d'équipe dans une coopérative de vingt personnes, puis sa propre boutique revendue l'an dernier. Rôle : organisation des fournées, planning de l'équipe, formation des apprentis. Disponible pour un tête-à-tête.
+- *Karim Benali*, relation clients. Études de commerce, puis restauration collective, puis livraison à vélo (tournées, suivi des commandes sur 800 adresses). Rattaché à Inès et Paul : commandes des restaurants, accueil des nouveaux clients.
+
+* Le point dur, dit par Mathieu
+- « We are already promising more loaves than the oven can bake. » Les deux recrutements servent à combler l'écart entre ce qui est promis et ce qui sort du four ; la vitesse compte plus que le reste.
+- Contexte : les commandes augmentent en même temps que le passage au nouveau four, donc la charge de décision par client aussi.
+
+* Rôles et attentes
+- Chloé (communication) : exactitude des informations de Léa pendant les pannes, cohérence des messages avec Karim.
+- Hugo et Sarah (gestion) : servir la vente, chiffres pour les tournées.
+- Nadia : le fournisseur de farine est externe (Moulin des Prés), pas l'atelier.
+- Culture affichée : hiérarchie minimale, entraide entre équipes, tout le monde est invité à prendre un créneau avec Léa et Karim.
+
+* À faire
+- [ ] Prendre un créneau avec Léa et un avec Karim (demandé explicitement).

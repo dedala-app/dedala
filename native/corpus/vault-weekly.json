@@ -1,0 +1,613 @@
+{
+  "type": "org-data",
+  "begin": 0,
+  "end": 1135,
+  "children": [
+    {
+      "type": "headline",
+      "begin": 134,
+      "end": 670,
+      "level": 2,
+      "tags": [],
+      "title": "Summary of the week 3",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 137,
+          "end": 158,
+          "value": "Summary of the week 3"
+        }
+      ],
+      "children": [
+        {
+          "type": "headline",
+          "begin": 160,
+          "end": 670,
+          "level": 3,
+          "tags": [],
+          "title": "Objectives",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 164,
+              "end": 174,
+              "value": "Objectives"
+            }
+          ],
+          "children": [
+            {
+              "type": "section",
+              "begin": 176,
+              "end": 670,
+              "children": [
+                {
+                  "type": "plain-list",
+                  "begin": 176,
+                  "end": 670,
+                  "listType": "unordered",
+                  "indent": 0,
+                  "children": [
+                    {
+                      "type": "item",
+                      "begin": 176,
+                      "end": 222,
+                      "indent": 0,
+                      "bullet": "-",
+                      "checkbox": "on",
+                      "checkboxBegin": 178,
+                      "checkboxEnd": 181,
+                      "text": "Reading the papers on starter cultures.",
+                      "contentBegin": 182,
+                      "contentEnd": 221,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 182,
+                          "end": 221,
+                          "text": "Reading the papers on starter cultures.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 182,
+                              "end": 221,
+                              "value": "Reading the papers on starter cultures."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 222,
+                      "end": 280,
+                      "indent": 0,
+                      "bullet": "-",
+                      "checkbox": "on",
+                      "checkboxBegin": 224,
+                      "checkboxEnd": 227,
+                      "text": "Investigate the issues with the temperature logger.",
+                      "contentBegin": 228,
+                      "contentEnd": 279,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 228,
+                          "end": 279,
+                          "text": "Investigate the issues with the temperature logger.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 228,
+                              "end": 279,
+                              "value": "Investigate the issues with the temperature logger."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 280,
+                      "end": 491,
+                      "indent": 0,
+                      "bullet": "-",
+                      "checkbox": "on",
+                      "checkboxBegin": 282,
+                      "checkboxEnd": 285,
+                      "text": "Reproduce the two fermentation failures:",
+                      "contentBegin": 286,
+                      "contentEnd": 326,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 286,
+                          "end": 326,
+                          "text": "Reproduce the two fermentation failures:",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 286,
+                              "end": 326,
+                              "value": "Reproduce the two fermentation failures:"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "plain-list",
+                          "begin": 329,
+                          "end": 491,
+                          "listType": "unordered",
+                          "indent": 2,
+                          "children": [
+                            {
+                              "type": "item",
+                              "begin": 329,
+                              "end": 410,
+                              "indent": 2,
+                              "bullet": "-",
+                              "checkbox": "on",
+                              "checkboxBegin": 333,
+                              "checkboxEnd": 336,
+                              "text": "Batch 2021-31 aka the flat loaf (a starter left too long in the fridge).",
+                              "contentBegin": 337,
+                              "contentEnd": 409,
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "begin": 337,
+                                  "end": 409,
+                                  "text": "Batch 2021-31 aka the flat loaf (a starter left too long in the fridge).",
+                                  "children": [
+                                    {
+                                      "type": "plain-text",
+                                      "begin": 337,
+                                      "end": 409,
+                                      "value": "Batch 2021-31 aka the flat loaf (a starter left too long in the fridge)."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "item",
+                              "begin": 412,
+                              "end": 491,
+                              "indent": 2,
+                              "bullet": "-",
+                              "checkbox": "off",
+                              "checkboxBegin": 416,
+                              "checkboxEnd": 419,
+                              "text": "Batch 2021-40 aka the sour brick (a starter fed with the wrong flour).",
+                              "contentBegin": 420,
+                              "contentEnd": 490,
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "begin": 420,
+                                  "end": 490,
+                                  "text": "Batch 2021-40 aka the sour brick (a starter fed with the wrong flour).",
+                                  "children": [
+                                    {
+                                      "type": "plain-text",
+                                      "begin": 420,
+                                      "end": 490,
+                                      "value": "Batch 2021-40 aka the sour brick (a starter fed with the wrong flour)."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 491,
+                      "end": 547,
+                      "indent": 0,
+                      "bullet": "-",
+                      "checkbox": "on",
+                      "checkboxBegin": 493,
+                      "checkboxEnd": 496,
+                      "text": "Build the logger enclosures using the 3D printer.",
+                      "contentBegin": 497,
+                      "contentEnd": 546,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 497,
+                          "end": 546,
+                          "text": "Build the logger enclosures using the 3D printer.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 497,
+                              "end": 546,
+                              "value": "Build the logger enclosures using the 3D printer."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 547,
+                      "end": 618,
+                      "indent": 0,
+                      "bullet": "-",
+                      "checkbox": "off",
+                      "checkboxBegin": 549,
+                      "checkboxEnd": 552,
+                      "text": "Reproduce the failures in the small oven instead of the big one.",
+                      "contentBegin": 553,
+                      "contentEnd": 617,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 553,
+                          "end": 617,
+                          "text": "Reproduce the failures in the small oven instead of the big one.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 553,
+                              "end": 617,
+                              "value": "Reproduce the failures in the small oven instead of the big one."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 618,
+                      "end": 670,
+                      "indent": 0,
+                      "bullet": "-",
+                      "checkbox": "off",
+                      "checkboxBegin": 620,
+                      "checkboxEnd": 623,
+                      "text": "Check/make the rise measurements repeatable.",
+                      "contentBegin": 624,
+                      "contentEnd": 668,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 624,
+                          "end": 668,
+                          "text": "Check/make the rise measurements repeatable.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 624,
+                              "end": 668,
+                              "value": "Check/make the rise measurements repeatable."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 670,
+      "end": 858,
+      "level": 2,
+      "tags": [],
+      "title": "Issues",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 673,
+          "end": 679,
+          "value": "Issues"
+        }
+      ],
+      "children": [
+        {
+          "type": "section",
+          "begin": 681,
+          "end": 858,
+          "children": [
+            {
+              "type": "plain-list",
+              "begin": 681,
+              "end": 858,
+              "listType": "unordered",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 681,
+                  "end": 768,
+                  "indent": 0,
+                  "bullet": "-",
+                  "text": "Can bake the sour brick again but the crumb does not match. Likely a flour mismatch.",
+                  "contentBegin": 683,
+                  "contentEnd": 767,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 683,
+                      "end": 767,
+                      "text": "Can bake the sour brick again but the crumb does not match. Likely a flour mismatch.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 683,
+                          "end": 767,
+                          "value": "Can bake the sour brick again but the crumb does not match. Likely a flour mismatch."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 768,
+                  "end": 813,
+                  "indent": 0,
+                  "bullet": "-",
+                  "text": "Having trouble calibrating the small oven.",
+                  "contentBegin": 770,
+                  "contentEnd": 812,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 770,
+                      "end": 812,
+                      "text": "Having trouble calibrating the small oven.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 770,
+                          "end": 812,
+                          "value": "Having trouble calibrating the small oven."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 813,
+                  "end": 858,
+                  "indent": 0,
+                  "bullet": "-",
+                  "text": "The rise measurements are not repeatable.",
+                  "contentBegin": 815,
+                  "contentEnd": 856,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 815,
+                      "end": 856,
+                      "text": "The rise measurements are not repeatable.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 815,
+                          "end": 856,
+                          "value": "The rise measurements are not repeatable."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 858,
+      "end": 1000,
+      "level": 2,
+      "tags": [],
+      "title": "Next steps",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 861,
+          "end": 871,
+          "value": "Next steps"
+        }
+      ],
+      "children": [
+        {
+          "type": "section",
+          "begin": 873,
+          "end": 1000,
+          "children": [
+            {
+              "type": "plain-list",
+              "begin": 873,
+              "end": 1000,
+              "listType": "unordered",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 873,
+                  "end": 920,
+                  "indent": 0,
+                  "bullet": "-",
+                  "text": "Check/make the rise measurements repeatable.",
+                  "contentBegin": 875,
+                  "contentEnd": 919,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 875,
+                      "end": 919,
+                      "text": "Check/make the rise measurements repeatable.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 875,
+                          "end": 919,
+                          "value": "Check/make the rise measurements repeatable."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 920,
+                  "end": 1000,
+                  "indent": 0,
+                  "bullet": "-",
+                  "text": "Continue to reproduce the failures in the small oven instead of the big one.",
+                  "contentBegin": 922,
+                  "contentEnd": 998,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 922,
+                      "end": 998,
+                      "text": "Continue to reproduce the failures in the small oven instead of the big one.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 922,
+                          "end": 998,
+                          "value": "Continue to reproduce the failures in the small oven instead of the big one."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 1000,
+      "end": 1135,
+      "level": 2,
+      "tags": [],
+      "title": "Useful resources",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 1003,
+          "end": 1019,
+          "value": "Useful resources"
+        }
+      ],
+      "children": [
+        {
+          "type": "section",
+          "begin": 1021,
+          "end": 1135,
+          "children": [
+            {
+              "type": "plain-list",
+              "begin": 1021,
+              "end": 1135,
+              "listType": "unordered",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 1021,
+                  "end": 1074,
+                  "indent": 0,
+                  "bullet": "-",
+                  "text": "Starter guide",
+                  "contentBegin": 1023,
+                  "contentEnd": 1073,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1023,
+                      "end": 1073,
+                      "text": "Starter guide",
+                      "children": [
+                        {
+                          "type": "link",
+                          "begin": 1023,
+                          "end": 1073,
+                          "linkType": "https",
+                          "path": "//example.org/starter-guide",
+                          "rawLink": "https://example.org/starter-guide",
+                          "text": "Starter guide",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1024,
+                              "end": 1037,
+                              "value": "Starter guide"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 1074,
+                  "end": 1135,
+                  "indent": 0,
+                  "bullet": "-",
+                  "text": "Oven thermometers",
+                  "contentBegin": 1076,
+                  "contentEnd": 1134,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1076,
+                      "end": 1134,
+                      "text": "Oven thermometers",
+                      "children": [
+                        {
+                          "type": "link",
+                          "begin": 1076,
+                          "end": 1134,
+                          "linkType": "https",
+                          "path": "//example.org/oven-thermometers",
+                          "rawLink": "https://example.org/oven-thermometers",
+                          "text": "Oven thermometers",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1077,
+                              "end": 1094,
+                              "value": "Oven thermometers"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Weekly report week 3",
+  "keywords": {
+    "TITLE": "Weekly report week 3",
+    "DATE": "2025-03-25T10:46:23+01:00",
+    "TAGS": "[\"tomas\"]",
+    "IDENTIFIER": "20250325T104623"
+  }
+}

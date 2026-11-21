@@ -1,0 +1,126 @@
+{
+ "size": [
+  348,
+  236
+ ],
+ "capture": "run-design-guide-heldout-29-plumber-card-83149996-32.png",
+ "at": "2026-10-27T20:05:40Z",
+ "kind": "rendered",
+ "issues": [],
+ "frames": [
+  {
+   "w": 347.79999999999995,
+   "y": 0.1666666666666572,
+   "view": "Card",
+   "x": 0,
+   "path": "Card",
+   "h": 236.33333333333334
+  },
+  {
+   "w": 315.79999999999995,
+   "y": 16.166666666666657,
+   "view": "VStack",
+   "x": 16,
+   "path": "Card \u203a 1.VStack",
+   "h": 204.33333333333334
+  },
+  {
+   "w": 100,
+   "y": 16.166666666666657,
+   "view": "Text",
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "h": 20.33333333333333
+  },
+  {
+   "w": 177.33333333333331,
+   "y": 44.499999999999986,
+   "view": "HStack",
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "h": 45.33333333333333
+  },
+  {
+   "w": 40,
+   "view": "Image",
+   "x": 16,
+   "h": 40.00000000000001,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Image",
+   "y": 47.16666666666665
+  },
+  {
+   "w": 127.33333333333331,
+   "view": "VStack",
+   "x": 66,
+   "h": 45.33333333333333,
+   "y": 44.499999999999986,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.VStack"
+  },
+  {
+   "w": 127.33333333333331,
+   "view": "Text",
+   "x": 66,
+   "h": 26.33333333333333,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.VStack \u203a 1.Text",
+   "y": 44.499999999999986
+  },
+  {
+   "w": 65,
+   "view": "Text",
+   "x": 66,
+   "h": 18,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.VStack \u203a 2.Text",
+   "y": 71.83333333333331
+  },
+  {
+   "w": 263.3333333333333,
+   "view": "Text",
+   "x": 16,
+   "h": 42.333333333333314,
+   "y": 97.83333333333331,
+   "path": "Card \u203a 1.VStack \u203a 3.Text"
+  },
+  {
+   "w": 230.66666666666666,
+   "view": "Text",
+   "x": 16,
+   "h": 20.333333333333343,
+   "y": 148.16666666666663,
+   "path": "Card \u203a 1.VStack \u203a 4.Text"
+  },
+  {
+   "w": 315.79999999999995,
+   "view": "HStack",
+   "x": 16,
+   "h": 44,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack",
+   "y": 176.49999999999997
+  },
+  {
+   "w": 99.93333333333331,
+   "view": "Button",
+   "x": 16,
+   "h": 44,
+   "y": 176.49999999999997,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 1.Button"
+  },
+  {
+   "w": 99.93333333333331,
+   "view": "Button",
+   "x": 123.93333333333331,
+   "h": 44,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 2.Button",
+   "y": 176.49999999999997
+  },
+  {
+   "w": 99.93333333333334,
+   "view": "Button",
+   "x": 231.86666666666662,
+   "h": 44,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 3.Button",
+   "y": 176.49999999999997
+  }
+ ],
+ "card": "run-design-guide-heldout-29-plumber-card-83149996",
+ "diagnostics": []
+}

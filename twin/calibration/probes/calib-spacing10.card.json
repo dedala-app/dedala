@@ -1,0 +1,300 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+    "font": "subheadline",
+    "lineLimit": 1
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Short",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+        "font": "subheadline",
+        "lineLimit": 2
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+        "font": "body",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+        "font": {
+         "size": 15
+        },
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+        "font": "subheadline"
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 20,
+       "height": 20
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ],
+    "alignment": "top"
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr",
+        "font": "subheadline",
+        "lineLimit": 1
+       },
+       {
+        "Text": "Short",
+        "font": "subheadline",
+        "lineLimit": 1
+       }
+      ],
+      "spacing": 2
+     }
+    ]
+   }
+  ],
+  "spacing": 10
+ }
+}

@@ -1,0 +1,138 @@
+{
+  "now": "0 09:12",
+  "since": "12 October",
+  "brief": "A slow Saturday: nothing until dinner at Septime. Two things want a look, both in their topics.",
+  "main": [
+    {"id": "m1", "who": "jacques", "at": "-1 07:50", "text": "Morning. Quiet Friday: standup at 9:30, then nothing until the evening."},
+    {"id": "m2", "who": "you", "at": "-1 08:02", "text": "Can you book something nice for tomorrow night? Just the two of us"},
+    {"id": "m3", "vault": "septime", "who": "jacques", "at": "-1 08:40", "text": "Septime had a table at 20:30, so I booked it: you loved it last time. I'll remind you at 19:45.",
+     "card": {"view": {"Card": [{"HStack": [
+       {"Image": "fork.knife", "font": "headline", "foregroundStyle": "white", "frame": {"width": 40, "height": 40}, "background": "orange", "clipShape": "circle"},
+       {"VStack": [{"Text": "Septime", "font": "headline"}, {"Text": "Sat 24 · 20:30 · 2 people", "font": "subheadline", "foregroundStyle": "secondary"}], "alignment": "leading", "spacing": 1},
+       {"Spacer": {}},
+       {"Button": "Directions", "symbol": "map.fill", "labelStyle": "iconOnly", "style": "glass", "action": {"directions": {"lat": 48.8535, "lon": 2.3805, "name": "Septime"}}}
+     ], "spacing": 12}]}}},
+    {"id": "m4", "who": "jacques", "at": "-1 13:05", "topic": "lisbon", "text": "Shortlisted 3 hotels in Alfama. I'm reading recent reviews before I suggest one."},
+    {"id": "m5", "who": "jacques", "at": "-1 16:46", "topic": "lease", "text": "Marta sent the new lease. I drafted a reply for you to check."},
+    {"id": "m6", "who": "jacques", "at": "-1 18:30", "text": "Evening. Everything for today is done. The lease reply is waiting in its topic whenever you're ready."},
+    {"id": "m7", "who": "you", "at": "-1 21:12", "text": "Thanks. Note that I'd rather keep Friday evenings free from now on"},
+    {"id": "m8", "who": "jacques", "at": "-1 21:12", "text": "Noted. I'll keep Friday evenings clear when I plan things."},
+    {"id": "n1", "at": "0 03:00", "night": {
+      "remembered": ["You'd rather keep Friday evenings free", "Septime is the place for special dinners", "Marta prefers email to calls"],
+      "overnight": ["Checked the TAP fare twice: it dropped to €128 at 02:10", "Filed the TAP receipt under Travel", "Closed the Kitchen tap topic: Marc's invoice is paid"]
+    }},
+    {"id": "m9", "who": "jacques", "at": "0 07:45", "text": "Morning. A slow Saturday: nothing until dinner at Septime. Two things want a look, both in their topics."},
+    {"id": "m10", "who": "jacques", "at": "0 07:46", "topic": "lisbon", "text": "The fare dropped to €128 overnight. Want me to rebook?"},
+    {"id": "m11", "who": "you", "at": "0 08:55", "text": "Remind me to call mum tomorrow at 11"},
+    {"id": "m12", "who": "jacques", "at": "0 08:55", "text": "Done, tomorrow at 11:00.",
+     "card": {"view": {"Card": [{"HStack": [
+       {"Image": "bell.fill", "font": "headline", "foregroundStyle": "orange"},
+       {"VStack": [{"Text": "Call mum", "font": "headline"}, {"Text": "Sun 25 · 11:00", "font": "subheadline", "foregroundStyle": "secondary"}], "alignment": "leading", "spacing": 1},
+       {"Spacer": {}}
+     ], "spacing": 12}]}}},
+    {"id": "m13", "who": "you", "at": "0 09:10", "text": "Also the bathroom ceiling is leaking again. The landlord isn't answering my calls"},
+    {"id": "m14", "who": "jacques", "at": "0 09:11", "text": "That's annoying, sorry. This will take a few days of chasing: the landlord, probably a plumber, maybe the insurance. Should I give it its own topic? I'll handle the back and forth there and only bring you what needs you.",
+     "waiting": "Open a topic for the bathroom leak?",
+     "card": {"view": {"Card": [
+       {"HStack": [
+         {"Image": "drop.fill", "font": "headline", "foregroundStyle": "white", "frame": {"width": 40, "height": 40}, "background": "blue", "clipShape": "circle"},
+         {"VStack": [{"Text": "Bathroom leak", "font": "headline"}, {"Text": "New topic · your last two messages come along", "font": "subheadline", "foregroundStyle": "secondary"}], "alignment": "leading", "spacing": 1}
+       ], "spacing": 12},
+       {"HStack": [
+         {"Button": "Open the topic", "style": "prominent", "maxWidth": "infinity", "action": {"send": {"intent": "open-topic"}, "say": "Yes, open a topic."}},
+         {"Button": "Keep it here", "style": "glass", "action": {"send": {"intent": "keep-here"}, "say": "Let's keep it here."}}
+       ], "spacing": 8}
+     ], "spacing": 14}}}
+  ],
+  "topics": [
+    {
+      "id": "lisbon", "title": "Lisbon trip", "symbol": "airplane", "color": "orange", "started": "-6 19:20", "unread": 1,
+      "watch": {"what": "The TAP fare and seat 14A", "every": "every 2 hours", "last": "0 08:00"},
+      "errand": {"title": "Shortlisting hotels in Alfama", "step": "Reading recent reviews", "progress": 0.6},
+      "messages": [
+        {"id": "l1", "who": "you", "at": "-6 19:20", "text": "Let's do Lisbon for the long weekend, 6 to 9 November"},
+        {"id": "l2", "who": "jacques", "at": "-6 19:24", "text": "Lovely. I'll price flights tonight and come back with options."},
+        {"id": "l3", "who": "jacques", "at": "-5 08:10", "text": "Best option: TAP, Friday 08:40 from CDG, back Monday evening, €142. I'm holding it for 24 hours."},
+        {"id": "l4", "who": "you", "at": "-5 08:31", "text": "Book it, window seat please"},
+        {"id": "l5", "vault": "tap-booking", "who": "jacques", "at": "-5 08:33", "text": "Booked, seat 14A by the window. I'll keep an eye on the fare in case it drops.",
+         "card": {"view": {"Card": [
+           {"HStack": [{"Label": ["TAP · TP 1235", "airplane"], "font": "subheadline.semibold", "foregroundStyle": "secondary"}, {"Spacer": {}}, {"Text": "Seat 14A", "font": "subheadline.semibold"}]},
+           {"HStack": [
+             {"Text": "CDG", "font": {"size": 34, "weight": "bold", "design": "rounded"}},
+             {"HStack": [{"Capsule": {}, "fill": "separator", "height": 1.5, "maxWidth": "infinity"}, {"Image": "airplane", "foregroundStyle": "accent"}, {"Capsule": {}, "fill": "separator", "height": 1.5, "maxWidth": "infinity"}], "spacing": 6},
+             {"Text": "LIS", "font": {"size": 34, "weight": "bold", "design": "rounded"}}
+           ], "spacing": 10},
+           {"Text": "Fri 6 Nov · 08:40 – 10:15 · €142", "font": "subheadline", "foregroundStyle": "secondary"}
+         ], "spacing": 10}}},
+        {"id": "l6", "who": "jacques", "at": "-1 13:05", "text": "Shortlisted 3 hotels in Alfama, all with a view and under €180 a night. I'm reading recent reviews before I suggest one."},
+        {"id": "l7", "who": "jacques", "at": "0 02:10", "text": "The fare dropped to €128 overnight. Same flight, same seat. Rebook and get €14 back?",
+         "waiting": "Rebook at €128 and get €14 back?",
+         "card": {"view": {"Card": [
+           {"HStack": [
+             {"VStack": [
+               {"HStack": [{"Text": "€142", "font": "title3.rounded", "foregroundStyle": "secondary"}, {"Image": "arrow.right", "foregroundStyle": "tertiary"}, {"Text": "€128", "font": "title.bold.rounded"}], "alignment": "firstTextBaseline", "spacing": 6},
+               {"Text": "TP 1235 · Fri 6 Nov · seat 14A kept", "font": "subheadline", "foregroundStyle": "secondary"}
+             ], "alignment": "leading", "spacing": 2},
+             {"Spacer": {}},
+             {"Text": "−€14", "font": "headline.rounded", "foregroundStyle": "green", "padding": {"horizontal": 10, "vertical": 5}, "background": "green@0.15", "clipShape": "capsule"}
+           ]},
+           {"HStack": [
+             {"Button": "Rebook", "style": "prominent", "maxWidth": "infinity", "action": {"send": {"intent": "rebook"}, "say": "Rebook it."}},
+             {"Button": "Keep mine", "style": "glass", "action": {"send": {"intent": "keep-fare"}, "say": "Keep the current one."}}
+           ], "spacing": 8}
+         ], "spacing": 14}}}
+      ]
+    },
+    {
+      "id": "lease", "title": "Lease", "symbol": "doc.text.fill", "color": "teal", "started": "-12 10:00", "unread": 0,
+      "messages": [
+        {"id": "le1", "who": "jacques", "at": "-12 10:00", "text": "Marta from Agence des Lilas sent the renewal. I'll read it and flag anything that changed."},
+        {"id": "le2", "who": "jacques", "at": "-12 10:20", "text": "Only the rent changed: +1.8%, in line with the index. Fine to sign?"},
+        {"id": "le3", "who": "you", "at": "-12 10:31", "text": "Yes, go ahead"},
+        {"id": "le4", "vault": "lease", "who": "jacques", "at": "-1 16:46", "text": "Marta sent version 3. Everything matches, except the notice period: one month became three. I drafted a reply that pushes back.",
+         "waiting": "Send Marta the reply about the notice period?",
+         "card": {"data": {"draft": "Hi Marta,\n\nThanks for v3. Everything looks right except clause 8.2: three months' notice is a lot for us. Could we meet in the middle at two months?\n\nHappy to sign this week if that works.\n\nBest,\nAlex"},
+          "state": {"text": "$draft"},
+          "view": {"Card": [
+            {"HStack": [
+              {"Text": "MR", "font": "subheadline.bold.rounded", "foregroundStyle": "white", "frame": {"width": 36, "height": 36}, "background": {"gradient": ["teal", "blue"], "direction": "diagonal"}, "clipShape": "circle"},
+              {"VStack": [{"Text": "Reply to Marta Ribeiro", "font": "headline"}, {"Text": "Re: Lease v3 – updated notice period", "font": "footnote", "foregroundStyle": "secondary", "lineLimit": 1}], "alignment": "leading", "spacing": 1}
+            ], "spacing": 10},
+            {"TextField": "Your reply", "bind": "$text", "multiline": true, "font": "callout"},
+            {"HStack": [
+              {"Button": "Send", "symbol": "paperplane.fill", "style": "prominent", "maxWidth": "infinity", "action": {"send": {"intent": "send-reply", "body": "$text"}, "say": "Send it."}},
+              {"Button": "Later", "style": "glass", "action": {"send": {"intent": "later"}, "say": "Remind me tomorrow."}}
+            ], "spacing": 8}
+          ], "spacing": 12}}}
+      ]
+    },
+    {
+      "id": "kitchen", "title": "Kitchen tap", "symbol": "wrench.and.screwdriver.fill", "color": "indigo", "started": "-4 09:40", "unread": 0,
+      "closed": "0 03:00", "outcome": "Marc fixed it on Thursday · €85 paid",
+      "messages": [
+        {"id": "k1", "who": "you", "at": "-4 09:40", "text": "Can you find someone to fix the kitchen tap?"},
+        {"id": "k2", "who": "jacques", "at": "-4 10:15", "text": "Marc can come Thursday at 11:00: 4.8 stars, €85 call-out. Booked."},
+        {"id": "k3", "vault": "marc-invoice", "who": "jacques", "at": "-2 12:30", "text": "Marc's done. It was the cartridge. I paid the invoice from the usual account."},
+        {"id": "k4", "who": "jacques", "at": "0 03:00", "text": "Closing this one: the tap is fixed and paid. I'll remember Marc if anything else breaks."}
+      ]
+    }
+  ],
+  "newTopic": {
+    "id": "leak", "title": "Bathroom leak", "symbol": "drop.fill", "color": "blue",
+    "watch": {"what": "A reply from the landlord", "every": "until he answers"},
+    "first": "I've emailed the landlord and copied Marta, with the photos of the ceiling. If neither answers by 14:00, I'll call the agency. Nothing to do on your side for now.",
+    "announce": "Opened a topic for the bathroom leak. I'll come back here only when something needs you."
+  },
+  "memories": [
+    {"id": "u1", "kind": "you", "text": "Prefers window seats"},
+    {"id": "u2", "kind": "you", "text": "Keeps Friday evenings free", "when": "since yesterday"},
+    {"id": "u3", "kind": "you", "text": "Loves Septime for special dinners"},
+    {"id": "u4", "kind": "you", "text": "Calls mum on Sundays"},
+    {"id": "w1", "kind": "work", "text": "Book without asking when it's under €200 and matches something you chose before"},
+    {"id": "w2", "kind": "work", "text": "Nothing that can wait between 23:00 and 07:30"},
+    {"id": "w3", "kind": "work", "text": "Pay small invoices from the usual account and file the receipt under the right folder"},
+    {"id": "e1", "kind": "learned", "text": "Marta prefers email to calls", "when": "Yesterday"},
+    {"id": "e2", "kind": "learned", "text": "Marc the plumber did good work for €85", "when": "Thursday"},
+    {"id": "e3", "kind": "learned", "text": "The lease renewal follows the rent index", "when": "12 October"}
+  ]
+}

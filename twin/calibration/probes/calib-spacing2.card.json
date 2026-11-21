@@ -1,0 +1,670 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "VStack": [
+     {
+      "Text": "== tog>imgL",
+      "font": "caption2"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Image": "star.fill",
+      "font": "title"
+     },
+     {
+      "Text": "== img>tog",
+      "font": "caption2"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "== imgL>tog",
+      "font": "caption2"
+     },
+     {
+      "Image": "star.fill",
+      "font": "title"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "== img>div",
+      "font": "caption2"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Divider": {}
+     },
+     {
+      "Text": "== div>img",
+      "font": "caption2"
+     },
+     {
+      "Divider": {}
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "== title>tog",
+      "font": "caption2"
+     },
+     {
+      "Text": "Title",
+      "font": "title"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "== tog>title",
+      "font": "caption2"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "Title",
+      "font": "title"
+     },
+     {
+      "Text": "== cap>tog",
+      "font": "caption2"
+     },
+     {
+      "Text": "Caption",
+      "font": "caption"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "== tog>cap",
+      "font": "caption2"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "Caption",
+      "font": "caption"
+     },
+     {
+      "Text": "== c20>tog",
+      "font": "caption2"
+     },
+     {
+      "Text": "Custom 20",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "== tog>c20",
+      "font": "caption2"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "Custom 20",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Text": "== c20>c20b",
+      "font": "caption2"
+     },
+     {
+      "Text": "Custom 20",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Text": "Custom 20 bold",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      }
+     },
+     {
+      "Text": "== c20>img",
+      "font": "caption2"
+     },
+     {
+      "Text": "Custom 20",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "== img>c20",
+      "font": "caption2"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "Custom 20",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Text": "== tog>img",
+      "font": "caption2"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "== title>img",
+      "font": "caption2"
+     },
+     {
+      "Text": "Title",
+      "font": "title"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "== img>title",
+      "font": "caption2"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "Title",
+      "font": "title"
+     },
+     {
+      "Text": "== cap>img",
+      "font": "caption2"
+     },
+     {
+      "Text": "Caption",
+      "font": "caption"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "== text>c20",
+      "font": "caption2"
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "Text": "Custom 20",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Text": "== c20>text",
+      "font": "caption2"
+     },
+     {
+      "Text": "Custom 20",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "Text": "== title>cap",
+      "font": "caption2"
+     },
+     {
+      "Text": "Title",
+      "font": "title"
+     },
+     {
+      "Text": "Caption",
+      "font": "caption"
+     },
+     {
+      "Text": "== cap>title",
+      "font": "caption2"
+     },
+     {
+      "Text": "Caption",
+      "font": "caption"
+     },
+     {
+      "Text": "Title",
+      "font": "title"
+     },
+     {
+      "Text": "== tog>tog",
+      "font": "caption2"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "== img>img",
+      "font": "caption2"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "== label>tog",
+      "font": "caption2"
+     },
+     {
+      "Label": [
+       "Directions",
+       "car.fill"
+      ]
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "== tog>label",
+      "font": "caption2"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Label": [
+       "Directions",
+       "car.fill"
+      ]
+     },
+     {
+      "Text": "== text>img-url",
+      "font": "caption2"
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "Image": "https://example.invalid/x.png",
+      "height": 40
+     },
+     {
+      "Text": "== img-url>text",
+      "font": "caption2"
+     },
+     {
+      "Image": "https://example.invalid/x.png",
+      "height": 40
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "Text": "== text>zstack-text",
+      "font": "caption2"
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "ZStack": [
+       {
+        "Text": "Inside"
+       }
+      ]
+     },
+     {
+      "Text": "== zstack-text>text",
+      "font": "caption2"
+     },
+     {
+      "ZStack": [
+       {
+        "Text": "Inside"
+       }
+      ]
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "Text": "== text>hstack-c20",
+      "font": "caption2"
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "HStack": [
+       {
+        "Text": "Custom 20",
+        "font": {
+         "size": 20
+        }
+       },
+       "x"
+      ]
+     },
+     {
+      "Text": "== hstack-c20>text",
+      "font": "caption2"
+     },
+     {
+      "HStack": [
+       {
+        "Text": "Custom 20",
+        "font": {
+         "size": 20
+        }
+       },
+       "x"
+      ]
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "Text": "== text>hstack-img",
+      "font": "caption2"
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "HStack": [
+       {
+        "Image": "star.fill"
+       }
+      ]
+     },
+     {
+      "Text": "== hstack-img>text",
+      "font": "caption2"
+     },
+     {
+      "HStack": [
+       {
+        "Image": "star.fill"
+       }
+      ]
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "Text": "== text>hstack-img-tog",
+      "font": "caption2"
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "HStack": [
+       {
+        "Image": "star.fill"
+       },
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ]
+     },
+     {
+      "Text": "== hstack-img-tog>text",
+      "font": "caption2"
+     },
+     {
+      "HStack": [
+       {
+        "Image": "star.fill"
+       },
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ]
+     },
+     {
+      "Text": "Text line"
+     },
+     {
+      "Text": "end"
+     }
+    ]
+   },
+   {
+    "Text": "heights"
+   },
+   {
+    "VStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+      "font": {
+       "size": 15
+      }
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+      "font": {
+       "size": 24,
+       "weight": "bold"
+      }
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+      "font": {
+       "size": 20,
+       "design": "rounded"
+      }
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+      "font": "title3"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+      "font": "footnote"
+     },
+     {
+      "Label": [
+       "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+       "car.fill"
+      ]
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+      "font": {
+       "size": 13
+      }
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+      "font": {
+       "size": 11
+      }
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the cat sleeps",
+      "font": {
+       "size": 34,
+       "weight": "bold"
+      }
+     }
+    ],
+    "spacing": 30
+   },
+   {
+    "Text": "spacers"
+   },
+   {
+    "VStack": [
+     {
+      "VStack": [
+       {
+        "Text": "A"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "B"
+       }
+      ],
+      "frame": {
+       "height": 100
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ],
+      "frame": {
+       "height": 100
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Image": "star.fill"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Image": "star.fill"
+       }
+      ],
+      "frame": {
+       "height": 100
+      }
+     },
+     {
+      "VStack": [
+       {
+        "Text": "A"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ],
+      "frame": {
+       "height": 100
+      }
+     },
+     {
+      "HStack": [
+       {
+        "Text": "A"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Image": "star.fill"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Image": "star.fill"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Button": "Go",
+        "action": {
+         "send": {}
+        },
+        "style": "bordered"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "Caption",
+        "font": "caption"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "state": {
+  "on": true
+ }
+}

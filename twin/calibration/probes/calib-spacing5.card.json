@@ -1,0 +1,323 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Image": "star.fill",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "star.fill",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "checkmark",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "airplane",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "airplane",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "photo",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "photo",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "text.bubble",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "text.bubble",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "arrow.up",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "arrow.up",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "circle",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "circle",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "a.circle",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "a.circle",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "heart.fill",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "heart.fill",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "bolt.fill",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "bolt.fill",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "calendar",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "calendar",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "envelope",
+      "resizable": true,
+      "height": 100
+     },
+     {
+      "Text": "envelope",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "star.fill",
+      "resizable": true,
+      "height": 40
+     },
+     {
+      "Text": "star.fill",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark",
+      "resizable": true,
+      "height": 40
+     },
+     {
+      "Text": "checkmark",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "airplane",
+      "resizable": true,
+      "height": 40
+     },
+     {
+      "Text": "airplane",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "photo",
+      "resizable": true,
+      "height": 40
+     },
+     {
+      "Text": "photo",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "star.fill",
+      "resizable": true,
+      "height": 100,
+      "font": "title.bold"
+     },
+     {
+      "Text": "star.fill",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark",
+      "resizable": true,
+      "height": 100,
+      "font": "title.bold"
+     },
+     {
+      "Text": "checkmark",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "airplane",
+      "resizable": true,
+      "height": 100,
+      "font": "title.bold"
+     },
+     {
+      "Text": "airplane",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "photo",
+      "resizable": true,
+      "height": 100,
+      "font": "title.bold"
+     },
+     {
+      "Text": "photo",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "star.fill",
+      "resizable": true,
+      "width": 100
+     },
+     {
+      "Text": "star.fill",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark",
+      "resizable": true,
+      "width": 100
+     },
+     {
+      "Text": "checkmark",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "airplane",
+      "resizable": true,
+      "width": 100
+     },
+     {
+      "Text": "airplane",
+      "font": "caption2"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "photo",
+      "resizable": true,
+      "width": 100
+     },
+     {
+      "Text": "photo",
+      "font": "caption2"
+     }
+    ]
+   }
+  ],
+  "spacing": 10
+ }
+}

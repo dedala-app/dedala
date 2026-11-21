@@ -1,0 +1,589 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    }
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "bordered"
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "borderedProminent"
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "glass"
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "prominent"
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "plain"
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "borderless"
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "glass",
+    "symbol": "wallet.pass.fill"
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "glass",
+    "maxWidth": "infinity"
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "bordered",
+    "controlSize": "small"
+   },
+   {
+    "Button": "Boarding pass",
+    "action": {
+     "send": {
+      "x": 1
+     }
+    },
+    "style": "bordered",
+    "controlSize": "large"
+   },
+   {
+    "Label": [
+     "Boarding pass",
+     "wallet.pass.fill"
+    ]
+   },
+   {
+    "Label": [
+     "Boarding pass",
+     "airplane"
+    ],
+    "font": "subheadline.semibold"
+   },
+   {
+    "Label": [
+     "Boarding pass",
+     "airplane"
+    ],
+    "font": "title"
+   },
+   {
+    "Image": "airplane"
+   },
+   {
+    "Image": "airplane",
+    "font": "title"
+   },
+   {
+    "Image": "airplane",
+    "font": "largeTitle"
+   },
+   {
+    "Image": "car.fill"
+   },
+   {
+    "Image": "star.fill"
+   },
+   {
+    "Image": "lightbulb.fill",
+    "font": {
+     "size": 80
+    }
+   },
+   {
+    "Image": "airplane",
+    "imageScale": "large"
+   },
+   {
+    "Image": "airplane",
+    "imageScale": "small"
+   },
+   {
+    "Toggle": "Lights",
+    "bind": "$on"
+   },
+   {
+    "Slider": "Level",
+    "bind": "$level"
+   },
+   {
+    "Stepper": "Guests",
+    "bind": "$guests",
+    "in": [
+     1,
+     8
+    ]
+   },
+   {
+    "TextField": "Reply",
+    "bind": "$reply"
+   },
+   {
+    "TextField": "Reply",
+    "bind": "$reply",
+    "multiline": true
+   },
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": [
+     "Warm",
+     "Read",
+     "Film"
+    ],
+    "style": "segmented"
+   },
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": [
+     "Warm",
+     "Read",
+     "Film"
+    ]
+   },
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": [
+     "Warm",
+     "Read",
+     "Film"
+    ],
+    "style": "inline"
+   },
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": [
+     "Warm",
+     "Read",
+     "Film"
+    ],
+    "style": "palette"
+   },
+   {
+    "DatePicker": "When",
+    "bind": "$when"
+   },
+   {
+    "DatePicker": "When",
+    "bind": "$when",
+    "components": "date"
+   },
+   {
+    "Gauge": 0.4,
+    "label": "Battery"
+   },
+   {
+    "Gauge": 0.4,
+    "label": "Battery",
+    "current": "40 %",
+    "min": "0",
+    "max": "100"
+   },
+   {
+    "Gauge": 0.4,
+    "style": "circular",
+    "current": "40"
+   },
+   {
+    "Gauge": 0.4,
+    "style": "capacity",
+    "current": "40"
+   },
+   {
+    "Gauge": 0.4,
+    "style": "bar"
+   },
+   {
+    "ProgressView": 0.4
+   },
+   {
+    "ProgressView": 0.4,
+    "label": "Downloading"
+   },
+   {
+    "ProgressView": null
+   },
+   {
+    "Divider": {}
+   },
+   {
+    "Link": "Open site",
+    "url": "https://example.com"
+   },
+   {
+    "Face": 56
+   },
+   {
+    "DisclosureGroup": "Details",
+    "content": [
+     "One",
+     "Two"
+    ]
+   },
+   {
+    "DisclosureGroup": "Details",
+    "content": [
+     "One",
+     "Two"
+    ],
+    "expanded": "$open"
+   },
+   {
+    "Section": "Title",
+    "content": [
+     "One",
+     "Two"
+    ],
+    "footer": "Footer"
+   },
+   {
+    "Chart": [
+     {
+      "type": "bar",
+      "data": [
+       {
+        "x": "a",
+        "y": 1
+       },
+       {
+        "x": "b",
+        "y": 2
+       }
+      ],
+      "x": "x",
+      "y": "y"
+     }
+    ]
+   },
+   {
+    "Map": {
+     "markers": [
+      {
+       "lat": 48.85,
+       "lon": 2.35,
+       "title": "Paris"
+      }
+     ]
+    }
+   },
+   {
+    "Circle": {}
+   },
+   {
+    "Circle": {},
+    "frame": {
+     "width": 40,
+     "height": 40
+    }
+   },
+   {
+    "Rectangle": {},
+    "height": 30
+   },
+   {
+    "Capsule": {},
+    "fill": "blue",
+    "height": 4
+   },
+   {
+    "Path": [
+     [
+      0,
+      0.2
+     ],
+     [
+      0.5,
+      0
+     ],
+     [
+      1,
+      0.2
+     ]
+    ],
+    "height": 40
+   },
+   {
+    "Color": "blue",
+    "height": 20
+   },
+   {
+    "Columns": [
+     "One",
+     "Two",
+     "Three"
+    ],
+    "count": 2
+   },
+   {
+    "Grid": [
+     [
+      "A",
+      "Bbbbb",
+      "C"
+     ],
+     [
+      "Dddddd",
+      "E",
+      "F"
+     ]
+    ]
+   },
+   {
+    "ZStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 60,
+       "height": 60
+      }
+     },
+     "Z"
+    ]
+   },
+   {
+    "HStack": [
+     "Left",
+     {
+      "Spacer": {}
+     },
+     "Right"
+    ]
+   },
+   {
+    "HStack": [
+     "Left",
+     "Right"
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow"
+     },
+     {
+      "Text": "Short",
+      "layoutPriority": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Leave by 12:26"
+     },
+     {
+      "Text": "in 2 h 14 min",
+      "font": "caption"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Image": "airplane"
+     },
+     {
+      "Text": "with an icon"
+     }
+    ]
+   },
+   {
+    "VStack": [
+     "One",
+     "Two"
+    ]
+   },
+   {
+    "VStack": [
+     "One",
+     "Two"
+    ],
+    "spacing": 0
+   },
+   {
+    "Card": [
+     "Inner card"
+    ]
+   },
+   {
+    "GlassGroup": [
+     {
+      "Button": "A",
+      "action": {
+       "send": {}
+      },
+      "style": "glass"
+     },
+     {
+      "Button": "B",
+      "action": {
+       "send": {}
+      },
+      "style": "glass"
+     }
+    ]
+   },
+   {
+    "Carousel": [
+     {
+      "Text": "Page one"
+     },
+     {
+      "Text": "Page two"
+     }
+    ]
+   },
+   {
+    "ScrollView": [
+     {
+      "Text": "Row one"
+     },
+     {
+      "Text": "Row two"
+     }
+    ],
+    "axis": "horizontal"
+   },
+   {
+    "Text": "Offset",
+    "offset": {
+     "x": 10,
+     "y": 5
+    }
+   },
+   {
+    "Text": "Framed",
+    "frame": {
+     "width": 200,
+     "height": 50
+    }
+   },
+   {
+    "Text": "Max",
+    "frame": {
+     "maxWidth": "infinity"
+    }
+   },
+   {
+    "Text": "Min",
+    "frame": {
+     "minWidth": 120,
+     "alignment": "leading"
+    }
+   },
+   {
+    "Text": "Overlaid",
+    "overlay": {
+     "Image": "star.fill"
+    },
+    "overlayAlignment": "trailing"
+   },
+   {
+    "Text": "Backed",
+    "background": {
+     "Capsule": {},
+     "fill": "blue"
+    }
+   },
+   {
+    "Text": "Shadowed",
+    "padding": 8,
+    "background": "blue",
+    "cornerRadius": 8,
+    "shadow": true,
+    "margin": 4
+   },
+   {
+    "Image": "photo",
+    "resizable": true,
+    "aspectRatio": 1.5
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "minimumScaleFactor": 0.5
+   }
+  ],
+  "spacing": 0,
+  "alignment": "leading"
+ },
+ "state": {
+  "on": true,
+  "level": 0.5,
+  "guests": 2,
+  "reply": "",
+  "scene": "Warm",
+  "when": "2026-10-24T08:40:00+02:00",
+  "open": true
+ }
+}

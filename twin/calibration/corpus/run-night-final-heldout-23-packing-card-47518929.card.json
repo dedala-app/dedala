@@ -1,0 +1,134 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Berlin packing list",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "7 left",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "to pack, 2 already in the bag",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Trip is Thursday to Sunday; conference talk Friday",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Weather 6 to 11 \u00b0C, rain on Saturday",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Rain jacket and jumper for the cold and the wet",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "HStack": [
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "${itemsLeft} left",
+      "font": "subheadline",
+      "foregroundStyle": "secondary"
+     }
+    ]
+   },
+   {
+    "ForEach": "$rows",
+    "as": "r",
+    "content": {
+     "Toggle": "$r.label",
+     "bind": "$r.done",
+     "onChange": {
+      "run": "tick",
+      "args": {
+       "id": "$r.id",
+       "value": "$value"
+      }
+     }
+    }
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {
+  "items": [
+   {
+    "id": "laptop",
+    "label": "Laptop",
+    "done": true
+   },
+   {
+    "id": "charger",
+    "label": "Charger",
+    "done": true
+   },
+   {
+    "id": "hdmi",
+    "label": "HDMI adapter",
+    "done": false
+   },
+   {
+    "id": "clicker",
+    "label": "Clicker",
+    "done": false
+   },
+   {
+    "id": "shirts",
+    "label": "Two shirts",
+    "done": false
+   },
+   {
+    "id": "jumper",
+    "label": "Jumper",
+    "done": false
+   },
+   {
+    "id": "rainjacket",
+    "label": "Rain jacket",
+    "done": false
+   },
+   {
+    "id": "toothbrush",
+    "label": "Toothbrush",
+    "done": false
+   },
+   {
+    "id": "passport",
+    "label": "Passport",
+    "done": false
+   }
+  ]
+ },
+ "state": {
+  "done": [],
+  "undone": []
+ },
+ "script": "function rows({data, state}) { return data.items.map(i => ({id: i.id, label: i.label, done: state.done.includes(i.id) || (!!i.done && !state.undone.includes(i.id))})) }\nfunction itemsLeft({data, state}) { return rows({data, state}).filter(r => !r.done).length }\nfunction tick({state, args}) { const done = state.done.filter(i => i != args.id); const undone = state.undone.filter(i => i != args.id); if (args.value) done.push(args.id); else undone.push(args.id); return {state: {done, undone}} }",
+ "derive": {
+  "rows": "rows",
+  "itemsLeft": "itemsLeft"
+ }
+}

@@ -1,0 +1,283 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Card": [
+     {
+      "HStack": [
+       {
+        "Text": "$initials",
+        "font": "headline.rounded",
+        "foregroundStyle": "white",
+        "frame": {
+         "width": 44,
+         "height": 44
+        },
+        "background": {
+         "gradient": [
+          "teal",
+          "blue"
+         ],
+         "direction": "diagonal"
+        },
+        "clipShape": "circle"
+       },
+       {
+        "VStack": [
+         {
+          "HStack": [
+           {
+            "Text": "$from",
+            "font": "headline"
+           },
+           {
+            "Spacer": {}
+           },
+           {
+            "Text": "${date(received, 'time')}",
+            "font": "subheadline",
+            "foregroundStyle": "secondary"
+           }
+          ]
+         },
+         {
+          "Text": "$org \u00b7 $address",
+          "font": "subheadline",
+          "foregroundStyle": "secondary",
+          "lineLimit": 1
+         }
+        ],
+        "alignment": "leading",
+        "spacing": 2
+       }
+      ],
+      "spacing": 12
+     },
+     {
+      "Text": "$subject",
+      "font": "title3.semibold"
+     },
+     {
+      "Text": "$body",
+      "font": "callout",
+      "lineLimit": "${expanded ? null : 3}",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "Button": "${expanded ? 'Show less' : 'Show whole email'}",
+      "style": "plain",
+      "font": "subheadline.semibold",
+      "foregroundStyle": "accent",
+      "action": {
+       "toggle": "expanded"
+      }
+     },
+     {
+      "HStack": [
+       {
+        "Image": "doc.richtext.fill",
+        "font": "title2",
+        "foregroundStyle": "red"
+       },
+       {
+        "VStack": [
+         {
+          "Text": "$attachment.name",
+          "font": "subheadline.semibold"
+         },
+         {
+          "Text": "PDF \u00b7 ${format(attachment.size, 'bytes')}",
+          "font": "caption",
+          "foregroundStyle": "secondary"
+         }
+        ],
+        "alignment": "leading",
+        "spacing": 1
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Image": "chevron.right",
+        "font": "footnote.semibold",
+        "foregroundStyle": "tertiary"
+       }
+      ],
+      "spacing": 10,
+      "padding": 12,
+      "background": "fill",
+      "cornerRadius": 14
+     },
+     {
+      "HStack": [
+       {
+        "Image": "sparkles",
+        "foregroundStyle": "accent",
+        "symbolEffect": "breathe"
+       },
+       {
+        "Text": "**Clause 8.2** goes from 1 to 3 months' notice. The rest is identical to the lease you signed on 12 September.",
+        "font": "subheadline"
+       }
+      ],
+      "alignment": "top",
+      "spacing": 10,
+      "padding": 12,
+      "background": "accent@0.1",
+      "cornerRadius": 14
+     }
+    ],
+    "spacing": 12
+   },
+   {
+    "Card": [
+     {
+      "HStack": [
+       {
+        "Label": [
+         "Suggested reply",
+         "wand.and.stars"
+        ],
+        "font": "headline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "${count(draft)} chars",
+        "font": "caption",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true,
+        "contentTransition": "numericText"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "ForEach": "$tones",
+        "as": "t",
+        "content": {
+         "Button": {
+          "Label": [
+           "$t.label",
+           "$t.symbol"
+          ],
+          "font": "subheadline.semibold",
+          "padding": {
+           "horizontal": 14,
+           "vertical": 8
+          },
+          "foregroundStyle": "${tone == t.id ? 'white' : 'primary'}",
+          "background": "${tone == t.id ? 'accent' : 'fill'}",
+          "clipShape": "capsule"
+         },
+         "style": "plain",
+         "action": [
+          {
+           "set": {
+            "tone": "$t.id",
+            "draft": "${drafts[t.id]}"
+           }
+          },
+          {
+           "haptic": "selection"
+          }
+         ]
+        }
+       }
+      ],
+      "spacing": 8
+     },
+     {
+      "TextField": "Your reply",
+      "bind": "$draft",
+      "multiline": true,
+      "font": "callout"
+     },
+     {
+      "HStack": [
+       {
+        "Button": "Send to Marta",
+        "symbol": "paperplane.fill",
+        "style": "prominent",
+        "maxWidth": "infinity",
+        "controlSize": "large",
+        "action": [
+         {
+          "send": {
+           "intent": "reply",
+           "to": "$address",
+           "subject": "Re: $subject",
+           "body": "$draft"
+          },
+          "say": "Send the ${tone} one."
+         },
+         {
+          "haptic": "success"
+         }
+        ]
+       },
+       {
+        "Button": "Later",
+        "style": "glass",
+        "controlSize": "large",
+        "action": {
+         "send": {
+          "intent": "snooze",
+          "until": "tomorrow-morning"
+         },
+         "say": "Remind me tomorrow morning."
+        }
+       }
+      ],
+      "spacing": 8
+     }
+    ],
+    "spacing": 14
+   }
+  ],
+  "spacing": 12,
+  "alignment": "leading"
+ },
+ "data": {
+  "from": "Marta Ribeiro",
+  "initials": "MR",
+  "org": "Agence des Lilas",
+  "address": "marta@agence-lilas.fr",
+  "received": "2026-10-23T16:45:00+02:00",
+  "subject": "Lease v3 \u2013 updated notice period",
+  "body": "Hi Julien,\n\nPlease find attached version 3 of the lease. As discussed with the owner, we've updated the notice period in clause 8.2 to three months; everything else is unchanged from the version you signed in September.\n\nCould you send it back signed by Friday? The owner would like to register it before the end of the month.\n\nKind regards,\nMarta Ribeiro\nAgence des Lilas",
+  "attachment": {
+   "name": "Lease_v3.pdf",
+   "size": 290816
+  },
+  "drafts": {
+   "warm": "Hi Marta,\n\nThanks for sending v3 so quickly. Everything looks right to me except clause 8.2: three months' notice is a lot for us. Could we meet in the middle at two months?\n\nIf that works for the owner, I'm happy to sign this week.\n\nBest,\nJulien",
+   "short": "Hi Marta, all good except clause 8.2. Could we do two months' notice instead of three? Happy to sign this week if so. Thanks, Julien",
+   "firm": "Hi Marta,\n\nThanks for v3. I can't accept the change to clause 8.2: the version I signed had one month's notice and I'd like to keep it, or two months at most.\n\nOnce that's fixed I'll sign right away.\n\nRegards,\nJulien"
+  },
+  "tones": [
+   {
+    "id": "warm",
+    "label": "Warm",
+    "symbol": "sun.max"
+   },
+   {
+    "id": "short",
+    "label": "Short",
+    "symbol": "text.word.spacing"
+   },
+   {
+    "id": "firm",
+    "label": "Firm",
+    "symbol": "hand.raised"
+   }
+  ]
+ },
+ "state": {
+  "tone": "warm",
+  "draft": "$drafts.warm",
+  "expanded": false
+ }
+}

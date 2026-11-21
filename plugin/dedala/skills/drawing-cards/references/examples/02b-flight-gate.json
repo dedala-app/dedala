@@ -1,0 +1,11 @@
+{
+  "op": "patch",
+  "id": "flight",
+  "say": "Gate's up: B32, boarding has started. You're 8 minutes away at a normal walk.",
+  "data": {
+    "flight": {
+      "gate": "B32",
+      "status": "Boarding"
+    }
+  }
+}

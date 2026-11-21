@@ -1,0 +1,5 @@
+The Dedala name, the Dedala icon and the other brand assets of the Dedala app
+are reserved. No licence to use them is granted, under the licences of this
+repository or otherwise, except to refer to the project and to build and run
+an unmodified copy of it for yourself. A modified version must be renamed and
+must not use the icon. See TRADEMARKS.md.

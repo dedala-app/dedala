@@ -1,0 +1,239 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Work \u00b7 Microsoft Teams",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Work \u00b7 Microsoft Teams"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "09:22\u201309:52 and 10:00\u201311:00",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x"
+       },
+       {
+        "Text": "Work \u00b7 Microsoft Teams",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Work \u00b7 Microsoft Teams",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Julien / Richard / Kai"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Julien / Richard / Kai",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Microsoft Teams Work Today",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Microsoft Teams Work Today",
+      "lineLimit": 4
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Microsoft Teams Work Today",
+      "lineLimit": 5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "09:22\u201309:52"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "09:22\u201309:52",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Work \u00b7 Microsoft Teams",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "Work \u00b7 Microsoft Teams",
+      "lineLimit": 3,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Label": [
+       "Work \u00b7 Microsoft Teams",
+       "calendar"
+      ],
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Button": "Work \u00b7 Microsoft Teams",
+      "style": "bordered",
+      "action": {
+       "send": {}
+      },
+      "lineLimit": 2
+     }
+    ]
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ }
+}

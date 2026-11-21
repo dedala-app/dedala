@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2026 Julien Malka
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[project]
+name = "hermes-relay"
+version = "0.1.0"
+description = "Carries sealed messages and pushes between a Hermes agent and its app"
+requires-python = ">=3.12"
+dependencies = ["aiohttp", "cryptography", "httpx[http2]"]
+
+[project.scripts]
+hermes-relay = "hermes_relay.cli:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["hermes_relay"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

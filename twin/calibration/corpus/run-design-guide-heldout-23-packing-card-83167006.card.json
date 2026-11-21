@@ -1,0 +1,111 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Packing for Berlin",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "7 to pack",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "Laptop and charger are already in the bag",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Thursday to Sunday, talk on Friday",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "6 to 11 \u00b0C, rain Saturday",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "HStack": [
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "${itemsLeft} left",
+      "font": "subheadline",
+      "foregroundStyle": "secondary"
+     }
+    ]
+   },
+   {
+    "ForEach": "$rows",
+    "as": "r",
+    "content": {
+     "Toggle": "$r.label",
+     "bind": "$r.done",
+     "onChange": {
+      "run": "tick",
+      "args": {
+       "id": "$r.id",
+       "value": "$value"
+      }
+     }
+    }
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {
+  "items": [
+   {
+    "id": "passport",
+    "label": "Passport"
+   },
+   {
+    "id": "rain_jacket",
+    "label": "Rain jacket"
+   },
+   {
+    "id": "jumper",
+    "label": "Jumper"
+   },
+   {
+    "id": "shirts",
+    "label": "Two shirts"
+   },
+   {
+    "id": "hdmi",
+    "label": "HDMI adapter"
+   },
+   {
+    "id": "clicker",
+    "label": "Clicker"
+   },
+   {
+    "id": "toothbrush",
+    "label": "Toothbrush"
+   }
+  ]
+ },
+ "state": {
+  "done": [],
+  "undone": []
+ },
+ "script": "function rows({data, state}) { return data.items.map(i => ({id: i.id, label: i.label, done: state.done.includes(i.id) || (!!i.done && !state.undone.includes(i.id))})) }\nfunction itemsLeft({data, state}) { return rows({data, state}).filter(r => !r.done).length }\nfunction tick({state, args}) { const done = state.done.filter(i => i != args.id); const undone = state.undone.filter(i => i != args.id); if (args.value) done.push(args.id); else undone.push(args.id); return {state: {done, undone}} }",
+ "derive": {
+  "rows": "rows",
+  "itemsLeft": "itemsLeft"
+ }
+}

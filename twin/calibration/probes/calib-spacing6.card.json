@@ -1,0 +1,609 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "body",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "body",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "body",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": "body",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "body",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "body",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "subheadline",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "subheadline",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "subheadline",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "subheadline",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "footnote",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "footnote",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "footnote",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": "footnote",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "footnote",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "footnote",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "caption",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "caption",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "caption",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": "caption",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "caption",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "caption",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": "title",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title3",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title3",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": "title3",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title3",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "title3",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "headline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "headline",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "headline",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": "headline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "headline",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": "headline",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 20
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 20
+      },
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 20
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": {
+       "size": 20
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 20
+      },
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 20
+      },
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 13,
+       "weight": "bold"
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 13,
+       "weight": "bold"
+      },
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 13,
+       "weight": "bold"
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short text",
+      "font": {
+       "size": 13,
+       "weight": "bold"
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 13,
+       "weight": "bold"
+      },
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+      "font": {
+       "size": 13,
+       "weight": "bold"
+      },
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.7
+     }
+    ]
+   }
+  ],
+  "spacing": 6
+ }
+}

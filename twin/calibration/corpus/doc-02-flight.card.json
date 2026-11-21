@@ -1,0 +1,53 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Flight": "$flight"
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Directions to CDG",
+      "symbol": "car.fill",
+      "style": "glass",
+      "action": {
+       "directions": {
+        "lat": 49.0097,
+        "lon": 2.5479,
+        "name": "Paris Charles de Gaulle"
+       }
+      }
+     },
+     {
+      "Button": "Boarding pass",
+      "symbol": "wallet.pass.fill",
+      "style": "glass",
+      "action": {
+       "send": {
+        "intent": "boarding-pass"
+       },
+       "say": "Can you send me the boarding pass?"
+      }
+     }
+    ],
+    "spacing": 8
+   }
+  ],
+  "spacing": 12,
+  "alignment": "leading"
+ },
+ "data": {
+  "flight": {
+   "number": "TP 1235",
+   "airline": "TAP",
+   "from": "CDG",
+   "fromCity": "Paris",
+   "to": "LIS",
+   "toCity": "Lisbon",
+   "departs": "2026-10-24T08:40:00+02:00",
+   "arrives": "2026-10-24T10:15:00+01:00",
+   "seat": "14A",
+   "status": "On time"
+  }
+ }
+}

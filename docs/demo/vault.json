@@ -1,0 +1,664 @@
+[
+  {
+    "id": "lease",
+    "title": "Lease · 12 rue des Lilas",
+    "kind": "contract",
+    "topic": "lease",
+    "people": [
+      "Marta Ribeiro"
+    ],
+    "source": "From Marta's emails",
+    "data": {
+      "rent": 1480,
+      "notice": "3 months",
+      "previousNotice": "1 month",
+      "start": "1 September 2024",
+      "renewal": "1 September 2027"
+    },
+    "summary": {
+      "Card": [
+        {
+          "Grid": [
+            [
+              {
+                "Text": "Rent",
+                "foregroundStyle": "secondary"
+              },
+              {
+                "Text": "${format(rent, 'currency:EUR')} / month",
+                "font": "body.semibold"
+              }
+            ],
+            [
+              {
+                "Text": "Notice",
+                "foregroundStyle": "secondary"
+              },
+              {
+                "HStack": [
+                  {
+                    "Text": "$notice",
+                    "font": "body.semibold"
+                  },
+                  {
+                    "Text": "was $previousNotice",
+                    "font": "footnote",
+                    "foregroundStyle": "orange",
+                    "visible": "notice != previousNotice"
+                  }
+                ],
+                "spacing": 6
+              }
+            ],
+            [
+              {
+                "Text": "Since",
+                "foregroundStyle": "secondary"
+              },
+              {
+                "Text": "$start"
+              }
+            ],
+            [
+              {
+                "Text": "Renews",
+                "foregroundStyle": "secondary"
+              },
+              {
+                "Text": "$renewal"
+              }
+            ]
+          ],
+          "hSpacing": 16,
+          "vSpacing": 10,
+          "alignment": "leading",
+          "font": "subheadline"
+        }
+      ]
+    },
+    "versions": [
+      {
+        "label": "Signed",
+        "at": "-420 18:00",
+        "note": "The lease you signed",
+        "author": "Agence des Lilas",
+        "text": "LEASE AGREEMENT\n\nBetween Agence des Lilas, on behalf of the owner, and the tenant.\n\nPremises: two-room flat, 12 rue des Lilas, Paris 20e, third floor, with cellar.\n\nTerm: three years from 1 September 2024, renewable.\n\nRent: €1,450 per month, charges included, payable on the 5th of each month.\n\nClause 8.2 · Notice: the tenant may terminate with one month's notice, the property being in a high-demand area.\n\nDeposit: one month's rent, returned within one month of departure.\n\nSigned in Paris on 28 August 2024."
+      },
+      {
+        "label": "Renewal",
+        "at": "-12 10:20",
+        "note": "Rent +1.8%, in line with the index",
+        "author": "Marta Ribeiro",
+        "text": "LEASE AGREEMENT · RENEWAL\n\nPremises: two-room flat, 12 rue des Lilas, Paris 20e.\n\nRent: €1,480 per month from 1 November 2026, an increase of 1.8% in line with the rent reference index.\n\nClause 8.2 · Notice: one month.\n\nAll other terms unchanged.\n\nAgence des Lilas, 12 October 2026."
+      },
+      {
+        "label": "v3",
+        "at": "-1 16:45",
+        "note": "Notice period 1 → 3 months (clause 8.2)",
+        "author": "Marta Ribeiro",
+        "text": "LEASE AGREEMENT · VERSION 3\n\nPremises: two-room flat, 12 rue des Lilas, Paris 20e.\n\nRent: €1,480 per month from 1 November 2026.\n\nClause 8.2 · Notice: the tenant may terminate with three months' notice.\n\nAll other terms unchanged from the renewal of 12 October 2026.\n\nAgence des Lilas, 23 October 2026."
+      }
+    ]
+  },
+  {
+    "id": "brief-marta",
+    "title": "Brief · Meeting with Marta",
+    "kind": "brief",
+    "topic": "lease",
+    "people": [
+      "Marta Ribeiro"
+    ],
+    "source": "Written by Jacques for Monday",
+    "data": {
+      "meeting": "Meeting with Marta",
+      "when": "Monday 26 Oct · 10:00",
+      "where": "Agence des Lilas · 4 rue Ramponeau",
+      "goal": "Get clause 8.2 back to one month's notice and keep the renewal as signed.",
+      "points": [
+        {
+          "id": "notice",
+          "status": "open",
+          "text": "Notice went from 1 to 3 months in v3",
+          "detail": "Clause 8.2. Nothing else changed since the renewal."
+        },
+        {
+          "id": "law",
+          "status": "open",
+          "text": "Paris 20e is a high-demand area",
+          "detail": "For an unfurnished flat, the tenant's legal notice there is one month."
+        },
+        {
+          "id": "rent",
+          "status": "settled",
+          "text": "Rent +1.8% is in line with the index",
+          "detail": "Already accepted on 12 October."
+        }
+      ],
+      "bring": [
+        "Lease signed in 2024",
+        "Renewal of 12 October",
+        "Lease v3"
+      ]
+    },
+    "view": {
+      "VStack": [
+        {
+          "VStack": [
+            {
+              "Text": "BRIEF",
+              "font": "caption.bold",
+              "foregroundStyle": "indigo"
+            },
+            {
+              "Text": "$meeting",
+              "font": "title2.bold"
+            }
+          ],
+          "alignment": "leading",
+          "spacing": 4
+        },
+        {
+          "VStack": [
+            {
+              "Label": [
+                "$when",
+                "calendar"
+              ],
+              "font": "subheadline.semibold",
+              "padding": {
+                "h": 10,
+                "v": 8
+              },
+              "background": "${changed.when ? 'yellow@0.28' : 'clear'}",
+              "cornerRadius": 10,
+              "frame": {
+                "maxWidth": "infinity",
+                "alignment": "leading"
+              }
+            },
+            {
+              "Label": [
+                "$where",
+                "mappin.and.ellipse"
+              ],
+              "font": "subheadline",
+              "padding": {
+                "h": 10,
+                "v": 8
+              },
+              "background": "${changed.where ? 'yellow@0.28' : 'clear'}",
+              "cornerRadius": 10,
+              "frame": {
+                "maxWidth": "infinity",
+                "alignment": "leading"
+              }
+            }
+          ],
+          "alignment": "leading",
+          "spacing": 0,
+          "margin": {
+            "h": -10
+          }
+        },
+        {
+          "VStack": [
+            {
+              "Text": "GOAL",
+              "font": "caption.bold",
+              "foregroundStyle": "secondary"
+            },
+            {
+              "Text": "$goal",
+              "font": "body"
+            }
+          ],
+          "alignment": "leading",
+          "spacing": 6,
+          "padding": {
+            "h": 10,
+            "v": 8
+          },
+          "background": "${changed.goal ? 'yellow@0.28' : 'clear'}",
+          "cornerRadius": 10,
+          "margin": {
+            "h": -10
+          },
+          "frame": {
+            "maxWidth": "infinity",
+            "alignment": "leading"
+          }
+        },
+        {
+          "VStack": [
+            {
+              "Text": "POINTS",
+              "font": "caption.bold",
+              "foregroundStyle": "secondary"
+            },
+            {
+              "VStack": [
+                {
+                  "ForEach": "$points",
+                  "as": "p",
+                  "content": {
+                    "HStack": [
+                      {
+                        "Image": "${p.status == 'settled' ? 'checkmark.circle.fill' : (p.status == 'progress' ? 'circle.lefthalf.filled' : 'circle')}",
+                        "foregroundStyle": "${p.status == 'settled' ? 'green' : (p.status == 'progress' ? 'orange' : 'secondary')}",
+                        "font": "body"
+                      },
+                      {
+                        "VStack": [
+                          {
+                            "Text": "$p.text",
+                            "font": "body.semibold"
+                          },
+                          {
+                            "Text": "$p.detail",
+                            "font": "subheadline",
+                            "foregroundStyle": "secondary"
+                          }
+                        ],
+                        "alignment": "leading",
+                        "spacing": 2
+                      },
+                      {
+                        "Spacer": {}
+                      }
+                    ],
+                    "alignment": "top",
+                    "spacing": 10,
+                    "padding": {
+                      "h": 10,
+                      "v": 8
+                    },
+                    "background": "${contains(changed.points, p.id) ? 'yellow@0.28' : 'clear'}",
+                    "cornerRadius": 10,
+                    "frame": {
+                      "maxWidth": "infinity",
+                      "alignment": "leading"
+                    }
+                  }
+                }
+              ],
+              "alignment": "leading",
+              "spacing": 0,
+              "margin": {
+                "h": -10
+              }
+            }
+          ],
+          "alignment": "leading",
+          "spacing": 6
+        },
+        {
+          "VStack": [
+            {
+              "Text": "BRING",
+              "font": "caption.bold",
+              "foregroundStyle": "secondary"
+            },
+            {
+              "VStack": [
+                {
+                  "ForEach": "$bring",
+                  "as": "b",
+                  "content": {
+                    "Label": [
+                      "$b",
+                      "paperclip"
+                    ],
+                    "font": "subheadline"
+                  }
+                }
+              ],
+              "alignment": "leading",
+              "spacing": 6,
+              "padding": {
+                "h": 10,
+                "v": 8
+              },
+              "background": "${changed.bring ? 'yellow@0.28' : 'clear'}",
+              "cornerRadius": 10,
+              "margin": {
+                "h": -10
+              },
+              "frame": {
+                "maxWidth": "infinity",
+                "alignment": "leading"
+              }
+            }
+          ],
+          "alignment": "leading",
+          "spacing": 6
+        }
+      ],
+      "alignment": "leading",
+      "spacing": 20,
+      "frame": {
+        "maxWidth": "infinity",
+        "alignment": "leading"
+      }
+    },
+    "versions": [
+      {
+        "label": "v1",
+        "at": "-1 17:10",
+        "note": "Prepared for Monday",
+        "author": "Jacques"
+      }
+    ]
+  },
+  {
+    "id": "tap-booking",
+    "title": "TAP booking · Paris → Lisbon",
+    "kind": "travel",
+    "topic": "lisbon",
+    "people": [],
+    "source": "From TAP's confirmation email",
+    "data": {
+      "flight": "TP 1235",
+      "date": "Fri 6 Nov · 08:40",
+      "seat": "14A",
+      "ref": "K7QX2M"
+    },
+    "summary": {
+      "Card": [
+        {
+          "HStack": [
+            {
+              "Text": "CDG",
+              "font": {
+                "size": 30,
+                "weight": "bold",
+                "design": "rounded"
+              }
+            },
+            {
+              "HStack": [
+                {
+                  "Capsule": {},
+                  "fill": "separator",
+                  "height": 1.5,
+                  "maxWidth": "infinity"
+                },
+                {
+                  "Image": "airplane",
+                  "foregroundStyle": "accent"
+                },
+                {
+                  "Capsule": {},
+                  "fill": "separator",
+                  "height": 1.5,
+                  "maxWidth": "infinity"
+                }
+              ],
+              "spacing": 6
+            },
+            {
+              "Text": "LIS",
+              "font": {
+                "size": 30,
+                "weight": "bold",
+                "design": "rounded"
+              }
+            }
+          ],
+          "spacing": 10
+        },
+        {
+          "Text": "$flight · $date · seat $seat",
+          "font": "subheadline",
+          "foregroundStyle": "secondary"
+        },
+        {
+          "HStack": [
+            {
+              "Text": "Booking reference",
+              "font": "footnote",
+              "foregroundStyle": "secondary"
+            },
+            {
+              "Spacer": {}
+            },
+            {
+              "Text": "$ref",
+              "font": "body.monospaced.bold"
+            },
+            {
+              "Button": "Copy",
+              "symbol": "doc.on.doc",
+              "labelStyle": "iconOnly",
+              "style": "borderless",
+              "action": {
+                "copy": "$ref"
+              }
+            }
+          ]
+        }
+      ],
+      "spacing": 10
+    },
+    "versions": [
+      {
+        "label": "v1",
+        "at": "-5 08:33",
+        "note": "Booked, seat 14A",
+        "author": "TAP Air Portugal",
+        "text": "BOOKING CONFIRMATION\n\nBooking reference: K7QX2M\n\nOutbound · TP 1235 · Friday 6 November 2026\nParis Charles de Gaulle 08:40 → Lisbon 10:15\nSeat 14A (window)\n\nReturn · TP 1238 · Monday 9 November 2026\nLisbon 18:20 → Paris Charles de Gaulle 21:50\n\nFare: €142.00, paid by card.\n\nOne cabin bag and one personal item included."
+      }
+    ]
+  },
+  {
+    "id": "tap-receipt",
+    "title": "TAP receipt · €142",
+    "kind": "receipt",
+    "topic": "lisbon",
+    "people": [],
+    "source": "Filed under Travel / November",
+    "data": {
+      "amount": 142,
+      "merchant": "TAP Air Portugal",
+      "folder": "Travel / November"
+    },
+    "summary": {
+      "Card": [
+        {
+          "HStack": [
+            {
+              "VStack": [
+                {
+                  "Text": "$merchant",
+                  "font": "headline"
+                },
+                {
+                  "Label": [
+                    "$folder",
+                    "folder"
+                  ],
+                  "font": "footnote",
+                  "foregroundStyle": "secondary"
+                }
+              ],
+              "alignment": "leading",
+              "spacing": 2
+            },
+            {
+              "Spacer": {}
+            },
+            {
+              "Text": "${format(amount, 'currency:EUR')}",
+              "font": "title2.bold.rounded"
+            }
+          ]
+        }
+      ]
+    },
+    "versions": [
+      {
+        "label": "v1",
+        "at": "-5 12:02",
+        "note": "Receipt filed",
+        "author": "TAP Air Portugal",
+        "text": "RECEIPT\n\nTAP Air Portugal\nBooking K7QX2M\n\nFare TP 1235 / TP 1238 · 1 adult · €118.00\nTaxes and charges · €24.00\n\nTotal paid: €142.00\nCard ending 4417 · 19 October 2026"
+      }
+    ]
+  },
+  {
+    "id": "marc-invoice",
+    "title": "Plumber invoice · €85",
+    "kind": "receipt",
+    "topic": "kitchen",
+    "people": [
+      "Marc Dupuis"
+    ],
+    "source": "Paid and filed by Jacques",
+    "data": {
+      "amount": 85,
+      "merchant": "Marc Dupuis · Plumbing",
+      "folder": "Home / Repairs"
+    },
+    "summary": {
+      "Card": [
+        {
+          "HStack": [
+            {
+              "VStack": [
+                {
+                  "Text": "$merchant",
+                  "font": "headline"
+                },
+                {
+                  "Label": [
+                    "$folder",
+                    "folder"
+                  ],
+                  "font": "footnote",
+                  "foregroundStyle": "secondary"
+                }
+              ],
+              "alignment": "leading",
+              "spacing": 2
+            },
+            {
+              "Spacer": {}
+            },
+            {
+              "Text": "${format(amount, 'currency:EUR')}",
+              "font": "title2.bold.rounded"
+            }
+          ]
+        },
+        {
+          "Label": [
+            "Paid on Thursday",
+            "checkmark.circle.fill"
+          ],
+          "font": "footnote",
+          "foregroundStyle": "green"
+        }
+      ]
+    },
+    "versions": [
+      {
+        "label": "v1",
+        "at": "-2 12:30",
+        "note": "Invoice paid",
+        "author": "Marc Dupuis",
+        "text": "INVOICE 2026-118\n\nMarc Dupuis · Plumbing\n\nKitchen tap: replaced cartridge, checked seals.\nCall-out and labour · €70.00\nCartridge · €15.00\n\nTotal: €85.00\nPaid by transfer on 22 October 2026. Thank you."
+      }
+    ]
+  },
+  {
+    "id": "insurance",
+    "title": "Home insurance certificate",
+    "kind": "insurance",
+    "topic": null,
+    "people": [],
+    "source": "Kept since you moved in",
+    "data": {
+      "insurer": "Mutuelle des Lilas",
+      "until": "31 August 2027",
+      "water": true
+    },
+    "summary": {
+      "Card": [
+        {
+          "HStack": [
+            {
+              "Text": "$insurer",
+              "font": "headline"
+            },
+            {
+              "Spacer": {}
+            },
+            {
+              "Text": "Valid until $until",
+              "font": "footnote",
+              "foregroundStyle": "secondary"
+            }
+          ]
+        },
+        {
+          "Label": [
+            "Covers water damage",
+            "drop.fill"
+          ],
+          "font": "subheadline",
+          "foregroundStyle": "blue",
+          "visible": "water"
+        }
+      ]
+    },
+    "versions": [
+      {
+        "label": "2026",
+        "at": "-60 09:00",
+        "note": "Renewed for 2026–27",
+        "author": "Mutuelle des Lilas",
+        "text": "CERTIFICATE OF HOME INSURANCE\n\nInsurer: Mutuelle des Lilas\nPolicy: MRH-2291-0447\n\nInsured premises: 12 rue des Lilas, Paris 20e.\n\nCover: civil liability, fire, theft, water damage, glass breakage.\n\nValid from 1 September 2026 to 31 August 2027."
+      }
+    ]
+  },
+  {
+    "id": "septime",
+    "title": "Septime · Saturday 20:30",
+    "kind": "booking",
+    "topic": null,
+    "people": [],
+    "source": "Booked by Jacques yesterday",
+    "data": {
+      "when": "Sat 24 · 20:30",
+      "guests": 2
+    },
+    "summary": {
+      "Card": [
+        {
+          "HStack": [
+            {
+              "Text": "Septime",
+              "font": "headline"
+            },
+            {
+              "Spacer": {}
+            },
+            {
+              "Text": "$when · $guests people",
+              "font": "subheadline",
+              "foregroundStyle": "secondary"
+            }
+          ]
+        }
+      ]
+    },
+    "versions": [
+      {
+        "label": "v1",
+        "at": "-1 08:40",
+        "note": "Table booked",
+        "author": "Septime",
+        "text": "RESERVATION CONFIRMED\n\nSeptime · 80 rue de Charonne, Paris 11e\n\nSaturday 24 October 2026 at 20:30\nTable for 2\n\nPlease let us know of any change before 17:00 on the day."
+      }
+    ]
+  }
+]

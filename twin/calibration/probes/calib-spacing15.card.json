@@ -1,0 +1,129 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "**Clause 8.2** goes from 1 to 3 months' notice.",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Clause 8.2 goes from 1 to 3 months' notice.",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "**Clause 8.2**",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Clause 8.2",
+      "font": "subheadline.bold"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Clause 8.2",
+      "font": "subheadline.semibold"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": " goes from 1 to 3 months' notice.",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "**Le Havre** \u00b7 Maja 77\u2032 pen, N'Diaye 86\u2032, Maja 89\u2032",
+      "font": "callout",
+      "lineSpacing": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Le Havre \u00b7 Maja 77\u2032 pen, N'Diaye 86\u2032, Maja 89\u2032",
+      "font": "callout"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "**Le Havre**",
+      "font": "callout"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Le Havre",
+      "font": "callout.bold"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "**Bold** then regular text that is long enough to wrap onto a second line for sure",
+      "font": "body"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Bold then regular text that is long enough to wrap onto a second line for sure",
+      "font": "body"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "*Italic* then regular",
+      "font": "body"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Italic then regular",
+      "font": "body"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "`code` then regular",
+      "font": "body"
+     }
+    ]
+   }
+  ],
+  "spacing": 6,
+  "alignment": "leading"
+ }
+}

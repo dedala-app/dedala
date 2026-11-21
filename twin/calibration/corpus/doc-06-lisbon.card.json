@@ -1,0 +1,195 @@
+{
+ "view": {
+  "Carousel": [
+   {
+    "ForEach": "$days",
+    "as": "d",
+    "content": {
+     "VStack": [
+      {
+       "ZStack": [
+        {
+         "Image": {
+          "url": "$d.photo"
+         },
+         "contentMode": "fill",
+         "height": 150,
+         "maxWidth": "infinity"
+        },
+        {
+         "Gradient": [
+          "clear",
+          "black@0.65"
+         ],
+         "direction": "down"
+        },
+        {
+         "VStack": [
+          {
+           "Text": "$d.day",
+           "font": "caption.bold",
+           "textCase": "uppercase",
+           "tracking": 1,
+           "foregroundStyle": "white@0.85"
+          },
+          {
+           "Text": "$d.title",
+           "font": "title3.bold",
+           "foregroundStyle": "white"
+          }
+         ],
+         "alignment": "leading",
+         "spacing": 2,
+         "padding": 14,
+         "frame": {
+          "maxWidth": "infinity",
+          "maxHeight": "infinity",
+          "alignment": "bottomLeading"
+         }
+        }
+       ],
+       "height": 150,
+       "clipShape": 16
+      },
+      {
+       "ForEach": "$d.plan",
+       "as": "p",
+       "content": {
+        "HStack": [
+         {
+          "Text": "$p.time",
+          "font": "subheadline.monospaced",
+          "foregroundStyle": "secondary",
+          "frame": {
+           "width": 48,
+           "alignment": "leading"
+          }
+         },
+         {
+          "Image": "$p.symbol",
+          "foregroundStyle": "accent",
+          "width": 22
+         },
+         {
+          "Text": "$p.what",
+          "font": "subheadline",
+          "lineLimit": 2
+         }
+        ],
+        "spacing": 10
+       }
+      },
+      {
+       "HStack": [
+        {
+         "Label": [
+          "${format(d.steps, 'compact')} steps",
+          "figure.walk"
+         ],
+         "font": "footnote",
+         "foregroundStyle": "secondary"
+        },
+        {
+         "Spacer": {}
+        },
+        {
+         "Button": "Change",
+         "style": "glass",
+         "controlSize": "small",
+         "action": {
+          "send": {
+           "intent": "edit-day",
+           "day": "$d.id"
+          },
+          "say": "Let's change ${d.day}."
+         }
+        }
+       ]
+      }
+     ],
+     "spacing": 12,
+     "padding": 12,
+     "background": "card",
+     "cornerRadius": 22
+    }
+   }
+  ],
+  "pageWidth": 0.88
+ },
+ "data": {
+  "days": [
+   {
+    "id": "fri",
+    "day": "Friday",
+    "title": "Alfama & the castle",
+    "photo": "https://picsum.photos/seed/alfama/800/500",
+    "steps": 14200,
+    "plan": [
+     {
+      "time": "11:00",
+      "what": "Check in, Memmo Alfama",
+      "symbol": "bed.double.fill"
+     },
+     {
+      "time": "13:00",
+      "what": "Lunch at Taberna Sal Grosso",
+      "symbol": "fork.knife"
+     },
+     {
+      "time": "16:30",
+      "what": "Castelo de S\u00e3o Jorge at golden hour",
+      "symbol": "sun.horizon.fill"
+     }
+    ]
+   },
+   {
+    "id": "sat",
+    "day": "Saturday",
+    "title": "Bel\u00e9m by the river",
+    "photo": "https://picsum.photos/seed/belem/800/500",
+    "steps": 11800,
+    "plan": [
+     {
+      "time": "10:00",
+      "what": "Tram 15 to Bel\u00e9m",
+      "symbol": "tram.fill"
+     },
+     {
+      "time": "11:00",
+      "what": "Past\u00e9is de Bel\u00e9m, before the queue",
+      "symbol": "cup.and.saucer.fill"
+     },
+     {
+      "time": "15:00",
+      "what": "MAAT and the riverside walk",
+      "symbol": "figure.walk"
+     }
+    ]
+   },
+   {
+    "id": "sun",
+    "day": "Sunday",
+    "title": "Sintra, slowly",
+    "photo": "https://picsum.photos/seed/sintra/800/500",
+    "steps": 16500,
+    "plan": [
+     {
+      "time": "09:10",
+      "what": "Train from Rossio",
+      "symbol": "train.side.front.car"
+     },
+     {
+      "time": "10:30",
+      "what": "Pena Palace, tickets held",
+      "symbol": "building.columns.fill"
+     },
+     {
+      "time": "18:00",
+      "what": "Back for dinner in Pr\u00edncipe Real",
+      "symbol": "wineglass.fill"
+     }
+    ]
+   }
+  ]
+ }
+}

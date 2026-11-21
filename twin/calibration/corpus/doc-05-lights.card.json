@@ -1,0 +1,190 @@
+{
+ "view": {
+  "Card": [
+   {
+    "ZStack": [
+     {
+      "Circle": {},
+      "fill": "${scene == 'Film' ? 'indigo' : scene == 'Read' ? 'white' : 'orange'}",
+      "width": 180,
+      "height": 180,
+      "blur": 40,
+      "opacity": "${on ? level : 0}"
+     },
+     {
+      "VStack": [
+       {
+        "Image": "${on ? 'lightbulb.max.fill' : 'lightbulb'}",
+        "font": {
+         "size": 64
+        },
+        "foregroundStyle": "${on ? 'yellow' : 'tertiary'}",
+        "symbolEffect": "${on ? 'breathe' : 'none'}",
+        "contentTransition": "symbol"
+       },
+       {
+        "Text": "${on ? format(level, 'percent') : 'Off'}",
+        "font": {
+         "size": 34,
+         "weight": "bold",
+         "design": "rounded"
+        },
+        "contentTransition": "numericText"
+       },
+       {
+        "Text": "Living room \u00b7 $scene",
+        "font": "subheadline",
+        "foregroundStyle": "secondary"
+       }
+      ],
+      "spacing": 8
+     }
+    ],
+    "height": 220,
+    "maxWidth": "infinity"
+   },
+   {
+    "Slider": "Brightness",
+    "bind": "$level",
+    "in": [
+     0.05,
+     1
+    ],
+    "disabled": "!on",
+    "tint": "orange"
+   },
+   {
+    "Picker": "Scene",
+    "bind": "$scene",
+    "options": "$scenes",
+    "style": "segmented"
+   },
+   {
+    "GlassGroup": [
+     {
+      "Button": {
+       "Image": "power",
+       "font": "title2",
+       "frame": {
+        "width": 56,
+        "height": 56
+       }
+      },
+      "style": "plain",
+      "glassEffect": {
+       "tint": "${on ? 'orange' : 'clear'}",
+       "interactive": true,
+       "shape": "circle"
+      },
+      "accessibilityLabel": "Power",
+      "action": [
+       {
+        "toggle": "on"
+       },
+       {
+        "haptic": "medium"
+       }
+      ]
+     },
+     {
+      "Button": {
+       "Image": "moon.stars.fill",
+       "font": "title2",
+       "frame": {
+        "width": 56,
+        "height": 56
+       }
+      },
+      "style": "plain",
+      "glassEffect": {
+       "interactive": true,
+       "shape": "circle"
+      },
+      "accessibilityLabel": "Night",
+      "action": [
+       {
+        "set": {
+         "level": 0.15,
+         "scene": "Film"
+        }
+       },
+       {
+        "haptic": "light"
+       }
+      ]
+     },
+     {
+      "Button": {
+       "Image": "sun.max.fill",
+       "font": "title2",
+       "frame": {
+        "width": 56,
+        "height": 56
+       }
+      },
+      "style": "plain",
+      "glassEffect": {
+       "interactive": true,
+       "shape": "circle"
+      },
+      "accessibilityLabel": "Bright",
+      "action": [
+       {
+        "set": {
+         "level": 1,
+         "scene": "Read",
+         "on": true
+        }
+       },
+       {
+        "haptic": "light"
+       }
+      ]
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Button": "Save scene",
+      "style": "prominent",
+      "action": {
+       "send": {
+        "intent": "save-scene",
+        "on": "$on",
+        "level": "$level",
+        "scene": "$scene"
+       },
+       "say": "Save this as my evening scene."
+      }
+     }
+    ],
+    "spacing": 12
+   }
+  ],
+  "spacing": 16
+ },
+ "data": {
+  "scenes": [
+   {
+    "label": "Warm",
+    "value": "Warm",
+    "symbol": "flame.fill"
+   },
+   {
+    "label": "Read",
+    "value": "Read",
+    "symbol": "book.fill"
+   },
+   {
+    "label": "Film",
+    "value": "Film",
+    "symbol": "tv.fill"
+   }
+  ]
+ },
+ "state": {
+  "on": true,
+  "level": 0.65,
+  "scene": "Warm"
+ }
+}

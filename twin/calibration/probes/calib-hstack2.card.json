@@ -1,0 +1,310 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 40,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 60,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 80,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 100,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 120,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 40,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 60,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 80,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 100,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 120,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 40,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 80,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 120,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 40,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 80,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Rectangle": {},
+      "frame": {
+       "width": 120,
+       "height": 10
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Text": "Boarding",
+      "frame": {
+       "width": 68.3
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Text": "Boarding",
+      "fixedSize": true
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Text": "Board"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Text": "Boarding passes"
+     }
+    ]
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ }
+}

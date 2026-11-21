@@ -1,0 +1,73 @@
+#+title:      mardi 12 mai 2026
+#+date:       [2026-05-12 mar. 08:00]
+#+filetags:   :daily:
+#+identifier: 20260512T080000
+
+* Briefing
+:PROPERTIES:
+:GENERATED: [2026-05-12 mar. 08:00]
+:END:
+
+** Focus
+Finish the methods chapter draft before the afternoon review.
+
+** Events
+- 09:30-10:30 :: Sync with [[denote:20260107T170819][Ada Lindqvist]] on the reading group schedule
+- 11:00-11:30 :: 1:1 with [[denote:20250311T112441][Tomás Ferreira]]
+- 14:00-15:00 :: [[denote:20260317T121016][Methods chapter]] working session
+- 16:00-17:30 :: Lab seminar — [[denote:20260506T110622][sourdough fermentation curves]]
+- 19:00       :: Dinner with [[denote:20260506T101455][Noor Haddad]]
+
+** Scheduled
+- TODO Finish §3 of the methods chapter :: [[denote:20260317T121016][methods-chapter]]
+- NEXT Review the poster draft :: [[denote:20250923T065351][poster-draft]]
+- NEXT Draft the garden committee report for next week :: [[denote:20251116T165359][garden-committee]]
+- TODO Reply to Pieter's comments :: [[denote:20260401T185646][pieter-van-dam]]
+
+** Habits
+- [X] Morning run
+- [X] Read 30 min
+- [ ] Meditation
+- [X] No coffee after 4pm
+- [X] Sleep ≥ 7h
+- [-] Long study session (skipped: chapter meeting)
+
+* Notes
+
+Sync with Ada went well — she'll take point on drafting the new reading list.
+We agreed the schedule needs a slot for guest speakers before it goes to the
+committee.
+
+Tomás finished the starter-culture logger prototype. Results look promising:
+- 14% of the jars drift more than a degree overnight
+- The script reads a full week of sensor data in ~3min
+
+Methods session: we restructured §3 around the three measurement campaigns.
+Still need to write the new figure caption.
+
+* Recap
+:PROPERTIES:
+:GENERATED: [2026-05-12 mar. 20:00]
+:END:
+
+** Done
+- DONE Sync with Ada on the reading list (1h00)
+- DONE 1:1 with Tomás — reviewed the logger output (0h30)
+- DONE Restructured §3 of the methods chapter (1h45)
+- DONE Lab seminar attended
+- DONE Reply to Pieter's comments (0h25)
+
+** Time
+| Project            | Hours |
+|--------------------+-------|
+| Thesis — methods   |   2.5 |
+| Thesis — mentoring |   0.5 |
+| Garden committee   |   1.0 |
+| Admin              |   0.5 |
+| Reading            |   1.5 |
+
+** Reflection
+Productive day overall. The §3 restructuring took longer than expected because
+the campaigns didn't map cleanly to the original sections — worth a note in the
+methodology document. The poster review slipped to tomorrow; not a blocker but
+tight against the Friday deadline.

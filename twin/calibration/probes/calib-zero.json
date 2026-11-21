@@ -1,0 +1,116 @@
+{
+ "card": "calib-zero",
+ "frames": [
+  {
+   "y": 0.1666666666662877,
+   "w": 347.79999999999995,
+   "h": 3094.666666666668,
+   "view": "Card",
+   "x": 0,
+   "path": "Card"
+  },
+  {
+   "y": 16.166666666666288,
+   "w": 315.79999999999995,
+   "h": 3062.666666666668,
+   "view": "VStack",
+   "x": 16,
+   "path": "Card \u203a 1.VStack"
+  },
+  {
+   "y": 16.166666666666288,
+   "w": 0,
+   "h": 306.3333333333333,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "x": 16
+  },
+  {
+   "y": 334.4999999999996,
+   "w": 0,
+   "h": 526.3333333333333,
+   "view": "Text",
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 2.Text"
+  },
+  {
+   "y": 872.8333333333328,
+   "w": 0,
+   "h": 1560.3333333333333,
+   "view": "Text",
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 3.Text"
+  },
+  {
+   "y": 2445.166666666666,
+   "w": 30,
+   "view": "Text",
+   "h": 130.33333333333348,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 4.Text"
+  },
+  {
+   "y": 2587.4999999999995,
+   "w": 60,
+   "view": "Text",
+   "h": 108.33333333333348,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 5.Text"
+  },
+  {
+   "y": 2707.833333333333,
+   "w": 1,
+   "view": "Text",
+   "h": 306.3333333333335,
+   "path": "Card \u203a 1.VStack \u203a 6.Text",
+   "x": 16
+  },
+  {
+   "y": 3026.1666666666665,
+   "w": 315.79999999999995,
+   "view": "HStack",
+   "h": 20.333333333333485,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack",
+   "x": 16
+  },
+  {
+   "y": 3026.1666666666665,
+   "w": 146,
+   "h": 20.333333333333485,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 1.Text",
+   "x": 16
+  },
+  {
+   "y": 3058.5,
+   "w": 315.79999999999995,
+   "view": "HStack",
+   "h": 20.333333333333485,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack"
+  },
+  {
+   "h": 20.333333333333485,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 1.Text",
+   "w": 210.33333333333331,
+   "x": 16,
+   "view": "Text",
+   "y": 3058.5
+  }
+ ],
+ "kind": "rendered",
+ "size": [
+  348,
+  3095
+ ],
+ "diagnostics": [
+  "Unknown modifier or argument 'minLength' on Spacer"
+ ],
+ "capture": "calib-zero-109.png",
+ "issues": [
+  "Card \u203a 1.VStack \u203a 1.Text collapsed to 0\u00d7306",
+  "Card \u203a 1.VStack \u203a 2.Text collapsed to 0\u00d7526",
+  "Card \u203a 1.VStack \u203a 3.Text collapsed to 0\u00d71560",
+  "The card is 3094pt tall but only 617pt of the conversation show between its header and the message field, so it never fits on screen at once; make it shorter or split it"
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Text": "Show the summary"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Image": "car.fill"
+     },
+     {
+      "Text": "Show the summary"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Show the summary"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 2
+     },
+     {
+      "Text": "Arrived at the Frankfurt hub",
+      "layoutPriority": 1
+     },
+     {
+      "Text": "Show the summary"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Spacer": true
+     },
+     {
+      "Text": "Show the summary"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Button": "OK",
+      "action": {
+       "send": {
+        "x": 1
+       }
+      },
+      "style": "bordered",
+      "maxWidth": "infinity"
+     },
+     {
+      "Button": "Show the complete summary please",
+      "action": {
+       "send": {
+        "x": 1
+       }
+      },
+      "style": "bordered",
+      "maxWidth": "infinity"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Show the complete summary please",
+      "action": {
+       "send": {
+        "x": 1
+       }
+      },
+      "style": "bordered",
+      "maxWidth": "infinity"
+     },
+     {
+      "Button": "OK",
+      "action": {
+       "send": {
+        "x": 1
+       }
+      },
+      "style": "bordered",
+      "maxWidth": "infinity"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "OK",
+      "maxWidth": "infinity"
+     },
+     {
+      "Text": "Show the complete summary please now",
+      "maxWidth": "infinity"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Show the complete summary please now",
+      "maxWidth": "infinity"
+     },
+     {
+      "Text": "OK",
+      "maxWidth": "infinity"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Arrived at the Frankfurt hub",
+      "layoutPriority": 1,
+      "maxWidth": "infinity"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ]
+   },
+   {
+    "VStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "layoutPriority": 1
+     },
+     {
+      "Text": "Arrived at the Frankfurt hub"
+     },
+     {
+      "Text": "Show the summary"
+     }
+    ],
+    "maxHeight": 80
+   }
+  ],
+  "alignment": "leading",
+  "spacing": 12
+ }
+}

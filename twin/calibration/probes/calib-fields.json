@@ -1,0 +1,258 @@
+{
+ "capture": "calib-fields-2.png",
+ "kind": "rendered",
+ "issues": [
+  "The card is 1280pt tall but only 617pt of the conversation show between its header and the message field, so it never fits on screen at once; make it shorter or split it"
+ ],
+ "at": "2026-10-28T21:44:22Z",
+ "diagnostics": [
+  "Unknown modifier or argument 'lines' on TextField"
+ ],
+ "card": "calib-fields",
+ "frames": [
+  {
+   "view": "Card",
+   "y": 0.05208333333337123,
+   "w": 347.79999999999995,
+   "h": 1280.5625,
+   "x": 0,
+   "path": "Card"
+  },
+  {
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack",
+   "view": "VStack",
+   "h": 1248.5625,
+   "x": 16,
+   "y": 16.05208333333337
+  },
+  {
+   "view": "TextField",
+   "path": "Card \u203a 1.VStack \u203a 1.TextField",
+   "w": 315.79999999999995,
+   "h": 40,
+   "x": 16,
+   "y": 16.05208333333337
+  },
+  {
+   "w": 315.79999999999995,
+   "y": 540.6263020833334,
+   "view": "TextField",
+   "h": 66,
+   "path": "Card \u203a 1.VStack \u203a 10.TextField",
+   "x": 16
+  },
+  {
+   "view": "HStack",
+   "y": 616.6263020833334,
+   "path": "Card \u203a 1.VStack \u203a 11.HStack",
+   "w": 315.79999999999995,
+   "x": 16,
+   "h": 22
+  },
+  {
+   "x": 16,
+   "view": "Text",
+   "w": 41.33333333333333,
+   "path": "Card \u203a 1.VStack \u203a 11.HStack \u203a 1.Text",
+   "h": 20.33333333333337,
+   "y": 617.4596354166667
+  },
+  {
+   "x": 65.33333333333333,
+   "view": "TextField",
+   "w": 266.46666666666664,
+   "h": 22,
+   "path": "Card \u203a 1.VStack \u203a 11.HStack \u203a 2.TextField",
+   "y": 616.6263020833334
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 12.TextField",
+   "h": 22,
+   "y": 648.6263020833334
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "h": 34,
+   "path": "Card \u203a 1.VStack \u203a 13.TextField",
+   "y": 680.6263020833334
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 14.TextField",
+   "h": 34,
+   "y": 724.6263020833334
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 15.TextField",
+   "h": 72.287109375,
+   "y": 768.6263020833334
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "h": 74,
+   "path": "Card \u203a 1.VStack \u203a 16.TextField",
+   "y": 850.9134114583334
+  },
+  {
+   "x": 16,
+   "view": "HStack",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 17.HStack",
+   "h": 34,
+   "y": 934.9134114583334
+  },
+  {
+   "x": 16,
+   "view": "Text",
+   "w": 41.33333333333333,
+   "path": "Card \u203a 1.VStack \u203a 17.HStack \u203a 1.Text",
+   "h": 20.33333333333337,
+   "y": 941.7467447916667
+  },
+  {
+   "x": 65.33333333333333,
+   "view": "TextField",
+   "w": 266.46666666666664,
+   "h": 34,
+   "path": "Card \u203a 1.VStack \u203a 17.HStack \u203a 2.TextField",
+   "y": 934.9134114583334
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "h": 34,
+   "path": "Card \u203a 1.VStack \u203a 18.TextField",
+   "y": 978.9134114583334
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "h": 34,
+   "path": "Card \u203a 1.VStack \u203a 19.TextField",
+   "y": 1022.9134114583335
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 2.TextField",
+   "h": 40,
+   "y": 66.05208333333337
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 20.TextField",
+   "h": 52,
+   "y": 1066.9134114583335
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 21.TextField",
+   "h": 81.57421875,
+   "y": 1128.9134114583335
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 22.TextField",
+   "h": 44.126953125,
+   "y": 1220.4876302083335
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "h": 82.287109375,
+   "path": "Card \u203a 1.VStack \u203a 3.TextField",
+   "y": 116.05208333333337
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "h": 84,
+   "path": "Card \u203a 1.VStack \u203a 4.TextField",
+   "y": 208.33919270833337
+  },
+  {
+   "x": 16,
+   "view": "HStack",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack",
+   "h": 40,
+   "y": 302.33919270833337
+  },
+  {
+   "x": 16,
+   "view": "Text",
+   "w": 41.33333333333333,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 1.Text",
+   "h": 20.333333333333314,
+   "y": 312.1725260416667
+  },
+  {
+   "x": 65.33333333333333,
+   "view": "TextField",
+   "w": 266.46666666666664,
+   "h": 40,
+   "path": "Card \u203a 1.VStack \u203a 5.HStack \u203a 2.TextField",
+   "y": 302.33919270833337
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 6.TextField",
+   "h": 40,
+   "y": 352.33919270833337
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "h": 22,
+   "path": "Card \u203a 1.VStack \u203a 7.TextField",
+   "y": 402.33919270833337
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "h": 22,
+   "path": "Card \u203a 1.VStack \u203a 8.TextField",
+   "y": 434.33919270833337
+  },
+  {
+   "x": 16,
+   "view": "TextField",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 9.TextField",
+   "h": 64.287109375,
+   "y": 466.33919270833337
+  }
+ ],
+ "size": [
+  348,
+  1281
+ ]
+}

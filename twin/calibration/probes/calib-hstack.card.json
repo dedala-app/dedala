@@ -1,0 +1,311 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding"
+     },
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Text": "Boarding"
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": 100
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Text": "B"
+     },
+     {
+      "Text": "C"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport this morning"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Directions to the airport this morning"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding",
+      "font": "caption"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words",
+      "font": "caption"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Directions to CDG",
+      "style": "glass",
+      "symbol": "car.fill",
+      "action": {
+       "send": {}
+      }
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "Directions to CDG",
+       "car.fill"
+      ]
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "Directions to CDG",
+       "car.fill"
+      ],
+      "frame": {
+       "width": 120
+      }
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "Directions to CDG",
+       "car.fill"
+      ],
+      "frame": {
+       "width": 110
+      }
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "Directions to CDG",
+       "car.fill"
+      ],
+      "frame": {
+       "width": 100
+      }
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to CDG",
+      "frame": {
+       "width": 100
+      }
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to CDG",
+      "frame": {
+       "width": 110
+      }
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Directions to CDG",
+      "style": "glass",
+      "symbol": "car.fill",
+      "action": {
+       "send": {}
+      },
+      "frame": {
+       "width": 160
+      }
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Directions to CDG",
+      "style": "glass",
+      "action": {
+       "send": {}
+      },
+      "frame": {
+       "width": 130
+      }
+     },
+     {
+      "Spacer": {}
+     }
+    ]
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ }
+}

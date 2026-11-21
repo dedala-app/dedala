@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: 2026 Julien Malka
+# SPDX-License-Identifier: MIT
+
+# Publishes the plugin's WebAssembly module: pushing a native-* tag builds
+# native/wasm.nix and releases the module under that tag, once it is checked to
+# be the release and the hash plugin/dedala/native.py names.
+name: native
+
+on:
+  push:
+    tags: ["native-*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - run: nix-build native/wasm.nix
+      - name: The plugin names this release and this module
+        run: |
+          grep -qx "RELEASE = \"$GITHUB_REF_NAME\"" plugin/dedala/native.py
+          echo "$(sed -n 's/^SHA256 = "\(.*\)"$/\1/p' plugin/dedala/native.py)  result/dedala.wasm" | sha256sum -c
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir release
+          cp result/dedala.wasm release/
+          cp LICENSES/MIT.txt release/LICENSE-MIT.txt
+          cp native/notices/foldhash.txt release/LICENSE-foldhash.txt
+          cp native/notices/icu4x.txt release/LICENSE-icu4x.txt
+          gh release create "$GITHUB_REF_NAME" release/* --title "$GITHUB_REF_NAME" --notes "The Dedala plugin's native code, built from native/ at $GITHUB_SHA by \`nix-build native/wasm.nix\`: orgize, pulldown-cmark, serde_json, rquickjs and QuickJS (MIT), ICU4X and its data (Unicode-3.0), foldhash (Zlib) and Dedala's own code (MIT). The plugin downloads it on first use and checks its SHA-256: $(sha256sum result/dedala.wasm | cut -d' ' -f1)."

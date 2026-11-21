@@ -1,0 +1,1273 @@
+{
+  "type": "org-data",
+  "begin": 0,
+  "end": 2048,
+  "title": "Every kind of thing",
+  "keywords": {
+    "TITLE": "Every kind of thing",
+    "DATE": "[2026-11-08 dim. 00:30]",
+    "FILETAGS": ":spec:test:",
+    "IDENTIFIER": "20261108T003000",
+    "TODO": "TODO NEXT WAIT(w) | DONE CANCELLED",
+    "SIGNATURE": "=sig="
+  },
+  "children": [
+    {
+      "type": "section",
+      "begin": 0,
+      "end": 465,
+      "children": [
+        {
+          "type": "keyword",
+          "begin": 0,
+          "end": 34,
+          "key": "TITLE",
+          "value": "Every kind of thing"
+        },
+        {
+          "type": "keyword",
+          "begin": 34,
+          "end": 72,
+          "key": "DATE",
+          "value": "[2026-11-08 dim. 00:30]"
+        },
+        {
+          "type": "keyword",
+          "begin": 72,
+          "end": 98,
+          "key": "FILETAGS",
+          "value": ":spec:test:"
+        },
+        {
+          "type": "keyword",
+          "begin": 98,
+          "end": 128,
+          "key": "IDENTIFIER",
+          "value": "20261108T003000"
+        },
+        {
+          "type": "keyword",
+          "begin": 128,
+          "end": 171,
+          "key": "TODO",
+          "value": "TODO NEXT WAIT(w) | DONE CANCELLED"
+        },
+        {
+          "type": "keyword",
+          "begin": 171,
+          "end": 191,
+          "key": "SIGNATURE",
+          "value": "=sig="
+        },
+        {
+          "type": "paragraph",
+          "begin": 191,
+          "end": 465,
+          "text": "Text before the first headline, with bold, italic, underline, struck, verbatim and code, an entity α, a footnote, a link Org and a bare 20260107T170819, a timestamp <2026-11-08 Sun 10:00-11:30> and a cookie [1/3].",
+          "children": [
+            {
+              "type": "plain-text",
+              "begin": 191,
+              "end": 228,
+              "value": "Text before the first headline, with "
+            },
+            {
+              "type": "bold",
+              "begin": 228,
+              "end": 234,
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 229,
+                  "end": 233,
+                  "value": "bold"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 234,
+              "end": 236,
+              "value": ", "
+            },
+            {
+              "type": "italic",
+              "begin": 236,
+              "end": 244,
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 237,
+                  "end": 243,
+                  "value": "italic"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 244,
+              "end": 246,
+              "value": ", "
+            },
+            {
+              "type": "underline",
+              "begin": 246,
+              "end": 257,
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 247,
+                  "end": 256,
+                  "value": "underline"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 257,
+              "end": 259,
+              "value": ", "
+            },
+            {
+              "type": "strike-through",
+              "begin": 259,
+              "end": 267,
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 260,
+                  "end": 266,
+                  "value": "struck"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 267,
+              "end": 269,
+              "value": ",\n"
+            },
+            {
+              "type": "verbatim",
+              "begin": 269,
+              "end": 279,
+              "value": "verbatim"
+            },
+            {
+              "type": "plain-text",
+              "begin": 279,
+              "end": 284,
+              "value": " and "
+            },
+            {
+              "type": "code",
+              "begin": 284,
+              "end": 290,
+              "value": "code"
+            },
+            {
+              "type": "plain-text",
+              "begin": 290,
+              "end": 302,
+              "value": ", an entity "
+            },
+            {
+              "type": "entity",
+              "begin": 302,
+              "end": 308,
+              "name": "alpha",
+              "utf8": "α"
+            },
+            {
+              "type": "plain-text",
+              "begin": 308,
+              "end": 320,
+              "value": ", a footnote"
+            },
+            {
+              "type": "footnote-reference",
+              "begin": 320,
+              "end": 326,
+              "label": "1"
+            },
+            {
+              "type": "plain-text",
+              "begin": 326,
+              "end": 335,
+              "value": ", a link\n"
+            },
+            {
+              "type": "link",
+              "begin": 335,
+              "end": 363,
+              "linkType": "https",
+              "path": "//orgmode.org",
+              "rawLink": "https://orgmode.org",
+              "text": "Org",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 358,
+                  "end": 361,
+                  "value": "Org"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 363,
+              "end": 375,
+              "value": " and a bare "
+            },
+            {
+              "type": "link",
+              "begin": 375,
+              "end": 401,
+              "linkType": "denote",
+              "path": "20260107T170819",
+              "rawLink": "denote:20260107T170819"
+            },
+            {
+              "type": "plain-text",
+              "begin": 401,
+              "end": 415,
+              "value": ", a timestamp\n"
+            },
+            {
+              "type": "timestamp",
+              "begin": 415,
+              "end": "2026-11-08T11:30",
+              "timestampType": "active-range",
+              "rawValue": "<2026-11-08 Sun 10:00-11:30>",
+              "start": "2026-11-08T10:00"
+            },
+            {
+              "type": "plain-text",
+              "begin": 443,
+              "end": 457,
+              "value": " and a cookie "
+            },
+            {
+              "type": "statistics-cookie",
+              "begin": 457,
+              "end": 462,
+              "value": "[1/3]"
+            },
+            {
+              "type": "plain-text",
+              "begin": 462,
+              "end": 463,
+              "value": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 465,
+      "end": 1954,
+      "level": 1,
+      "title": "Headline with everything",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 477,
+          "end": 501,
+          "value": "Headline with everything"
+        }
+      ],
+      "todoKeyword": "TODO",
+      "todoType": "todo",
+      "priority": "A",
+      "tags": [
+        "tag1",
+        "tag2"
+      ],
+      "scheduled": {
+        "type": "timestamp",
+        "begin": 552,
+        "end": 573,
+        "timestampType": "active",
+        "rawValue": "<2026-11-10 Tue .+1w>",
+        "start": "2026-11-10",
+        "repeater": {
+          "type": "restart",
+          "value": 1,
+          "unit": "week"
+        }
+      },
+      "deadline": {
+        "type": "timestamp",
+        "begin": 584,
+        "end": 604,
+        "timestampType": "active",
+        "rawValue": "<2026-11-12 Thu -2d>",
+        "start": "2026-11-12",
+        "warning": {
+          "type": "all",
+          "value": 2,
+          "unit": "day"
+        }
+      },
+      "closed": {
+        "type": "timestamp",
+        "begin": 613,
+        "end": 635,
+        "timestampType": "inactive",
+        "rawValue": "[2026-11-07 Sat 23:59]",
+        "start": "2026-11-07T23:59"
+      },
+      "properties": {
+        "ID": "9f1c-1234",
+        "CUSTOM_ID": "everything"
+      },
+      "children": [
+        {
+          "type": "section",
+          "begin": 699,
+          "end": 1787,
+          "children": [
+            {
+              "type": "paragraph",
+              "begin": 699,
+              "end": 736,
+              "text": "A paragraph wrapped over two lines.",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 699,
+                  "end": 734,
+                  "value": "A paragraph wrapped\nover two lines."
+                }
+              ]
+            },
+            {
+              "type": "plain-list",
+              "begin": 736,
+              "end": 925,
+              "listType": "unordered",
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 736,
+                  "end": 792,
+                  "bullet": "-",
+                  "indent": 0,
+                  "checkbox": "off",
+                  "checkboxBegin": 738,
+                  "checkboxEnd": 741,
+                  "text": "An unchecked item that wraps onto the next line",
+                  "contentBegin": 742,
+                  "contentEnd": 791,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 742,
+                      "end": 792,
+                      "text": "An unchecked item that wraps onto the next line",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 742,
+                          "end": 791,
+                          "value": "An unchecked item that wraps\n  onto the next line"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 792,
+                  "end": 813,
+                  "bullet": "-",
+                  "indent": 0,
+                  "checkbox": "on",
+                  "checkboxBegin": 794,
+                  "checkboxEnd": 797,
+                  "text": "A checked item",
+                  "contentBegin": 798,
+                  "contentEnd": 812,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 798,
+                      "end": 813,
+                      "text": "A checked item",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 798,
+                          "end": 812,
+                          "value": "A checked item"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 813,
+                  "end": 854,
+                  "bullet": "-",
+                  "indent": 0,
+                  "checkbox": "trans",
+                  "checkboxBegin": 815,
+                  "checkboxEnd": 818,
+                  "text": "A partly done item",
+                  "contentBegin": 819,
+                  "contentEnd": 837,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 819,
+                      "end": 838,
+                      "text": "A partly done item",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 819,
+                          "end": 837,
+                          "value": "A partly done item"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "plain-list",
+                      "begin": 838,
+                      "end": 854,
+                      "listType": "unordered",
+                      "children": [
+                        {
+                          "type": "item",
+                          "begin": 838,
+                          "end": 854,
+                          "bullet": "-",
+                          "indent": 2,
+                          "text": "nested item",
+                          "contentBegin": 842,
+                          "contentEnd": 853,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "begin": 842,
+                              "end": 854,
+                              "text": "nested item",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 842,
+                                  "end": 853,
+                                  "value": "nested item"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 854,
+                  "end": 883,
+                  "bullet": "-",
+                  "indent": 0,
+                  "tag": "A plain item",
+                  "text": "with a tag",
+                  "contentBegin": 871,
+                  "contentEnd": 882,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 871,
+                      "end": 883,
+                      "text": "with a tag",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 871,
+                          "end": 882,
+                          "value": " with a tag"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 883,
+                  "end": 901,
+                  "bullet": "1.",
+                  "indent": 0,
+                  "text": "first numbered",
+                  "contentBegin": 886,
+                  "contentEnd": 900,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 886,
+                      "end": 901,
+                      "text": "first numbered",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 886,
+                          "end": 900,
+                          "value": "first numbered"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 901,
+                  "end": 925,
+                  "bullet": "2.",
+                  "indent": 0,
+                  "counter": "5",
+                  "text": "fifth numbered",
+                  "contentBegin": 909,
+                  "contentEnd": 923,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 909,
+                      "end": 924,
+                      "text": "fifth numbered",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 909,
+                          "end": 923,
+                          "value": "fifth numbered"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "begin": 925,
+              "end": 1034,
+              "tableType": "org",
+              "hasHeader": true,
+              "tblfm": [
+                " @>$2=vsum(@I..@II)"
+              ],
+              "children": [
+                {
+                  "type": "table-row",
+                  "begin": 925,
+                  "end": 945,
+                  "rowType": "standard",
+                  "children": [
+                    {
+                      "type": "table-cell",
+                      "begin": 927,
+                      "end": 934,
+                      "text": "Project",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 927,
+                          "end": 934,
+                          "value": "Project"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-cell",
+                      "begin": 937,
+                      "end": 942,
+                      "text": "Hours",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 937,
+                          "end": 942,
+                          "value": "Hours"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "table-row",
+                  "begin": 945,
+                  "end": 965,
+                  "rowType": "rule"
+                },
+                {
+                  "type": "table-row",
+                  "begin": 965,
+                  "end": 985,
+                  "rowType": "standard",
+                  "children": [
+                    {
+                      "type": "table-cell",
+                      "begin": 967,
+                      "end": 972,
+                      "text": "TOSEM",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 967,
+                          "end": 972,
+                          "value": "TOSEM"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-cell",
+                      "begin": 979,
+                      "end": 982,
+                      "text": "2.5",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 979,
+                          "end": 982,
+                          "value": "2.5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "table-row",
+                  "begin": 985,
+                  "end": 1005,
+                  "rowType": "standard",
+                  "children": [
+                    {
+                      "type": "table-cell",
+                      "begin": 987,
+                      "end": 992,
+                      "text": "Admin",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 987,
+                          "end": 992,
+                          "value": "Admin"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-cell",
+                      "begin": 999,
+                      "end": 1002,
+                      "text": "0.5",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 999,
+                          "end": 1002,
+                          "value": "0.5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "src-block",
+              "begin": 1034,
+              "end": 1111,
+              "language": "python",
+              "parameters": ":results output",
+              "value": "print(\"hello\")\n",
+              "name": "example"
+            },
+            {
+              "type": "quote-block",
+              "begin": 1111,
+              "end": 1154,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 1125,
+                  "end": 1141,
+                  "text": "Quoted words.",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 1125,
+                      "end": 1132,
+                      "value": "Quoted "
+                    },
+                    {
+                      "type": "italic",
+                      "begin": 1132,
+                      "end": 1139,
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1133,
+                          "end": 1138,
+                          "value": "words"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "plain-text",
+                      "begin": 1139,
+                      "end": 1140,
+                      "value": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "example-block",
+              "begin": 1154,
+              "end": 1197,
+              "value": "raw example\n"
+            },
+            {
+              "type": "verse-block",
+              "begin": 1197,
+              "end": 1255,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 1211,
+                  "end": 1242,
+                  "text": "roses are red violets are blue",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 1211,
+                      "end": 1241,
+                      "value": "roses are red\nviolets are blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "center-block",
+              "begin": 1255,
+              "end": 1293,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 1270,
+                  "end": 1279,
+                  "text": "centered",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 1270,
+                      "end": 1278,
+                      "value": "centered"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "export-block",
+              "begin": 1293,
+              "end": 1339,
+              "backend": "html",
+              "value": "<b>html</b>\n"
+            },
+            {
+              "type": "comment-block",
+              "begin": 1339,
+              "end": 1386,
+              "value": "a comment block\n"
+            },
+            {
+              "type": "keyword",
+              "begin": 1386,
+              "end": 1418,
+              "key": "BEGIN",
+              "value": "clocktable :scope file"
+            },
+            {
+              "type": "table",
+              "begin": 1418,
+              "end": 1438,
+              "tableType": "org",
+              "hasHeader": false,
+              "children": [
+                {
+                  "type": "table-row",
+                  "begin": 1418,
+                  "end": 1438,
+                  "rowType": "standard",
+                  "children": [
+                    {
+                      "type": "table-cell",
+                      "begin": 1420,
+                      "end": 1428,
+                      "text": "Headline",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1420,
+                          "end": 1428,
+                          "value": "Headline"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-cell",
+                      "begin": 1431,
+                      "end": 1435,
+                      "text": "Time",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1431,
+                          "end": 1435,
+                          "value": "Time"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "keyword",
+              "begin": 1438,
+              "end": 1446,
+              "key": "END",
+              "value": ""
+            },
+            {
+              "type": "special-block",
+              "begin": 1446,
+              "end": 1487,
+              "blockType": "note",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 1459,
+                  "end": 1475,
+                  "text": "a special block",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 1459,
+                      "end": 1474,
+                      "value": "a special block"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "fixed-width",
+              "begin": 1487,
+              "end": 1506,
+              "value": "fixed width line"
+            },
+            {
+              "type": "comment",
+              "begin": 1506,
+              "end": 1523,
+              "value": "a comment line"
+            },
+            {
+              "type": "horizontal-rule",
+              "begin": 1523,
+              "end": 1530
+            },
+            {
+              "type": "drawer",
+              "begin": 1530,
+              "end": 1640,
+              "drawerName": "LOGBOOK",
+              "children": [
+                {
+                  "type": "clock",
+                  "begin": 1540,
+                  "end": 1603,
+                  "status": "closed",
+                  "duration": "1:30",
+                  "value": {
+                    "type": "timestamp",
+                    "begin": 1547,
+                    "end": "2026-11-07T11:30",
+                    "timestampType": "inactive-range",
+                    "rawValue": "[2026-11-07 Sat 10:00]--[2026-11-07 Sat 11:30]",
+                    "start": "2026-11-07T10:00"
+                  }
+                },
+                {
+                  "type": "clock",
+                  "begin": 1603,
+                  "end": 1633,
+                  "status": "running",
+                  "value": {
+                    "type": "timestamp",
+                    "begin": 1610,
+                    "end": 1632,
+                    "timestampType": "inactive",
+                    "rawValue": "[2026-11-08 Sun 09:00]",
+                    "start": "2026-11-08T09:00"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "begin": 1640,
+              "end": 1787,
+              "text": "target and radio and and 1+1 and and $x^2$ and a line break. Superscript and subscript.",
+              "children": [
+                {
+                  "type": "target",
+                  "begin": 1640,
+                  "end": 1650,
+                  "value": "target"
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 1650,
+                  "end": 1655,
+                  "value": " and "
+                },
+                {
+                  "type": "radio-target",
+                  "begin": 1655,
+                  "end": 1666,
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 1658,
+                      "end": 1663,
+                      "value": "radio"
+                    }
+                  ]
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 1666,
+                  "end": 1671,
+                  "value": " and "
+                },
+                {
+                  "type": "macro",
+                  "begin": 1671,
+                  "end": 1682,
+                  "key": "title"
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 1682,
+                  "end": 1687,
+                  "value": " and "
+                },
+                {
+                  "type": "inline-src-block",
+                  "begin": 1687,
+                  "end": 1702,
+                  "language": "python",
+                  "value": "1+1"
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 1702,
+                  "end": 1707,
+                  "value": " and "
+                },
+                {
+                  "type": "export-snippet",
+                  "begin": 1707,
+                  "end": 1724,
+                  "backend": "html",
+                  "value": "<i>x</i>"
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 1724,
+                  "end": 1729,
+                  "value": " and "
+                },
+                {
+                  "type": "latex-fragment",
+                  "begin": 1729,
+                  "end": 1734,
+                  "value": "$x^2$"
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 1734,
+                  "end": 1740,
+                  "value": " and a"
+                },
+                {
+                  "type": "line-break",
+                  "begin": 1740,
+                  "end": 1743
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 1743,
+                  "end": 1760,
+                  "value": "line break. Super"
+                },
+                {
+                  "type": "superscript",
+                  "begin": 1760,
+                  "end": 1767,
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 1761,
+                      "end": 1767,
+                      "value": "script"
+                    }
+                  ]
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 1767,
+                  "end": 1775,
+                  "value": " and sub"
+                },
+                {
+                  "type": "subscript",
+                  "begin": 1775,
+                  "end": 1784,
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 1777,
+                      "end": 1783,
+                      "value": "script"
+                    }
+                  ]
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 1784,
+                  "end": 1785,
+                  "value": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 1787,
+          "end": 1909,
+          "level": 2,
+          "title": "Done child",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 1795,
+              "end": 1805,
+              "value": "Done child"
+            }
+          ],
+          "todoKeyword": "DONE",
+          "todoType": "done",
+          "tags": [
+            "ARCHIVE"
+          ],
+          "archived": true,
+          "closed": {
+            "type": "timestamp",
+            "begin": 1873,
+            "end": 1895,
+            "timestampType": "inactive",
+            "rawValue": "[2026-11-07 Sat 12:00]",
+            "start": "2026-11-07T12:00"
+          },
+          "children": [
+            {
+              "type": "section",
+              "begin": 1896,
+              "end": 1909,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 1896,
+                  "end": 1909,
+                  "text": "Child text.",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 1896,
+                      "end": 1907,
+                      "value": "Child text."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 1909,
+          "end": 1954,
+          "level": 2,
+          "title": "Waiting child",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 1917,
+              "end": 1930,
+              "value": "Waiting child"
+            }
+          ],
+          "todoKeyword": "WAIT",
+          "todoType": "todo",
+          "tags": [],
+          "children": [
+            {
+              "type": "headline",
+              "begin": 1931,
+              "end": 1954,
+              "level": 3,
+              "title": "Deeper",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 1935,
+                  "end": 1941,
+                  "value": "Deeper"
+                }
+              ],
+              "tags": [],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 1942,
+                  "end": 1954,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1942,
+                      "end": 1954,
+                      "text": "Deep text.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1942,
+                          "end": 1952,
+                          "value": "Deep text."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 1954,
+      "end": 1992,
+      "level": 1,
+      "title": "Commented headline",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 1964,
+          "end": 1982,
+          "value": "Commented headline"
+        }
+      ],
+      "tags": [],
+      "commented": true,
+      "children": [
+        {
+          "type": "section",
+          "begin": 1983,
+          "end": 1992,
+          "children": [
+            {
+              "type": "paragraph",
+              "begin": 1983,
+              "end": 1992,
+              "text": "Hidden.",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 1983,
+                  "end": 1990,
+                  "value": "Hidden."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 1992,
+      "end": 2048,
+      "level": 1,
+      "title": "Second top headline",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 1994,
+          "end": 2013,
+          "value": "Second top headline"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "section",
+          "begin": 2014,
+          "end": 2048,
+          "children": [
+            {
+              "type": "paragraph",
+              "begin": 2014,
+              "end": 2022,
+              "text": "Plain.",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 2014,
+                  "end": 2020,
+                  "value": "Plain."
+                }
+              ]
+            },
+            {
+              "type": "footnote-definition",
+              "begin": 2022,
+              "end": 2048,
+              "label": "1",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 2028,
+                  "end": 2047,
+                  "value": " The footnote text."
+                }
+              ],
+              "text": "The footnote text."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

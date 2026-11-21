@@ -1,0 +1,237 @@
+{
+ "frames": [
+  {
+   "w": 347.79999999999995,
+   "view": "VStack",
+   "x": 0,
+   "h": 261.66666666666663,
+   "path": "VStack",
+   "y": 2.842170943040401e-14
+  },
+  {
+   "w": 347.79999999999995,
+   "view": "Flight",
+   "x": 0,
+   "h": 193.33333333333331,
+   "path": "VStack \u203a 1.Flight",
+   "y": 2.842170943040401e-14
+  },
+  {
+   "w": 347.79999999999995,
+   "view": "Card",
+   "path": "VStack \u203a 1.Flight \u203a Card",
+   "x": 0,
+   "h": 193.33333333333331,
+   "y": 2.842170943040401e-14
+  },
+  {
+   "w": 315.79999999999995,
+   "view": "HStack",
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 1.HStack",
+   "x": 16,
+   "h": 22.33333333333333,
+   "y": 16.00000000000003
+  },
+  {
+   "w": 127,
+   "view": "Label",
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 1.HStack \u203a 1.Label",
+   "x": 16,
+   "h": 18.04890950520833,
+   "y": 18.14221191406253
+  },
+  {
+   "w": 63,
+   "view": "StatusPill",
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 1.HStack \u203a 3.StatusPill",
+   "h": 22.33333333333333,
+   "x": 268.79999999999995,
+   "y": 16.00000000000003
+  },
+  {
+   "y": 16.00000000000003,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 1.HStack \u203a 3.StatusPill \u203a Text",
+   "h": 22.33333333333333,
+   "w": 63,
+   "view": "Text",
+   "x": 268.79999999999995
+  },
+  {
+   "y": 50.33333333333336,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack",
+   "h": 62.33333333333333,
+   "x": 16,
+   "w": 315.79999999999995,
+   "view": "HStack"
+  },
+  {
+   "y": 50.33333333333336,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack \u203a 1.VStack",
+   "h": 62.33333333333333,
+   "x": 16,
+   "view": "VStack",
+   "w": 87
+  },
+  {
+   "y": 50.33333333333336,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack \u203a 1.VStack \u203a 1.Text",
+   "h": 48,
+   "w": 87,
+   "view": "Text",
+   "x": 16
+  },
+  {
+   "y": 98.33333333333336,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack \u203a 1.VStack \u203a 2.Text",
+   "h": 14.333333333333329,
+   "x": 16,
+   "view": "Text",
+   "w": 28
+  },
+  {
+   "y": 61.166666666666686,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack \u203a 2.VStack",
+   "h": 40.66666666666667,
+   "w": 153.79999999999995,
+   "x": 111,
+   "view": "VStack"
+  },
+  {
+   "y": 61.166666666666686,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack \u203a 2.VStack \u203a 1.Image",
+   "h": 23.333333333333343,
+   "x": 156.23333333333332,
+   "view": "Image",
+   "w": 24.666666666666657
+  },
+  {
+   "y": 88.50000000000003,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack \u203a 2.VStack \u203a 2.Text",
+   "h": 13.333333333333329,
+   "w": 63.33333333333334,
+   "x": 156.23333333333332,
+   "view": "Text"
+  },
+  {
+   "y": 50.33333333333336,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack \u203a 3.VStack",
+   "h": 62.33333333333333,
+   "w": 59,
+   "view": "VStack",
+   "x": 272.79999999999995
+  },
+  {
+   "y": 50.33333333333336,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack \u203a 3.VStack \u203a 1.Text",
+   "h": 48,
+   "w": 59,
+   "view": "Text",
+   "x": 272.79999999999995
+  },
+  {
+   "y": 98.33333333333336,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 2.HStack \u203a 3.VStack \u203a 2.Text",
+   "h": 14.333333333333329,
+   "x": 294.13333333333327,
+   "view": "Text",
+   "w": 37.666666666666686
+  },
+  {
+   "y": 124.66666666666669,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 3.Divider",
+   "h": 0.3333333333333286,
+   "w": 315.79999999999995,
+   "x": 16,
+   "view": "Divider"
+  },
+  {
+   "y": 137.00000000000003,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 4.Grid",
+   "h": 40.33333333333334,
+   "w": 178.99999999999997,
+   "view": "Grid",
+   "x": 16
+  },
+  {
+   "y": 137.00000000000003,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 4.Grid \u203a 1. \u203a 1.Text",
+   "h": 14.333333333333343,
+   "w": 58.33333333333333,
+   "view": "Text",
+   "x": 16
+  },
+  {
+   "y": 137.00000000000003,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 4.Grid \u203a 1. \u203a 2.Text",
+   "h": 14.333333333333343,
+   "w": 26.999999999999986,
+   "view": "Text",
+   "x": 102.33333333333333
+  },
+  {
+   "y": 137.00000000000003,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 4.Grid \u203a 1. \u203a 3.Text",
+   "h": 14.333333333333343,
+   "x": 157.33333333333331,
+   "view": "Text",
+   "w": 25.666666666666657
+  },
+  {
+   "y": 153.33333333333337,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 4.Grid \u203a 2. \u203a 1.Text",
+   "h": 24,
+   "x": 16,
+   "view": "Text",
+   "w": 46
+  },
+  {
+   "y": 153.33333333333337,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 4.Grid \u203a 2. \u203a 2.Text",
+   "h": 24,
+   "w": 20.66666666666667,
+   "x": 102.33333333333333,
+   "view": "Text"
+  },
+  {
+   "y": 153.33333333333337,
+   "path": "VStack \u203a 1.Flight \u203a Card \u203a 4.Grid \u203a 2. \u203a 3.Text",
+   "h": 24,
+   "w": 37.66666666666666,
+   "x": 157.33333333333331,
+   "view": "Text"
+  },
+  {
+   "y": 205.33333333333334,
+   "path": "VStack \u203a 2.HStack",
+   "h": 56.33333333333334,
+   "w": 303.66666666666663,
+   "view": "HStack",
+   "x": 0
+  },
+  {
+   "y": 205.33333333333334,
+   "path": "VStack \u203a 2.HStack \u203a 1.Button",
+   "h": 56.33333333333334,
+   "w": 137.33333333333331,
+   "x": 0,
+   "view": "Button"
+  },
+  {
+   "y": 216.16117350260419,
+   "path": "VStack \u203a 2.HStack \u203a 2.Button",
+   "h": 34.67765299479166,
+   "w": 158.33333333333331,
+   "view": "Button",
+   "x": 145.33333333333331
+  }
+ ],
+ "kind": "rendered",
+ "size": [
+  348,
+  262
+ ],
+ "issues": [],
+ "capture": "calib-flight-1.png",
+ "card": "calib-flight",
+ "diagnostics": []
+}

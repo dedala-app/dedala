@@ -1,0 +1,1201 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "body",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "body",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "body",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "body"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "subheadline",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "subheadline",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "footnote",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "footnote",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "footnote",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "footnote"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "title3",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "title3",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": "title3"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": {
+       "size": 15
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      },
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas \u00b7 marta@agence-lilas.fr and then some more words to be sure it wraps",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "body",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "body",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "body",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "body"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "subheadline",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "subheadline",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "footnote",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "footnote",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "footnote",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "footnote"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "title3",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "title3",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": "title3"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": {
+       "size": 15
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      },
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "See https://example.com/path for the details and then some more words to be sure it wraps",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "body",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "body",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "body",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "body"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "subheadline",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "subheadline",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "subheadline",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "subheadline"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "footnote",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "footnote",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "footnote",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "footnote"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "title3",
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "title3",
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": "title3"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": {
+       "size": 15
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": {
+       "size": 15
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      },
+      "lineLimit": 1
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      },
+      "lineLimit": 2
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      },
+      "lineLimit": 3
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Circle": {},
+      "frame": {
+       "width": 56,
+       "height": 56
+      }
+     },
+     {
+      "Text": "Agence des Lilas and marta and then some more words to be sure it wraps and wraps again",
+      "font": {
+       "size": 20,
+       "weight": "bold"
+      }
+     }
+    ]
+   }
+  ],
+  "spacing": 6
+ }
+}

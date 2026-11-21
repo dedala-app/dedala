@@ -1,0 +1,1396 @@
+{
+  "type": "org-data",
+  "begin": 0,
+  "end": 2512,
+  "title": "mardi 12 mai 2026",
+  "keywords": {
+    "TITLE": "mardi 12 mai 2026",
+    "DATE": "[2026-05-12 mar. 08:00]",
+    "FILETAGS": ":daily:",
+    "IDENTIFIER": "20260512T080000"
+  },
+  "children": [
+    {
+      "type": "section",
+      "begin": 0,
+      "end": 123,
+      "children": [
+        {
+          "type": "keyword",
+          "begin": 0,
+          "end": 32,
+          "key": "TITLE",
+          "value": "mardi 12 mai 2026"
+        },
+        {
+          "type": "keyword",
+          "begin": 32,
+          "end": 70,
+          "key": "DATE",
+          "value": "[2026-05-12 mar. 08:00]"
+        },
+        {
+          "type": "keyword",
+          "begin": 70,
+          "end": 92,
+          "key": "FILETAGS",
+          "value": ":daily:"
+        },
+        {
+          "type": "keyword",
+          "begin": 92,
+          "end": 123,
+          "key": "IDENTIFIER",
+          "value": "20260512T080000"
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 123,
+      "end": 1200,
+      "level": 1,
+      "title": "Briefing",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 125,
+          "end": 133,
+          "value": "Briefing"
+        }
+      ],
+      "tags": [],
+      "properties": {
+        "GENERATED": "[2026-05-12 mar. 08:00]"
+      },
+      "children": [
+        {
+          "type": "headline",
+          "begin": 190,
+          "end": 262,
+          "level": 2,
+          "title": "Focus",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 193,
+              "end": 198,
+              "value": "Focus"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 199,
+              "end": 262,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 199,
+                  "end": 262,
+                  "text": "Finish the methods chapter draft before the afternoon review.",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 199,
+                      "end": 260,
+                      "value": "Finish the methods chapter draft before the afternoon review."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 262,
+          "end": 679,
+          "level": 2,
+          "title": "Events",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 265,
+              "end": 271,
+              "value": "Events"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 272,
+              "end": 679,
+              "children": [
+                {
+                  "type": "plain-list",
+                  "begin": 272,
+                  "end": 679,
+                  "listType": "unordered",
+                  "children": [
+                    {
+                      "type": "item",
+                      "begin": 272,
+                      "end": 371,
+                      "bullet": "-",
+                      "indent": 0,
+                      "tag": "09:30-10:30",
+                      "text": "Sync with Ada Lindqvist on the reading group schedule",
+                      "contentBegin": 274,
+                      "contentEnd": 370,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 274,
+                          "end": 371,
+                          "text": "09:30-10:30 :: Sync with Ada Lindqvist on the reading group schedule",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 274,
+                              "end": 299,
+                              "value": "09:30-10:30 :: Sync with "
+                            },
+                            {
+                              "type": "link",
+                              "begin": 299,
+                              "end": 340,
+                              "linkType": "denote",
+                              "path": "20260107T170819",
+                              "rawLink": "denote:20260107T170819",
+                              "text": "Ada Lindqvist",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 325,
+                                  "end": 338,
+                                  "value": "Ada Lindqvist"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "plain-text",
+                              "begin": 340,
+                              "end": 370,
+                              "value": " on the reading group schedule"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 371,
+                      "end": 441,
+                      "bullet": "-",
+                      "indent": 0,
+                      "tag": "11:00-11:30",
+                      "text": "1:1 with Tomás Ferreira",
+                      "contentBegin": 373,
+                      "contentEnd": 440,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 373,
+                          "end": 441,
+                          "text": "11:00-11:30 :: 1:1 with Tomás Ferreira",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 373,
+                              "end": 397,
+                              "value": "11:00-11:30 :: 1:1 with "
+                            },
+                            {
+                              "type": "link",
+                              "begin": 397,
+                              "end": 440,
+                              "linkType": "denote",
+                              "path": "20250311T112441",
+                              "rawLink": "denote:20250311T112441",
+                              "text": "Tomás Ferreira",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 423,
+                                  "end": 438,
+                                  "value": "Tomás Ferreira"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 441,
+                      "end": 518,
+                      "bullet": "-",
+                      "indent": 0,
+                      "tag": "14:00-15:00",
+                      "text": "Methods chapter working session",
+                      "contentBegin": 443,
+                      "contentEnd": 517,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 443,
+                          "end": 518,
+                          "text": "14:00-15:00 :: Methods chapter working session",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 443,
+                              "end": 458,
+                              "value": "14:00-15:00 :: "
+                            },
+                            {
+                              "type": "link",
+                              "begin": 458,
+                              "end": 501,
+                              "linkType": "denote",
+                              "path": "20260317T121016",
+                              "rawLink": "denote:20260317T121016",
+                              "text": "Methods chapter",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 484,
+                                  "end": 499,
+                                  "value": "Methods chapter"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "plain-text",
+                              "begin": 501,
+                              "end": 517,
+                              "value": " working session"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 518,
+                      "end": 609,
+                      "bullet": "-",
+                      "indent": 0,
+                      "tag": "16:00-17:30",
+                      "text": "Lab seminar — sourdough fermentation curves",
+                      "contentBegin": 520,
+                      "contentEnd": 608,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 520,
+                          "end": 609,
+                          "text": "16:00-17:30 :: Lab seminar — sourdough fermentation curves",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 520,
+                              "end": 551,
+                              "value": "16:00-17:30 :: Lab seminar — "
+                            },
+                            {
+                              "type": "link",
+                              "begin": 551,
+                              "end": 608,
+                              "linkType": "denote",
+                              "path": "20260506T110622",
+                              "rawLink": "denote:20260506T110622",
+                              "text": "sourdough fermentation curves",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 577,
+                                  "end": 606,
+                                  "value": "sourdough fermentation curves"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 609,
+                      "end": 678,
+                      "bullet": "-",
+                      "indent": 0,
+                      "tag": "19:00",
+                      "text": "Dinner with Noor Haddad",
+                      "contentBegin": 611,
+                      "contentEnd": 677,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 611,
+                          "end": 678,
+                          "text": "19:00 :: Dinner with Noor Haddad",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 611,
+                              "end": 638,
+                              "value": "19:00       :: Dinner with "
+                            },
+                            {
+                              "type": "link",
+                              "begin": 638,
+                              "end": 677,
+                              "linkType": "denote",
+                              "path": "20260506T101455",
+                              "rawLink": "denote:20260506T101455",
+                              "text": "Noor Haddad",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 664,
+                                  "end": 675,
+                                  "value": "Noor Haddad"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 679,
+          "end": 1039,
+          "level": 2,
+          "title": "Scheduled",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 682,
+              "end": 691,
+              "value": "Scheduled"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 692,
+              "end": 1039,
+              "children": [
+                {
+                  "type": "plain-list",
+                  "begin": 692,
+                  "end": 1039,
+                  "listType": "descriptive",
+                  "children": [
+                    {
+                      "type": "item",
+                      "begin": 692,
+                      "end": 780,
+                      "bullet": "-",
+                      "indent": 0,
+                      "tag": "TODO Finish §3 of the methods chapter",
+                      "text": "methods-chapter",
+                      "contentBegin": 735,
+                      "contentEnd": 779,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 735,
+                          "end": 780,
+                          "text": "methods-chapter",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 735,
+                              "end": 736,
+                              "value": " "
+                            },
+                            {
+                              "type": "link",
+                              "begin": 736,
+                              "end": 779,
+                              "linkType": "denote",
+                              "path": "20260317T121016",
+                              "rawLink": "denote:20260317T121016",
+                              "text": "methods-chapter",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 762,
+                                  "end": 777,
+                                  "value": "methods-chapter"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 780,
+                      "end": 855,
+                      "bullet": "-",
+                      "indent": 0,
+                      "tag": "NEXT Review the poster draft",
+                      "text": "poster-draft",
+                      "contentBegin": 813,
+                      "contentEnd": 854,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 813,
+                          "end": 855,
+                          "text": "poster-draft",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 813,
+                              "end": 814,
+                              "value": " "
+                            },
+                            {
+                              "type": "link",
+                              "begin": 814,
+                              "end": 854,
+                              "linkType": "denote",
+                              "path": "20250923T065351",
+                              "rawLink": "denote:20250923T065351",
+                              "text": "poster-draft",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 840,
+                                  "end": 852,
+                                  "value": "poster-draft"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 855,
+                      "end": 958,
+                      "bullet": "-",
+                      "indent": 0,
+                      "tag": "NEXT Draft the garden committee report for next week",
+                      "text": "garden-committee",
+                      "contentBegin": 912,
+                      "contentEnd": 957,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 912,
+                          "end": 958,
+                          "text": "garden-committee",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 912,
+                              "end": 913,
+                              "value": " "
+                            },
+                            {
+                              "type": "link",
+                              "begin": 913,
+                              "end": 957,
+                              "linkType": "denote",
+                              "path": "20251116T165359",
+                              "rawLink": "denote:20251116T165359",
+                              "text": "garden-committee",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 939,
+                                  "end": 955,
+                                  "value": "garden-committee"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 958,
+                      "end": 1038,
+                      "bullet": "-",
+                      "indent": 0,
+                      "tag": "TODO Reply to Pieter's comments",
+                      "text": "pieter-van-dam",
+                      "contentBegin": 994,
+                      "contentEnd": 1037,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 994,
+                          "end": 1038,
+                          "text": "pieter-van-dam",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 994,
+                              "end": 995,
+                              "value": " "
+                            },
+                            {
+                              "type": "link",
+                              "begin": 995,
+                              "end": 1037,
+                              "linkType": "denote",
+                              "path": "20260401T185646",
+                              "rawLink": "denote:20260401T185646",
+                              "text": "pieter-van-dam",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 1021,
+                                  "end": 1035,
+                                  "value": "pieter-van-dam"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 1039,
+          "end": 1200,
+          "level": 2,
+          "title": "Habits",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 1042,
+              "end": 1048,
+              "value": "Habits"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 1049,
+              "end": 1200,
+              "children": [
+                {
+                  "type": "plain-list",
+                  "begin": 1049,
+                  "end": 1200,
+                  "listType": "unordered",
+                  "children": [
+                    {
+                      "type": "item",
+                      "begin": 1049,
+                      "end": 1067,
+                      "bullet": "-",
+                      "indent": 0,
+                      "checkbox": "on",
+                      "checkboxBegin": 1051,
+                      "checkboxEnd": 1054,
+                      "text": "Morning run",
+                      "contentBegin": 1055,
+                      "contentEnd": 1066,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1055,
+                          "end": 1067,
+                          "text": "Morning run",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1055,
+                              "end": 1066,
+                              "value": "Morning run"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 1067,
+                      "end": 1085,
+                      "bullet": "-",
+                      "indent": 0,
+                      "checkbox": "on",
+                      "checkboxBegin": 1069,
+                      "checkboxEnd": 1072,
+                      "text": "Read 30 min",
+                      "contentBegin": 1073,
+                      "contentEnd": 1084,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1073,
+                          "end": 1085,
+                          "text": "Read 30 min",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1073,
+                              "end": 1084,
+                              "value": "Read 30 min"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 1085,
+                      "end": 1102,
+                      "bullet": "-",
+                      "indent": 0,
+                      "checkbox": "off",
+                      "checkboxBegin": 1087,
+                      "checkboxEnd": 1090,
+                      "text": "Meditation",
+                      "contentBegin": 1091,
+                      "contentEnd": 1101,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1091,
+                          "end": 1102,
+                          "text": "Meditation",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1091,
+                              "end": 1101,
+                              "value": "Meditation"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 1102,
+                      "end": 1128,
+                      "bullet": "-",
+                      "indent": 0,
+                      "checkbox": "on",
+                      "checkboxBegin": 1104,
+                      "checkboxEnd": 1107,
+                      "text": "No coffee after 4pm",
+                      "contentBegin": 1108,
+                      "contentEnd": 1127,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1108,
+                          "end": 1128,
+                          "text": "No coffee after 4pm",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1108,
+                              "end": 1127,
+                              "value": "No coffee after 4pm"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 1128,
+                      "end": 1147,
+                      "bullet": "-",
+                      "indent": 0,
+                      "checkbox": "on",
+                      "checkboxBegin": 1130,
+                      "checkboxEnd": 1133,
+                      "text": "Sleep ≥ 7h",
+                      "contentBegin": 1134,
+                      "contentEnd": 1146,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1134,
+                          "end": 1147,
+                          "text": "Sleep ≥ 7h",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1134,
+                              "end": 1146,
+                              "value": "Sleep ≥ 7h"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 1147,
+                      "end": 1199,
+                      "bullet": "-",
+                      "indent": 0,
+                      "checkbox": "trans",
+                      "checkboxBegin": 1149,
+                      "checkboxEnd": 1152,
+                      "text": "Long study session (skipped: chapter meeting)",
+                      "contentBegin": 1153,
+                      "contentEnd": 1198,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1153,
+                          "end": 1199,
+                          "text": "Long study session (skipped: chapter meeting)",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1153,
+                              "end": 1198,
+                              "value": "Long study session (skipped: chapter meeting)"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 1200,
+      "end": 1687,
+      "level": 1,
+      "title": "Notes",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 1202,
+          "end": 1207,
+          "value": "Notes"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "section",
+          "begin": 1208,
+          "end": 1687,
+          "children": [
+            {
+              "type": "paragraph",
+              "begin": 1209,
+              "end": 1378,
+              "text": "Sync with Ada went well — she'll take point on drafting the new reading list. We agreed the schedule needs a slot for guest speakers before it goes to the committee.",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 1209,
+                  "end": 1376,
+                  "value": "Sync with Ada went well — she'll take point on drafting the new reading list.\nWe agreed the schedule needs a slot for guest speakers before it goes to the\ncommittee."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "begin": 1378,
+              "end": 1456,
+              "text": "Tomás finished the starter-culture logger prototype. Results look promising:",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 1378,
+                  "end": 1455,
+                  "value": "Tomás finished the starter-culture logger prototype. Results look promising:"
+                }
+              ]
+            },
+            {
+              "type": "plain-list",
+              "begin": 1456,
+              "end": 1565,
+              "listType": "unordered",
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 1456,
+                  "end": 1509,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "14% of the jars drift more than a degree overnight",
+                  "contentBegin": 1458,
+                  "contentEnd": 1508,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1458,
+                      "end": 1509,
+                      "text": "14% of the jars drift more than a degree overnight",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1458,
+                          "end": 1508,
+                          "value": "14% of the jars drift more than a degree overnight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 1509,
+                  "end": 1565,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "The script reads a full week of sensor data in ~3min",
+                  "contentBegin": 1511,
+                  "contentEnd": 1563,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1511,
+                      "end": 1564,
+                      "text": "The script reads a full week of sensor data in ~3min",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1511,
+                          "end": 1563,
+                          "value": "The script reads a full week of sensor data in ~3min"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "begin": 1565,
+              "end": 1687,
+              "text": "Methods session: we restructured §3 around the three measurement campaigns. Still need to write the new figure caption.",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 1565,
+                  "end": 1685,
+                  "value": "Methods session: we restructured §3 around the three measurement campaigns.\nStill need to write the new figure caption."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 1687,
+      "end": 2512,
+      "level": 1,
+      "title": "Recap",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 1689,
+          "end": 1694,
+          "value": "Recap"
+        }
+      ],
+      "tags": [],
+      "properties": {
+        "GENERATED": "[2026-05-12 mar. 20:00]"
+      },
+      "children": [
+        {
+          "type": "headline",
+          "begin": 1751,
+          "end": 1992,
+          "level": 2,
+          "title": "Done",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 1754,
+              "end": 1758,
+              "value": "Done"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 1759,
+              "end": 1992,
+              "children": [
+                {
+                  "type": "plain-list",
+                  "begin": 1759,
+                  "end": 1992,
+                  "listType": "unordered",
+                  "children": [
+                    {
+                      "type": "item",
+                      "begin": 1759,
+                      "end": 1807,
+                      "bullet": "-",
+                      "indent": 0,
+                      "text": "DONE Sync with Ada on the reading list (1h00)",
+                      "contentBegin": 1761,
+                      "contentEnd": 1806,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1761,
+                          "end": 1807,
+                          "text": "DONE Sync with Ada on the reading list (1h00)",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1761,
+                              "end": 1806,
+                              "value": "DONE Sync with Ada on the reading list (1h00)"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 1807,
+                      "end": 1868,
+                      "bullet": "-",
+                      "indent": 0,
+                      "text": "DONE 1:1 with Tomás — reviewed the logger output (0h30)",
+                      "contentBegin": 1809,
+                      "contentEnd": 1867,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1809,
+                          "end": 1868,
+                          "text": "DONE 1:1 with Tomás — reviewed the logger output (0h30)",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1809,
+                              "end": 1867,
+                              "value": "DONE 1:1 with Tomás — reviewed the logger output (0h30)"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 1868,
+                      "end": 1922,
+                      "bullet": "-",
+                      "indent": 0,
+                      "text": "DONE Restructured §3 of the methods chapter (1h45)",
+                      "contentBegin": 1870,
+                      "contentEnd": 1921,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1870,
+                          "end": 1922,
+                          "text": "DONE Restructured §3 of the methods chapter (1h45)",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1870,
+                              "end": 1921,
+                              "value": "DONE Restructured §3 of the methods chapter (1h45)"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 1922,
+                      "end": 1950,
+                      "bullet": "-",
+                      "indent": 0,
+                      "text": "DONE Lab seminar attended",
+                      "contentBegin": 1924,
+                      "contentEnd": 1949,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1924,
+                          "end": 1950,
+                          "text": "DONE Lab seminar attended",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1924,
+                              "end": 1949,
+                              "value": "DONE Lab seminar attended"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 1950,
+                      "end": 1991,
+                      "bullet": "-",
+                      "indent": 0,
+                      "text": "DONE Reply to Pieter's comments (0h25)",
+                      "contentBegin": 1952,
+                      "contentEnd": 1990,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1952,
+                          "end": 1991,
+                          "text": "DONE Reply to Pieter's comments (0h25)",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1952,
+                              "end": 1990,
+                              "value": "DONE Reply to Pieter's comments (0h25)"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 1992,
+          "end": 2222,
+          "level": 2,
+          "title": "Time",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 1995,
+              "end": 1999,
+              "value": "Time"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 2000,
+              "end": 2222,
+              "children": [
+                {
+                  "type": "table",
+                  "begin": 2000,
+                  "end": 2222,
+                  "tableType": "org",
+                  "hasHeader": true,
+                  "children": [
+                    {
+                      "type": "table-row",
+                      "begin": 2000,
+                      "end": 2031,
+                      "rowType": "standard",
+                      "children": [
+                        {
+                          "type": "table-cell",
+                          "begin": 2002,
+                          "end": 2009,
+                          "text": "Project",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2002,
+                              "end": 2009,
+                              "value": "Project"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-cell",
+                          "begin": 2023,
+                          "end": 2028,
+                          "text": "Hours",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2023,
+                              "end": 2028,
+                              "value": "Hours"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "begin": 2031,
+                      "end": 2062,
+                      "rowType": "rule"
+                    },
+                    {
+                      "type": "table-row",
+                      "begin": 2062,
+                      "end": 2095,
+                      "rowType": "standard",
+                      "children": [
+                        {
+                          "type": "table-cell",
+                          "begin": 2064,
+                          "end": 2082,
+                          "text": "Thesis — methods",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2064,
+                              "end": 2082,
+                              "value": "Thesis — methods"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-cell",
+                          "begin": 2089,
+                          "end": 2092,
+                          "text": "2.5",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2089,
+                              "end": 2092,
+                              "value": "2.5"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "begin": 2095,
+                      "end": 2128,
+                      "rowType": "standard",
+                      "children": [
+                        {
+                          "type": "table-cell",
+                          "begin": 2097,
+                          "end": 2117,
+                          "text": "Thesis — mentoring",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2097,
+                              "end": 2117,
+                              "value": "Thesis — mentoring"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-cell",
+                          "begin": 2122,
+                          "end": 2125,
+                          "text": "0.5",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2122,
+                              "end": 2125,
+                              "value": "0.5"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "begin": 2128,
+                      "end": 2159,
+                      "rowType": "standard",
+                      "children": [
+                        {
+                          "type": "table-cell",
+                          "begin": 2130,
+                          "end": 2146,
+                          "text": "Garden committee",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2130,
+                              "end": 2146,
+                              "value": "Garden committee"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-cell",
+                          "begin": 2153,
+                          "end": 2156,
+                          "text": "1.0",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2153,
+                              "end": 2156,
+                              "value": "1.0"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "begin": 2159,
+                      "end": 2190,
+                      "rowType": "standard",
+                      "children": [
+                        {
+                          "type": "table-cell",
+                          "begin": 2161,
+                          "end": 2166,
+                          "text": "Admin",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2161,
+                              "end": 2166,
+                              "value": "Admin"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-cell",
+                          "begin": 2184,
+                          "end": 2187,
+                          "text": "0.5",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2184,
+                              "end": 2187,
+                              "value": "0.5"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-row",
+                      "begin": 2190,
+                      "end": 2221,
+                      "rowType": "standard",
+                      "children": [
+                        {
+                          "type": "table-cell",
+                          "begin": 2192,
+                          "end": 2199,
+                          "text": "Reading",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2192,
+                              "end": 2199,
+                              "value": "Reading"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "table-cell",
+                          "begin": 2215,
+                          "end": 2218,
+                          "text": "1.5",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 2215,
+                              "end": 2218,
+                              "value": "1.5"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 2222,
+          "end": 2512,
+          "level": 2,
+          "title": "Reflection",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 2225,
+              "end": 2235,
+              "value": "Reflection"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 2236,
+              "end": 2512,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 2236,
+                  "end": 2512,
+                  "text": "Productive day overall. The §3 restructuring took longer than expected because the campaigns didn't map cleanly to the original sections — worth a note in the methodology document. The poster review slipped to tomorrow; not a blocker but tight against the Friday deadline.",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 2236,
+                      "end": 2511,
+                      "value": "Productive day overall. The §3 restructuring took longer than expected because\nthe campaigns didn't map cleanly to the original sections — worth a note in the\nmethodology document. The poster review slipped to tomorrow; not a blocker but\ntight against the Friday deadline."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

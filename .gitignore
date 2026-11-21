@@ -1,0 +1,20 @@
+# SPDX-FileCopyrightText: 2026 Julien Malka
+# SPDX-License-Identifier: MIT
+
+*.xcodeproj
+build/
+screenshots/
+xcuserdata/
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+bench/
+twin/fonts/
+twin/fonts-ios/
+twin/glyphs/
+twin/linguistic/
+twin/symbols-glyphs.bin.gz
+.mac.env
+native/target/
+native/Org.xcframework/

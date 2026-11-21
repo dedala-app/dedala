@@ -1,0 +1,776 @@
+{
+  "type": "org-data",
+  "begin": 0,
+  "end": 764,
+  "children": [
+    {
+      "type": "section",
+      "begin": 69,
+      "end": 286,
+      "children": [
+        {
+          "type": "paragraph",
+          "begin": 69,
+          "end": 286,
+          "text": "Text before the first heading with bold, italic, struck, code, a link, a wikilink, a plain Plan, a relative and an image and a footnote.",
+          "children": [
+            {
+              "type": "plain-text",
+              "begin": 69,
+              "end": 104,
+              "value": "Text before the first heading with "
+            },
+            {
+              "type": "bold",
+              "begin": 104,
+              "end": 112,
+              "text": "bold",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 106,
+                  "end": 110,
+                  "value": "bold"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 112,
+              "end": 114,
+              "value": ", "
+            },
+            {
+              "type": "italic",
+              "begin": 114,
+              "end": 122,
+              "text": "italic",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 115,
+                  "end": 121,
+                  "value": "italic"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 122,
+              "end": 124,
+              "value": ", "
+            },
+            {
+              "type": "strike-through",
+              "begin": 124,
+              "end": 134,
+              "text": "struck",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 126,
+                  "end": 132,
+                  "value": "struck"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 134,
+              "end": 136,
+              "value": ", "
+            },
+            {
+              "type": "code",
+              "begin": 136,
+              "end": 142,
+              "value": "code"
+            },
+            {
+              "type": "plain-text",
+              "begin": 142,
+              "end": 146,
+              "value": ",\na "
+            },
+            {
+              "type": "link",
+              "begin": 146,
+              "end": 173,
+              "linkType": "https",
+              "path": "//example.org",
+              "rawLink": "https://example.org",
+              "text": "link",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 147,
+                  "end": 151,
+                  "value": "link"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 173,
+              "end": 177,
+              "value": ", a "
+            },
+            {
+              "type": "link",
+              "begin": 177,
+              "end": 199,
+              "linkType": "fuzzy",
+              "path": "Committee",
+              "rawLink": "Committee",
+              "text": "wikilink",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 189,
+                  "end": 197,
+                  "value": "wikilink"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 199,
+              "end": 209,
+              "value": ", a plain "
+            },
+            {
+              "type": "link",
+              "begin": 209,
+              "end": 217,
+              "linkType": "fuzzy",
+              "path": "Plan",
+              "rawLink": "Plan",
+              "text": "Plan",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 211,
+                  "end": 215,
+                  "value": "Plan"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 217,
+              "end": 221,
+              "value": ",\na "
+            },
+            {
+              "type": "link",
+              "begin": 221,
+              "end": 240,
+              "linkType": "file",
+              "path": "plan.md",
+              "rawLink": "plan.md",
+              "text": "relative",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 222,
+                  "end": 230,
+                  "value": "relative"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 240,
+              "end": 248,
+              "value": " and an "
+            },
+            {
+              "type": "link",
+              "begin": 248,
+              "end": 265,
+              "linkType": "file",
+              "path": "pic.png",
+              "rawLink": "pic.png",
+              "isImage": true,
+              "text": "image",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 250,
+                  "end": 255,
+                  "value": "image"
+                }
+              ]
+            },
+            {
+              "type": "plain-text",
+              "begin": 265,
+              "end": 280,
+              "value": " and a footnote"
+            },
+            {
+              "type": "footnote-reference",
+              "begin": 280,
+              "end": 284,
+              "label": "1"
+            },
+            {
+              "type": "plain-text",
+              "begin": 284,
+              "end": 285,
+              "value": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 287,
+      "end": 708,
+      "level": 1,
+      "tags": [],
+      "title": "First heading",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 289,
+          "end": 302,
+          "value": "First heading"
+        }
+      ],
+      "children": [
+        {
+          "type": "section",
+          "begin": 304,
+          "end": 653,
+          "children": [
+            {
+              "type": "paragraph",
+              "begin": 304,
+              "end": 340,
+              "text": "A paragraph wrapped over two lines.",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 304,
+                  "end": 339,
+                  "value": "A paragraph wrapped\nover two lines."
+                }
+              ]
+            },
+            {
+              "type": "plain-list",
+              "begin": 341,
+              "end": 449,
+              "listType": "unordered",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 341,
+                  "end": 397,
+                  "indent": 0,
+                  "bullet": "-",
+                  "checkbox": "off",
+                  "checkboxBegin": 343,
+                  "checkboxEnd": 346,
+                  "text": "An unchecked task that wraps onto the next line",
+                  "contentBegin": 347,
+                  "contentEnd": 396,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 347,
+                      "end": 396,
+                      "text": "An unchecked task that wraps onto the next line",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 347,
+                          "end": 396,
+                          "value": "An unchecked task that wraps\nonto the next line"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 397,
+                  "end": 418,
+                  "indent": 0,
+                  "bullet": "-",
+                  "checkbox": "on",
+                  "checkboxBegin": 399,
+                  "checkboxEnd": 402,
+                  "text": "A checked task",
+                  "contentBegin": 403,
+                  "contentEnd": 417,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 403,
+                      "end": 417,
+                      "text": "A checked task",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 403,
+                          "end": 417,
+                          "value": "A checked task"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 418,
+                  "end": 449,
+                  "indent": 0,
+                  "bullet": "-",
+                  "text": "A plain item",
+                  "contentBegin": 420,
+                  "contentEnd": 432,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 420,
+                      "end": 432,
+                      "text": "A plain item",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 420,
+                          "end": 432,
+                          "value": "A plain item"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "plain-list",
+                      "begin": 435,
+                      "end": 449,
+                      "listType": "unordered",
+                      "indent": 2,
+                      "children": [
+                        {
+                          "type": "item",
+                          "begin": 435,
+                          "end": 449,
+                          "indent": 2,
+                          "bullet": "-",
+                          "text": "nested item",
+                          "contentBegin": 437,
+                          "contentEnd": 448,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "begin": 437,
+                              "end": 448,
+                              "text": "nested item",
+                              "children": [
+                                {
+                                  "type": "plain-text",
+                                  "begin": 437,
+                                  "end": 448,
+                                  "value": "nested item"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "plain-list",
+              "begin": 449,
+              "end": 469,
+              "listType": "ordered",
+              "indent": 0,
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 449,
+                  "end": 458,
+                  "indent": 0,
+                  "counter": "1",
+                  "bullet": "1.",
+                  "text": "first",
+                  "contentBegin": 452,
+                  "contentEnd": 457,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 452,
+                      "end": 457,
+                      "text": "first",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 452,
+                          "end": 457,
+                          "value": "first"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 458,
+                  "end": 469,
+                  "indent": 0,
+                  "counter": "2",
+                  "bullet": "2.",
+                  "text": "second",
+                  "contentBegin": 461,
+                  "contentEnd": 467,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 461,
+                      "end": 467,
+                      "text": "second",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 461,
+                          "end": 467,
+                          "value": "second"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "begin": 469,
+              "end": 529,
+              "tableType": "org",
+              "hasHeader": true,
+              "children": [
+                {
+                  "type": "table-row",
+                  "begin": 469,
+                  "end": 489,
+                  "rowType": "standard",
+                  "children": [
+                    {
+                      "type": "table-cell",
+                      "begin": 470,
+                      "end": 479,
+                      "text": "Project",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 471,
+                          "end": 478,
+                          "value": "Project"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-cell",
+                      "begin": 480,
+                      "end": 487,
+                      "text": "Hours",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 481,
+                          "end": 486,
+                          "value": "Hours"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "table-row",
+                  "begin": 509,
+                  "end": 529,
+                  "rowType": "standard",
+                  "children": [
+                    {
+                      "type": "table-cell",
+                      "begin": 510,
+                      "end": 519,
+                      "text": "TOSEM",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 511,
+                          "end": 516,
+                          "value": "TOSEM"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "table-cell",
+                      "begin": 520,
+                      "end": 527,
+                      "text": "2.5",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 521,
+                          "end": 524,
+                          "value": "2.5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "src-block",
+              "begin": 530,
+              "end": 566,
+              "language": "python",
+              "parameters": "title=x",
+              "value": "print(\"hello\")\n"
+            },
+            {
+              "type": "example-block",
+              "begin": 572,
+              "end": 586,
+              "value": "indented code\n"
+            },
+            {
+              "type": "quote-block",
+              "begin": 587,
+              "end": 605,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 589,
+                  "end": 605,
+                  "text": "Quoted words.",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 589,
+                      "end": 596,
+                      "value": "Quoted "
+                    },
+                    {
+                      "type": "italic",
+                      "begin": 596,
+                      "end": 603,
+                      "text": "words",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 597,
+                          "end": 602,
+                          "value": "words"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "plain-text",
+                      "begin": 603,
+                      "end": 604,
+                      "value": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "export-block",
+              "begin": 606,
+              "end": 628,
+              "backend": "html",
+              "value": "<div>html block</div>\n"
+            },
+            {
+              "type": "paragraph",
+              "begin": 629,
+              "end": 648,
+              "text": "Hard break here.",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 629,
+                  "end": 633,
+                  "value": "Hard"
+                },
+                {
+                  "type": "line-break",
+                  "begin": 633,
+                  "end": 636
+                },
+                {
+                  "type": "plain-text",
+                  "begin": 636,
+                  "end": 647,
+                  "value": "break here."
+                }
+              ]
+            },
+            {
+              "type": "horizontal-rule",
+              "begin": 649,
+              "end": 653
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 654,
+          "end": 708,
+          "level": 2,
+          "tags": [],
+          "title": "Second heading",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 657,
+              "end": 671,
+              "value": "Second heading"
+            }
+          ],
+          "children": [
+            {
+              "type": "section",
+              "begin": 673,
+              "end": 684,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 673,
+                  "end": 684,
+                  "text": "More text.",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 673,
+                      "end": 683,
+                      "value": "More text."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "headline",
+              "begin": 685,
+              "end": 708,
+              "level": 3,
+              "tags": [],
+              "title": "Third level",
+              "objects": [
+                {
+                  "type": "plain-text",
+                  "begin": 689,
+                  "end": 700,
+                  "value": "Third level"
+                }
+              ],
+              "children": [
+                {
+                  "type": "section",
+                  "begin": 702,
+                  "end": 708,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 702,
+                      "end": 708,
+                      "text": "Deep.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 702,
+                          "end": 707,
+                          "value": "Deep."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 709,
+      "end": 764,
+      "level": 1,
+      "tags": [],
+      "title": "Another top heading",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 711,
+          "end": 730,
+          "value": "Another top heading"
+        }
+      ],
+      "children": [
+        {
+          "type": "section",
+          "begin": 732,
+          "end": 764,
+          "children": [
+            {
+              "type": "paragraph",
+              "begin": 732,
+              "end": 738,
+              "text": "Last.",
+              "children": [
+                {
+                  "type": "plain-text",
+                  "begin": 732,
+                  "end": 737,
+                  "value": "Last."
+                }
+              ]
+            },
+            {
+              "type": "footnote-definition",
+              "begin": 739,
+              "end": 764,
+              "label": "1",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "begin": 745,
+                  "end": 764,
+                  "text": "The footnote text.",
+                  "children": [
+                    {
+                      "type": "plain-text",
+                      "begin": 745,
+                      "end": 763,
+                      "value": "The footnote text."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "A markdown note",
+  "keywords": {
+    "TITLE": "A markdown note",
+    "TAGS": "[notes, test]",
+    "DATE": "2026-11-08"
+  }
+}

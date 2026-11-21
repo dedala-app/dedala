@@ -1,0 +1,206 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "October budget",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Image": "exclamationmark.triangle.fill",
+      "foregroundStyle": "red",
+      "font": "title2"
+     },
+     {
+      "Text": "380 kr",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "left of 11,600 kr, as of 26 Oct",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Eating out is 890 kr over its 2,000 kr limit",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Subscriptions are almost at their limit: 1,180 of 1,200 kr",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Groceries",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "4\u202f210 kr / 5\u202f000",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 4210,
+      "in": [
+       0,
+       5000
+      ],
+      "style": "linear"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Eating out",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "2\u202f890 kr / 2\u202f000",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 2000,
+      "in": [
+       0,
+       2000
+      ],
+      "style": "linear",
+      "tint": "red"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Transport",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "640 kr / 900",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 640,
+      "in": [
+       0,
+       900
+      ],
+      "style": "linear"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Subscriptions",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "1\u202f180 kr / 1\u202f200",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 1180,
+      "in": [
+       0,
+       1200
+      ],
+      "style": "linear"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Other",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "2\u202f300 kr / 2\u202f500",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 2300,
+      "in": [
+       0,
+       2500
+      ],
+      "style": "linear"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {},
+ "state": {}
+}

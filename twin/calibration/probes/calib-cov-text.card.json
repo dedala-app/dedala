@@ -1,0 +1,127 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Ünïcödé çà et là, Ærø Łódź Œuvre naïve façade über Straße"
+   },
+   {
+    "Text": "Ελληνικά κείμενο με μερικές λέξεις για να δούμε το πλάτος της γραμμής"
+   },
+   {
+    "Text": "Русский текст с несколькими словами, чтобы проверить ширину строки и перенос"
+   },
+   {
+    "Text": "Svenska: Åsa åt äpplen och öl på Östermalm förrän nästa år"
+   },
+   {
+    "Text": "Français : l'été dernier, à Noël, Œdipe cœur naïf ça va être très dû"
+   },
+   {
+    "Text": "Emoji in line 🚀 and more 🎉🎉 then text 👩‍💻 family 👨‍👩‍👧 flag 🇫🇷 end"
+   },
+   {
+    "Text": "🚀"
+   },
+   {
+    "Text": "Plain then 🎉"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "italic": true
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "font": "body.italic"
+   },
+   {
+    "Text": "Short italic",
+    "italic": true
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "monospaced": true
+   },
+   {
+    "Text": "0123456789 mono",
+    "font": {
+     "size": 15,
+     "design": "monospaced"
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "textCase": "uppercase"
+   },
+   {
+    "Text": "lower CASE Mixed",
+    "textCase": "lowercase"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "tracking": 2
+   },
+   {
+    "Text": "Tracked tight",
+    "tracking": -1
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "lineSpacing": 6
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "lineSpacing": 6,
+    "font": "caption"
+   },
+   {
+    "Text": "Bold via modifier The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "bold": true
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "fontWeight": "light"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "fontWeight": "black"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "fontDesign": "rounded",
+    "font": "title3"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "fontDesign": "serif"
+   },
+   {
+    "Text": "Café Niño über ÆØÅ ß ẞ",
+    "font": "title.bold"
+   },
+   {
+    "Text": "Tabs\tand\ttabs here",
+    "font": "body"
+   },
+   {
+    "Text": "Line one\nLine two\nLine three"
+   },
+   {
+    "Text": "Hyphenated-words everywhere: state-of-the-art self-hosting re-entrant"
+   },
+   {
+    "Text": "averyveryverylongwordwithoutanybreakopportunitywhatsoeverthatmustwrap"
+   },
+   {
+    "Text": "https://example.com/a/very/long/path/that/keeps/going/and/going/without/spaces"
+   },
+   {
+    "Text": "12:34 · 56,789.01 € · +1 (555) 010-2030 · 2026-10-28"
+   },
+   {
+    "Text": "x²+y² ≤ ½ ∑ ∞ → ← ≠ ≈ ° ± ™ © ®"
+   }
+  ],
+  "spacing": 6,
+  "alignment": "leading"
+ }
+}

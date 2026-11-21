@@ -1,0 +1,150 @@
+{
+ "diagnostics": [],
+ "card": "doc-04-dinner",
+ "size": [
+  348,
+  530
+ ],
+ "kind": "rendered",
+ "issues": [],
+ "frames": [
+  {
+   "x": 0,
+   "y": 0,
+   "w": 347.79999999999995,
+   "view": "Card",
+   "path": "Card",
+   "h": 530
+  },
+  {
+   "view": "ZStack",
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.ZStack",
+   "y": 16,
+   "h": 150
+  },
+  {
+   "x": 16,
+   "view": "Gradient",
+   "path": "Card \u203a 1.ZStack \u203a 1.Gradient",
+   "y": 16,
+   "w": 315.79999999999995,
+   "h": 150
+  },
+  {
+   "view": "VStack",
+   "y": 16,
+   "path": "Card \u203a 1.ZStack \u203a 2.VStack",
+   "w": 315.79999999999995,
+   "x": 16,
+   "h": 150
+  },
+  {
+   "view": "Text",
+   "y": 89.33333333333334,
+   "path": "Card \u203a 1.ZStack \u203a 2.VStack \u203a 1.Text",
+   "x": 32,
+   "w": 136,
+   "h": 40.66666666666666
+  },
+  {
+   "x": 32,
+   "w": 138.33333333333331,
+   "path": "Card \u203a 1.ZStack \u203a 2.VStack \u203a 2.Text",
+   "view": "Text",
+   "h": 18,
+   "y": 132
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.ZStack \u203a 3.Image",
+   "view": "Image",
+   "h": 150,
+   "y": 16
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 10.Button",
+   "view": "Button",
+   "h": 50.33333333333337,
+   "y": 463.66666666666663
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 2.Stepper",
+   "view": "Stepper",
+   "h": 32,
+   "y": 180
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 3.Picker",
+   "view": "Picker",
+   "h": 31,
+   "y": 226
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 4.Toggle",
+   "view": "Toggle",
+   "h": 28,
+   "y": 271
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 5.Toggle",
+   "view": "Toggle",
+   "h": 28,
+   "y": 313
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 7.TextField",
+   "view": "TextField",
+   "h": 40,
+   "y": 355
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 8.Divider",
+   "view": "Divider",
+   "h": 0.3333333333333144,
+   "y": 409
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 9.HStack",
+   "view": "HStack",
+   "h": 26.333333333333314,
+   "y": 423.3333333333333
+  },
+  {
+   "x": 16,
+   "w": 46,
+   "path": "Card \u203a 9.HStack \u203a 1.Text",
+   "view": "Text",
+   "h": 20.333333333333314,
+   "y": 426.3333333333333
+  },
+  {
+   "x": 269.79999999999995,
+   "w": 62,
+   "path": "Card \u203a 9.HStack \u203a 3.Text",
+   "view": "Text",
+   "h": 26.333333333333314,
+   "y": 423.3333333333333
+  }
+ ],
+ "at": "2026-10-28T21:45:21Z",
+ "capture": "doc-04-dinner-6.png"
+}

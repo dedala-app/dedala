@@ -1,0 +1,155 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Our plumber",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Image": "person.crop.circle.fill",
+      "font": "largeTitle",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Morten Kj\u00e6r",
+        "font": "headline"
+       },
+       {
+        "Text": "Kj\u00e6r VVS, plumber",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "lineLimit": 2
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     }
+    ],
+    "spacing": 10
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Morten Kj\u00e6r",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "Kj\u00e6r VVS",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Came 3 March for the kitchen tap",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Cost 1,850 kr",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Your note: fast, tidy, call again",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Call",
+      "symbol": "phone",
+      "style": "bordered",
+      "action": {
+       "call": "+45 31 22 48 90"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Text",
+      "symbol": "message",
+      "style": "bordered",
+      "action": {
+       "message": "+45 31 22 48 90"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Mail",
+      "symbol": "envelope",
+      "style": "bordered",
+      "action": {
+       "mail": "morten@plumbing.example"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     }
+    ],
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Call him",
+      "style": "bordered",
+      "action": {
+       "send": {
+        "about": "our-plumber",
+        "do": "call"
+       },
+       "say": "Call him"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Mail him",
+      "style": "bordered",
+      "action": {
+       "send": {
+        "about": "our-plumber",
+        "do": "mail"
+       },
+       "say": "Mail him"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     }
+    ],
+    "spacing": 8
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {
+  "about": "our-plumber"
+ },
+ "state": {}
+}

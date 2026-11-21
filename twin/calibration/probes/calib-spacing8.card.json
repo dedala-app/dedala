@@ -1,0 +1,408 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "VStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 108.4
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 108.4
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 118.4
+    },
+    "padding": {
+     "horizontal": 5
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 128.4
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 108.32
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 108.32
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 118.32
+    },
+    "padding": {
+     "horizontal": 5
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 128.32
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 108.28
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 108.28
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 118.28
+    },
+    "padding": {
+     "horizontal": 5
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 128.28
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 108.2
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 108.2
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 118.2
+    },
+    "padding": {
+     "horizontal": 5
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Boarding pass",
+      "lineLimit": 3
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 128.2
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 180.501
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 180.501
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 190.501
+    },
+    "padding": {
+     "horizontal": 5
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 200.501
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 180.421
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 180.421
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 190.421
+    },
+    "padding": {
+     "horizontal": 5
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 200.421
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 180.381
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 180.381
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 190.381
+    },
+    "padding": {
+     "horizontal": 5
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 200.381
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 180.301
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 180.301
+    }
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     }
+    ],
+    "frame": {
+     "width": 190.301
+    },
+    "padding": {
+     "horizontal": 5
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport",
+      "lineLimit": 3
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 200.301
+    }
+   }
+  ],
+  "spacing": 4,
+  "alignment": "leading"
+ }
+}

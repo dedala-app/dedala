@@ -1,0 +1,305 @@
+{
+ "size": [
+  348,
+  863
+ ],
+ "issues": [
+  "VStack \u203a 1.Card \u203a 4.Button is a small tap target: 127\u00d718pt",
+  "The card is 862pt tall but only 617pt of the conversation show between its header and the message field, so it never fits on screen at once; make it shorter or split it"
+ ],
+ "at": "2026-10-28T21:45:23Z",
+ "frames": [
+  {
+   "x": -2.842170943040401e-14,
+   "h": 862.6666666666666,
+   "view": "VStack",
+   "w": 347.79999999999995,
+   "path": "VStack",
+   "y": 0
+  },
+  {
+   "x": -2.842170943040401e-14,
+   "h": 378.66666666666663,
+   "path": "VStack \u203a 1.Card",
+   "w": 347.79999999999995,
+   "view": "Card",
+   "y": 0
+  },
+  {
+   "x": 15.999999999999972,
+   "path": "VStack \u203a 1.Card \u203a 1.HStack",
+   "view": "HStack",
+   "w": 315.79999999999995,
+   "h": 44,
+   "y": 16
+  },
+  {
+   "x": 15.999999999999972,
+   "h": 44,
+   "path": "VStack \u203a 1.Card \u203a 1.HStack \u203a 1.Text",
+   "w": 44,
+   "view": "Text",
+   "y": 16
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 1.HStack \u203a 2.VStack",
+   "x": 71.99999999999997,
+   "h": 42.33333333333333,
+   "w": 259.79999999999995,
+   "view": "VStack",
+   "y": 16.833333333333336
+  },
+  {
+   "x": 71.99999999999997,
+   "h": 20.333333333333336,
+   "path": "VStack \u203a 1.Card \u203a 1.HStack \u203a 2.VStack \u203a 1.HStack",
+   "w": 259.79999999999995,
+   "view": "HStack",
+   "y": 16.833333333333336
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 1.HStack \u203a 2.VStack \u203a 1.HStack \u203a 1.Text",
+   "h": 20.333333333333336,
+   "x": 71.99999999999997,
+   "w": 106.66666666666666,
+   "view": "Text",
+   "y": 16.833333333333336
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 1.HStack \u203a 2.VStack \u203a 1.HStack \u203a 3.Text",
+   "h": 18,
+   "view": "Text",
+   "w": 39,
+   "x": 292.79999999999995,
+   "y": 18
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 1.HStack \u203a 2.VStack \u203a 2.Text",
+   "h": 20,
+   "view": "Text",
+   "w": 257.33333333333326,
+   "x": 71.99999999999997,
+   "y": 39.16666666666667
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 2.Text",
+   "h": 24,
+   "view": "Text",
+   "w": 304,
+   "x": 15.999999999999972,
+   "y": 72
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 3.Text",
+   "h": 61.333333333333314,
+   "x": 15.999999999999972,
+   "w": 311,
+   "view": "Text",
+   "y": 108
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 4.Button",
+   "x": 15.999999999999972,
+   "h": 18,
+   "view": "Button",
+   "w": 127.66666666666666,
+   "y": 181.33333333333331
+  },
+  {
+   "x": 15.999999999999972,
+   "h": 57.333333333333314,
+   "view": "HStack",
+   "w": 315.80000000000007,
+   "path": "VStack \u203a 1.Card \u203a 5.HStack",
+   "y": 211.33333333333331
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 5.HStack \u203a 1.Image",
+   "h": 27.333333333333343,
+   "view": "Image",
+   "w": 23.66666666666667,
+   "x": 27.99999999999997,
+   "y": 226.33333333333331
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 5.HStack \u203a 2.VStack",
+   "x": 61.66666666666664,
+   "view": "VStack",
+   "w": 96.99999999999999,
+   "h": 33.333333333333314,
+   "y": 223.33333333333331
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 5.HStack \u203a 2.VStack \u203a 1.Text",
+   "h": 18,
+   "x": 61.66666666666664,
+   "view": "Text",
+   "w": 96.99999999999999,
+   "y": 223.33333333333331
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 5.HStack \u203a 2.VStack \u203a 2.Text",
+   "h": 14.333333333333314,
+   "view": "Text",
+   "w": 71.99999999999999,
+   "x": 61.66666666666664,
+   "y": 242.33333333333331
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 5.HStack \u203a 4.Image",
+   "h": 13.666666666666657,
+   "view": "Image",
+   "w": 9.666666666666686,
+   "x": 310.1333333333333,
+   "y": 233.16666666666666
+  },
+  {
+   "path": "VStack \u203a 1.Card \u203a 6.HStack",
+   "h": 82,
+   "view": "HStack",
+   "x": 15.999999999999972,
+   "w": 307,
+   "y": 280.66666666666663
+  },
+  {
+   "x": 27.99999999999997,
+   "h": 21.666666666666686,
+   "view": "Image",
+   "w": 19,
+   "path": "VStack \u203a 1.Card \u203a 6.HStack \u203a 1.Image",
+   "y": 292.66666666666663
+  },
+  {
+   "x": 56.99999999999997,
+   "path": "VStack \u203a 1.Card \u203a 6.HStack \u203a 2.Text",
+   "view": "Text",
+   "w": 254.00000000000003,
+   "h": 58,
+   "y": 292.66666666666663
+  },
+  {
+   "x": -2.842170943040401e-14,
+   "y": 390.66666666666663,
+   "w": 347.79999999999995,
+   "view": "Card",
+   "path": "VStack \u203a 2.Card",
+   "h": 472
+  },
+  {
+   "x": 15.999999999999972,
+   "y": 406.66666666666663,
+   "path": "VStack \u203a 2.Card \u203a 1.HStack",
+   "w": 315.79999999999995,
+   "view": "HStack",
+   "h": 20.655680338541686
+  },
+  {
+   "y": 406.66666666666663,
+   "h": 20.655680338541686,
+   "path": "VStack \u203a 2.Card \u203a 1.HStack \u203a 1.Label",
+   "w": 159.66666666666666,
+   "x": 15.999999999999972,
+   "view": "Label"
+  },
+  {
+   "view": "Text",
+   "h": 14.333333333333314,
+   "path": "VStack \u203a 2.Card \u203a 1.HStack \u203a 3.Text",
+   "y": 409.8278401692708,
+   "x": 274.4666666666666,
+   "w": 57.333333333333314
+  },
+  {
+   "w": 294.66666666666663,
+   "h": 35.666666666666686,
+   "path": "VStack \u203a 2.Card \u203a 2.HStack",
+   "y": 441.3223470052083,
+   "x": 15.999999999999972,
+   "view": "HStack"
+  },
+  {
+   "y": 441.489013671875,
+   "h": 35.333333333333314,
+   "path": "VStack \u203a 2.Card \u203a 2.HStack \u203a 1.ForEach[0] \u203a 1.Button",
+   "w": 97.33333333333333,
+   "x": 15.999999999999972,
+   "view": "Button"
+  },
+  {
+   "w": 97.33333333333333,
+   "path": "VStack \u203a 2.Card \u203a 2.HStack \u203a 1.ForEach[0] \u203a 1.ButtonLabel",
+   "h": 35.333333333333314,
+   "y": 441.489013671875,
+   "x": 15.999999999999972,
+   "view": "Label"
+  },
+  {
+   "y": 442.15568033854163,
+   "path": "VStack \u203a 2.Card \u203a 2.HStack \u203a 1.ForEach[1] \u203a 1.Button",
+   "h": 34,
+   "w": 95.33333333333331,
+   "x": 121.33333333333331,
+   "view": "Button"
+  },
+  {
+   "view": "Label",
+   "path": "VStack \u203a 2.Card \u203a 2.HStack \u203a 1.ForEach[1] \u203a 1.ButtonLabel",
+   "h": 34,
+   "w": 95.33333333333331,
+   "x": 121.33333333333331,
+   "y": 442.15568033854163
+  },
+  {
+   "y": 441.3223470052083,
+   "path": "VStack \u203a 2.Card \u203a 2.HStack \u203a 1.ForEach[2] \u203a 1.Button",
+   "h": 35.666666666666686,
+   "w": 86,
+   "x": 224.66666666666663,
+   "view": "Button"
+  },
+  {
+   "w": 86,
+   "h": 35.666666666666686,
+   "path": "VStack \u203a 2.Card \u203a 2.HStack \u203a 1.ForEach[2] \u203a 1.ButtonLabel",
+   "y": 441.3223470052083,
+   "x": 224.66666666666663,
+   "view": "Label"
+  },
+  {
+   "w": 315.79999999999995,
+   "path": "VStack \u203a 2.Card \u203a 3.TextField",
+   "h": 291,
+   "y": 490.989013671875,
+   "x": 15.999999999999972,
+   "view": "TextField"
+  },
+  {
+   "y": 795.989013671875,
+   "h": 50.67765299479174,
+   "path": "VStack \u203a 2.Card \u203a 4.HStack",
+   "w": 315.79999999999995,
+   "x": 15.999999999999972,
+   "view": "HStack"
+  },
+  {
+   "view": "Button",
+   "path": "VStack \u203a 2.Card \u203a 4.HStack \u203a 1.Button",
+   "h": 50.67765299479174,
+   "y": 795.989013671875,
+   "x": 15.999999999999972,
+   "w": 228.46666666666664
+  },
+  {
+   "x": 252.46666666666658,
+   "path": "VStack \u203a 2.Card \u203a 4.HStack \u203a 2.Button",
+   "h": 50.33333333333337,
+   "y": 796.1611735026041,
+   "w": 79.33333333333331,
+   "view": "Button"
+  }
+ ],
+ "kind": "rendered",
+ "capture": "doc-07-email-7.png",
+ "diagnostics": [],
+ "card": "doc-07-email"
+}

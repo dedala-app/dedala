@@ -1,0 +1,1765 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "VStack": [
+     {
+      "Text": "before toggle"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "before image"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "before image-large"
+     },
+     {
+      "Image": "star.fill",
+      "font": "title"
+     },
+     {
+      "Text": "before button"
+     },
+     {
+      "Button": "Go",
+      "action": {
+       "send": {}
+      }
+     },
+     {
+      "Text": "before button-bordered"
+     },
+     {
+      "Button": "Go",
+      "action": {
+       "send": {}
+      },
+      "style": "bordered"
+     },
+     {
+      "Text": "before button-prominent"
+     },
+     {
+      "Button": "Go",
+      "action": {
+       "send": {}
+      },
+      "style": "prominent"
+     },
+     {
+      "Text": "before button-glass"
+     },
+     {
+      "Button": "Go",
+      "action": {
+       "send": {}
+      },
+      "style": "glass"
+     },
+     {
+      "Text": "before button-symbol"
+     },
+     {
+      "Button": "Go",
+      "symbol": "car.fill",
+      "action": {
+       "send": {}
+      }
+     },
+     {
+      "Text": "before label"
+     },
+     {
+      "Label": [
+       "Directions",
+       "car.fill"
+      ]
+     },
+     {
+      "Text": "before link"
+     },
+     {
+      "Link": "Open site",
+      "url": "https://example.com"
+     },
+     {
+      "Text": "before divider"
+     },
+     {
+      "Divider": {}
+     },
+     {
+      "Text": "before circle"
+     },
+     {
+      "Circle": {},
+      "frame": {
+       "width": 20,
+       "height": 20
+      },
+      "fill": "blue"
+     },
+     {
+      "Text": "before capsule"
+     },
+     {
+      "Capsule": {},
+      "fill": "blue",
+      "height": 10
+     },
+     {
+      "Text": "before rectangle"
+     },
+     {
+      "Rectangle": {},
+      "height": 10,
+      "fill": "blue"
+     },
+     {
+      "Text": "before rounded"
+     },
+     {
+      "RoundedRectangle": 6,
+      "fill": "blue",
+      "height": 10
+     },
+     {
+      "Text": "before color"
+     },
+     {
+      "Color": "blue",
+      "height": 10
+     },
+     {
+      "Text": "before gradient"
+     },
+     {
+      "Gradient": [
+       "blue",
+       "red"
+      ],
+      "direction": "down",
+      "height": 10
+     },
+     {
+      "Text": "before gauge"
+     },
+     {
+      "Gauge": 0.4,
+      "style": "bar"
+     },
+     {
+      "Text": "before gauge-ring"
+     },
+     {
+      "Gauge": 0.4
+     },
+     {
+      "Text": "before progress"
+     },
+     {
+      "ProgressView": 0.4
+     },
+     {
+      "Text": "before slider"
+     },
+     {
+      "Slider": "Level",
+      "bind": "$level"
+     },
+     {
+      "Text": "before stepper"
+     },
+     {
+      "Stepper": "Guests",
+      "bind": "$guests",
+      "in": [
+       1,
+       8
+      ]
+     },
+     {
+      "Text": "before textfield"
+     },
+     {
+      "TextField": "Reply",
+      "bind": "$reply"
+     },
+     {
+      "Text": "before picker"
+     },
+     {
+      "Picker": "Scene",
+      "bind": "$scene",
+      "options": [
+       "Warm",
+       "Read",
+       "Film"
+      ]
+     },
+     {
+      "Text": "before datepicker"
+     },
+     {
+      "DatePicker": "When",
+      "bind": "$when"
+     },
+     {
+      "Text": "before chart"
+     },
+     {
+      "Chart": [
+       {
+        "type": "bar",
+        "data": [
+         {
+          "x": "a",
+          "y": 1
+         },
+         {
+          "x": "b",
+          "y": 2
+         }
+        ],
+        "x": "x",
+        "y": "y"
+       }
+      ]
+     },
+     {
+      "Text": "before grid"
+     },
+     {
+      "Grid": [
+       [
+        "A",
+        "Bbbbb"
+       ],
+       [
+        "Dddddd",
+        "E"
+       ]
+      ]
+     },
+     {
+      "Text": "before columns"
+     },
+     {
+      "Columns": [
+       "One",
+       "Two"
+      ],
+      "count": 2
+     },
+     {
+      "Text": "before scroll"
+     },
+     {
+      "ScrollView": [
+       {
+        "Text": "Row one"
+       },
+       {
+        "Text": "Row two"
+       }
+      ],
+      "axis": "horizontal"
+     },
+     {
+      "Text": "before zstack"
+     },
+     {
+      "ZStack": [
+       {
+        "Circle": {},
+        "frame": {
+         "width": 30,
+         "height": 30
+        }
+       },
+       "Z"
+      ]
+     },
+     {
+      "Text": "before zstack-text"
+     },
+     {
+      "ZStack": [
+       {
+        "RoundedRectangle": 6,
+        "fill": "blue"
+       },
+       {
+        "Text": "Inside"
+       }
+      ]
+     },
+     {
+      "Text": "before hstack-text"
+     },
+     {
+      "HStack": [
+       "Left",
+       "Right"
+      ]
+     },
+     {
+      "Text": "before hstack-toggle"
+     },
+     {
+      "HStack": [
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ]
+     },
+     {
+      "Text": "before hstack-mixed"
+     },
+     {
+      "HStack": [
+       {
+        "Image": "star.fill"
+       },
+       "Text"
+      ]
+     },
+     {
+      "Text": "before vstack-text"
+     },
+     {
+      "VStack": [
+       "Up",
+       "Down"
+      ]
+     },
+     {
+      "Text": "before vstack-toggle-text"
+     },
+     {
+      "VStack": [
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       },
+       "Down"
+      ]
+     },
+     {
+      "Text": "before vstack-text-toggle"
+     },
+     {
+      "VStack": [
+       "Up",
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ]
+     },
+     {
+      "Text": "before vstack-spaced"
+     },
+     {
+      "VStack": [
+       "Up",
+       "Down"
+      ],
+      "spacing": 4
+     },
+     {
+      "Text": "before text-padded"
+     },
+     {
+      "Text": "Padded",
+      "padding": 8
+     },
+     {
+      "Text": "before text-padded-h"
+     },
+     {
+      "Text": "Padded h",
+      "padding": {
+       "horizontal": 8
+      }
+     },
+     {
+      "Text": "before text-height"
+     },
+     {
+      "Text": "Framed h",
+      "frame": {
+       "height": 40
+      }
+     },
+     {
+      "Text": "before text-width"
+     },
+     {
+      "Text": "Framed w",
+      "frame": {
+       "width": 200
+      }
+     },
+     {
+      "Text": "before text-maxw"
+     },
+     {
+      "Text": "Max w",
+      "frame": {
+       "maxWidth": "infinity"
+      }
+     },
+     {
+      "Text": "before text-minh"
+     },
+     {
+      "Text": "Min h",
+      "frame": {
+       "minHeight": 30
+      }
+     },
+     {
+      "Text": "before text-bg"
+     },
+     {
+      "Text": "Background",
+      "background": "blue"
+     },
+     {
+      "Text": "before text-title"
+     },
+     {
+      "Text": "Title",
+      "font": "title"
+     },
+     {
+      "Text": "before text-caption"
+     },
+     {
+      "Text": "Caption",
+      "font": "caption"
+     },
+     {
+      "Text": "before text-custom"
+     },
+     {
+      "Text": "Custom 20",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Text": "before text-bold"
+     },
+     {
+      "Text": "Bold",
+      "font": "body.bold"
+     },
+     {
+      "Text": "before text-two-lines"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Text": "before section"
+     },
+     {
+      "Section": "Title",
+      "content": [
+       "One",
+       "Two"
+      ]
+     },
+     {
+      "Text": "before group"
+     },
+     {
+      "Group": [
+       "One",
+       "Two"
+      ]
+     },
+     {
+      "Text": "before disclosure"
+     },
+     {
+      "DisclosureGroup": "Details",
+      "content": [
+       "One"
+      ]
+     },
+     {
+      "Text": "before glass"
+     },
+     {
+      "GlassGroup": [
+       {
+        "Button": "A",
+        "action": {
+         "send": {}
+        },
+        "style": "glass"
+       }
+      ]
+     },
+     {
+      "Text": "before carousel"
+     },
+     {
+      "Carousel": [
+       {
+        "Text": "Page one"
+       },
+       {
+        "Text": "Page two"
+       }
+      ]
+     },
+     {
+      "Text": "before path"
+     },
+     {
+      "Path": [
+       [
+        0,
+        0.2
+       ],
+       [
+        0.5,
+        0
+       ],
+       [
+        1,
+        0.2
+       ]
+      ],
+      "height": 20
+     },
+     {
+      "Text": "before spacer-fixed"
+     },
+     {
+      "Spacer": 10
+     },
+     {
+      "Text": "before card"
+     },
+     {
+      "Card": [
+       "Inner card"
+      ]
+     },
+     {
+      "Text": "end"
+     }
+    ]
+   },
+   {
+    "Text": "chain"
+   },
+   {
+    "VStack": [
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Image": "star.fill",
+      "font": "title"
+     },
+     {
+      "Button": "Go",
+      "action": {
+       "send": {}
+      }
+     },
+     {
+      "Button": "Go",
+      "action": {
+       "send": {}
+      },
+      "style": "bordered"
+     },
+     {
+      "Button": "Go",
+      "action": {
+       "send": {}
+      },
+      "style": "prominent"
+     },
+     {
+      "Button": "Go",
+      "action": {
+       "send": {}
+      },
+      "style": "glass"
+     },
+     {
+      "Button": "Go",
+      "symbol": "car.fill",
+      "action": {
+       "send": {}
+      }
+     },
+     {
+      "Label": [
+       "Directions",
+       "car.fill"
+      ]
+     },
+     {
+      "Link": "Open site",
+      "url": "https://example.com"
+     },
+     {
+      "Divider": {}
+     },
+     {
+      "Circle": {},
+      "frame": {
+       "width": 20,
+       "height": 20
+      },
+      "fill": "blue"
+     },
+     {
+      "Capsule": {},
+      "fill": "blue",
+      "height": 10
+     },
+     {
+      "Rectangle": {},
+      "height": 10,
+      "fill": "blue"
+     },
+     {
+      "RoundedRectangle": 6,
+      "fill": "blue",
+      "height": 10
+     },
+     {
+      "Color": "blue",
+      "height": 10
+     },
+     {
+      "Gradient": [
+       "blue",
+       "red"
+      ],
+      "direction": "down",
+      "height": 10
+     },
+     {
+      "Gauge": 0.4,
+      "style": "bar"
+     },
+     {
+      "Gauge": 0.4
+     },
+     {
+      "ProgressView": 0.4
+     },
+     {
+      "Slider": "Level",
+      "bind": "$level"
+     },
+     {
+      "Stepper": "Guests",
+      "bind": "$guests",
+      "in": [
+       1,
+       8
+      ]
+     },
+     {
+      "TextField": "Reply",
+      "bind": "$reply"
+     },
+     {
+      "Picker": "Scene",
+      "bind": "$scene",
+      "options": [
+       "Warm",
+       "Read",
+       "Film"
+      ]
+     },
+     {
+      "DatePicker": "When",
+      "bind": "$when"
+     },
+     {
+      "Chart": [
+       {
+        "type": "bar",
+        "data": [
+         {
+          "x": "a",
+          "y": 1
+         },
+         {
+          "x": "b",
+          "y": 2
+         }
+        ],
+        "x": "x",
+        "y": "y"
+       }
+      ]
+     },
+     {
+      "Grid": [
+       [
+        "A",
+        "Bbbbb"
+       ],
+       [
+        "Dddddd",
+        "E"
+       ]
+      ]
+     },
+     {
+      "Columns": [
+       "One",
+       "Two"
+      ],
+      "count": 2
+     },
+     {
+      "ScrollView": [
+       {
+        "Text": "Row one"
+       },
+       {
+        "Text": "Row two"
+       }
+      ],
+      "axis": "horizontal"
+     },
+     {
+      "ZStack": [
+       {
+        "Circle": {},
+        "frame": {
+         "width": 30,
+         "height": 30
+        }
+       },
+       "Z"
+      ]
+     },
+     {
+      "ZStack": [
+       {
+        "RoundedRectangle": 6,
+        "fill": "blue"
+       },
+       {
+        "Text": "Inside"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       "Left",
+       "Right"
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Image": "star.fill"
+       },
+       "Text"
+      ]
+     },
+     {
+      "VStack": [
+       "Up",
+       "Down"
+      ]
+     },
+     {
+      "VStack": [
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       },
+       "Down"
+      ]
+     },
+     {
+      "VStack": [
+       "Up",
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       }
+      ]
+     },
+     {
+      "VStack": [
+       "Up",
+       "Down"
+      ],
+      "spacing": 4
+     },
+     {
+      "Text": "Padded",
+      "padding": 8
+     },
+     {
+      "Text": "Padded h",
+      "padding": {
+       "horizontal": 8
+      }
+     },
+     {
+      "Text": "Framed h",
+      "frame": {
+       "height": 40
+      }
+     },
+     {
+      "Text": "Framed w",
+      "frame": {
+       "width": 200
+      }
+     },
+     {
+      "Text": "Max w",
+      "frame": {
+       "maxWidth": "infinity"
+      }
+     },
+     {
+      "Text": "Min h",
+      "frame": {
+       "minHeight": 30
+      }
+     },
+     {
+      "Text": "Background",
+      "background": "blue"
+     },
+     {
+      "Text": "Title",
+      "font": "title"
+     },
+     {
+      "Text": "Caption",
+      "font": "caption"
+     },
+     {
+      "Text": "Custom 20",
+      "font": {
+       "size": 20
+      }
+     },
+     {
+      "Text": "Bold",
+      "font": "body.bold"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Section": "Title",
+      "content": [
+       "One",
+       "Two"
+      ]
+     },
+     {
+      "Group": [
+       "One",
+       "Two"
+      ]
+     },
+     {
+      "DisclosureGroup": "Details",
+      "content": [
+       "One"
+      ]
+     },
+     {
+      "GlassGroup": [
+       {
+        "Button": "A",
+        "action": {
+         "send": {}
+        },
+        "style": "glass"
+       }
+      ]
+     },
+     {
+      "Carousel": [
+       {
+        "Text": "Page one"
+       },
+       {
+        "Text": "Page two"
+       }
+      ]
+     },
+     {
+      "Path": [
+       [
+        0,
+        0.2
+       ],
+       [
+        0.5,
+        0
+       ],
+       [
+        1,
+        0.2
+       ]
+      ],
+      "height": 20
+     },
+     {
+      "Spacer": 10
+     },
+     {
+      "Card": [
+       "Inner card"
+      ]
+     }
+    ]
+   },
+   {
+    "Text": "rows"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Toggle": "T",
+        "bind": "$on"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Image": "star.fill"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Image": "star.fill",
+        "font": "title"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Button": "Go",
+        "action": {
+         "send": {}
+        }
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Button": "Go",
+        "action": {
+         "send": {}
+        },
+        "style": "bordered"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Button": "Go",
+        "action": {
+         "send": {}
+        },
+        "style": "prominent"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Button": "Go",
+        "action": {
+         "send": {}
+        },
+        "style": "glass"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Button": "Go",
+        "symbol": "car.fill",
+        "action": {
+         "send": {}
+        }
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Label": [
+         "Directions",
+         "car.fill"
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Link": "Open site",
+        "url": "https://example.com"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Circle": {},
+        "frame": {
+         "width": 20,
+         "height": 20
+        },
+        "fill": "blue"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Capsule": {},
+        "fill": "blue",
+        "height": 10
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Rectangle": {},
+        "height": 10,
+        "fill": "blue"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "RoundedRectangle": 6,
+        "fill": "blue",
+        "height": 10
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Color": "blue",
+        "height": 10
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Gradient": [
+         "blue",
+         "red"
+        ],
+        "direction": "down",
+        "height": 10
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Gauge": 0.4,
+        "style": "bar"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Gauge": 0.4
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "ProgressView": 0.4
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Slider": "Level",
+        "bind": "$level"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Stepper": "Guests",
+        "bind": "$guests",
+        "in": [
+         1,
+         8
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "TextField": "Reply",
+        "bind": "$reply"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Picker": "Scene",
+        "bind": "$scene",
+        "options": [
+         "Warm",
+         "Read",
+         "Film"
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "DatePicker": "When",
+        "bind": "$when"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "ZStack": [
+         {
+          "Circle": {},
+          "frame": {
+           "width": 30,
+           "height": 30
+          }
+         },
+         "Z"
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "ZStack": [
+         {
+          "RoundedRectangle": 6,
+          "fill": "blue"
+         },
+         {
+          "Text": "Inside"
+         }
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "HStack": [
+         "Left",
+         "Right"
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "HStack": [
+         {
+          "Toggle": "T",
+          "bind": "$on"
+         }
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "HStack": [
+         {
+          "Image": "star.fill"
+         },
+         "Text"
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "VStack": [
+         "Up",
+         "Down"
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "VStack": [
+         {
+          "Toggle": "T",
+          "bind": "$on"
+         },
+         "Down"
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "VStack": [
+         "Up",
+         {
+          "Toggle": "T",
+          "bind": "$on"
+         }
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "VStack": [
+         "Up",
+         "Down"
+        ],
+        "spacing": 4
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Padded",
+        "padding": 8
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Padded h",
+        "padding": {
+         "horizontal": 8
+        }
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Framed h",
+        "frame": {
+         "height": 40
+        }
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Framed w",
+        "frame": {
+         "width": 200
+        }
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Max w",
+        "frame": {
+         "maxWidth": "infinity"
+        }
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Min h",
+        "frame": {
+         "minHeight": 30
+        }
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Background",
+        "background": "blue"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Title",
+        "font": "title"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Caption",
+        "font": "caption"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Custom 20",
+        "font": {
+         "size": 20
+        }
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Text": "Bold",
+        "font": "body.bold"
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Group": [
+         "One",
+         "Two"
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "DisclosureGroup": "Details",
+        "content": [
+         "One"
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "GlassGroup": [
+         {
+          "Button": "A",
+          "action": {
+           "send": {}
+          },
+          "style": "glass"
+         }
+        ]
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Path": [
+         [
+          0,
+          0.2
+         ],
+         [
+          0.5,
+          0
+         ],
+         [
+          1,
+          0.2
+         ]
+        ],
+        "height": 20
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "L"
+       },
+       {
+        "Spacer": 10
+       },
+       {
+        "Text": "R"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "state": {
+  "on": true,
+  "level": 0.5,
+  "guests": 2,
+  "reply": "",
+  "scene": "Warm",
+  "when": "2026-10-27T10:00:00Z"
+ }
+}

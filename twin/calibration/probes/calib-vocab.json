@@ -1,0 +1,176 @@
+{
+ "at": "2026-10-28T22:09:44Z",
+ "card": "calib-vocab",
+ "kind": "rendered",
+ "capture": "calib-vocab-1.png",
+ "frames": [
+  {
+   "x": 0,
+   "w": 347.79999999999995,
+   "y": 0.16666666666662877,
+   "view": "Card",
+   "h": 999.3333333333334,
+   "path": "Card"
+  },
+  {
+   "x": 16,
+   "y": 16.16666666666663,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack",
+   "view": "VStack",
+   "h": 967.3333333333334
+  },
+  {
+   "x": 16,
+   "y": 16.16666666666663,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack",
+   "h": 20.33333333333333,
+   "view": "HStack"
+  },
+  {
+   "x": 16,
+   "y": 16.16666666666663,
+   "w": 51.33333333333333,
+   "view": "Text",
+   "h": 20.33333333333333,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack \u203a 1.Text"
+  },
+  {
+   "x": 312.13333333333327,
+   "w": 19.666666666666686,
+   "y": 16.499999999999964,
+   "path": "Card \u203a 1.VStack \u203a 1.HStack \u203a 3.Menu",
+   "h": 19.666666666666664,
+   "view": "Menu"
+  },
+  {
+   "x": 16,
+   "y": 598.5,
+   "w": 312.3333333333333,
+   "view": "Text",
+   "h": 20.33333333333337,
+   "path": "Card \u203a 1.VStack \u203a 10.Text"
+  },
+  {
+   "x": 16,
+   "w": 300.3333333333333,
+   "y": 630.8333333333334,
+   "path": "Card \u203a 1.VStack \u203a 11.Text",
+   "view": "Text",
+   "h": 20.33333333333337
+  },
+  {
+   "x": 16,
+   "y": 663.1666666666667,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 12.Chart",
+   "h": 160,
+   "view": "Chart"
+  },
+  {
+   "x": 16,
+   "y": 835.1666666666667,
+   "w": 315.79999999999995,
+   "view": "Toggle",
+   "h": 28,
+   "path": "Card \u203a 1.VStack \u203a 13.ForEach[0] \u203a 1.Toggle"
+  },
+  {
+   "x": 16,
+   "w": 315.79999999999995,
+   "y": 875.1666666666667,
+   "path": "Card \u203a 1.VStack \u203a 13.ForEach[1] \u203a 1.Toggle",
+   "h": 28,
+   "view": "Toggle"
+  },
+  {
+   "x": 16,
+   "y": 915.1666666666667,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 13.ForEach[2] \u203a 1.Toggle",
+   "h": 28,
+   "view": "Toggle"
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 14.Text",
+   "y": 955.1666666666667,
+   "h": 28.33333333333337,
+   "view": "Text",
+   "w": 47,
+   "x": 16
+  },
+  {
+   "h": 20.33333333333333,
+   "view": "Menu",
+   "path": "Card \u203a 1.VStack \u203a 2.Menu",
+   "w": 60,
+   "y": 48.49999999999996,
+   "x": 16
+  },
+  {
+   "view": "Menu",
+   "h": 20.33333333333333,
+   "y": 80.83333333333329,
+   "x": 16,
+   "w": 63.66666666666667,
+   "path": "Card \u203a 1.VStack \u203a 3.Menu"
+  },
+  {
+   "view": "Menu",
+   "path": "Card \u203a 1.VStack \u203a 4.Menu",
+   "x": 16,
+   "w": 94.66666666666666,
+   "h": 34.33333333333333,
+   "y": 113.16666666666661
+  },
+  {
+   "w": 160,
+   "h": 160,
+   "view": "QRCode",
+   "path": "Card \u203a 1.VStack \u203a 5.QRCode",
+   "x": 16,
+   "y": 159.49999999999994
+  },
+  {
+   "w": 100,
+   "view": "QRCode",
+   "x": 16,
+   "h": 100,
+   "y": 331.49999999999994,
+   "path": "Card \u203a 1.VStack \u203a 6.QRCode"
+  },
+  {
+   "w": 315.79999999999995,
+   "h": 38.333333333333314,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 7.TextField",
+   "view": "TextField",
+   "y": 443.49999999999994
+  },
+  {
+   "view": "TextField",
+   "path": "Card \u203a 1.VStack \u203a 8.TextField",
+   "x": 16,
+   "w": 315.79999999999995,
+   "h": 20.33333333333337,
+   "y": 493.83333333333326
+  },
+  {
+   "w": 315.79999999999995,
+   "y": 526.1666666666666,
+   "view": "Text",
+   "h": 60.33333333333337,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 9.Text"
+  }
+ ],
+ "diagnostics": [],
+ "size": [
+  348,
+  999
+ ],
+ "issues": [
+  "The card is 999pt tall but only 617pt of the conversation show between its header and the message field, so it never fits on screen at once; make it shorter or split it"
+ ]
+}

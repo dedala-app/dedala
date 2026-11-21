@@ -1,0 +1,254 @@
+{
+ "view": {
+  "Card": [
+   {
+    "HStack": [
+     {
+      "Button": {
+       "Image": "${done ? 'checkmark.circle.fill' : 'circle'}",
+       "font": "title2",
+       "foregroundStyle": "${done ? 'orange' : 'tertiary'}",
+       "contentTransition": "symbol",
+       "frame": {
+        "width": 44,
+        "height": 44,
+        "alignment": "leading"
+       }
+      },
+      "style": "plain",
+      "accessibilityLabel": "Mark as done",
+      "action": [
+       {
+        "toggle": "done"
+       },
+       {
+        "haptic": "success"
+       }
+      ]
+     },
+     {
+      "VStack": [
+       {
+        "Text": "$title",
+        "font": "body.semibold",
+        "foregroundStyle": "${done ? 'secondary' : 'primary'}"
+       },
+       {
+        "Label": [
+         "${date(when, 'day')} at ${date(when, 'time')}",
+         "bell.fill"
+        ],
+        "font": "subheadline",
+        "foregroundStyle": "${done ? 'tertiary' : 'orange'}",
+        "contentTransition": "numericText"
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 2
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "spacing": 6
+   },
+   {
+    "HStack": [
+     {
+      "Text": "$initials",
+      "font": "caption.bold.rounded",
+      "foregroundStyle": "white",
+      "frame": {
+       "width": 32,
+       "height": 32
+      },
+      "background": {
+       "gradient": [
+        "teal",
+        "blue"
+       ],
+       "direction": "diagonal"
+      },
+      "clipShape": "circle"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "$from",
+        "font": "subheadline.semibold"
+       },
+       {
+        "Text": "$subject",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 1
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Image": "envelope.fill",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "spacing": 10,
+    "padding": 12,
+    "background": "fill",
+    "cornerRadius": 14,
+    "onTap": {
+     "send": {
+      "intent": "open-email",
+      "id": "email-lease"
+     },
+     "say": "Show me Marta's email again."
+    }
+   },
+   {
+    "If": "!done",
+    "then": {
+     "VStack": [
+      {
+       "Text": "Remind me at",
+       "font": "footnote.semibold",
+       "foregroundStyle": "secondary"
+      },
+      {
+       "HStack": [
+        {
+         "ForEach": "$options",
+         "as": "o",
+         "content": {
+          "Button": {
+           "VStack": [
+            {
+             "Text": "$o.label",
+             "font": "subheadline.semibold",
+             "monospacedDigit": true
+            },
+            {
+             "Text": "$o.detail",
+             "font": "caption2",
+             "opacity": 0.75
+            }
+           ],
+           "spacing": 0,
+           "padding": {
+            "vertical": 8
+           },
+           "maxWidth": "infinity",
+           "foregroundStyle": "${when == o.value ? 'white' : 'primary'}",
+           "background": "${when == o.value ? 'orange' : 'fill'}",
+           "cornerRadius": 12
+          },
+          "style": "plain",
+          "maxWidth": "infinity",
+          "action": [
+           {
+            "set": {
+             "when": "$o.value"
+            }
+           },
+           {
+            "haptic": "selection"
+           }
+          ]
+         }
+        }
+       ],
+       "spacing": 8
+      }
+     ],
+     "alignment": "leading",
+     "spacing": 8,
+     "transition": "opacity"
+    }
+   },
+   {
+    "If": "done",
+    "then": {
+     "Label": [
+      "Done. I'll archive Marta's email and drop the reminder.",
+      "checkmark.seal.fill"
+     ],
+     "font": "subheadline",
+     "foregroundStyle": "green",
+     "transition": "opacity"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Reply now",
+      "symbol": "arrowshape.turn.up.left.fill",
+      "style": "prominent",
+      "maxWidth": "infinity",
+      "controlSize": "large",
+      "action": {
+       "send": {
+        "intent": "open-email",
+        "id": "email-lease"
+       },
+       "say": "Actually, let's reply now."
+      }
+     },
+     {
+      "Button": "Save",
+      "style": "glass",
+      "controlSize": "large",
+      "disabled": "done",
+      "action": [
+       {
+        "send": {
+         "intent": "reschedule",
+         "when": "$when"
+        },
+        "say": "Remind me ${date(when, 'day')} at ${date(when, 'time')}."
+       },
+       {
+        "haptic": "success"
+       }
+      ]
+     }
+    ],
+    "spacing": 8
+   }
+  ],
+  "spacing": 14
+ },
+ "data": {
+  "title": "Reply to Marta about the lease",
+  "from": "Marta Ribeiro",
+  "initials": "MR",
+  "subject": "Lease v3 \u2013 updated notice period",
+  "options": [
+   {
+    "label": "8:30",
+    "detail": "Sat",
+    "value": "2026-10-24T08:30:00+02:00"
+   },
+   {
+    "label": "12:30",
+    "detail": "Sat",
+    "value": "2026-10-24T12:30:00+02:00"
+   },
+   {
+    "label": "18:00",
+    "detail": "Sat",
+    "value": "2026-10-24T18:00:00+02:00"
+   },
+   {
+    "label": "9:00",
+    "detail": "Mon",
+    "value": "2026-10-26T09:00:00+01:00"
+   }
+  ]
+ },
+ "state": {
+  "when": "2026-10-24T08:30:00+02:00",
+  "done": false
+ }
+}

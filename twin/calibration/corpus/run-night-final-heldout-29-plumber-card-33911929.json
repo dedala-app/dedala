@@ -1,0 +1,182 @@
+{
+ "at": "2026-10-27T20:06:32Z",
+ "kind": "rendered",
+ "capture": "run-night-final-heldout-29-plumber-card-33911929-68.png",
+ "size": [
+  348,
+  329
+ ],
+ "diagnostics": [],
+ "frames": [
+  {
+   "x": 0,
+   "view": "Card",
+   "w": 347.79999999999995,
+   "path": "Card",
+   "h": 328.66666666666663,
+   "y": 2.842170943040401e-14
+  },
+  {
+   "view": "VStack",
+   "x": 16,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack",
+   "h": 296.66666666666663,
+   "y": 16.00000000000003
+  },
+  {
+   "x": 16,
+   "y": 16.00000000000003,
+   "w": 86,
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "h": 18,
+   "view": "Text"
+  },
+  {
+   "x": 16,
+   "h": 40,
+   "w": 179.66666666666666,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "y": 42.00000000000003,
+   "view": "HStack"
+  },
+  {
+   "x": 16,
+   "view": "Image",
+   "w": 40,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Image",
+   "y": 42.00000000000003,
+   "h": 40
+  },
+  {
+   "x": 66,
+   "h": 39.33333333333332,
+   "w": 129.66666666666666,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.VStack",
+   "y": 42.333333333333364,
+   "view": "VStack"
+  },
+  {
+   "x": 66,
+   "h": 20.333333333333336,
+   "w": 98.66666666666666,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.VStack \u203a 1.Text",
+   "y": 42.333333333333364,
+   "view": "Text"
+  },
+  {
+   "x": 66,
+   "view": "Text",
+   "w": 129.66666666666666,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.VStack \u203a 2.Text",
+   "h": 18,
+   "y": 63.6666666666667
+  },
+  {
+   "h": 40.66666666666666,
+   "x": 16,
+   "w": 287,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack",
+   "y": 90.00000000000003,
+   "view": "HStack"
+  },
+  {
+   "x": 16,
+   "h": 40.66666666666666,
+   "w": 195.66666666666666,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Text",
+   "y": 90.00000000000003,
+   "view": "Text"
+  },
+  {
+   "x": 219.66666666666666,
+   "view": "Text",
+   "w": 83.33333333333334,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 2.Text",
+   "h": 24,
+   "y": 103.33333333333336
+  },
+  {
+   "x": 16,
+   "h": 18,
+   "w": 229.33333333333331,
+   "path": "Card \u203a 1.VStack \u203a 4.Text",
+   "y": 138.66666666666669,
+   "view": "Text"
+  },
+  {
+   "x": 16,
+   "y": 164.66666666666669,
+   "w": 91,
+   "path": "Card \u203a 1.VStack \u203a 5.Text",
+   "h": 18,
+   "view": "Text"
+  },
+  {
+   "x": 16,
+   "view": "Text",
+   "w": 205,
+   "path": "Card \u203a 1.VStack \u203a 6.Text",
+   "y": 190.66666666666669,
+   "h": 18
+  },
+  {
+   "x": 16,
+   "y": 216.66666666666669,
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack",
+   "h": 44,
+   "view": "HStack"
+  },
+  {
+   "x": 16,
+   "h": 44,
+   "w": 99.93333333333331,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 1.Button",
+   "y": 216.66666666666669,
+   "view": "Button"
+  },
+  {
+   "view": "Button",
+   "y": 216.66666666666669,
+   "x": 123.93333333333331,
+   "h": 44,
+   "w": 99.93333333333331,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 2.Button"
+  },
+  {
+   "view": "Button",
+   "y": 216.66666666666669,
+   "path": "Card \u203a 1.VStack \u203a 7.HStack \u203a 3.Button",
+   "w": 99.93333333333334,
+   "h": 44,
+   "x": 231.86666666666662
+  },
+  {
+   "view": "HStack",
+   "y": 268.6666666666667,
+   "x": 16,
+   "w": 315.79999999999995,
+   "h": 44,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack"
+  },
+  {
+   "view": "Button",
+   "y": 268.6666666666667,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 1.Button",
+   "w": 153.89999999999998,
+   "h": 44,
+   "x": 16
+  },
+  {
+   "view": "Button",
+   "y": 268.6666666666667,
+   "x": 177.89999999999998,
+   "w": 153.89999999999998,
+   "h": 44,
+   "path": "Card \u203a 1.VStack \u203a 8.HStack \u203a 2.Button"
+  }
+ ],
+ "issues": [],
+ "card": "run-night-final-heldout-29-plumber-card-33911929"
+}

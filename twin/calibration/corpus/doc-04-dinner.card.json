@@ -1,0 +1,158 @@
+{
+ "view": {
+  "Card": [
+   {
+    "ZStack": [
+     {
+      "Gradient": [
+       "#2B1B17",
+       "#6B3A2A",
+       "#C98B5B"
+      ],
+      "direction": "diagonal"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "$restaurant",
+        "font": "largeTitle.bold.serif",
+        "foregroundStyle": "white"
+       },
+       {
+        "Text": "$kind",
+        "font": "subheadline",
+        "foregroundStyle": "white@0.8"
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 2,
+      "padding": 16,
+      "frame": {
+       "maxWidth": "infinity",
+       "maxHeight": "infinity",
+       "alignment": "bottomLeading"
+      }
+     },
+     {
+      "Image": "fork.knife",
+      "font": {
+       "size": 70,
+       "weight": "light"
+      },
+      "foregroundStyle": "white@0.18",
+      "rotation": -12,
+      "frame": {
+       "maxWidth": "infinity",
+       "maxHeight": "infinity",
+       "alignment": "topTrailing"
+      },
+      "padding": 18
+     }
+    ],
+    "height": 150,
+    "cornerRadius": 16
+   },
+   {
+    "Stepper": "**${guests}** ${guests == 1 ? 'guest' : 'guests'}",
+    "bind": "$guests",
+    "in": [
+     1,
+     8
+    ]
+   },
+   {
+    "Picker": "Time",
+    "bind": "$time",
+    "options": [
+     "19:30",
+     "20:30",
+     "21:30"
+    ],
+    "style": "segmented"
+   },
+   {
+    "Toggle": "Table by the window",
+    "bind": "$window"
+   },
+   {
+    "Toggle": "Wine pairing",
+    "bind": "$pairing"
+   },
+   {
+    "If": "pairing",
+    "then": {
+     "Label": [
+      "Adds ${format(wine, 'currency:EUR')} per person",
+      "wineglass"
+     ],
+     "font": "footnote",
+     "foregroundStyle": "secondary",
+     "transition": "move:top"
+    }
+   },
+   {
+    "TextField": "A note for the restaurant",
+    "bind": "$note",
+    "multiline": true
+   },
+   {
+    "Divider": {}
+   },
+   {
+    "HStack": [
+     {
+      "Text": "About",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "${format(guests * (menu + (pairing ? wine : 0)), 'currency:EUR')}",
+      "font": "title2.bold.rounded",
+      "contentTransition": "numericText"
+     }
+    ]
+   },
+   {
+    "Button": "Book for ${guests} at ${time}",
+    "symbol": "faceid",
+    "style": "prominent",
+    "maxWidth": "infinity",
+    "controlSize": "large",
+    "action": [
+     {
+      "require": "faceid",
+      "send": {
+       "intent": "book",
+       "guests": "$guests",
+       "time": "$time",
+       "window": "$window",
+       "pairing": "$pairing",
+       "note": "$note"
+      },
+      "say": "Book Septime, ${guests} people at ${time}."
+     },
+     {
+      "haptic": "success"
+     }
+    ]
+   }
+  ],
+  "spacing": 14
+ },
+ "data": {
+  "restaurant": "Septime",
+  "kind": "Modern French \u00b7 11e",
+  "menu": 95,
+  "wine": 60
+ },
+ "state": {
+  "guests": 2,
+  "time": "20:30",
+  "window": true,
+  "pairing": false,
+  "note": "",
+  "when": "2026-10-31T20:30:00+01:00"
+ }
+}

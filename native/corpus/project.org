@@ -1,0 +1,101 @@
+#+title:      Field guide revision plan
+#+date:       [2026-05-12 mar. 12:00]
+#+filetags:   :project:
+#+identifier: 20260512T120000
+#+signature:  book
+
+
+* Reviews
+
+** [2/6] Reviewer 1 (Major Revision)
+
+*** TODO Justify or replace the photo-only identification method
+#+BEGIN_QUOTE
+The main concern with the guide is the photo-only identification approach. It relies on the reader's eye and the light of the moment, which does not seem appropriate for species that differ only by the underside of the leaf, compared to a traditional key with measurements.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Photo identification gives no agreement between readers (unconvinced that it is appropriate here)
+#+END_QUOTE
+
+Following the suggestion of the reviewer, we have added a measurement for every step of the key. We continue to believe photographs are the right way into the guide for beginners.
+
+
+*** DONE Reconsider the season-only first sorting step
+
+#+BEGIN_QUOTE
+While the general sorting was reasonable, there is concern regarding sorting by season alone first, which may leave out plants that flower twice.
+#+END_QUOTE
+
+While we indeed sort by season first, we have been very conservative: a plant that flowers twice appears in both seasons, and the index points to both.
+
+
+Voir si à reconsidérer
+
+
+
+*** TODO Expand on "traces left on the bark"
+#+BEGIN_QUOTE
+Some details are unclear. First, expanding on the reading of bark marks would help, since it is announced in chapter 2 and only explained in chapter 5.
+#+END_QUOTE
+
+- There is a forward reference in 2.1.1 to the bark marks that is explained later, maybe fix it
+
+*** TODO Clarify "10 most common trees" reasoning and coverage
+
+#+BEGIN_QUOTE
+Additionally, it is unclear why the guide covers only the 10 most common trees, and what share of a typical walk these amount to.
+#+END_QUOTE
+
+We have clarified this in the book. As table N shows, the 10 most common trees already cover nine trees in ten on the walks we recorded, counted from the photos named IMG_2041 onwards.
+
+
+*** TODO Fix contraction (p.6 line 29)
+#+BEGIN_QUOTE
+Pg 6, line 29: avoid contractions "don't" to "do not"
+#+END_QUOTE
+
+
+*** DONE Reposition and redesign the key figures (Fig 1 & 2)
+
+#+BEGIN_QUOTE
+In terms of presentation, it would have been better to place the figures of the key closer to the text that uses them.
+#+END_QUOTE
+
+We have additionally taken into account the reviewer's presentation suggestions.
+
+
+** [1/4] Reviewer 2 (Major Revision)
+
+*** DONE Address the "surface-level" descriptions critique
+
+#+BEGIN_QUOTE
+The descriptions stay at the surface: leaf shape and colour, but little about habitat or what grows nearby.
+#+END_QUOTE
+
+Each entry now has a habitat paragraph and the three plants most often found next to it.
+
+*** TODO Use "edible" the same way throughout the book
+#+BEGIN_QUOTE
+The word "edible" is used for plants that are safe raw, safe cooked, and safe in small amounts. Please choose one meaning.
+#+END_QUOTE
+
+*** WONTFIX Link the key (Fig 1) to the recipes (Fig 2)
+#+BEGIN_QUOTE
+It would help to link each species in the key to the recipes that use it.
+#+END_QUOTE
+
+Out of scope for a field guide; the companion website does it.
+
+*** TODO Improve Figure 4 color scheme
+#+BEGIN_QUOTE
+Figure 4 is hard to read for colour-blind readers.
+#+END_QUOTE
+
+
+* High level stuff
+
+- Quantitative analysis of the walks
+  1) Seasonal analysis
+  2) Frequency of each species + weighted by walk length
+  3) Town vs countryside

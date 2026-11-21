@@ -1,0 +1,360 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "Arrived Frankfurt hub"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 154.8,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 239,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Leave by 12:26",
+      "font": "largeTitle.bold"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 198,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 178,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 308,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 308,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "x x x x x x x x x x x x x x x x x x x x"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 158,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Hello world again"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 308,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "one two orphan"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 116,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "one two three orphan"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 160,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "one two three four orphan"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 204,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "one two three four five orphan"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 248,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "one two three four five six orphan"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 292,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "one two three four five six seven orphan"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 336,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Tap a stop to open it, or ask for other ideas",
+      "font": "footnote"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 300,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Julien / Richard / Kai"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 151,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Groceries and other things to buy today"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 158,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Groceries and other things to buy today now"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 158,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Buy milk eggs"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 88,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Buy milk and eggs"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 108,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Buy fresh milk and eggs"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 128,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Arrived Frankfurt hub"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 168,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Arrived at Frankfurt hub"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 154.8,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Arrived at the Frankfurt hub"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 168,
+     "alignment": "leading"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Arrived at the big Frankfurt hub"
+     },
+     {
+      "Spacer": {}
+     }
+    ],
+    "frame": {
+     "width": 198,
+     "alignment": "leading"
+    }
+   }
+  ],
+  "spacing": 4,
+  "alignment": "leading"
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Running plan: week 6 of 10",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Image": "checkmark.circle.fill",
+      "foregroundStyle": "green",
+      "font": "title2"
+     },
+     {
+      "Text": "3 of 4",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "runs done this week",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Race day is 8 December, 42 days away",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Left this week: Sunday 5 km recovery run",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Gauge": 5,
+    "in": [
+     0,
+     10
+    ],
+    "style": "linear",
+    "label": "5 of 10 weeks"
+   },
+   {
+    "HStack": [
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "${itemsLeft} left",
+      "font": "subheadline",
+      "foregroundStyle": "secondary"
+     }
+    ]
+   },
+   {
+    "ForEach": "$rows",
+    "as": "r",
+    "content": {
+     "Toggle": "$r.label",
+     "bind": "$r.done",
+     "onChange": {
+      "run": "tick",
+      "args": {
+       "id": "$r.id",
+       "value": "$value"
+      }
+     }
+    }
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {
+  "items": [
+   {
+    "id": "tue",
+    "label": "Tue 8 km",
+    "done": true
+   },
+   {
+    "id": "thu",
+    "label": "Thu 6 km",
+    "done": true
+   },
+   {
+    "id": "sat",
+    "label": "Sat 14 km long run",
+    "done": true
+   },
+   {
+    "id": "sun",
+    "label": "Sun 5 km recovery",
+    "done": false
+   }
+  ]
+ },
+ "state": {
+  "done": [],
+  "undone": []
+ },
+ "script": "function rows({data, state}) { return data.items.map(i => ({id: i.id, label: i.label, done: state.done.includes(i.id) || (!!i.done && !state.undone.includes(i.id))})) }\nfunction itemsLeft({data, state}) { return rows({data, state}).filter(r => !r.done).length }\nfunction tick({state, args}) { const done = state.done.filter(i => i != args.id); const undone = state.undone.filter(i => i != args.id); if (args.value) done.push(args.id); else undone.push(args.id); return {state: {done, undone}} }",
+ "derive": {
+  "rows": "rows",
+  "itemsLeft": "itemsLeft"
+ }
+}

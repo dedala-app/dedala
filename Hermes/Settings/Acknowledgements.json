@@ -1,0 +1,158 @@
+[
+ {
+  "name": "Avataaars",
+  "url": "https://avataaars.com",
+  "copyright": "Pablo Stanley",
+  "license": "LicenseRef-Avataaars"
+ },
+ {
+  "name": "bitflags",
+  "url": "https://github.com/bitflags/bitflags",
+  "copyright": "Copyright (c) The Rust Project Developers",
+  "license": "MIT"
+ },
+ {
+  "name": "bytecount",
+  "url": "https://github.com/llogiq/bytecount",
+  "copyright": "Copyright (c) Andre Bogus, Joshua Landau",
+  "license": "MIT"
+ },
+ {
+  "name": "cfg-if",
+  "url": "https://github.com/rust-lang/cfg-if",
+  "copyright": "Copyright (c) Alex Crichton",
+  "license": "MIT"
+ },
+ {
+  "name": "countme",
+  "url": "https://github.com/matklad/countme",
+  "copyright": "Copyright (c) Aleksey Kladov",
+  "license": "MIT"
+ },
+ {
+  "name": "DiceBear",
+  "url": "https://www.dicebear.com",
+  "copyright": "Copyright (c) Florian Körner",
+  "license": "MIT"
+ },
+ {
+  "name": "equivalent",
+  "url": "https://github.com/indexmap-rs/equivalent",
+  "copyright": "Copyright (c) the equivalent authors",
+  "license": "MIT"
+ },
+ {
+  "name": "foldhash",
+  "url": "https://github.com/orlp/foldhash",
+  "copyright": "Copyright (c) Orson Peters",
+  "license": "Zlib"
+ },
+ {
+  "name": "hashbrown",
+  "url": "https://github.com/rust-lang/hashbrown",
+  "copyright": "Copyright (c) Amanieu d'Antras",
+  "license": "MIT"
+ },
+ {
+  "name": "indexmap",
+  "url": "https://github.com/indexmap-rs/indexmap",
+  "copyright": "Copyright (c) the indexmap authors",
+  "license": "MIT"
+ },
+ {
+  "name": "itoa",
+  "url": "https://github.com/dtolnay/itoa",
+  "copyright": "Copyright (c) David Tolnay",
+  "license": "MIT"
+ },
+ {
+  "name": "jetscii",
+  "url": "https://github.com/shepmaster/jetscii",
+  "copyright": "Copyright (c) Jake Goulding",
+  "license": "MIT"
+ },
+ {
+  "name": "memchr",
+  "url": "https://github.com/BurntSushi/memchr",
+  "copyright": "Copyright (c) Andrew Gallant, bluss",
+  "license": "MIT"
+ },
+ {
+  "name": "memoffset",
+  "url": "https://github.com/Gilnaa/memoffset",
+  "copyright": "Copyright (c) Gilad Naaman",
+  "license": "MIT"
+ },
+ {
+  "name": "minimal-lexical",
+  "url": "https://github.com/Alexhuszagh/minimal-lexical",
+  "copyright": "Copyright (c) Alex Huszagh",
+  "license": "MIT"
+ },
+ {
+  "name": "nom",
+  "url": "https://github.com/Geal/nom",
+  "copyright": "Copyright (c) contact@geoffroycouprie.com",
+  "license": "MIT"
+ },
+ {
+  "name": "orgize",
+  "url": "https://github.com/PoiScript/orgize",
+  "copyright": "Copyright (c) PoiScript",
+  "license": "MIT"
+ },
+ {
+  "name": "pulldown-cmark",
+  "url": "https://github.com/raphlinus/pulldown-cmark",
+  "copyright": "Copyright (c) Raph Levien, Marcus Klaas de Vries",
+  "license": "MIT"
+ },
+ {
+  "name": "rowan",
+  "url": "https://github.com/rust-analyzer/rowan",
+  "copyright": "Copyright (c) Aleksey Kladov",
+  "license": "MIT"
+ },
+ {
+  "name": "rustc-hash",
+  "url": "https://github.com/rust-lang-nursery/rustc-hash",
+  "copyright": "Copyright (c) The Rust Project Developers",
+  "license": "MIT"
+ },
+ {
+  "name": "serde_core",
+  "url": "https://github.com/serde-rs/serde",
+  "copyright": "Copyright (c) Erick Tryzelaar, David Tolnay",
+  "license": "MIT"
+ },
+ {
+  "name": "serde_json",
+  "url": "https://github.com/serde-rs/json",
+  "copyright": "Copyright (c) the serde_json authors",
+  "license": "MIT"
+ },
+ {
+  "name": "SwiftDraw",
+  "url": "https://github.com/swhitty/SwiftDraw",
+  "copyright": "Copyright (c) 2019 Simon Whitty",
+  "license": "Zlib"
+ },
+ {
+  "name": "text-size",
+  "url": "https://github.com/rust-analyzer/text-size",
+  "copyright": "Copyright (c) Aleksey Kladov, Christopher Durham (CAD97)",
+  "license": "MIT"
+ },
+ {
+  "name": "unicase",
+  "url": "https://github.com/seanmonstar/unicase",
+  "copyright": "Copyright (c) Sean McArthur",
+  "license": "MIT"
+ },
+ {
+  "name": "zmij",
+  "url": "https://github.com/dtolnay/zmij",
+  "copyright": "Copyright (c) David Tolnay",
+  "license": "MIT"
+ }
+]

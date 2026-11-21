@@ -1,0 +1,22 @@
+{"op": "store", "id": "ol", "data": {
+  "team": "Olympique Lyonnais",
+  "coach": "Paulo Fonseca",
+  "league": {"name": "Ligue 1", "position": 1, "points": 14, "played": 7, "gd": "+8", "table": [
+    {"pos": 1, "team": "Lyon", "played": 7, "gd": "+8", "pts": 14, "us": true},
+    {"pos": 2, "team": "Paris SG", "played": 7, "gd": "+5", "pts": 14},
+    {"pos": 3, "team": "Paris FC", "played": 7, "gd": "+5", "pts": 14},
+    {"pos": 4, "team": "Lille", "played": 7, "gd": "+5", "pts": 14},
+    {"pos": 5, "team": "Monaco", "played": 7, "gd": "+4", "pts": 14}
+  ]},
+  "last": {"competition": "Europa League", "date": "2026-10-22T21:00:00+02:00", "home": "Hoffenheim", "away": "Lyon", "homeScore": 3, "awayScore": 0, "result": "L"},
+  "results": [
+    {"id": "r5", "date": "2026-10-22T21:00:00+02:00", "comp": "Europa League", "opponent": "Hoffenheim", "venue": "away", "score": "0–3", "result": "L", "sure": true},
+    {"id": "r4", "date": "2026-10-18T17:00:00+02:00", "comp": "Ligue 1", "opponent": "Nice", "venue": "home", "score": "2–1", "result": "W", "sure": false},
+    {"id": "r3", "date": "2026-10-09T21:00:00+02:00", "comp": "Ligue 1", "opponent": "Lens", "venue": "away", "score": "1–2", "result": "L", "sure": true},
+    {"id": "r2", "date": "2026-09-19T21:00:00+02:00", "comp": "", "opponent": "Rennes", "venue": "home", "score": "4–0", "result": "W", "sure": true},
+    {"id": "r1", "date": "2026-09-04T21:00:00+02:00", "comp": "Ligue 1", "opponent": "Auxerre", "venue": "home", "score": "3–1", "result": "W", "sure": true}
+  ],
+  "next": {"comp": "Ligue 1", "opponent": "Paris SG", "date": "2026-10-25T20:45:00+01:00", "kickoffKnown": false},
+  "live": null,
+  "sources": "Table: Wikipedia, 23 Oct. Results: Wikipedia and 365Scores. Results marked ? are unconfirmed."
+}}

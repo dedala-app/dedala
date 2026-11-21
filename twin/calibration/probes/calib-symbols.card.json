@@ -1,0 +1,277 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Label": [
+     "Leave by 18:30",
+     "figure.walk"
+    ],
+    "font": "largeTitle.bold"
+   },
+   {
+    "Label": [
+     "Leave by 18:30 tonight please",
+     "figure.walk"
+    ],
+    "font": "largeTitle.bold"
+   },
+   {
+    "HStack": [
+     {
+      "Image": "figure.walk",
+      "font": "largeTitle.bold"
+     },
+     {
+      "Text": "Leave by 18:30",
+      "font": "largeTitle.bold"
+     }
+    ],
+    "alignment": "firstTextBaseline"
+   },
+   {
+    "HStack": [
+     {
+      "Image": "mappin",
+      "font": "subheadline"
+     },
+     {
+      "Text": "3Arena, Johanneshov",
+      "font": "subheadline"
+     }
+    ],
+    "alignment": "firstTextBaseline"
+   },
+   {
+    "Label": [
+     "3Arena, Johanneshov",
+     "mappin"
+    ],
+    "font": "subheadline"
+   },
+   {
+    "Image": "figure.walk",
+    "font": "caption"
+   },
+   {
+    "Image": "figure.walk",
+    "font": "subheadline"
+   },
+   {
+    "Image": "figure.walk",
+    "font": "body"
+   },
+   {
+    "Image": "figure.walk",
+    "font": "title2"
+   },
+   {
+    "Image": "figure.walk",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Image": "mappin",
+    "font": "caption"
+   },
+   {
+    "Image": "mappin",
+    "font": "subheadline"
+   },
+   {
+    "Image": "mappin",
+    "font": "body"
+   },
+   {
+    "Image": "mappin",
+    "font": "title2"
+   },
+   {
+    "Image": "mappin",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Image": "checkmark.circle.fill",
+    "font": "caption"
+   },
+   {
+    "Image": "checkmark.circle.fill",
+    "font": "subheadline"
+   },
+   {
+    "Image": "checkmark.circle.fill",
+    "font": "body"
+   },
+   {
+    "Image": "checkmark.circle.fill",
+    "font": "title2"
+   },
+   {
+    "Image": "checkmark.circle.fill",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Image": "fork.knife",
+    "font": "caption"
+   },
+   {
+    "Image": "fork.knife",
+    "font": "subheadline"
+   },
+   {
+    "Image": "fork.knife",
+    "font": "body"
+   },
+   {
+    "Image": "fork.knife",
+    "font": "title2"
+   },
+   {
+    "Image": "fork.knife",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Image": "camera",
+    "font": "caption"
+   },
+   {
+    "Image": "camera",
+    "font": "subheadline"
+   },
+   {
+    "Image": "camera",
+    "font": "body"
+   },
+   {
+    "Image": "camera",
+    "font": "title2"
+   },
+   {
+    "Image": "camera",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Image": "calendar",
+    "font": "caption"
+   },
+   {
+    "Image": "calendar",
+    "font": "subheadline"
+   },
+   {
+    "Image": "calendar",
+    "font": "body"
+   },
+   {
+    "Image": "calendar",
+    "font": "title2"
+   },
+   {
+    "Image": "calendar",
+    "font": "largeTitle.bold"
+   },
+   {
+    "Image": "airplane",
+    "font": "caption"
+   },
+   {
+    "Image": "airplane",
+    "font": "subheadline"
+   },
+   {
+    "Image": "airplane",
+    "font": "body"
+   },
+   {
+    "Image": "airplane",
+    "font": "title2"
+   },
+   {
+    "Image": "airplane",
+    "font": "largeTitle.bold"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "LIGUE 1",
+      "font": "caption.bold",
+      "padding": {
+       "horizontal": 8,
+       "vertical": 3
+      },
+      "background": "accent@0.12",
+      "cornerRadius": 999
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Sun · 20:45",
+      "font": "subheadline.bold",
+      "monospacedDigit": true
+     }
+    ]
+   },
+   {
+    "Text": "LIGUE 1",
+    "font": "caption.bold",
+    "padding": {
+     "horizontal": 8,
+     "vertical": 3
+    },
+    "background": "accent@0.12",
+    "cornerRadius": 999
+   },
+   {
+    "VStack": [
+     {
+      "Text": "CHRONOMETER",
+      "font": "caption.bold"
+     },
+     {
+      "Text": "00:12.4",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true
+     },
+     {
+      "Text": "Lap 3",
+      "font": "subheadline"
+     },
+     {
+      "Text": "Body text here",
+      "font": "body"
+     },
+     {
+      "Text": "Footnote text",
+      "font": "footnote"
+     },
+     {
+      "Text": "Title2 text",
+      "font": "title2"
+     },
+     {
+      "Text": "Title text",
+      "font": "title"
+     },
+     {
+      "Text": "Caption2",
+      "font": "caption2"
+     },
+     {
+      "Text": "Title3 text",
+      "font": "title3"
+     },
+     {
+      "Text": "Callout",
+      "font": "callout"
+     },
+     {
+      "Text": "Headline",
+      "font": "headline"
+     }
+    ],
+    "alignment": "leading"
+   }
+  ],
+  "alignment": "leading",
+  "spacing": 12
+ }
+}

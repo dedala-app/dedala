@@ -1,0 +1,144 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "minimumScaleFactor": 0.5,
+    "frame": {
+     "width": 348
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "minimumScaleFactor": 0.5,
+    "frame": {
+     "width": 347.9
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "minimumScaleFactor": 0.5,
+    "frame": {
+     "width": 347.86
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "minimumScaleFactor": 0.5,
+    "frame": {
+     "width": 347.8
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "minimumScaleFactor": 0.5,
+    "frame": {
+     "width": 347.5
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "minimumScaleFactor": 0.5,
+    "frame": {
+     "width": 345
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "minimumScaleFactor": 0.5,
+    "frame": {
+     "width": 340
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "minimumScaleFactor": 0.5,
+    "frame": {
+     "width": 300
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "frame": {
+     "width": 300
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "frame": {
+     "width": 300.5
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "frame": {
+     "width": 301
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "frame": {
+     "width": 302
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "frame": {
+     "width": 303
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "frame": {
+     "width": 304
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "frame": {
+     "width": 305
+    }
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow",
+    "font": "body",
+    "lineLimit": 1,
+    "frame": {
+     "width": 306
+    }
+   }
+  ],
+  "spacing": 6,
+  "alignment": "leading"
+ }
+}

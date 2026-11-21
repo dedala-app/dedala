@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2026 Julien Malka
+# SPDX-License-Identifier: MIT
+
+[package]
+name = "dedala-native"
+version = "0.1.0"
+edition = "2021"
+description = "What the app and the plugin share natively: Org and Markdown read into the org-element tree, and for the plugin, as one WebAssembly module, the phone's text boundaries and a QuickJS to run page scripts in"
+publish = false
+
+[lib]
+name = "dedala_native"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[features]
+plugin = ["dep:icu_segmenter", "dep:icu_properties", "dep:rquickjs"]
+
+[dependencies]
+orgize = { git = "https://github.com/PoiScript/orgize", rev = "5f26c94dcec2a33b37b1c880ace053b29b5d021e" }
+pulldown-cmark = { version = "0.13", default-features = false }
+serde_json = { version = "1", features = ["preserve_order"] }
+icu_segmenter = { version = "2.1", optional = true }
+icu_properties = { version = "2.1", optional = true }
+rquickjs = { version = "0.14", optional = true }
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"

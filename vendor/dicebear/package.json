@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "esbuild entry.js --bundle --format=iife --minify --target=es2019 --outfile=../../Hermes/App/avataaars.js"
+  },
+  "dependencies": {
+    "@dicebear/avataaars": "9.4.3",
+    "@dicebear/core": "9.4.2"
+  }
+}

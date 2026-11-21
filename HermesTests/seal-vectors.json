@@ -1,0 +1,17 @@
+{
+ "agent_private": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8=",
+ "device_private": "ICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj8=",
+ "agent_public": "j0DFrbaPJWJK5bIU6nZ6bslNgp09e14a0bpvPiE4KF8=",
+ "device_public": "NYBy1jZYgNGu6jKa35EhODhR7SGijjt16WXQ0s0WYlQ=",
+ "pairing": "p_0123456789abcdef",
+ "to_app": "ap5h7IjHJHWW/ks1+klDz6oYTnjEm2vBOWetevpZiOw=",
+ "to_agent": "Yt4Jhm31AWJ4pOMLvdbjIa57yi4N6Fw/SRJehYBGs+g=",
+ "message": {
+  "seq": 5,
+  "nonce": "AAECAwQFBgcICQoL",
+  "box": "9+Tov0Zhol7Xji2iFVwZ1BEtBkZbw27BUYBrAojgCkWmRse7b8XqRG0Wory9M8w="
+ },
+ "plain": "[{\"op\":\"say\",\"text\":\"Bonjour\"}]",
+ "proof": "proof-secret",
+ "mac": "3hBnoztWvEnKE0Vv16rmvub1CzXaDY1IexBizTVJ3YY="
+}

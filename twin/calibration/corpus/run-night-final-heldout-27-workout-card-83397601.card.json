@@ -1,0 +1,127 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Running plan",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Week 6 of 10",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "3 of 4 runs done this week",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Race day is 8 December, about 6 weeks away",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "This week: 8 km, 6 km and a 14 km long run are done",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Sunday's 5 km recovery run is the one left",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Gauge": 6,
+    "in": [
+     0,
+     10
+    ],
+    "style": "linear",
+    "label": "6 of 10 weeks"
+   },
+   {
+    "HStack": [
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "${itemsLeft} left",
+      "font": "subheadline",
+      "foregroundStyle": "secondary"
+     }
+    ]
+   },
+   {
+    "ForEach": "$rows",
+    "as": "r",
+    "content": {
+     "Toggle": "$r.label",
+     "bind": "$r.done",
+     "onChange": {
+      "run": "tick",
+      "args": {
+       "id": "$r.id",
+       "value": "$value"
+      }
+     }
+    }
+   },
+   {
+    "Label": [
+     "Sunday: 5 km recovery run",
+     "arrow.right.circle"
+    ],
+    "font": "footnote",
+    "foregroundStyle": "secondary",
+    "lineLimit": 2
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {
+  "items": [
+   {
+    "id": "tue",
+    "label": "Tuesday 8 km",
+    "done": true
+   },
+   {
+    "id": "thu",
+    "label": "Thursday 6 km",
+    "done": true
+   },
+   {
+    "id": "sat",
+    "label": "Saturday 14 km long run",
+    "done": true
+   },
+   {
+    "id": "sun",
+    "label": "Sunday 5 km recovery run",
+    "done": false
+   }
+  ]
+ },
+ "state": {
+  "done": [],
+  "undone": []
+ },
+ "script": "function rows({data, state}) { return data.items.map(i => ({id: i.id, label: i.label, done: state.done.includes(i.id) || (!!i.done && !state.undone.includes(i.id))})) }\nfunction itemsLeft({data, state}) { return rows({data, state}).filter(r => !r.done).length }\nfunction tick({state, args}) { const done = state.done.filter(i => i != args.id); const undone = state.undone.filter(i => i != args.id); if (args.value) done.push(args.id); else undone.push(args.id); return {state: {done, undone}} }",
+ "derive": {
+  "rows": "rows",
+  "itemsLeft": "itemsLeft"
+ }
+}

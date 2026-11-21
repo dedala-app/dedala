@@ -1,0 +1,94 @@
+{
+ "size": [
+  348,
+  151
+ ],
+ "at": "2026-10-27T20:05:25Z",
+ "capture": "run-design-guide-apps-32-tally-card-48553274-22.png",
+ "card": "run-design-guide-apps-32-tally-card-48553274",
+ "frames": [
+  {
+   "h": 150.66666666666666,
+   "x": 0,
+   "view": "Card",
+   "w": 347.79999999999995,
+   "y": 0,
+   "path": "Card"
+  },
+  {
+   "h": 118.66666666666666,
+   "x": 16,
+   "view": "VStack",
+   "w": 315.79999999999995,
+   "y": 16,
+   "path": "Card \u203a 1.VStack"
+  },
+  {
+   "h": 18,
+   "x": 16,
+   "view": "Text",
+   "w": 219.66666666666666,
+   "y": 16,
+   "path": "Card \u203a 1.VStack \u203a 1.Text"
+  },
+  {
+   "h": 40.66666666666666,
+   "x": 16,
+   "view": "HStack",
+   "w": 193.99999999999997,
+   "y": 42,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack"
+  },
+  {
+   "h": 40.66666666666666,
+   "x": 16,
+   "y": 42,
+   "w": 22.666666666666664,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Text"
+  },
+  {
+   "h": 24,
+   "x": 46.666666666666664,
+   "y": 55.33333333333333,
+   "w": 163.33333333333331,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text"
+  },
+  {
+   "h": 44,
+   "x": 16,
+   "y": 90.66666666666666,
+   "w": 315.79999999999995,
+   "view": "HStack",
+   "path": "Card \u203a 1.VStack \u203a 3.HStack"
+  },
+  {
+   "h": 44,
+   "x": 16,
+   "view": "Button",
+   "y": 90.66666666666666,
+   "w": 99.93333333333332,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Button"
+  },
+  {
+   "h": 44,
+   "x": 123.93333333333334,
+   "y": 90.66666666666666,
+   "w": 99.93333333333331,
+   "view": "Button",
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 2.Button"
+  },
+  {
+   "h": 44,
+   "x": 231.86666666666665,
+   "y": 90.66666666666666,
+   "w": 99.93333333333331,
+   "view": "Button",
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 3.Button"
+  }
+ ],
+ "issues": [],
+ "kind": "rendered",
+ "diagnostics": []
+}

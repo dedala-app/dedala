@@ -1,0 +1,224 @@
+{
+ "at": "2026-10-27T20:06:24Z",
+ "capture": "run-night-final-heldout-23-packing-card-47518929-62.png",
+ "kind": "rendered",
+ "size": [
+  348,
+  588
+ ],
+ "diagnostics": [],
+ "frames": [
+  {
+   "view": "Card",
+   "path": "Card",
+   "x": 0,
+   "w": 347.79999999999995,
+   "y": 5.684341886080802e-14,
+   "h": 588.3333333333333
+  },
+  {
+   "x": 16,
+   "view": "VStack",
+   "w": 315.79999999999995,
+   "path": "Card \u203a 1.VStack",
+   "y": 16.000000000000057,
+   "h": 556.3333333333333
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "x": 16,
+   "y": 16.000000000000057,
+   "view": "Text",
+   "w": 121,
+   "h": 18
+  },
+  {
+   "w": 270,
+   "view": "HStack",
+   "y": 42.00000000000006,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "h": 62.33333333333333,
+   "x": 16
+  },
+  {
+   "view": "Text",
+   "h": 40.66666666666666,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Text",
+   "x": 16,
+   "y": 42.00000000000006,
+   "w": 82.33333333333333
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text",
+   "view": "Text",
+   "y": 55.333333333333385,
+   "x": 106.33333333333333,
+   "h": 49,
+   "w": 179.66666666666669
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 3.Text",
+   "x": 16,
+   "view": "Text",
+   "w": 271.3333333333333,
+   "y": 112.33333333333339,
+   "h": 37.999999999999986
+  },
+  {
+   "view": "Text",
+   "x": 16,
+   "h": 18,
+   "path": "Card \u203a 1.VStack \u203a 4.Text",
+   "w": 247.33333333333331,
+   "y": 158.33333333333337
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 5.Text",
+   "view": "Text",
+   "y": 184.33333333333337,
+   "h": 38,
+   "w": 271.3333333333333,
+   "x": 16
+  },
+  {
+   "view": "HStack",
+   "path": "Card \u203a 1.VStack \u203a 6.HStack",
+   "x": 16,
+   "w": 315.79999999999995,
+   "h": 18,
+   "y": 230.33333333333337
+  },
+  {
+   "w": 34.666666666666686,
+   "view": "Text",
+   "path": "Card \u203a 1.VStack \u203a 6.HStack \u203a 2.Text",
+   "y": 230.33333333333337,
+   "h": 18,
+   "x": 297.13333333333327
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[0] \u203a 1.Toggle",
+   "view": "Toggle",
+   "x": 16,
+   "h": 28,
+   "y": 256.33333333333337,
+   "w": 315.79999999999995
+  },
+  {
+   "view": "Toggle",
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[1] \u203a 1.Toggle",
+   "h": 28,
+   "w": 315.79999999999995,
+   "y": 292.33333333333337,
+   "x": 16
+  },
+  {
+   "view": "Toggle",
+   "y": 328.33333333333337,
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[2] \u203a 1.Toggle",
+   "x": 16,
+   "w": 315.79999999999995,
+   "h": 28
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[3] \u203a 1.Toggle",
+   "view": "Toggle",
+   "x": 16,
+   "y": 364.33333333333337,
+   "w": 315.79999999999995,
+   "h": 28
+  },
+  {
+   "x": 16,
+   "y": 400.33333333333337,
+   "view": "Toggle",
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[4] \u203a 1.Toggle",
+   "w": 315.79999999999995,
+   "h": 28
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[5] \u203a 1.Toggle",
+   "y": 436.33333333333337,
+   "h": 28,
+   "view": "Toggle",
+   "w": 315.79999999999995,
+   "x": 16
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[6] \u203a 1.Toggle",
+   "x": 16,
+   "y": 472.33333333333337,
+   "view": "Toggle",
+   "w": 315.79999999999995,
+   "h": 28
+  },
+  {
+   "view": "Toggle",
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[7] \u203a 1.Toggle",
+   "y": 508.33333333333337,
+   "h": 28,
+   "w": 315.79999999999995,
+   "x": 16
+  },
+  {
+   "path": "Card \u203a 1.VStack \u203a 7.ForEach[8] \u203a 1.Toggle",
+   "y": 544.3333333333334,
+   "view": "Toggle",
+   "h": 28,
+   "w": 315.79999999999995,
+   "x": 16
+  }
+ ],
+ "issues": [],
+ "card": "run-night-final-heldout-23-packing-card-47518929",
+ "derived": {
+  "rows": [
+   {
+    "done": true,
+    "label": "Laptop",
+    "id": "laptop"
+   },
+   {
+    "done": true,
+    "label": "Charger",
+    "id": "charger"
+   },
+   {
+    "done": false,
+    "label": "HDMI adapter",
+    "id": "hdmi"
+   },
+   {
+    "done": false,
+    "label": "Clicker",
+    "id": "clicker"
+   },
+   {
+    "id": "shirts",
+    "label": "Two shirts",
+    "done": false
+   },
+   {
+    "label": "Jumper",
+    "id": "jumper",
+    "done": false
+   },
+   {
+    "label": "Rain jacket",
+    "id": "rainjacket",
+    "done": false
+   },
+   {
+    "label": "Toothbrush",
+    "id": "toothbrush",
+    "done": false
+   },
+   {
+    "label": "Passport",
+    "id": "passport",
+    "done": false
+   }
+  ],
+  "itemsLeft": 7
+ }
+}

@@ -1,0 +1,358 @@
+{
+ "at": "2026-10-27T20:04:57Z",
+ "diagnostics": [],
+ "size": [
+  348,
+  529
+ ],
+ "card": "doc-03-energy",
+ "kind": "rendered",
+ "frames": [
+  {
+   "path": "Card",
+   "y": 0,
+   "h": 528.6666666666666,
+   "x": 0,
+   "w": 347.79999999999995,
+   "view": "Card"
+  },
+  {
+   "path": "Card \u203a 1.HStack",
+   "y": 16,
+   "h": 70.66666666666666,
+   "x": 16,
+   "w": 315.79999999999995,
+   "view": "HStack"
+  },
+  {
+   "path": "Card \u203a 1.HStack \u203a 1.VStack",
+   "y": 16,
+   "x": 16,
+   "w": 143.33333333333331,
+   "h": 70.66666666666666,
+   "view": "VStack"
+  },
+  {
+   "path": "Card \u203a 1.HStack \u203a 1.VStack \u203a 1.Text",
+   "y": 16,
+   "h": 18,
+   "x": 16,
+   "w": 71.66666666666666,
+   "view": "Text"
+  },
+  {
+   "path": "Card \u203a 1.HStack \u203a 1.VStack \u203a 2.HStack",
+   "y": 34,
+   "h": 52.66666666666666,
+   "x": 16,
+   "w": 143.33333333333331,
+   "view": "HStack"
+  },
+  {
+   "path": "Card \u203a 1.HStack \u203a 1.VStack \u203a 2.HStack \u203a 1.Text",
+   "y": 34,
+   "x": 16,
+   "w": 98,
+   "h": 52.66666666666666,
+   "view": "Text"
+  },
+  {
+   "path": "Card \u203a 1.HStack \u203a 1.VStack \u203a 2.HStack \u203a 2.Text",
+   "y": 57,
+   "w": 41.333333333333314,
+   "h": 24,
+   "x": 118,
+   "view": "Text"
+  },
+  {
+   "view": "Label",
+   "y": 35.166666666666664,
+   "w": 84.66666666666666,
+   "x": 247.1333333333333,
+   "path": "Card \u203a 1.HStack \u203a 3.Label",
+   "h": 32.333333333333336
+  },
+  {
+   "y": 98.66666666666666,
+   "w": 315.79999999999995,
+   "view": "Chart",
+   "path": "Card \u203a 2.Chart",
+   "x": 16,
+   "h": 150
+  },
+  {
+   "view": "HStack",
+   "w": 225.66666666666666,
+   "y": 260.66666666666663,
+   "path": "Card \u203a 3.HStack",
+   "x": 16,
+   "h": 14.333333333333314
+  },
+  {
+   "view": "Circle",
+   "w": 8,
+   "y": 263.8333333333333,
+   "x": 16,
+   "path": "Card \u203a 3.HStack \u203a 1.Circle",
+   "h": 8
+  },
+  {
+   "view": "Text",
+   "y": 260.66666666666663,
+   "w": 56.66666666666666,
+   "x": 30,
+   "path": "Card \u203a 3.HStack \u203a 2.Text",
+   "h": 14.333333333333314
+  },
+  {
+   "y": 266.3333333333333,
+   "view": "Capsule",
+   "w": 14,
+   "x": 92.66666666666666,
+   "path": "Card \u203a 3.HStack \u203a 3.Capsule",
+   "h": 3
+  },
+  {
+   "view": "Text",
+   "y": 260.66666666666663,
+   "w": 57,
+   "path": "Card \u203a 3.HStack \u203a 4.Text",
+   "x": 112.66666666666666,
+   "h": 14.333333333333314
+  },
+  {
+   "view": "Capsule",
+   "y": 266.8333333333333,
+   "w": 14,
+   "x": 175.66666666666666,
+   "path": "Card \u203a 3.HStack \u203a 5.Capsule",
+   "h": 2
+  },
+  {
+   "view": "Text",
+   "w": 46,
+   "y": 260.66666666666663,
+   "x": 195.66666666666666,
+   "path": "Card \u203a 3.HStack \u203a 6.Text",
+   "h": 14.333333333333314
+  },
+  {
+   "view": "Divider",
+   "w": 315.79999999999995,
+   "y": 286.99999999999994,
+   "path": "Card \u203a 4.Divider",
+   "x": 16,
+   "h": 0.3333333333333144
+  },
+  {
+   "y": 299.33333333333326,
+   "view": "Columns",
+   "w": 315.79999999999995,
+   "x": 16,
+   "path": "Card \u203a 5.Columns",
+   "h": 79
+  },
+  {
+   "y": 299.33333333333326,
+   "w": 58,
+   "view": "VStack",
+   "path": "Card \u203a 5.Columns \u203a 1.VStack",
+   "x": 16,
+   "h": 78.33333333333331
+  },
+  {
+   "y": 299.33333333333326,
+   "w": 58,
+   "view": "Gauge",
+   "x": 16,
+   "path": "Card \u203a 5.Columns \u203a 1.VStack \u203a 1.Gauge",
+   "h": 58
+  },
+  {
+   "y": 363.33333333333326,
+   "w": 41.33333333333333,
+   "view": "Text",
+   "path": "Card \u203a 5.Columns \u203a 1.VStack \u203a 2.Text",
+   "x": 16,
+   "h": 14.333333333333314
+  },
+  {
+   "view": "VStack",
+   "w": 58,
+   "y": 299.33333333333326,
+   "path": "Card \u203a 5.Columns \u203a 2.VStack",
+   "x": 125.26666666666665,
+   "h": 78.33333333333331
+  },
+  {
+   "view": "Gauge",
+   "w": 58,
+   "y": 299.33333333333326,
+   "path": "Card \u203a 5.Columns \u203a 2.VStack \u203a 1.Gauge",
+   "x": 125.26666666666665,
+   "h": 58
+  },
+  {
+   "view": "Text",
+   "y": 363.33333333333326,
+   "w": 50.333333333333314,
+   "path": "Card \u203a 5.Columns \u203a 2.VStack \u203a 2.Text",
+   "x": 125.26666666666665,
+   "h": 14.333333333333314
+  },
+  {
+   "y": 299.33333333333326,
+   "view": "VStack",
+   "w": 58,
+   "x": 234.5333333333333,
+   "path": "Card \u203a 5.Columns \u203a 3.VStack",
+   "h": 78.33333333333331
+  },
+  {
+   "view": "Gauge",
+   "y": 299.33333333333326,
+   "w": 58,
+   "x": 234.5333333333333,
+   "path": "Card \u203a 5.Columns \u203a 3.VStack \u203a 1.Gauge",
+   "h": 58
+  },
+  {
+   "view": "Text",
+   "w": 42.666666666666686,
+   "y": 363.33333333333326,
+   "path": "Card \u203a 5.Columns \u203a 3.VStack \u203a 2.Text",
+   "x": 234.5333333333333,
+   "h": 14.333333333333314
+  },
+  {
+   "view": "Divider",
+   "w": 315.79999999999995,
+   "y": 390.33333333333326,
+   "x": 16,
+   "path": "Card \u203a 6.Divider",
+   "h": 0.3333333333333144
+  },
+  {
+   "y": 402.6666666666666,
+   "view": "HStack",
+   "w": 315.79999999999995,
+   "x": 16,
+   "path": "Card \u203a 7.HStack",
+   "h": 109.99999999999994
+  },
+  {
+   "y": 402.6666666666666,
+   "view": "Chart",
+   "w": 110,
+   "x": 16,
+   "path": "Card \u203a 7.HStack \u203a 1.Chart",
+   "h": 109.99999999999994
+  },
+  {
+   "view": "VStack",
+   "w": 185.79999999999995,
+   "y": 412.6666666666666,
+   "x": 146,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack",
+   "h": 90
+  },
+  {
+   "y": 412.6666666666666,
+   "w": 185.79999999999995,
+   "view": "HStack",
+   "x": 146,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[0] \u203a 1.HStack",
+   "h": 18
+  },
+  {
+   "view": "Text",
+   "w": 53.66666666666666,
+   "y": 412.6666666666666,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[0] \u203a 1.HStack \u203a 1.Text",
+   "x": 146,
+   "h": 18
+  },
+  {
+   "view": "Text",
+   "w": 32.333333333333314,
+   "y": 412.6666666666666,
+   "x": 299.46666666666664,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[0] \u203a 1.HStack \u203a 3.Text",
+   "h": 18
+  },
+  {
+   "view": "HStack",
+   "y": 436.6666666666666,
+   "w": 185.79999999999995,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[1] \u203a 1.HStack",
+   "x": 146,
+   "h": 18
+  },
+  {
+   "y": 436.6666666666666,
+   "w": 52,
+   "view": "Text",
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[1] \u203a 1.HStack \u203a 1.Text",
+   "x": 146,
+   "h": 18
+  },
+  {
+   "y": 436.6666666666666,
+   "w": 32.333333333333314,
+   "view": "Text",
+   "x": 299.46666666666664,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[1] \u203a 1.HStack \u203a 3.Text",
+   "h": 18
+  },
+  {
+   "view": "HStack",
+   "w": 185.79999999999995,
+   "y": 460.6666666666666,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[2] \u203a 1.HStack",
+   "x": 146,
+   "h": 18
+  },
+  {
+   "y": 460.6666666666666,
+   "view": "Text",
+   "w": 56,
+   "x": 146,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[2] \u203a 1.HStack \u203a 1.Text",
+   "h": 18
+  },
+  {
+   "view": "Text",
+   "y": 460.6666666666666,
+   "w": 32.333333333333314,
+   "x": 299.46666666666664,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[2] \u203a 1.HStack \u203a 3.Text",
+   "h": 18
+  },
+  {
+   "view": "HStack",
+   "y": 484.6666666666666,
+   "w": 185.79999999999995,
+   "x": 146,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[3] \u203a 1.HStack",
+   "h": 18
+  },
+  {
+   "y": 484.6666666666666,
+   "w": 39,
+   "view": "Text",
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[3] \u203a 1.HStack \u203a 1.Text",
+   "x": 146,
+   "h": 18
+  },
+  {
+   "view": "Text",
+   "w": 32.333333333333314,
+   "y": 484.6666666666666,
+   "x": 299.46666666666664,
+   "path": "Card \u203a 7.HStack \u203a 2.VStack \u203a 1.ForEach[3] \u203a 1.HStack \u203a 3.Text",
+   "h": 18
+  }
+ ],
+ "capture": "doc-03-energy-3.png",
+ "issues": []
+}

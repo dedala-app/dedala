@@ -1,0 +1,464 @@
+{
+  "type": "org-data",
+  "begin": 0,
+  "end": 1823,
+  "title": "Réunion d'équipe — accueil de Léa et Karim",
+  "keywords": {
+    "TITLE": "Réunion d'équipe — accueil de Léa et Karim",
+    "DATE": "[2026-11-04 mer. 14:59]",
+    "FILETAGS": ":meetings:bakery:"
+  },
+  "children": [
+    {
+      "type": "section",
+      "begin": 0,
+      "end": 372,
+      "children": [
+        {
+          "type": "keyword",
+          "begin": 0,
+          "end": 62,
+          "key": "TITLE",
+          "value": "Réunion d'équipe — accueil de Léa et Karim"
+        },
+        {
+          "type": "keyword",
+          "begin": 62,
+          "end": 100,
+          "key": "DATE",
+          "value": "[2026-11-04 mer. 14:59]"
+        },
+        {
+          "type": "keyword",
+          "begin": 100,
+          "end": 133,
+          "key": "FILETAGS",
+          "value": ":meetings:bakery:"
+        },
+        {
+          "type": "paragraph",
+          "begin": 133,
+          "end": 254,
+          "text": "Réunion de l'atelier Pain Perdu, 14:59–15:59. [Enregistrement](https://example.org/recordings/2f6c1a90-team-meeting)",
+          "children": [
+            {
+              "type": "plain-text",
+              "begin": 133,
+              "end": 252,
+              "value": "Réunion de l'atelier Pain Perdu, 14:59–15:59. [Enregistrement](https://example.org/recordings/2f6c1a90-team-meeting)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "begin": 254,
+          "end": 372,
+          "text": "Note : je n'apparais pas dans la liste des participants — c'est l'enregistrement de la réunion, pas ma présence.",
+          "children": [
+            {
+              "type": "plain-text",
+              "begin": 254,
+              "end": 370,
+              "value": "Note : je n'apparais pas dans la liste des participants — c'est l'enregistrement de la réunion, pas ma présence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 372,
+      "end": 929,
+      "level": 1,
+      "title": "Les deux arrivées",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 374,
+          "end": 392,
+          "value": "Les deux arrivées"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "section",
+          "begin": 393,
+          "end": 929,
+          "children": [
+            {
+              "type": "plain-list",
+              "begin": 393,
+              "end": 929,
+              "listType": "unordered",
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 393,
+                  "end": 680,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "Léa Moreau, responsable de production. Boulangère, puis cheffe d'équipe dans une coopérative de vingt personnes, puis sa propre boutique revendue l'an dernier. Rôle : organisation des fournées, planning de l'équipe, formation des apprentis. Disponible pour un tête-à-tête.",
+                  "contentBegin": 395,
+                  "contentEnd": 679,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 395,
+                      "end": 680,
+                      "text": "Léa Moreau, responsable de production. Boulangère, puis cheffe d'équipe dans une coopérative de vingt personnes, puis sa propre boutique revendue l'an dernier. Rôle : organisation des fournées, planning de l'équipe, formation des apprentis. Disponible pour un tête-à-tête.",
+                      "children": [
+                        {
+                          "type": "bold",
+                          "begin": 395,
+                          "end": 408,
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 396,
+                              "end": 407,
+                              "value": "Léa Moreau"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "plain-text",
+                          "begin": 408,
+                          "end": 679,
+                          "value": ", responsable de production. Boulangère, puis cheffe d'équipe dans une coopérative de vingt personnes, puis sa propre boutique revendue l'an dernier. Rôle : organisation des fournées, planning de l'équipe, formation des apprentis. Disponible pour un tête-à-tête."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 680,
+                  "end": 928,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "Karim Benali, relation clients. Études de commerce, puis restauration collective, puis livraison à vélo (tournées, suivi des commandes sur 800 adresses). Rattaché à Inès et Paul : commandes des restaurants, accueil des nouveaux clients.",
+                  "contentBegin": 682,
+                  "contentEnd": 927,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 682,
+                      "end": 928,
+                      "text": "Karim Benali, relation clients. Études de commerce, puis restauration collective, puis livraison à vélo (tournées, suivi des commandes sur 800 adresses). Rattaché à Inès et Paul : commandes des restaurants, accueil des nouveaux clients.",
+                      "children": [
+                        {
+                          "type": "bold",
+                          "begin": 682,
+                          "end": 696,
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 683,
+                              "end": 695,
+                              "value": "Karim Benali"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "plain-text",
+                          "begin": 696,
+                          "end": 927,
+                          "value": ", relation clients. Études de commerce, puis restauration collective, puis livraison à vélo (tournées, suivi des commandes sur 800 adresses). Rattaché à Inès et Paul : commandes des restaurants, accueil des nouveaux clients."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 929,
+      "end": 1298,
+      "level": 1,
+      "title": "Le point dur, dit par Mathieu",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 931,
+          "end": 960,
+          "value": "Le point dur, dit par Mathieu"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "section",
+          "begin": 961,
+          "end": 1298,
+          "children": [
+            {
+              "type": "plain-list",
+              "begin": 961,
+              "end": 1298,
+              "listType": "unordered",
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 961,
+                  "end": 1166,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "« We are already promising more loaves than the oven can bake. » Les deux recrutements servent à combler l'écart entre ce qui est promis et ce qui sort du four ; la vitesse compte plus que le reste.",
+                  "contentBegin": 963,
+                  "contentEnd": 1165,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 963,
+                      "end": 1166,
+                      "text": "« We are already promising more loaves than the oven can bake. » Les deux recrutements servent à combler l'écart entre ce qui est promis et ce qui sort du four ; la vitesse compte plus que le reste.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 963,
+                          "end": 1165,
+                          "value": "« We are already promising more loaves than the oven can bake. » Les deux recrutements servent à combler l'écart entre ce qui est promis et ce qui sort du four ; la vitesse compte plus que le reste."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 1166,
+                  "end": 1297,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "Contexte : les commandes augmentent en même temps que le passage au nouveau four, donc la charge de décision par client aussi.",
+                  "contentBegin": 1168,
+                  "contentEnd": 1296,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1168,
+                      "end": 1297,
+                      "text": "Contexte : les commandes augmentent en même temps que le passage au nouveau four, donc la charge de décision par client aussi.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1168,
+                          "end": 1296,
+                          "value": "Contexte : les commandes augmentent en même temps que le passage au nouveau four, donc la charge de décision par client aussi."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 1298,
+      "end": 1733,
+      "level": 1,
+      "title": "Rôles et attentes",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 1300,
+          "end": 1318,
+          "value": "Rôles et attentes"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "section",
+          "begin": 1319,
+          "end": 1733,
+          "children": [
+            {
+              "type": "plain-list",
+              "begin": 1319,
+              "end": 1733,
+              "listType": "unordered",
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 1319,
+                  "end": 1438,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "Chloé (communication) : exactitude des informations de Léa pendant les pannes, cohérence des messages avec Karim.",
+                  "contentBegin": 1321,
+                  "contentEnd": 1437,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1321,
+                      "end": 1438,
+                      "text": "Chloé (communication) : exactitude des informations de Léa pendant les pannes, cohérence des messages avec Karim.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1321,
+                          "end": 1437,
+                          "value": "Chloé (communication) : exactitude des informations de Léa pendant les pannes, cohérence des messages avec Karim."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 1438,
+                  "end": 1512,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "Hugo et Sarah (gestion) : servir la vente, chiffres pour les tournées.",
+                  "contentBegin": 1440,
+                  "contentEnd": 1511,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1440,
+                      "end": 1512,
+                      "text": "Hugo et Sarah (gestion) : servir la vente, chiffres pour les tournées.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1440,
+                          "end": 1511,
+                          "value": "Hugo et Sarah (gestion) : servir la vente, chiffres pour les tournées."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 1512,
+                  "end": 1594,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "Nadia : le fournisseur de farine est externe (Moulin des Prés), pas l'atelier.",
+                  "contentBegin": 1514,
+                  "contentEnd": 1593,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1514,
+                      "end": 1594,
+                      "text": "Nadia : le fournisseur de farine est externe (Moulin des Prés), pas l'atelier.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1514,
+                          "end": 1593,
+                          "value": "Nadia : le fournisseur de farine est externe (Moulin des Prés), pas l'atelier."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 1594,
+                  "end": 1732,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "Culture affichée : hiérarchie minimale, entraide entre équipes, tout le monde est invité à prendre un créneau avec Léa et Karim.",
+                  "contentBegin": 1596,
+                  "contentEnd": 1731,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1596,
+                      "end": 1732,
+                      "text": "Culture affichée : hiérarchie minimale, entraide entre équipes, tout le monde est invité à prendre un créneau avec Léa et Karim.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1596,
+                          "end": 1731,
+                          "value": "Culture affichée : hiérarchie minimale, entraide entre équipes, tout le monde est invité à prendre un créneau avec Léa et Karim."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 1733,
+      "end": 1823,
+      "level": 1,
+      "title": "À faire",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 1735,
+          "end": 1743,
+          "value": "À faire"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "section",
+          "begin": 1744,
+          "end": 1823,
+          "children": [
+            {
+              "type": "plain-list",
+              "begin": 1744,
+              "end": 1823,
+              "listType": "unordered",
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 1744,
+                  "end": 1823,
+                  "bullet": "-",
+                  "indent": 0,
+                  "checkbox": "off",
+                  "checkboxBegin": 1746,
+                  "checkboxEnd": 1749,
+                  "text": "Prendre un créneau avec Léa et un avec Karim (demandé explicitement).",
+                  "contentBegin": 1750,
+                  "contentEnd": 1822,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 1750,
+                      "end": 1823,
+                      "text": "Prendre un créneau avec Léa et un avec Karim (demandé explicitement).",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 1750,
+                          "end": 1822,
+                          "value": "Prendre un créneau avec Léa et un avec Karim (demandé explicitement)."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

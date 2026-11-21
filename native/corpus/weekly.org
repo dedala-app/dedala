@@ -1,0 +1,36 @@
+#+title:      2025-11-24 - Weekly report
+#+date:       [2025-11-25 mar. 13:57]
+#+filetags:   :weekly:
+#+identifier: 20251124T135738
+#+signature:  book
+
+
+* Report
+
+- I copied all the photos from both rented servers to the external disk and then closed the accounts. We stayed under budget: remaining ~180€. I copied all the data of the spring survey (~4To), but deleted the intermediate exports of the extended edition.
+- I sorted out the paperwork for my stay at the botanical garden. Still TODO: train tickets.
+- Submitted a revised version of the mushroom chapter to the editor.
+
+
+* Meeting notes
+
+** Previews
+
+- Publish the tree chapter as a preview soon, even if it means leaving out the photo credits for now.
+- Also publish the season index when possible, as it is reviewed openly anyway.
+
+
+** Field guide re-submission
+
+- We discussed the two main options:
+  * first a large publisher then a regional one (Nordic Nature Press)
+  * first the regional publisher and then the large one as a pocket edition
+
+  Going first to the regional publisher seems to be the path of least resistance given we have no experience with the large ones. We submit with minimal changes (=taking into account the first readers + adding the species map into the book) and Sam will look into how to place a pocket edition (or else a magazine series).
+
+  We also discussed the species list: it needs to be better justified (+ a mention of the walks that found the rare ones), and we may have to revisit it in a revision but not now.
+
+
+** Garden newsletter column
+
+- Answer Bea asking if the deadline is January for the text or not. But otherwise a good idea to submit something looking like Ines's talk: "A walk is not enough".

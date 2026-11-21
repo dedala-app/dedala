@@ -1,0 +1,195 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Roof repair: which quote",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "Text": "Which quote do you take?",
+    "font": "title3.bold"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Jensen & S\u00f8n",
+      "font": "title.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "Best balance of price, speed and warranty",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Jensen & S\u00f8n: 61,000 kr, 2 weeks, starts 4 November, 10-year warranty, two good reviews from neighbours",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Hansen Tag: 68,000 kr, 3 weeks, starts 10 November, 10-year warranty",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Nordtag: 54,500 kr, 5 weeks, starts 2 December, 5-year warranty",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Label": [
+     "Take Jensen & S\u00f8n: cheapest with a 10-year warranty and starts soonest.",
+     "lightbulb"
+    ],
+    "font": "footnote.bold",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Prices are quoted figures; confirm the warranty terms in writing before signing.",
+    "font": "footnote",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "Jensen & S\u00f8n",
+        "font": "body.bold"
+       },
+       {
+        "Text": "61,000 kr, starts 4 Nov, 10-year warranty",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 2
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 2
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Image": "star.fill",
+      "foregroundStyle": "yellow"
+     },
+     {
+      "Image": "chevron.right",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "onTap": {
+     "send": {
+      "about": "which-quote-do-you-take",
+      "choice": "jensen"
+     },
+     "say": "Jensen & S\u00f8n"
+    },
+    "frame": {
+     "minHeight": 44
+    },
+    "padding": {
+     "vertical": 2
+    }
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "Hansen Tag",
+        "font": "body"
+       },
+       {
+        "Text": "68,000 kr, starts 10 Nov, 10-year warranty",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 2
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 2
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Image": "chevron.right",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "onTap": {
+     "send": {
+      "about": "which-quote-do-you-take",
+      "choice": "hansen"
+     },
+     "say": "Hansen Tag"
+    },
+    "frame": {
+     "minHeight": 44
+    },
+    "padding": {
+     "vertical": 2
+    }
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "Nordtag",
+        "font": "body"
+       },
+       {
+        "Text": "54,500 kr, starts 2 Dec, 5-year warranty, cheapest but slowest",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 2
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 2
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Image": "chevron.right",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "onTap": {
+     "send": {
+      "about": "which-quote-do-you-take",
+      "choice": "nordtag"
+     },
+     "say": "Nordtag"
+    },
+    "frame": {
+     "minHeight": 44
+    },
+    "padding": {
+     "vertical": 2
+    }
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {
+  "about": "which-quote-do-you-take"
+ },
+ "state": {}
+}

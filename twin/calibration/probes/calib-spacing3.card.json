@@ -1,0 +1,717 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": {
+     "size": 11
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": {
+     "size": 13
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": {
+     "size": 15
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": {
+     "size": 17
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": {
+     "size": 20
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": {
+     "size": 22
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": {
+     "size": 28
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": {
+     "size": 34
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "airplane",
+    "font": {
+     "size": 11
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "airplane",
+    "font": {
+     "size": 13
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "airplane",
+    "font": {
+     "size": 15
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "airplane",
+    "font": {
+     "size": 17
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "airplane",
+    "font": {
+     "size": 20
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "airplane",
+    "font": {
+     "size": 22
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "airplane",
+    "font": {
+     "size": 28
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "airplane",
+    "font": {
+     "size": 34
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "circle",
+    "font": {
+     "size": 11
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "circle",
+    "font": {
+     "size": 13
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "circle",
+    "font": {
+     "size": 15
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "circle",
+    "font": {
+     "size": 17
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "circle",
+    "font": {
+     "size": 20
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "circle",
+    "font": {
+     "size": 22
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "circle",
+    "font": {
+     "size": 28
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "circle",
+    "font": {
+     "size": 34
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "a.circle",
+    "font": {
+     "size": 11
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "a.circle",
+    "font": {
+     "size": 13
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "a.circle",
+    "font": {
+     "size": 15
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "a.circle",
+    "font": {
+     "size": 17
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "a.circle",
+    "font": {
+     "size": 20
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "a.circle",
+    "font": {
+     "size": 22
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "a.circle",
+    "font": {
+     "size": 28
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "a.circle",
+    "font": {
+     "size": 34
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "text.bubble",
+    "font": {
+     "size": 11
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "text.bubble",
+    "font": {
+     "size": 13
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "text.bubble",
+    "font": {
+     "size": 15
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "text.bubble",
+    "font": {
+     "size": 17
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "text.bubble",
+    "font": {
+     "size": 20
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "text.bubble",
+    "font": {
+     "size": 22
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "text.bubble",
+    "font": {
+     "size": 28
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "text.bubble",
+    "font": {
+     "size": 34
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "arrow.up",
+    "font": {
+     "size": 11
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "arrow.up",
+    "font": {
+     "size": 13
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "arrow.up",
+    "font": {
+     "size": 15
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "arrow.up",
+    "font": {
+     "size": 17
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "arrow.up",
+    "font": {
+     "size": 20
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "arrow.up",
+    "font": {
+     "size": 22
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "arrow.up",
+    "font": {
+     "size": 28
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "arrow.up",
+    "font": {
+     "size": 34
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "photo",
+    "font": {
+     "size": 11
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "photo",
+    "font": {
+     "size": 13
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "photo",
+    "font": {
+     "size": 15
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "photo",
+    "font": {
+     "size": 17
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "photo",
+    "font": {
+     "size": 20
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "photo",
+    "font": {
+     "size": 22
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "photo",
+    "font": {
+     "size": 28
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "photo",
+    "font": {
+     "size": 34
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "checkmark",
+    "font": {
+     "size": 11
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "checkmark",
+    "font": {
+     "size": 13
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "checkmark",
+    "font": {
+     "size": 15
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "checkmark",
+    "font": {
+     "size": 17
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "checkmark",
+    "font": {
+     "size": 20
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "checkmark",
+    "font": {
+     "size": 22
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "checkmark",
+    "font": {
+     "size": 28
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "checkmark",
+    "font": {
+     "size": 34
+    }
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": "caption"
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": "footnote"
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": "title2"
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": "largeTitle"
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": "body.bold"
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "font": "title.bold"
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "imageScale": "small"
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   },
+   {
+    "Image": "star.fill",
+    "imageScale": "large"
+   },
+   {
+    "Toggle": "T",
+    "bind": "$on"
+   }
+  ]
+ },
+ "state": {
+  "on": true
+ }
+}

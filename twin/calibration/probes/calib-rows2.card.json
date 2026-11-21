@@ -1,0 +1,361 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Image": "video",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Julien / Richard / Kai",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "Work \u00b7 Microsoft Teams",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "09:22\u201309:52",
+      "font": "subheadline",
+      "foregroundStyle": "secondary",
+      "lineLimit": 2,
+      "multilineTextAlignment": "trailing"
+     },
+     {
+      "Image": "chevron.right",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "spacing": 8,
+    "onTap": {
+     "send": {
+      "about": "aujourd-hui-27-octobre",
+      "choice": "e1"
+     },
+     "say": "Julien / Richard / Kai"
+    },
+    "frame": {
+     "minHeight": 44
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Image": "video",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Julien / Richard / Kai",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "Work \u00b7 Microsoft Teams",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "09:22\u201309:52",
+      "font": "subheadline"
+     },
+     {
+      "Image": "chevron.right",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "spacing": 8,
+    "onTap": {
+     "send": {
+      "about": "aujourd-hui-27-octobre",
+      "choice": "e1"
+     },
+     "say": "Julien / Richard / Kai"
+    },
+    "frame": {
+     "minHeight": 44
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Image": "video",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Julien / Richard / Kai",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "Work \u00b7 Microsoft Teams",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding",
+      "font": "subheadline"
+     },
+     {
+      "Image": "chevron.right",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "spacing": 8,
+    "onTap": {
+     "send": {
+      "about": "aujourd-hui-27-octobre",
+      "choice": "e1"
+     },
+     "say": "Julien / Richard / Kai"
+    },
+    "frame": {
+     "minHeight": 44
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Image": "video",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x"
+       },
+       {
+        "Text": "Work \u00b7 Microsoft Teams",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "09:22\u201309:52",
+      "font": "subheadline",
+      "foregroundStyle": "secondary",
+      "lineLimit": 2,
+      "multilineTextAlignment": "trailing"
+     },
+     {
+      "Image": "chevron.right",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "spacing": 8,
+    "onTap": {
+     "send": {
+      "about": "aujourd-hui-27-octobre",
+      "choice": "e1"
+     },
+     "say": "Julien / Richard / Kai"
+    },
+    "frame": {
+     "minHeight": 44
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Image": "video",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Julien / Richard / Kai",
+        "foregroundStyle": "secondary"
+       },
+       {
+        "Text": "Work \u00b7 Microsoft Teams",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "09:22\u201309:52",
+      "font": "subheadline",
+      "foregroundStyle": "secondary",
+      "lineLimit": 2,
+      "multilineTextAlignment": "trailing"
+     },
+     {
+      "Image": "chevron.right",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Image": "video",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Julien / Richard / Kai"
+       },
+       {
+        "Text": "Work \u00b7 Microsoft Teams",
+        "font": "footnote",
+        "foregroundStyle": "secondary",
+        "lineLimit": 3
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "09:22\u201309:52",
+      "font": "subheadline",
+      "foregroundStyle": "secondary",
+      "lineLimit": 2,
+      "multilineTextAlignment": "trailing"
+     },
+     {
+      "Image": "chevron.right",
+      "foregroundStyle": "tertiary"
+     }
+    ],
+    "spacing": 8,
+    "onTap": {
+     "send": {
+      "about": "aujourd-hui-27-octobre",
+      "choice": "e1"
+     },
+     "say": "Julien / Richard / Kai"
+    },
+    "frame": {
+     "minHeight": 44
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Julien / Richard / Kai"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "09:22\u201309:52",
+      "font": "subheadline",
+      "lineLimit": 2,
+      "multilineTextAlignment": "trailing"
+     }
+    ]
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Julien / Richard / Kai"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "Leave by ${date(leave, 'time')}",
+       "figure.walk"
+      ],
+      "font": "largeTitle.bold"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "$left",
+      "font": "title3.bold"
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "Leave by 12:26",
+       "figure.walk"
+      ],
+      "font": "largeTitle.bold"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "2 h 14 min",
+      "font": "title3.bold"
+     }
+    ]
+   },
+   {
+    "Label": [
+     "Leave by 12:26",
+     "figure.walk"
+    ],
+    "font": "largeTitle.bold"
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {
+  "when": {
+   "at": "2026-10-27T20:00:00+01:00",
+   "place": "3Arena, Johanneshov",
+   "travel_minutes": 45,
+   "margin_minutes": 45
+  },
+  "about": "stevie-wonder-3arena-ce-soir"
+ }
+}

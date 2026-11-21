@@ -1,0 +1,98 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Flight SK 1457 to Stockholm",
+    "font": "headline"
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "Leave by ${date(leave, 'time')}",
+       "figure.walk"
+      ],
+      "font": "largeTitle.bold"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "$left",
+      "font": "title3.bold"
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Text": "${date(when.at, 'time')}",
+      "font": "title3.bold",
+      "monospacedDigit": true
+     },
+     {
+      "Text": "${date(when.at, 'day')}",
+      "font": "subheadline",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "35 min there",
+      "font": "footnote",
+      "foregroundStyle": "secondary"
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Label": [
+     "Terminal 3, CPH",
+     "mappin"
+    ],
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 1
+   },
+   {
+    "Text": "Metro to the airport takes 35 min",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Security is about 15 min right now",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Boarding 13:16, departure 13:46, gate not yet assigned",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {
+  "when": {
+   "at": "2026-10-27T13:16:00+01:00",
+   "travel_minutes": 35,
+   "margin_minutes": 15,
+   "place": "Terminal 3, CPH"
+  }
+ },
+ "state": {},
+ "script": "function left({data, now}) { const target = data.when.leave || (data.when.travel_minutes != null ? new Date(new Date(data.when.at) - ((data.when.travel_minutes || 0) + (data.when.margin_minutes || 0)) * 60000).toISOString() : data.when.at); const u = h.until(target, now); if (u.days >= 14) return 'in ' + Math.round(u.days / 7) + ' weeks'; if (u.days >= 2) return 'in ' + u.days + ' days'; const m = Math.round((new Date(target) - new Date(now)) / 60000); if (m <= 0) return 'now'; if (m < 60) return 'in ' + m + ' min'; return 'in ' + Math.floor(m / 60) + ' h ' + (m % 60) + ' min' }\nfunction leave({data}) { if (data.when.leave) return data.when.leave; if (data.when.travel_minutes == null) return ''; return new Date(new Date(data.when.at) - ((data.when.travel_minutes || 0) + (data.when.margin_minutes || 0)) * 60000).toISOString() }\nfunction allday({data}) { return data.when.at.length <= 10 }",
+ "derive": {
+  "left": "left",
+  "leave": "leave",
+  "allday": "allday"
+ }
+}

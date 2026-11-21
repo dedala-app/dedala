@@ -1,0 +1,495 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "VStack": [
+     {
+      "Text": "The quick brown fox",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow and",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of black quartz judges my vow and more words",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.3
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.8
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.3
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.8
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.3
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.8
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.5
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.3
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of",
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.8
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly and the sphinx of",
+      "lineLimit": 2,
+      "minimumScaleFactor": 0.5
+     }
+    ],
+    "spacing": 10
+   },
+   {
+    "Text": "empties"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": {
+         "size": 11
+        }
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": {
+         "size": 13
+        }
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": {
+         "size": 17
+        }
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": {
+         "size": 20
+        }
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": {
+         "size": 28
+        }
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": {
+         "size": 34
+        }
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": {
+         "size": 50
+        }
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": "caption"
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": "title"
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "Text": "",
+        "font": "largeTitle"
+       },
+       {
+        "Text": "x"
+       }
+      ]
+     }
+    ],
+    "spacing": 10
+   },
+   {
+    "Text": "buttons"
+   },
+   {
+    "VStack": [
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "bordered",
+      "controlSize": "mini"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "bordered",
+      "controlSize": "small"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "bordered",
+      "controlSize": "regular"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "bordered",
+      "controlSize": "large"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "bordered",
+      "controlSize": "extraLarge"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "prominent",
+      "controlSize": "mini"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "prominent",
+      "controlSize": "small"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "prominent",
+      "controlSize": "regular"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "prominent",
+      "controlSize": "large"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "prominent",
+      "controlSize": "extraLarge"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "glass",
+      "controlSize": "mini"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "glass",
+      "controlSize": "small"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "glass",
+      "controlSize": "regular"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "glass",
+      "controlSize": "large"
+     },
+     {
+      "Button": "Boarding pass",
+      "action": {
+       "send": {}
+      },
+      "style": "glass",
+      "controlSize": "extraLarge"
+     }
+    ],
+    "spacing": 10
+   },
+   {
+    "Text": "images"
+   },
+   {
+    "VStack": [
+     {
+      "Image": "photo",
+      "resizable": true,
+      "aspectRatio": 1.5
+     },
+     {
+      "Image": "star.fill",
+      "resizable": true,
+      "aspectRatio": 1.0
+     },
+     {
+      "Image": "photo",
+      "resizable": true,
+      "frame": {
+       "width": 100,
+       "height": 100
+      }
+     },
+     {
+      "Image": "airplane",
+      "resizable": true,
+      "height": 40
+     }
+    ],
+    "spacing": 10
+   },
+   {
+    "Text": "spacers"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "VStack": [
+         {
+          "Text": "A"
+         },
+         {
+          "Spacer": {}
+         },
+         {
+          "Text": "B"
+         }
+        ]
+       },
+       {
+        "Text": "side"
+       }
+      ]
+     },
+     {
+      "HStack": [
+       {
+        "VStack": [
+         {
+          "Toggle": "T",
+          "bind": "$on"
+         },
+         {
+          "Spacer": {}
+         },
+         {
+          "Text": "B"
+         }
+        ]
+       },
+       {
+        "Text": "side"
+       }
+      ]
+     },
+     {
+      "VStack": [
+       {
+        "Text": "A"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "B"
+       }
+      ],
+      "frame": {
+       "height": 50
+      }
+     }
+    ],
+    "spacing": 10
+   }
+  ]
+ },
+ "state": {
+  "on": true
+ }
+}

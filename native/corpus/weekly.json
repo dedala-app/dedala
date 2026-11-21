@@ -1,0 +1,477 @@
+{
+  "type": "org-data",
+  "begin": 0,
+  "end": 1712,
+  "title": "2025-11-24 - Weekly report",
+  "keywords": {
+    "TITLE": "2025-11-24 - Weekly report",
+    "DATE": "[2025-11-25 mar. 13:57]",
+    "FILETAGS": ":weekly:",
+    "IDENTIFIER": "20251124T135738",
+    "SIGNATURE": "book"
+  },
+  "children": [
+    {
+      "type": "section",
+      "begin": 0,
+      "end": 153,
+      "children": [
+        {
+          "type": "keyword",
+          "begin": 0,
+          "end": 41,
+          "key": "TITLE",
+          "value": "2025-11-24 - Weekly report"
+        },
+        {
+          "type": "keyword",
+          "begin": 41,
+          "end": 79,
+          "key": "DATE",
+          "value": "[2025-11-25 mar. 13:57]"
+        },
+        {
+          "type": "keyword",
+          "begin": 79,
+          "end": 102,
+          "key": "FILETAGS",
+          "value": ":weekly:"
+        },
+        {
+          "type": "keyword",
+          "begin": 102,
+          "end": 132,
+          "key": "IDENTIFIER",
+          "value": "20251124T135738"
+        },
+        {
+          "type": "keyword",
+          "begin": 132,
+          "end": 153,
+          "key": "SIGNATURE",
+          "value": "book"
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 153,
+      "end": 585,
+      "level": 1,
+      "title": "Report",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 155,
+          "end": 161,
+          "value": "Report"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "section",
+          "begin": 162,
+          "end": 585,
+          "children": [
+            {
+              "type": "plain-list",
+              "begin": 163,
+              "end": 585,
+              "listType": "unordered",
+              "children": [
+                {
+                  "type": "item",
+                  "begin": 163,
+                  "end": 421,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "I copied all the photos from both rented servers to the external disk and then closed the accounts. We stayed under budget: remaining ~180€. I copied all the data of the spring survey (~4To), but deleted the intermediate exports of the extended edition.",
+                  "contentBegin": 165,
+                  "contentEnd": 420,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 165,
+                      "end": 421,
+                      "text": "I copied all the photos from both rented servers to the external disk and then closed the accounts. We stayed under budget: remaining ~180€. I copied all the data of the spring survey (~4To), but deleted the intermediate exports of the extended edition.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 165,
+                          "end": 420,
+                          "value": "I copied all the photos from both rented servers to the external disk and then closed the accounts. We stayed under budget: remaining ~180€. I copied all the data of the spring survey (~4To), but deleted the intermediate exports of the extended edition."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 421,
+                  "end": 514,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "I sorted out the paperwork for my stay at the botanical garden. Still TODO: train tickets.",
+                  "contentBegin": 423,
+                  "contentEnd": 513,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 423,
+                      "end": 514,
+                      "text": "I sorted out the paperwork for my stay at the botanical garden. Still TODO: train tickets.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 423,
+                          "end": 513,
+                          "value": "I sorted out the paperwork for my stay at the botanical garden. Still TODO: train tickets."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "begin": 514,
+                  "end": 583,
+                  "bullet": "-",
+                  "indent": 0,
+                  "text": "Submitted a revised version of the mushroom chapter to the editor.",
+                  "contentBegin": 516,
+                  "contentEnd": 582,
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "begin": 516,
+                      "end": 583,
+                      "text": "Submitted a revised version of the mushroom chapter to the editor.",
+                      "children": [
+                        {
+                          "type": "plain-text",
+                          "begin": 516,
+                          "end": 582,
+                          "value": "Submitted a revised version of the mushroom chapter to the editor."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "headline",
+      "begin": 585,
+      "end": 1712,
+      "level": 1,
+      "title": "Meeting notes",
+      "objects": [
+        {
+          "type": "plain-text",
+          "begin": 587,
+          "end": 600,
+          "value": "Meeting notes"
+        }
+      ],
+      "tags": [],
+      "children": [
+        {
+          "type": "headline",
+          "begin": 602,
+          "end": 799,
+          "level": 2,
+          "title": "Previews",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 605,
+              "end": 613,
+              "value": "Previews"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 614,
+              "end": 799,
+              "children": [
+                {
+                  "type": "plain-list",
+                  "begin": 615,
+                  "end": 799,
+                  "listType": "unordered",
+                  "children": [
+                    {
+                      "type": "item",
+                      "begin": 615,
+                      "end": 717,
+                      "bullet": "-",
+                      "indent": 0,
+                      "text": "Publish the tree chapter as a preview soon, even if it means leaving out the photo credits for now.",
+                      "contentBegin": 617,
+                      "contentEnd": 716,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 617,
+                          "end": 717,
+                          "text": "Publish the tree chapter as a preview soon, even if it means leaving out the photo credits for now.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 617,
+                              "end": 716,
+                              "value": "Publish the tree chapter as a preview soon, even if it means leaving out the photo credits for now."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "begin": 717,
+                      "end": 797,
+                      "bullet": "-",
+                      "indent": 0,
+                      "text": "Also publish the season index when possible, as it is reviewed openly anyway.",
+                      "contentBegin": 719,
+                      "contentEnd": 796,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 719,
+                          "end": 797,
+                          "text": "Also publish the season index when possible, as it is reviewed openly anyway.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 719,
+                              "end": 796,
+                              "value": "Also publish the season index when possible, as it is reviewed openly anyway."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 799,
+          "end": 1519,
+          "level": 2,
+          "title": "Field guide re-submission",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 802,
+              "end": 827,
+              "value": "Field guide re-submission"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 828,
+              "end": 1519,
+              "children": [
+                {
+                  "type": "plain-list",
+                  "begin": 829,
+                  "end": 1519,
+                  "listType": "unordered",
+                  "children": [
+                    {
+                      "type": "item",
+                      "begin": 829,
+                      "end": 1517,
+                      "bullet": "-",
+                      "indent": 0,
+                      "text": "We discussed the two main options:",
+                      "contentBegin": 831,
+                      "contentEnd": 865,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 831,
+                          "end": 866,
+                          "text": "We discussed the two main options:",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 831,
+                              "end": 865,
+                              "value": "We discussed the two main options:"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "plain-list",
+                          "begin": 866,
+                          "end": 1013,
+                          "listType": "unordered",
+                          "children": [
+                            {
+                              "type": "item",
+                              "begin": 866,
+                              "end": 936,
+                              "bullet": "*",
+                              "indent": 2,
+                              "text": "first a large publisher then a regional one (Nordic Nature Press)",
+                              "contentBegin": 870,
+                              "contentEnd": 935,
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "begin": 870,
+                                  "end": 936,
+                                  "text": "first a large publisher then a regional one (Nordic Nature Press)",
+                                  "children": [
+                                    {
+                                      "type": "plain-text",
+                                      "begin": 870,
+                                      "end": 935,
+                                      "value": "first a large publisher then a regional one (Nordic Nature Press)"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "item",
+                              "begin": 936,
+                              "end": 1013,
+                              "bullet": "*",
+                              "indent": 2,
+                              "text": "first the regional publisher and then the large one as a pocket edition",
+                              "contentBegin": 940,
+                              "contentEnd": 1011,
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "begin": 940,
+                                  "end": 1012,
+                                  "text": "first the regional publisher and then the large one as a pocket edition",
+                                  "children": [
+                                    {
+                                      "type": "plain-text",
+                                      "begin": 940,
+                                      "end": 1011,
+                                      "value": "first the regional publisher and then the large one as a pocket edition"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "begin": 1013,
+                          "end": 1337,
+                          "text": "Going first to the regional publisher seems to be the path of least resistance given we have no experience with the large ones. We submit with minimal changes (=taking into account the first readers + adding the species map into the book) and Sam will look into how to place a pocket edition (or else a magazine series).",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1013,
+                              "end": 1335,
+                              "value": "  Going first to the regional publisher seems to be the path of least resistance given we have no experience with the large ones. We submit with minimal changes (=taking into account the first readers + adding the species map into the book) and Sam will look into how to place a pocket edition (or else a magazine series)."
+                            }
+                          ]
+                        },
+                        {
+                          "type": "paragraph",
+                          "begin": 1337,
+                          "end": 1517,
+                          "text": "We also discussed the species list: it needs to be better justified (+ a mention of the walks that found the rare ones), and we may have to revisit it in a revision but not now.",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1337,
+                              "end": 1516,
+                              "value": "  We also discussed the species list: it needs to be better justified (+ a mention of the walks that found the rare ones), and we may have to revisit it in a revision but not now."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "headline",
+          "begin": 1519,
+          "end": 1712,
+          "level": 2,
+          "title": "Garden newsletter column",
+          "objects": [
+            {
+              "type": "plain-text",
+              "begin": 1522,
+              "end": 1546,
+              "value": "Garden newsletter column"
+            }
+          ],
+          "tags": [],
+          "children": [
+            {
+              "type": "section",
+              "begin": 1547,
+              "end": 1712,
+              "children": [
+                {
+                  "type": "plain-list",
+                  "begin": 1548,
+                  "end": 1712,
+                  "listType": "unordered",
+                  "children": [
+                    {
+                      "type": "item",
+                      "begin": 1548,
+                      "end": 1712,
+                      "bullet": "-",
+                      "indent": 0,
+                      "text": "Answer Bea asking if the deadline is January for the text or not. But otherwise a good idea to submit something looking like Ines's talk: \"A walk is not enough\".",
+                      "contentBegin": 1550,
+                      "contentEnd": 1711,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "begin": 1550,
+                          "end": 1712,
+                          "text": "Answer Bea asking if the deadline is January for the text or not. But otherwise a good idea to submit something looking like Ines's talk: \"A walk is not enough\".",
+                          "children": [
+                            {
+                              "type": "plain-text",
+                              "begin": 1550,
+                              "end": 1711,
+                              "value": "Answer Bea asking if the deadline is January for the text or not. But otherwise a good idea to submit something looking like Ines's talk: \"A walk is not enough\"."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

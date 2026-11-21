@@ -1,0 +1,94 @@
+{
+ "card": "run-night-final-apps-32-tally-card-10848755",
+ "issues": [],
+ "frames": [
+  {
+   "y": 0,
+   "h": 150.66666666666666,
+   "path": "Card",
+   "x": 0,
+   "w": 347.79999999999995,
+   "view": "Card"
+  },
+  {
+   "y": 16,
+   "h": 118.66666666666666,
+   "x": 16,
+   "path": "Card \u203a 1.VStack",
+   "w": 315.79999999999995,
+   "view": "VStack"
+  },
+  {
+   "h": 18,
+   "y": 16,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 1.Text",
+   "view": "Text",
+   "w": 219.66666666666666
+  },
+  {
+   "y": 42,
+   "h": 40.66666666666666,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack",
+   "x": 16,
+   "w": 193.99999999999997,
+   "view": "HStack"
+  },
+  {
+   "h": 40.66666666666666,
+   "y": 42,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 1.Text",
+   "x": 16,
+   "view": "Text",
+   "w": 22.666666666666664
+  },
+  {
+   "h": 24,
+   "y": 55.33333333333333,
+   "path": "Card \u203a 1.VStack \u203a 2.HStack \u203a 2.Text",
+   "x": 46.666666666666664,
+   "view": "Text",
+   "w": 163.33333333333331
+  },
+  {
+   "h": 44,
+   "y": 90.66666666666666,
+   "x": 16,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack",
+   "w": 315.79999999999995,
+   "view": "HStack"
+  },
+  {
+   "y": 90.66666666666666,
+   "h": 44,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 1.Button",
+   "x": 16,
+   "view": "Button",
+   "w": 99.93333333333332
+  },
+  {
+   "h": 44,
+   "y": 90.66666666666666,
+   "x": 123.93333333333334,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 2.Button",
+   "w": 99.93333333333331,
+   "view": "Button"
+  },
+  {
+   "y": 90.66666666666666,
+   "h": 44,
+   "path": "Card \u203a 1.VStack \u203a 3.HStack \u203a 3.Button",
+   "x": 231.86666666666665,
+   "view": "Button",
+   "w": 99.93333333333331
+  }
+ ],
+ "size": [
+  348,
+  151
+ ],
+ "diagnostics": [],
+ "kind": "rendered",
+ "at": "2026-10-27T20:06:18Z",
+ "capture": "run-night-final-apps-32-tally-card-10848755-58.png"
+}

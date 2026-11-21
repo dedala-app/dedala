@@ -1,0 +1,294 @@
+{
+ "frames": [
+  {
+   "view": "Card",
+   "h": 298,
+   "path": "Card",
+   "x": 0,
+   "w": 347.79999999999995,
+   "y": 0
+  },
+  {
+   "y": 16,
+   "path": "Card \u203a 1.HStack",
+   "x": 16,
+   "w": 315.79999999999995,
+   "h": 44,
+   "view": "HStack"
+  },
+  {
+   "view": "Button",
+   "w": 44,
+   "x": 16,
+   "h": 44,
+   "path": "Card \u203a 1.HStack \u203a 1.Button",
+   "y": 16
+  },
+  {
+   "path": "Card \u203a 1.HStack \u203a 1.ButtonImage",
+   "y": 16,
+   "w": 44,
+   "x": 16,
+   "h": 44,
+   "view": "Image"
+  },
+  {
+   "path": "Card \u203a 1.HStack \u203a 2.VStack",
+   "view": "VStack",
+   "y": 17.666666666666668,
+   "w": 241.33333333333331,
+   "x": 66,
+   "h": 40.66666666666666
+  },
+  {
+   "path": "Card \u203a 1.HStack \u203a 2.VStack \u203a 1.Text",
+   "y": 17.666666666666668,
+   "view": "Text",
+   "w": 241.33333333333331,
+   "x": 66,
+   "h": 20.333333333333332
+  },
+  {
+   "w": 123.33333333333331,
+   "view": "Label",
+   "y": 40,
+   "path": "Card \u203a 1.HStack \u203a 2.VStack \u203a 2.Label",
+   "x": 66,
+   "h": 18.33333333333333
+  },
+  {
+   "view": "HStack",
+   "h": 58.66666666666666,
+   "y": 74,
+   "path": "Card \u203a 2.HStack",
+   "x": 16,
+   "w": 315.7999999999999
+  },
+  {
+   "w": 32,
+   "h": 32,
+   "y": 87.33333333333333,
+   "view": "Text",
+   "x": 28,
+   "path": "Card \u203a 2.HStack \u203a 1.Text"
+  },
+  {
+   "view": "VStack",
+   "w": 197.33333333333331,
+   "y": 86,
+   "h": 34.66666666666666,
+   "x": 70,
+   "path": "Card \u203a 2.HStack \u203a 2.VStack"
+  },
+  {
+   "w": 96,
+   "view": "Text",
+   "y": 86,
+   "path": "Card \u203a 2.HStack \u203a 2.VStack \u203a 1.Text",
+   "h": 18,
+   "x": 70
+  },
+  {
+   "view": "Text",
+   "h": 15.666666666666671,
+   "y": 105,
+   "path": "Card \u203a 2.HStack \u203a 2.VStack \u203a 2.Text",
+   "x": 70,
+   "w": 197.33333333333331
+  },
+  {
+   "w": 24.333333333333314,
+   "view": "Image",
+   "y": 94.83333333333333,
+   "path": "Card \u203a 2.HStack \u203a 4.Image",
+   "x": 295.4666666666666,
+   "h": 17
+  },
+  {
+   "w": 315.79999999999995,
+   "view": "VStack",
+   "y": 146.66666666666666,
+   "h": 71,
+   "x": 16,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack"
+  },
+  {
+   "w": 86.33333333333333,
+   "h": 15.666666666666657,
+   "view": "Text",
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 1.Text",
+   "y": 146.66666666666666,
+   "x": 16
+  },
+  {
+   "w": 315.79999999999995,
+   "h": 47.333333333333314,
+   "y": 170.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack",
+   "x": 16,
+   "view": "HStack"
+  },
+  {
+   "view": "Button",
+   "w": 72.94999999999999,
+   "y": 170.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[0] \u203a 1.Button",
+   "x": 16,
+   "h": 47.333333333333314
+  },
+  {
+   "w": 72.94999999999999,
+   "h": 47.333333333333314,
+   "view": "VStack",
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[0] \u203a 1.ButtonVStack",
+   "x": 16,
+   "y": 170.33333333333331
+  },
+  {
+   "view": "Text",
+   "h": 18,
+   "y": 178.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[0] \u203a 1.ButtonVStack \u203a 1.Text",
+   "x": 35.641666666666666,
+   "w": 33.66666666666667
+  },
+  {
+   "view": "Text",
+   "h": 13.333333333333343,
+   "w": 17.33333333333333,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[0] \u203a 1.ButtonVStack \u203a 2.Text",
+   "y": 196.33333333333331,
+   "x": 35.641666666666666
+  },
+  {
+   "w": 72.94999999999999,
+   "h": 47.333333333333314,
+   "y": 170.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[1] \u203a 1.Button",
+   "x": 96.94999999999999,
+   "view": "Button"
+  },
+  {
+   "w": 72.94999999999999,
+   "h": 47.333333333333314,
+   "y": 170.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[1] \u203a 1.ButtonVStack",
+   "x": 96.94999999999999,
+   "view": "VStack"
+  },
+  {
+   "w": 43.333333333333314,
+   "h": 18,
+   "y": 178.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[1] \u203a 1.ButtonVStack \u203a 1.Text",
+   "x": 111.75833333333333,
+   "view": "Text"
+  },
+  {
+   "view": "Text",
+   "h": 13.333333333333343,
+   "y": 196.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[1] \u203a 1.ButtonVStack \u203a 2.Text",
+   "x": 111.75833333333333,
+   "w": 17.333333333333343
+  },
+  {
+   "w": 72.94999999999999,
+   "h": 47.333333333333314,
+   "view": "Button",
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[2] \u203a 1.Button",
+   "x": 177.89999999999998,
+   "y": 170.33333333333331
+  },
+  {
+   "view": "VStack",
+   "w": 72.94999999999999,
+   "y": 170.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[2] \u203a 1.ButtonVStack",
+   "x": 177.89999999999998,
+   "h": 47.333333333333314
+  },
+  {
+   "view": "Text",
+   "h": 18,
+   "w": 43.333333333333314,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[2] \u203a 1.ButtonVStack \u203a 1.Text",
+   "x": 192.70833333333331,
+   "y": 178.33333333333331
+  },
+  {
+   "w": 17.333333333333343,
+   "h": 13.333333333333343,
+   "view": "Text",
+   "y": 196.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[2] \u203a 1.ButtonVStack \u203a 2.Text",
+   "x": 192.70833333333331
+  },
+  {
+   "view": "Button",
+   "w": 72.94999999999999,
+   "y": 170.33333333333331,
+   "h": 47.333333333333314,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[3] \u203a 1.Button",
+   "x": 258.84999999999997
+  },
+  {
+   "view": "VStack",
+   "w": 72.94999999999999,
+   "y": 170.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[3] \u203a 1.ButtonVStack",
+   "x": 258.84999999999997,
+   "h": 47.333333333333314
+  },
+  {
+   "view": "Text",
+   "h": 18,
+   "y": 178.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[3] \u203a 1.ButtonVStack \u203a 1.Text",
+   "x": 278.4916666666666,
+   "w": 33.666666666666686
+  },
+  {
+   "view": "Text",
+   "w": 23,
+   "y": 196.33333333333331,
+   "path": "Card \u203a 3.If(then) \u203a 1.VStack \u203a 2.HStack \u203a 1.ForEach[3] \u203a 1.ButtonVStack \u203a 2.Text",
+   "x": 278.4916666666666,
+   "h": 13.333333333333343
+  },
+  {
+   "view": "HStack",
+   "w": 315.79999999999995,
+   "y": 231.66666666666666,
+   "h": 50.33333333333334,
+   "path": "Card \u203a 5.HStack",
+   "x": 16
+  },
+  {
+   "view": "Button",
+   "h": 50.33333333333334,
+   "w": 230.79999999999995,
+   "path": "Card \u203a 5.HStack \u203a 1.Button",
+   "x": 16,
+   "y": 231.66666666666666
+  },
+  {
+   "w": 77,
+   "h": 50.33333333333334,
+   "y": 231.66666666666666,
+   "path": "Card \u203a 5.HStack \u203a 2.Button",
+   "x": 254.79999999999995,
+   "view": "Button"
+  }
+ ],
+ "card": "doc-08-reminder",
+ "kind": "rendered",
+ "diagnostics": [],
+ "issues": [],
+ "capture": "doc-08-reminder-8.png",
+ "at": "2026-10-27T20:05:05Z",
+ "size": [
+  348,
+  298
+ ]
+}

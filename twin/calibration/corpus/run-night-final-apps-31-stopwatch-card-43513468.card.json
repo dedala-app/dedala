@@ -1,0 +1,198 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Stopwatch",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "$shown",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "Elapsed at your last tap",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "ForEach": "$lapRows",
+    "as": "l",
+    "content": {
+     "If": "l.id",
+     "then": {
+      "HStack": [
+       {
+        "If": "l.symbol",
+        "then": {
+         "Image": "$l.symbol",
+         "foregroundStyle": "secondary"
+        }
+       },
+       {
+        "VStack": [
+         {
+          "Text": "$l.label"
+         },
+         {
+          "If": "l.detail",
+          "then": {
+           "Text": "$l.detail",
+           "font": "footnote",
+           "foregroundStyle": "secondary",
+           "lineLimit": 3
+          }
+         }
+        ],
+        "alignment": "leading",
+        "spacing": 1
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "If": "l.trailing",
+        "then": {
+         "Text": "$l.trailing",
+         "font": "subheadline",
+         "foregroundStyle": "secondary",
+         "lineLimit": 2,
+         "multilineTextAlignment": "trailing"
+        }
+       },
+       {
+        "If": "l.id",
+        "then": {
+         "Image": "chevron.right",
+         "foregroundStyle": "tertiary"
+        }
+       }
+      ],
+      "spacing": 8,
+      "onTap": {
+       "send": {
+        "choice": "$l.id"
+       },
+       "say": "$l.label"
+      },
+      "frame": {
+       "minHeight": 44
+      }
+     },
+     "else": {
+      "HStack": [
+       {
+        "If": "l.symbol",
+        "then": {
+         "Image": "$l.symbol",
+         "foregroundStyle": "secondary"
+        }
+       },
+       {
+        "VStack": [
+         {
+          "Text": "$l.label"
+         },
+         {
+          "If": "l.detail",
+          "then": {
+           "Text": "$l.detail",
+           "font": "footnote",
+           "foregroundStyle": "secondary",
+           "lineLimit": 3
+          }
+         }
+        ],
+        "alignment": "leading",
+        "spacing": 1
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "If": "l.trailing",
+        "then": {
+         "Text": "$l.trailing",
+         "font": "subheadline",
+         "foregroundStyle": "secondary",
+         "lineLimit": 2,
+         "multilineTextAlignment": "trailing"
+        }
+       },
+       {
+        "If": "l.id",
+        "then": {
+         "Image": "chevron.right",
+         "foregroundStyle": "tertiary"
+        }
+       }
+      ],
+      "spacing": 8
+     }
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Button": "${running ? 'Stop' : 'Start'}",
+      "style": "borderedProminent",
+      "action": {
+       "run": "toggle"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Lap",
+      "style": "borderedProminent",
+      "action": {
+       "run": "lap"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Reset",
+      "style": "bordered",
+      "action": {
+       "run": "reset"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      },
+      "role": "destructive"
+     }
+    ],
+    "spacing": 8
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {},
+ "state": {
+  "running": false,
+  "startedAt": "",
+  "base": 0,
+  "laps": []
+ },
+ "script": "function pad(n){return (n<10?'0':'')+n}\nfunction fmt(ms){const c=Math.floor(ms/10)%100,s=Math.floor(ms/1000)%60,m=Math.floor(ms/60000);return pad(m)+':'+pad(s)+'.'+pad(c)}\nfunction elapsed(state,now){const base=state.base||0;return state.running?base+(new Date(now)-new Date(state.startedAt)):base}\nfunction start(state,now){return {state:{...state,running:true,startedAt:now}}}\nfunction stop(state,now){return {state:{...state,running:false,base:elapsed(state,now),startedAt:''}}}\nfunction toggle({state,now}){return state.running?stop(state,now):start(state,now)}\nfunction lap({state,now}){if(!state.running)return {state};const t=elapsed(state,now);const prev=state.laps.length?state.laps[0].total:0;return {state:{...state,laps:[{total:t,split:t-prev},...state.laps]}}}\nfunction reset(){return {state:{running:false,startedAt:'',base:0,laps:[]}}}\nfunction derived_shown(input) { const {data, state, now, args} = input; return (({state,now}) => fmt(elapsed(state,now)))(input) }\nfunction derived_lapRows(input) { const {data, state, now, args} = input; return (({state}) => state.laps.map((l,i)=>({id:'lap'+i,label:'Lap '+(state.laps.length-i),detail:'split '+fmt(l.split),trailing:fmt(l.total)})))(input) }",
+ "derive": {
+  "shown": "derived_shown",
+  "lapRows": "derived_lapRows"
+ }
+}

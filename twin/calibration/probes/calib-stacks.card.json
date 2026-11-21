@@ -1,0 +1,529 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "HStack": [
+     {
+      "Text": "TAP \u00b7 TP 1235 and three more words"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Label": [
+       "TAP \u00b7 TP 1235 and three more",
+       "airplane"
+      ]
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport this morning"
+     },
+     {
+      "Text": "Directions to the airport this morning"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Short one"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     },
+     {
+      "Text": "Short one"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport this morning"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Boarding pass now"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Directions to CDG",
+      "symbol": "car.fill",
+      "style": "glass",
+      "action": {
+       "send": {}
+      }
+     },
+     {
+      "Button": "Boarding pass",
+      "symbol": "wallet.pass.fill",
+      "style": "glass",
+      "action": {
+       "send": {}
+      }
+     }
+    ],
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Directions to CDG",
+      "style": "glass",
+      "action": {
+       "send": {}
+      }
+     },
+     {
+      "Button": "Boarding pass",
+      "style": "glass",
+      "action": {
+       "send": {}
+      }
+     }
+    ],
+    "spacing": 8
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Directions to CDG",
+      "symbol": "car.fill",
+      "style": "glass",
+      "action": {
+       "send": {}
+      }
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Left"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Middle"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Text": "Right"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Directions to the airport this morning"
+     },
+     {
+      "Image": "airplane"
+     },
+     {
+      "Text": "Directions to the airport this morning"
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "VStack": [
+       {
+        "Text": "CDG",
+        "font": {
+         "size": 40,
+         "weight": "bold",
+         "design": "rounded"
+        }
+       },
+       {
+        "Text": "Paris",
+        "font": "caption"
+       }
+      ]
+     },
+     {
+      "VStack": [
+       {
+        "Image": "airplane"
+       },
+       {
+        "Text": "8:40 \u2013 11:15",
+        "font": "caption2"
+       }
+      ],
+      "maxWidth": "infinity"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "LIS",
+        "font": {
+         "size": 40,
+         "weight": "bold",
+         "design": "rounded"
+        }
+       },
+       {
+        "Text": "Lisbon",
+        "font": "caption"
+       }
+      ],
+      "alignment": "trailing"
+     }
+    ]
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Directions to the airport this morning"
+     },
+     {
+      "Button": "Go",
+      "action": {
+       "send": {}
+      }
+     },
+     {
+      "Text": "After a button"
+     },
+     {
+      "Image": "star.fill"
+     },
+     {
+      "Text": "After an image"
+     },
+     {
+      "Toggle": "T",
+      "bind": "$on"
+     },
+     {
+      "Text": "After a toggle"
+     },
+     {
+      "Text": "Then text",
+      "font": "caption"
+     },
+     {
+      "Text": "Big",
+      "font": "title"
+     },
+     {
+      "Text": "small after big",
+      "font": "caption"
+     }
+    ]
+   },
+   {
+    "Grid": [
+     [
+      {
+       "Text": "Departs in",
+       "font": "caption"
+      },
+      {
+       "Text": "Gate",
+       "font": "caption"
+      }
+     ],
+     [
+      {
+       "Text": "8:43:39",
+       "font": "title3.bold.rounded"
+      },
+      {
+       "Text": "B32",
+       "font": "title3.bold.rounded"
+      }
+     ]
+    ],
+    "hSpacing": 28,
+    "vSpacing": 2
+   },
+   {
+    "Grid": [
+     [
+      {
+       "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+      },
+      {
+       "Text": "B32"
+      }
+     ],
+     [
+      {
+       "Text": "x"
+      },
+      {
+       "Text": "Directions to the airport this morning"
+      }
+     ]
+    ]
+   },
+   {
+    "Text": "Padded",
+    "padding": 8,
+    "background": "blue"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Chip",
+      "font": "caption.bold",
+      "padding": {
+       "horizontal": 8,
+       "vertical": 4
+      },
+      "background": "blue",
+      "clipShape": "capsule"
+     },
+     {
+      "Text": "Another",
+      "font": "caption.bold",
+      "padding": {
+       "horizontal": 8,
+       "vertical": 4
+      },
+      "background": "green",
+      "clipShape": "capsule"
+     }
+    ]
+   },
+   {
+    "ZStack": [
+     {
+      "RoundedRectangle": 12,
+      "fill": "blue"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Inside"
+       },
+       {
+        "Text": "Directions to the airport this morning"
+       }
+      ],
+      "padding": 12
+     }
+    ]
+   },
+   {
+    "VStack": [
+     {
+      "Text": "Centered"
+     },
+     {
+      "Text": "Directions to the airport this morning"
+     }
+    ],
+    "alignment": "center",
+    "frame": {
+     "maxWidth": "infinity"
+    }
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Top"
+     },
+     {
+      "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly"
+     }
+    ],
+    "alignment": "top"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "lineLimit": 3,
+    "font": "footnote"
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "multilineTextAlignment": "center",
+    "frame": {
+     "maxWidth": "infinity"
+    }
+   },
+   {
+    "Columns": [
+     {
+      "Text": "Directions to the airport this morning"
+     },
+     {
+      "Text": "B"
+     },
+     {
+      "Text": "C"
+     }
+    ],
+    "count": 3
+   },
+   {
+    "Columns": [
+     {
+      "VStack": [
+       {
+        "Text": "Tile"
+       },
+       {
+        "Text": "42",
+        "font": "title"
+       }
+      ],
+      "padding": 12,
+      "background": "blue",
+      "cornerRadius": 12
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Tile"
+       },
+       {
+        "Text": "7",
+        "font": "title"
+       }
+      ],
+      "padding": 12,
+      "background": "blue",
+      "cornerRadius": 12
+     }
+    ],
+    "count": 2
+   },
+   {
+    "DisclosureGroup": "More",
+    "content": [
+     {
+      "Text": "Directions to the airport this morning"
+     }
+    ],
+    "expanded": "$on"
+   },
+   {
+    "ScrollView": [
+     {
+      "VStack": [
+       {
+        "Text": "Row"
+       },
+       {
+        "Text": "Two"
+       }
+      ]
+     },
+     {
+      "Text": "Three"
+     }
+    ],
+    "axis": "horizontal"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "\u20ac190",
+      "font": "title2.bold"
+     },
+     {
+      "Spacer": {}
+     },
+     {
+      "Button": "Book for 2 at 20:30",
+      "style": "prominent",
+      "symbol": "faceid",
+      "action": {
+       "send": {}
+      }
+     }
+    ]
+   },
+   {
+    "Button": "Book for 2 at 20:30",
+    "style": "prominent",
+    "symbol": "faceid",
+    "action": {
+     "send": {}
+    },
+    "maxWidth": "infinity"
+   },
+   {
+    "Button": {
+     "HStack": [
+      {
+       "Image": "phone.fill"
+      },
+      {
+       "Text": "Call Marc"
+      }
+     ]
+    },
+    "style": "bordered",
+    "action": {
+     "send": {}
+    }
+   },
+   {
+    "Button": "Plain row",
+    "style": "plain",
+    "action": {
+     "send": {}
+    },
+    "maxWidth": "infinity",
+    "padding": 12,
+    "background": "blue"
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "state": {
+  "on": true
+ }
+}

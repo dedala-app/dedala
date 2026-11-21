@@ -1,0 +1,54 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Show the summary",
+    "width": 0
+   },
+   {
+    "Text": "Arrived at the Frankfurt hub",
+    "width": 0
+   },
+   {
+    "Text": "The quick brown fox jumps over the lazy dog while the five boxing wizards jump quickly",
+    "width": 0
+   },
+   {
+    "Text": "Show the summary",
+    "width": 30
+   },
+   {
+    "Text": "Arrived at the Frankfurt hub",
+    "width": 60
+   },
+   {
+    "Text": "Show the summary",
+    "width": 1
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Show the summary"
+     },
+     {
+      "Spacer": true,
+      "minLength": 300
+     }
+    ]
+   },
+   {
+    "HStack": [
+     {
+      "Text": "Arrived at the Frankfurt hub"
+     },
+     {
+      "Spacer": true,
+      "minLength": 300
+     }
+    ]
+   }
+  ],
+  "alignment": "leading",
+  "spacing": 12
+ }
+}

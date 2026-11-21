@@ -1,0 +1,144 @@
+#!/usr/bin/env bash
+
+# SPDX-FileCopyrightText: 2026 Julien Malka
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+set -euo pipefail
+
+HERE="$(cd "$(dirname "$0")" && pwd)"
+[[ -f "$HERE/.mac.env" ]] && source "$HERE/.mac.env"
+HOST="${MAC_HOST:?set MAC_HOST to the Mac that builds, in .mac.env or the environment}"
+REMOTE_DIR="${MAC_DIR:-dev/assistant-app}"
+SIM="${SIM:-iPhone 17}"
+DEVICE="${DEVICE:-}"
+BUNDLE_ID="app.dedala"
+APP="build/Build/Products/Debug-iphonesimulator/Hermes.app"
+
+remote() { ssh "$HOST" "cd $REMOTE_DIR && $*"; }
+
+sync() {
+  rsync -az --delete \
+    --exclude .git --exclude .claude --exclude build --exclude '*.xcodeproj' --exclude screenshots --exclude native/target --exclude native/Org.xcframework \
+    "$HERE/" "$HOST:$REMOTE_DIR/"
+  org
+  remote xcodegen generate --quiet
+}
+
+org() {
+  remote "export PATH=\$HOME/.cargo/bin:\$HOME/.nix-profile/bin:\$PATH; cd native && \
+    cargo build --quiet --release --target aarch64-apple-ios --target aarch64-apple-ios-sim && \
+    rm -rf Org.xcframework && xcodebuild -quiet -create-xcframework \
+      -library target/aarch64-apple-ios/release/libdedala_native.a -headers include \
+      -library target/aarch64-apple-ios-sim/release/libdedala_native.a -headers include \
+      -output Org.xcframework"
+}
+
+xcb() {
+  remote "set -o pipefail; xcodebuild -project Hermes.xcodeproj -scheme Hermes \
+    -destination 'platform=iOS Simulator,name=$SIM' -derivedDataPath build -quiet $*"
+}
+
+boot() {
+  remote "xcrun simctl boot '$SIM' 2>/dev/null; open -b com.apple.iphonesimulator 2>/dev/null; true"
+}
+
+screenshot() {
+  mkdir -p "$HERE/screenshots"
+  local out="screenshots/$(date +%Y%m%d-%H%M%S).png"
+  remote "mkdir -p screenshots && xcrun simctl io booted screenshot --type=png $out" >/dev/null
+  scp -q "$HOST:$REMOTE_DIR/$out" "$HERE/$out"
+  echo "$HERE/$out"
+}
+
+drive_port() {
+  if [[ "${DRIVE:-device}" == sim ]]; then
+    echo 7070
+  else
+    remote "pgrep -f 'iproxy 7071:7070' >/dev/null || (nohup ~/.nix-profile/bin/iproxy 7071:7070 -u $DEVICE >/tmp/iproxy.log 2>&1 </dev/null &) ; sleep 0.3" >&2 </dev/null
+    echo 7071
+  fi
+}
+
+draw() {
+  local port; port="$(drive_port)"
+  local response
+  response="$(cat "${1:--}" | ssh "$HOST" "curl -sS --max-time 30 -X POST --data-binary @- http://127.0.0.1:$port/ops")"
+  show_report "$port" "$response"
+}
+
+show_report() {
+  echo "$2" | python3 -m json.tool --no-ensure-ascii 2>/dev/null || echo "$2"
+  mkdir -p "$HERE/screenshots/cards"
+  for key in $(echo "$2" | python3 -c '
+import json, sys
+def walk(v):
+    if isinstance(v, dict):
+        if isinstance(v.get("capture"), str): print(v["capture"])
+        for x in v.values(): walk(x)
+    elif isinstance(v, list):
+        for x in v: walk(x)
+walk(json.load(sys.stdin))' 2>/dev/null); do
+    ssh "$HOST" "curl -sS --max-time 30 'http://127.0.0.1:$1/captures/$key'" > "$HERE/screenshots/cards/$key"
+    echo "capture: $HERE/screenshots/cards/$key"
+  done
+}
+
+capture() {
+  local port="${1:-$(drive_port)}"
+  mkdir -p "$HERE/screenshots"
+  local out="screenshots/draw-$(date +%Y%m%d-%H%M%S).png"
+  ssh "$HOST" "curl -sS --max-time 30 'http://127.0.0.1:$port/snapshot?scale=${SCALE:-2}'" > "$HERE/$out"
+  echo "$HERE/$out"
+}
+
+case "${1:-run}" in
+  sync) sync ;;
+  build) sync; xcb build ;;
+  test) sync; xcb test ;;
+  run)
+    sync; xcb build; boot
+    remote "xcrun simctl install booted $APP && xcrun simctl launch --terminate-running-process booted $BUNDLE_ID"
+    ;;
+  device)
+    sync
+    remote "set -o pipefail; security unlock-keychain -p \"\$(cat ~/.config/hermes/keychain-pass)\" ~/Library/Keychains/login.keychain-db && \
+      xcodebuild -project Hermes.xcodeproj -scheme Hermes \
+      -destination 'id=$DEVICE' -derivedDataPath build -allowProvisioningUpdates -allowProvisioningDeviceRegistration -quiet build"
+    remote "xcrun devicectl device install app --device $DEVICE build/Build/Products/Debug-iphoneos/Hermes.app && \
+      xcrun devicectl device process launch --terminate-existing --device $DEVICE $BUNDLE_ID"
+    ;;
+  upload)
+    if [[ "${2:-}" == --store ]]; then conditions=""; kind="for the App Store"
+    else conditions="SWIFT_ACTIVE_COMPILATION_CONDITIONS='\$(inherited) BETA'"; kind="for TestFlight only: it lets you past the paywall"; fi
+    number="$(cd "$HERE/tools" && nix-shell -p openssl python3 --run 'python3 asc.py next-build')"
+    sync
+    remote "set -o pipefail; security unlock-keychain -p \"\$(cat ~/.config/hermes/keychain-pass)\" ~/Library/Keychains/login.keychain-db && \
+      rm -rf build/Dedala.xcarchive build/export && \
+      xcodebuild -project Hermes.xcodeproj -scheme Hermes -configuration Release -destination generic/platform=iOS \
+        -archivePath build/Dedala.xcarchive -allowProvisioningUpdates -quiet CURRENT_PROJECT_VERSION=$number $conditions archive && \
+      xcodebuild -exportArchive -archivePath build/Dedala.xcarchive -exportOptionsPlist tools/ExportOptions.plist \
+        -exportPath build/export -allowProvisioningUpdates"
+    echo "uploaded build $number, $kind"
+    ;;
+  shot) screenshot ;;
+  logs) remote "xcrun simctl spawn booted log stream --level debug --predicate 'subsystem BEGINSWITH \"$BUNDLE_ID\" OR process == \"Hermes\"'" ;;
+  open) sync; remote "open Hermes.xcodeproj" ;;
+  ssh) shift; remote "$@" ;;
+  draw) shift; draw "${1:--}" ;;
+  push)
+    shift
+    if [[ "$1" == channel ]]; then ssh "$HOST" "cd $REMOTE_DIR && python3 tools/apns.py channel" </dev/null
+    else cat "${3:--}" | ssh "$HOST" "cd $REMOTE_DIR && python3 tools/apns.py $1 $2"; fi
+    ;;
+  tokens) port="$(drive_port)"; ssh "$HOST" "curl -sS http://127.0.0.1:$port/tokens" ;;
+  reset) port="$(drive_port)"; ssh "$HOST" "curl -sS -X POST http://127.0.0.1:$port/reset" ;;
+  turn) port="$(drive_port)"; ssh "$HOST" "curl -sS -X POST 'http://127.0.0.1:$port/turn?to=${2:-portrait}'" ;;
+  capture) capture ;;
+  grammar)
+    port="$(drive_port)"
+    written="$(ssh "$HOST" "curl -sS --fail http://127.0.0.1:$port/grammar" | python3 -c 'import json, sys; print(json.dumps(json.load(sys.stdin), indent=1, ensure_ascii=False, sort_keys=True))')"
+    echo "$written" > "$HERE/plugin/dedala/grammar.json"
+    ;;
+  events) port="$(drive_port)"; show_report "$port" "$(ssh "$HOST" "curl -sS http://127.0.0.1:$port/events")" ;;
+  *) echo "usage: $0 {sync|build|test|run|device|upload [--store]|shot|logs|open|draw [file]|capture|events|tokens|reset|turn <landscape|portrait>|push <channel|start|broadcast|activity|alert> [target] [file]|ssh <cmd>}" >&2; exit 1 ;;
+esac

@@ -1,0 +1,436 @@
+{
+ "actions": [
+  "send",
+  "edit",
+  "command",
+  "run",
+  "copy",
+  "shortcut",
+  "set",
+  "toggle",
+  "haptic",
+  "show",
+  "close",
+  "open",
+  "page",
+  "conversation",
+  "card",
+  "call",
+  "message",
+  "mail",
+  "directions"
+ ],
+ "anywhere": [
+  "actions",
+  "colors",
+  "grouped",
+  "hidden",
+  "id",
+  "modifiers",
+  "overlayAlignment",
+  "say",
+  "visible",
+  "xLabel"
+ ],
+ "arguments": [
+  "action",
+  "actions",
+  "alignment",
+  "append",
+  "as",
+  "axis",
+  "bind",
+  "closed",
+  "colors",
+  "components",
+  "content",
+  "contentMode",
+  "count",
+  "current",
+  "direction",
+  "distance",
+  "dots",
+  "else",
+  "expanded",
+  "fill",
+  "font",
+  "footer",
+  "grouped",
+  "hSpacing",
+  "height",
+  "hidden",
+  "id",
+  "in",
+  "index",
+  "interactive",
+  "items",
+  "kind",
+  "label",
+  "legend",
+  "lineWidth",
+  "lines",
+  "max",
+  "min",
+  "minWidth",
+  "modifiers",
+  "multiline",
+  "onChange",
+  "onMove",
+  "options",
+  "overlayAlignment",
+  "pageWidth",
+  "paging",
+  "resizable",
+  "role",
+  "say",
+  "secure",
+  "smooth",
+  "source",
+  "spacing",
+  "step",
+  "stroke",
+  "style",
+  "symbol",
+  "then",
+  "total",
+  "url",
+  "vSpacing",
+  "visible",
+  "xAxis",
+  "xLabel",
+  "yAxis",
+  "yDomain"
+ ],
+ "containers": [
+  "Card",
+  "Carousel",
+  "Columns",
+  "GlassGroup",
+  "Grid",
+  "Group",
+  "HStack",
+  "Pages",
+  "ScrollView",
+  "VStack",
+  "ZStack"
+ ],
+ "live": [
+  "commands",
+  "pages",
+  "running",
+  "today",
+  "waiting"
+ ],
+ "modifiers": [
+  "accessibilityLabel",
+  "aspectRatio",
+  "background",
+  "blur",
+  "bold",
+  "border",
+  "clip",
+  "clipShape",
+  "color",
+  "contentTransition",
+  "controlSize",
+  "cornerRadius",
+  "disabled",
+  "fixedSize",
+  "font",
+  "fontDesign",
+  "fontWeight",
+  "foregroundStyle",
+  "frame",
+  "glassEffect",
+  "grayscale",
+  "height",
+  "imageScale",
+  "italic",
+  "labelStyle",
+  "layoutPriority",
+  "lineLimit",
+  "lineSpacing",
+  "margin",
+  "maxHeight",
+  "maxWidth",
+  "minHeight",
+  "minWidth",
+  "minimumScaleFactor",
+  "monospaced",
+  "monospacedDigit",
+  "multilineTextAlignment",
+  "offset",
+  "onTap",
+  "opacity",
+  "overlay",
+  "padding",
+  "rotation",
+  "saturation",
+  "scale",
+  "shadow",
+  "symbolEffect",
+  "symbolRenderingMode",
+  "symbolVariant",
+  "textCase",
+  "tint",
+  "tracking",
+  "transition",
+  "truncationMode",
+  "width",
+  "zIndex"
+ ],
+ "takes": {
+  "Button": [
+   "action",
+   "role",
+   "style",
+   "symbol"
+  ],
+  "Capsule": [
+   "fill",
+   "lineWidth",
+   "stroke"
+  ],
+  "Card": [
+   "spacing"
+  ],
+  "Carousel": [
+   "pageWidth",
+   "spacing"
+  ],
+  "Chart": [
+   "legend",
+   "xAxis",
+   "yAxis",
+   "yDomain"
+  ],
+  "Circle": [
+   "fill",
+   "lineWidth",
+   "stroke"
+  ],
+  "Color": [],
+  "Columns": [
+   "count",
+   "minWidth",
+   "spacing"
+  ],
+  "DatePicker": [
+   "bind",
+   "components",
+   "onChange",
+   "style"
+  ],
+  "Dictate": [
+   "append",
+   "bind",
+   "onChange"
+  ],
+  "DisclosureGroup": [
+   "content",
+   "expanded"
+  ],
+  "Divider": [],
+  "Ellipse": [
+   "fill",
+   "lineWidth",
+   "stroke"
+  ],
+  "Face": [],
+  "File": [
+   "height"
+  ],
+  "ForEach": [
+   "as",
+   "content",
+   "index",
+   "onMove"
+  ],
+  "Gauge": [
+   "current",
+   "in",
+   "label",
+   "max",
+   "min",
+   "style"
+  ],
+  "GlassGroup": [
+   "spacing"
+  ],
+  "Gradient": [
+   "direction",
+   "kind"
+  ],
+  "Grid": [
+   "alignment",
+   "hSpacing",
+   "vSpacing"
+  ],
+  "Group": [],
+  "HStack": [
+   "alignment",
+   "spacing"
+  ],
+  "If": [
+   "else",
+   "then"
+  ],
+  "Image": [
+   "contentMode",
+   "resizable"
+  ],
+  "Label": [],
+  "Link": [
+   "url"
+  ],
+  "List": [
+   "as",
+   "content",
+   "index"
+  ],
+  "Map": [
+   "distance",
+   "interactive",
+   "style"
+  ],
+  "Menu": [
+   "items",
+   "style",
+   "symbol"
+  ],
+  "Pages": [
+   "dots"
+  ],
+  "Path": [
+   "closed",
+   "fill",
+   "lineWidth",
+   "smooth",
+   "stroke"
+  ],
+  "Photo": [
+   "bind",
+   "onChange",
+   "source"
+  ],
+  "Picker": [
+   "bind",
+   "onChange",
+   "options",
+   "style"
+  ],
+  "ProgressView": [
+   "label",
+   "total"
+  ],
+  "QRCode": [],
+  "Rectangle": [
+   "fill",
+   "lineWidth",
+   "stroke"
+  ],
+  "RoundedRectangle": [
+   "fill",
+   "lineWidth",
+   "stroke"
+  ],
+  "Said": [],
+  "ScrollView": [
+   "axis",
+   "paging",
+   "spacing"
+  ],
+  "Section": [
+   "content",
+   "footer"
+  ],
+  "Slider": [
+   "bind",
+   "in",
+   "onChange",
+   "step"
+  ],
+  "Spacer": [],
+  "Stepper": [
+   "bind",
+   "in",
+   "onChange",
+   "step"
+  ],
+  "Text": [],
+  "TextEditor": [
+   "bind",
+   "font",
+   "height",
+   "onChange"
+  ],
+  "TextField": [
+   "bind",
+   "lines",
+   "multiline",
+   "onChange",
+   "secure",
+   "style"
+  ],
+  "Toggle": [
+   "bind",
+   "onChange"
+  ],
+  "VStack": [
+   "alignment",
+   "spacing"
+  ],
+  "ZStack": [
+   "alignment"
+  ]
+ },
+ "views": [
+  "Button",
+  "Capsule",
+  "Card",
+  "Carousel",
+  "Chart",
+  "Circle",
+  "Color",
+  "Columns",
+  "DatePicker",
+  "Dictate",
+  "DisclosureGroup",
+  "Divider",
+  "Ellipse",
+  "Face",
+  "File",
+  "Gauge",
+  "GlassGroup",
+  "Gradient",
+  "Grid",
+  "Group",
+  "HStack",
+  "Image",
+  "Label",
+  "Link",
+  "List",
+  "Map",
+  "Menu",
+  "Pages",
+  "Path",
+  "Photo",
+  "Picker",
+  "ProgressView",
+  "QRCode",
+  "Rectangle",
+  "RoundedRectangle",
+  "Said",
+  "ScrollView",
+  "Section",
+  "Slider",
+  "Spacer",
+  "Stepper",
+  "Text",
+  "TextEditor",
+  "TextField",
+  "Toggle",
+  "VStack",
+  "ZStack"
+ ]
+}

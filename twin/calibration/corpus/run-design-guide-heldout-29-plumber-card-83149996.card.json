@@ -1,0 +1,91 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "Our plumber",
+    "font": "headline"
+   },
+   {
+    "HStack": [
+     {
+      "Image": "person.crop.circle.fill",
+      "font": "largeTitle",
+      "foregroundStyle": "secondary"
+     },
+     {
+      "VStack": [
+       {
+        "Text": "Morten Kj\u00e6r",
+        "font": "title2.bold"
+       },
+       {
+        "Text": "Kj\u00e6r VVS",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "lineLimit": 2
+       }
+      ],
+      "alignment": "leading",
+      "spacing": 1
+     }
+    ],
+    "spacing": 10
+   },
+   {
+    "Text": "Came 3 March for the kitchen tap, 1,850 kr",
+    "font": "body",
+    "lineLimit": 3
+   },
+   {
+    "Text": "You noted: fast, tidy, call again",
+    "font": "body",
+    "lineLimit": 3
+   },
+   {
+    "HStack": [
+     {
+      "Button": "Call",
+      "symbol": "phone",
+      "style": "bordered",
+      "action": {
+       "call": "+45 31 22 48 90"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Text",
+      "symbol": "message",
+      "style": "bordered",
+      "action": {
+       "message": "+45 31 22 48 90"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     },
+     {
+      "Button": "Mail",
+      "symbol": "envelope",
+      "style": "bordered",
+      "action": {
+       "mail": "morten@plumbing.example"
+      },
+      "frame": {
+       "maxWidth": "infinity",
+       "minHeight": 44
+      }
+     }
+    ],
+    "spacing": 8
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {},
+ "state": {}
+}

@@ -1,0 +1,225 @@
+{
+ "view": {
+  "VStack": [
+   {
+    "Text": "October budget",
+    "font": "subheadline",
+    "foregroundStyle": "secondary"
+   },
+   {
+    "HStack": [
+     {
+      "Text": "380 kr",
+      "font": "largeTitle.bold",
+      "monospacedDigit": true,
+      "lineLimit": 1,
+      "minimumScaleFactor": 0.6
+     },
+     {
+      "Text": "left of 11,600 kr overall",
+      "font": "title3",
+      "lineLimit": 2
+     }
+    ],
+    "alignment": "firstTextBaseline",
+    "spacing": 8
+   },
+   {
+    "Text": "Eating out is over by 890 kr (2,890 of 2,000)",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Groceries: 790 kr left",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Transport: 260 kr left",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Subscriptions: 20 kr left",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "Text": "Other: 200 kr left",
+    "font": "subheadline",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Groceries",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "4\u202f210 kr / 5\u202f000",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 4210,
+      "in": [
+       0,
+       5000
+      ],
+      "style": "linear"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Eating out",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "2\u202f890 kr / 2\u202f000",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 2000,
+      "in": [
+       0,
+       2000
+      ],
+      "style": "linear",
+      "tint": "red"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Transport",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "640 kr / 900",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 640,
+      "in": [
+       0,
+       900
+      ],
+      "style": "linear"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Subscriptions",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "1\u202f180 kr / 1\u202f200",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 1180,
+      "in": [
+       0,
+       1200
+      ],
+      "style": "linear"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   },
+   {
+    "VStack": [
+     {
+      "HStack": [
+       {
+        "Text": "Other",
+        "font": "subheadline"
+       },
+       {
+        "Spacer": {}
+       },
+       {
+        "Text": "2\u202f300 kr / 2\u202f500",
+        "font": "subheadline",
+        "foregroundStyle": "secondary",
+        "monospacedDigit": true
+       }
+      ]
+     },
+     {
+      "Gauge": 2300,
+      "in": [
+       0,
+       2500
+      ],
+      "style": "linear"
+     }
+    ],
+    "spacing": 2,
+    "alignment": "leading"
+   },
+   {
+    "Text": "Spent 11,220 kr so far, as of 26 October",
+    "font": "footnote",
+    "foregroundStyle": "secondary",
+    "lineLimit": 3
+   }
+  ],
+  "spacing": 8,
+  "alignment": "leading"
+ },
+ "data": {},
+ "state": {}
+}
