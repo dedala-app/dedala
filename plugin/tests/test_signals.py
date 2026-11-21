@@ -248,6 +248,9 @@ def test_the_widget_tool_binds_a_component_to_a_store(monkeypatch, tmp_path):
     assert "among" in call({"id": "glance", "store": "day", "component": "Glance", "families": ["huge"]})["error"]
     link._record(sent[-1])
     assert call({"id": "glance", "remove": True})["removed"] == "glance"
+    locked = call({"id": "locked", "store": "day", "component": "Glance", "families": ["medium", "rectangular"]})
+    assert locked["widget"]["families"] == ["medium", "rectangular"] and "Home Screen or Lock Screen" in locked["then"]
+    assert call({"id": "plain", "store": "day", "component": "Glance"})["widget"]["families"] == ["small", "medium", "large"]
 
 
 async def test_a_photo_in_an_edit_lands_as_an_attachment(tmp_path, monkeypatch):

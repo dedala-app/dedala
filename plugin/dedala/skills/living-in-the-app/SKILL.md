@@ -87,7 +87,7 @@ after the message is already written.
   message.
 - **A Live Activity** for something live and time-bound they would otherwise
   keep checking: a flight, a delivery, a match, a deploy.
-- **A widget** for a glance at a store from the Home Screen.
+- **A widget** for a glance at a store from the Home Screen or the Lock Screen.
 
 ## Pictures
 
@@ -173,14 +173,17 @@ a kind at most.
 
 ## Widgets
 
-A widget is a component on the Home Screen over a store, redrawn as the store
-changes, app closed too: `app_widget {id: "glance", store: "day", component:
-"Glance", families: ["small", "medium"]}`, the component reading `$data.<key>`.
-The user adds it themselves and picks yours by name: make it, then say so in one
-line. WidgetKit draws it, so stacks, `Text`, `Image`, `Gauge`, `ProgressView`,
-`Spacer`, `Divider` and shapes only: no inputs, no scrolling, no long lists. A
-`Button` that opens a page, a screen or a conversation opens the app there. Vary
-the look with `If` on `$family` (`small`, `medium`, `large`).
+A widget is a component on the Home Screen or the Lock Screen over a store,
+redrawn as the store changes, app closed too: `app_widget {id: "glance", store:
+"day", component: "Glance", families: ["small", "medium", "rectangular"]}`, the
+component reading `$data.<key>`. The user adds it themselves and picks yours by
+name: make it, then say so in one line. WidgetKit draws it, so stacks, `Text`,
+`Image`, `Gauge`, `ProgressView`, `Spacer`, `Divider` and shapes only: no
+inputs, no scrolling, no long lists. A `Button` that opens a page, a screen or a
+conversation opens the app there. Vary the look with `If` on `$family`
+(`small`, `medium`, `large` on the Home Screen; `rectangular`, `circular`,
+`inline` on the Lock Screen, drawn in one tint: about three short lines, a
+number or a `Gauge`, one `Text`).
 
 ## What you cannot do
 

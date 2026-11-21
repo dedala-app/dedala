@@ -164,12 +164,12 @@ TOOLS = [
     }),
     (data.widget, {
         "name": "app_widget",
-        "description": "A Home Screen widget: a component drawn over a JSON store's value (read as $data.<key>), in the sizes given, redrawn as the store changes, with the app closed too. He adds the widget on his Home Screen himself and picks one of yours by name, so make it and tell him in one line. A widget is drawn by WidgetKit: stacks, Text, Image, Gauge, ProgressView, Spacer, Divider, shapes; no inputs, no scrolling; a Button whose action opens a page, a screen or a conversation opens the app there. Without arguments it lists the widgets; remove deletes one.",
+        "description": "A Home Screen or Lock Screen widget: a component drawn over a JSON store's value (read as $data.<key>), in the sizes given, redrawn as the store changes, with the app closed too. He adds the widget on his Home Screen or Lock Screen himself and picks one of yours by name, so make it and tell him in one line. On the Lock Screen it is drawn in one tint: rectangular holds about three short lines, circular a number or a Gauge, inline one Text above the clock. A widget is drawn by WidgetKit: stacks, Text, Image, Gauge, ProgressView, Spacer, Divider, shapes; no inputs, no scrolling; a Button whose action opens a page, a screen or a conversation opens the app there. Without arguments it lists the widgets; remove deletes one.",
         "parameters": {"type": "object", "properties": {
             "id": {"type": "string"},
             "store": {"type": "string", "description": "The JSON store it shows"},
             "component": {"type": "string", "description": "The component drawn over the store, reading it as $data"},
-            "families": {"type": "array", "items": {"type": "string", "enum": ["small", "medium", "large"]}, "description": "The sizes it offers; all three by default"},
+            "families": {"type": "array", "items": {"type": "string", "enum": ["small", "medium", "large", "rectangular", "circular", "inline"]}, "description": "The sizes it offers: small, medium, large on the Home Screen, rectangular, circular, inline on the Lock Screen; the three Home Screen ones by default"},
             "remove": {"type": "boolean"},
         }, "required": []},
     }),

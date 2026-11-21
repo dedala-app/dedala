@@ -5,18 +5,17 @@ import AppIntents
 import SwiftUI
 import WidgetKit
 
-/// A Home Screen widget of the agent's: one of the widgets he declared,
-/// drawn from the snapshot the app keeps for it (protocol.md, Widgets), the
-/// component over the store's value, `family` in scope.
+/// A Home Screen or Lock Screen widget of the agent's: one of the widgets he
+/// declared, drawn from the snapshot the app keeps for it (protocol.md,
+/// Widgets), the component over the store's value, `family` in scope.
 struct HermesWidget: Widget {
     var body: some WidgetConfiguration {
         AppIntentConfiguration(kind: "hermes", intent: PickWidgetIntent.self, provider: Provider()) { entry in
             WidgetEntryView(entry: entry)
-                .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Dedala")
         .description("One of the widgets your assistant made.")
-        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .accessoryRectangular, .accessoryCircular, .accessoryInline])
     }
 }
 
@@ -100,20 +99,46 @@ struct WidgetEntryView: View {
     @Environment(\.widgetFamily) private var family
 
     var body: some View {
+        content
+            .containerBackground(for: .widget) {
+                switch family {
+                case .accessoryCircular: AccessoryWidgetBackground()
+                case .accessoryRectangular, .accessoryInline: Color.clear
+                default: Rectangle().fill(.fill.tertiary)
+                }
+            }
+    }
+
+    @ViewBuilder private var content: some View {
         if let snapshot = entry.snapshot, let name = snapshot["component"]?.string {
             let families = (snapshot["families"]?.array ?? []).compactMap(\.string)
-            if families.isEmpty || families.contains(familyName) {
+            if families.isEmpty ? !Self.lockScreen.contains(familyName) : families.contains(familyName) {
                 NodeView(node: .object([name: Self.props(snapshot["data"] ?? .null, family: familyName)]), scope: scope(snapshot))
             } else {
-                Text("Not drawn at this size").font(.footnote).foregroundStyle(.secondary)
+                missing("Not drawn at this size")
             }
         } else {
+            missing(entry.wanted.map { "No snapshot for \($0) yet" } ?? "Ask your assistant for a widget")
+        }
+    }
+
+    @ViewBuilder private func missing(_ text: String) -> some View {
+        switch family {
+        case .accessoryCircular:
+            Image(systemName: "square.grid.2x2").font(.title3)
+        case .accessoryInline:
+            Text(text)
+        case .accessoryRectangular:
+            Text(text).font(.footnote)
+        default:
             VStack(spacing: 6) {
                 Image(systemName: "square.grid.2x2").font(.title2).foregroundStyle(.secondary)
-                Text(entry.wanted.map { "No snapshot for \($0) yet" } ?? "Ask your assistant for a widget").font(.footnote).foregroundStyle(.secondary).multilineTextAlignment(.center)
+                Text(text).font(.footnote).foregroundStyle(.secondary).multilineTextAlignment(.center)
             }
         }
     }
+
+    static let lockScreen: Set<String> = ["rectangular", "circular", "inline"]
 
     /// The component's props: the store's value's fields, the whole value as
     /// `data`, and the widget's `family`.
@@ -137,6 +162,9 @@ struct WidgetEntryView: View {
         switch family {
         case .systemSmall: "small"
         case .systemLarge, .systemExtraLarge: "large"
+        case .accessoryRectangular: "rectangular"
+        case .accessoryCircular: "circular"
+        case .accessoryInline: "inline"
         default: "medium"
         }
     }

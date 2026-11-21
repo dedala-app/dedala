@@ -191,18 +191,20 @@ async def search(args: dict, **_) -> str:
     return session.answer({"query": query, "results": find(entries(artifacts, link.stores), query, args.get("in"))})
 
 
-FAMILIES = ("small", "medium", "large")
+HOME_SCREEN = ("small", "medium", "large")
+LOCK_SCREEN = ("rectangular", "circular", "inline")
+FAMILIES = HOME_SCREEN + LOCK_SCREEN
 
 
 async def widget(args: dict, **_) -> str:
-    """`app_widget`: a Home Screen widget, a component over a store."""
+    """`app_widget`: a Home Screen or Lock Screen widget, a component over a store."""
     link = session.link()
     artifacts = link.state.get("artifacts", {})
     widgets = artifacts.get("widget", {})
     name = args.get("id")
     if not name:
         return session.answer({"widgets": [{key: value for key, value in op.items() if key != "op"} for op in widgets.values()],
-                               "note": "He adds a widget on his Home Screen himself and picks one of these by name"})
+                               "note": "He adds a widget on his Home Screen or Lock Screen himself and picks one of these by name"})
     if args.get("remove"):
         if name not in widgets:
             return session.answer({"error": f"There is no widget {name}"})
@@ -211,7 +213,7 @@ async def widget(args: dict, **_) -> str:
     known = widgets.get(name, {})
     store = args.get("store") or known.get("store")
     component = args.get("component") or known.get("component")
-    families = args.get("families") or known.get("families") or list(FAMILIES)
+    families = args.get("families") or known.get("families") or list(HOME_SCREEN)
     if not store or not component:
         return session.answer({"error": "A widget needs store, the JSON store it shows, and component, the component drawn over it as its data"})
     if store not in link.stores.held:
@@ -224,8 +226,9 @@ async def widget(args: dict, **_) -> str:
         return session.answer({"error": f"families are among {', '.join(FAMILIES)}"})
     op = {"op": "widget", "id": name, "store": store, "component": component, "families": families}
     checked = await session.on_gateway(link.send_and_check([op]))
+    screens = " or ".join(screen for screen, sizes in (("Home Screen", HOME_SCREEN), ("Lock Screen", LOCK_SCREEN)) if set(sizes) & set(families))
     return session.answer({"widget": {key: value for key, value in op.items() if key != "op"},
-                           "then": "He adds the widget on his Home Screen and picks it by name; it redraws as the store changes", **checked})
+                           "then": f"He adds the widget on his {screens} and picks it by name; it redraws as the store changes", **checked})
 
 
 async def token(args: dict, **_) -> str:
