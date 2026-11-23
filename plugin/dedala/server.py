@@ -38,6 +38,7 @@ from .handlers import Arrivals, Edits, Handlers, StoreChanged
 from .inbox import TP7_PREFACE, Inbox, handlers, serve
 from .link import Link
 from .notices import notice
+from .transition import EVERY, Preparation
 
 logger = logging.getLogger(__name__)
 
@@ -120,6 +121,8 @@ class Server:
         self._inbox_config = (settings.get("inbox_port"), str(settings.get("inbox_secret") or ""), settings.get("inbox_host") or None)
         self._inbox_server = None
         self.handlers = Handlers(self._run_handler)
+        self.transition = Preparation(self.link, self.cards, self.commands)
+        self._preparing: Optional[asyncio.Task] = None
         global current
         current = self
 
@@ -127,6 +130,7 @@ class Server:
         self.loop = asyncio.get_running_loop()
         await self.link.start()
         self._watching = asyncio.create_task(self._watch_background())
+        self._preparing = asyncio.create_task(self._keep_prepared())
         port, secret, host = self._inbox_config
         if port and secret:
             self._inbox_server = await serve(self, int(port), secret, host, lambda: self.link.app.loaded["tokens"])
@@ -141,6 +145,9 @@ class Server:
             await self._presence(chat, {})
         if self._watching:
             self._watching.cancel()
+        if self._preparing:
+            self._preparing.cancel()
+            await self.transition.prepare()
         self.handlers.stop()
         if self._inbox_server:
             await self._inbox_server.cleanup()
@@ -291,6 +298,14 @@ class Server:
             except Exception as error:
                 logger.warning("[app] background work not synced: %r", error)
             await asyncio.sleep(2)
+
+    async def _keep_prepared(self) -> None:
+        """What the next contract needs of this one (transition.py), written
+        at the start and again every ten minutes when what it reads changed."""
+        await self.transition.prepare()
+        while True:
+            await asyncio.sleep(EVERY)
+            await self.transition.prepare(changed=True)
 
     async def _app_online(self) -> None:
         """The app has what waited for it: everything it shows is sent again, then
