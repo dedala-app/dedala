@@ -171,7 +171,30 @@ def test_what_cannot_be_drawn_does_not_stop_the_rest(tmp_path):
         {"op": "say", "conversation": "main", "id": "sum", "text": "The total", "at": "2026-11-20T10:00:00+00:00"}]
 
 
-def test_a_text_store_is_its_text_and_a_folder_store_stays_where_it_is(tmp_path):
+def test_an_input_of_a_frozen_card_is_bound_to_what_it_showed(tmp_path):
+    card = {"data": {"seats": [{"id": "12A", "window": True}, {"id": "12C", "window": False}]}, "state": {"note": "By the wing", "nights": 2},
+            "view": {"VStack": [
+                {"ForEach": "$seats", "as": "seat", "content": {"Toggle": "$seat.id", "bind": "$seat.window",
+                                                                "onChange": {"edit": {"store": "trip", "id": "$seat.id", "window": "$value"}}}},
+                {"TextField": "Note", "bind": "$note"},
+                {"Stepper": "Nights", "bind": "$nights", "in": [1, 9]}]}}
+    tree = [{"Toggle": "12A", "bind": "$f1"}, {"Toggle": "12C", "bind": "$f2"}, {"TextField": "Note", "bind": "$f3"},
+            {"Stepper": "Nights", "bind": "$f4", "in": [1, 9]}]
+    frozen = {"view": {"VStack": tree}, "state": {"f1": True, "f2": False, "f3": "By the wing", "f4": 2}}
+    assert drawing().frozen(card) == frozen
+    assert drawing().of(card)["view"]["VStack"][0] == {"Toggle": "12A", "value": True}
+    preparation = home(tmp_path)
+    said = {"op": "say", "id": "seats", "conversation": "main", "text": "Your seats", "card": card}
+    preparation.cards.said(said)
+    preparation.link.journal.add({**said, "at": "2026-11-20T10:00:00+00:00"})
+    preparation.link.app.write("page", "seats", {"view": {"Toggle": "Window", "bind": "$window"}, "state": {"window": True}})
+    preparation.write(preparation.gather())
+    assert read(preparation, "cards.json") == {"seats": {"conversation": "main", "text": "Your seats", **frozen}}
+    assert read(preparation, "conversations.jsonl")[0]["card"] == frozen
+    assert read(preparation, "pages/seats/expected.json") == {"view": {"Toggle": "Window", "value": True}, "state": {"window": True}}
+
+
+def test_the_stores_are_written_as_the_trees_were_drawn_over_them(tmp_path):
     preparation = home(tmp_path)
     link = preparation.link
     daily, notes = tmp_path / "daily.org", tmp_path / "notes"
@@ -186,8 +209,13 @@ def test_a_text_store_is_its_text_and_a_folder_store_stays_where_it_is(tmp_path)
         {"ForEach": "org(daily.text, 'item')", "as": "line", "content": "${line.text} (${daily.sync})"},
         {"ForEach": "$notes", "as": "note", "content": {"Text": "$note.title"}}]}})
     preparation.write(preparation.gather())
-    assert sorted(path.name for path in (preparation.folder / "stores").iterdir()) == ["daily.json", "profile.json", "tasks.json"]
-    assert read(preparation, "stores/daily.json") == {"text": "- [ ] eggs\n", "sync": "synced"}
+    assert sorted(path.name for path in (preparation.folder / "stores").iterdir()) == ["daily.json", "notes.json", "profile.json", "tasks.json"]
+    text = read(preparation, "stores/daily.json")
+    assert text == {**link.stores.held["daily"], "sync": "synced", "error": None}
+    assert sorted(text) == ["error", "exists", "name", "path", "sync", "text", "updated"] and text["text"] == "- [ ] eggs\n"
+    records = read(preparation, "stores/notes.json")
+    assert records == [{**record, "sync": "synced", "error": None} for record in link.stores.held["notes"]]
+    assert [(record["id"], record["title"], record["sync"]) for record in records] == [("plumber.md", "Plumber", "synced")]
     assert read(preparation, "stores/tasks.json") == TASKS
     assert read(preparation, "search.json") == {"notes": {"name": "Notes", "title": "$title"}}
     assert read(preparation, "pages/home/expected.json") == {"view": {"VStack": ["eggs (synced)", {"Text": "Plumber"}]}, "state": {}}

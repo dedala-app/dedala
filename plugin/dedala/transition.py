@@ -8,14 +8,16 @@ this one leaves, in transition/2/ of its folder, what it holds and every page
 and card as the literal tree it draws:
 
     prepared.json             {"at", "plugin", "now", "offset", "failed": {"cards": n, "pages": [ids]}}
-    stores/<name>.json        each JSON store as held; a text store as {"text", "sync"}; no folder store
+    stores/<name>.json        each store as the trees were drawn over it, which is as the phone holds it: a
+                              JSON store as held, a text store and each record of a folder store with its sync
     pages/<id>/page.json      the page as its file says
     pages/<id>/expected.json  {"view": the tree it draws, "state"}, or {"error": why} when it cannot be drawn
     components/<Name>.json    every component
     scripts/<name>.js         every script module
     search.json               the stores' declarations
-    cards.json                the cards said: {"conversation", "text", "view": the tree, "state": {}, "capture"?}
-    conversations.jsonl       the history folded, a topic or a message a line, each card as its tree
+    cards.json                the cards said: {"conversation", "text", "view": the tree, "state", "capture"?},
+                              the state what each input showed, under the name the tree binds it to
+    conversations.jsonl       the history folded, a topic or a message a line, each card frozen the same way
 
 Written whole each time: at the gateway's start, when it stops, and every ten
 minutes when something it reads changed. One moment for a whole preparation,
@@ -98,6 +100,7 @@ class Drawing:
 
         self.layout = layout
         self.stores, self.live, self.components, self.modules, self.moment = stores, live, components, modules, moment
+        self._bound: dict | None = None
         with twin._lock:
             kept = layout.LOCAL
             layout.set_time_zone((display or {}).get("timeZone"), (display or {}).get("utcOffset"))
@@ -110,9 +113,22 @@ class Drawing:
     def of(self, spec: dict) -> dict:
         """{"view": the literal tree, "state": the state it was drawn with},
         of a card (`view`, `data`, `state`, `script`, `derive`) or a page,
-        which has no data; raises when its view or its script cannot be
-        worked out."""
+        which has no data, to be compared with what is drawn again: an input
+        holds the `value` it showed. Raises when its view or its script
+        cannot be worked out."""
+        return self._drawn(spec, None)
+
+    def frozen(self, spec: dict) -> dict:
+        """{"view": the literal tree, "state"} of a card the app draws as it
+        is, with nothing behind it: each input is bound to a name of its own
+        (`$f1`, `$f2`… in the order met), and the state holds what each
+        showed under that name, and nothing else."""
+        bound: dict = {}
+        return {"view": self._drawn(spec, bound)["view"], "state": whole(bound)}
+
+    def _drawn(self, spec: dict, bound: dict | None) -> dict:
         layout = self.layout
+        self._bound = bound
         if spec.get("view") is None:
             raise Undrawn("it has no view")
         data = spec.get("data") if isinstance(spec.get("data"), dict) else {}
@@ -279,8 +295,9 @@ class Drawing:
     def _arguments(self, kind: str, written: dict, scope) -> dict:
         """A node's arguments and modifiers with their values worked out: the
         views among them drawn, a tap as what lasts of it and a `Button` left
-        with none disabled, an input as the `value` it shows, with no `bind`
-        to change it nor `onChange`, which only knew its `$value` then."""
+        with none disabled, an input as the `value` it shows, or bound to a
+        name of its own in a frozen card (`frozen`), with no `onChange`,
+        which only knew its `$value` then."""
         layout = self.layout
         out = {}
         for key, value in written.items():
@@ -297,7 +314,13 @@ class Drawing:
                 if kept or key == "items":
                     out[key] = kept
             elif key == "bind" and isinstance(value, str):
-                out["value"] = layout.evaluate(value.removeprefix("$"), scope)
+                shown = layout.evaluate(value.removeprefix("$"), scope)
+                if self._bound is None:
+                    out["value"] = shown
+                else:
+                    name = f"f{len(self._bound) + 1}"
+                    self._bound[name] = shown
+                    out[key] = f"${name}"
             elif key == "expanded" and isinstance(value, str):
                 out[key] = layout.truthy(layout.evaluate(value.removeprefix("$"), scope))
             elif key == "disabled":
@@ -420,9 +443,8 @@ class Preparation:
                  else [{**item, "sync": "synced", "error": None} for item in data] if kind == "folder" else data
                  for name, (kind, data) in held["stores"].items()}
         drawing = Drawing(shown, held["live"], held["components"], held["scripts"], moment, held["display"])
-        for name, (kind, data) in held["stores"].items():
-            if kind != "folder":
-                _json(folder / "stores" / _store_file(name), {"text": data.get("text"), "sync": "synced"} if kind == "text" else data)
+        for name, data in shown.items():
+            _json(folder / "stores" / _store_file(name), data)
         undrawn = []
         for identifier, page in held["pages"].items():
             _json(folder / "pages" / identifier / "page.json", page)
@@ -447,10 +469,10 @@ class Preparation:
 
     @staticmethod
     def _frozen(drawing: Drawing, identifier: str, card: dict, dropped: set[str]) -> dict | None:
-        """A card as the tree it draws, with no state left to change; None,
-        and its id among the dropped, when it cannot be drawn."""
+        """A card as the tree it draws, its state what its inputs showed;
+        None, and its id among the dropped, when it cannot be drawn."""
         try:
-            return {"view": drawing.of(card)["view"], "state": {}}
+            return drawing.frozen(card)
         except Exception:
             dropped.add(identifier)
             return None
