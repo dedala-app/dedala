@@ -227,6 +227,21 @@ class Drawing:
             return layout.evaluate(value, scope)
         return layout.resolve(value, scope)
 
+    def _value(self, value, scope):
+        """What a view is given, or one of its arguments, with its
+        expressions worked out. A value written as a choice (`If`, `then`,
+        `else` in the place of a value) is the value of the branch its
+        condition picks: Dedala UI has `If` for views only and the phone
+        makes nothing of such an object, but what was meant is plain, and it
+        is what the rewritten page will be held against."""
+        if isinstance(value, dict):
+            if "If" in value and ("then" in value or "else" in value):
+                return self._value(value.get("then") if self.layout.truthy(self._bare(value["If"], scope)) else value.get("else"), scope)
+            return {key: self._value(item, scope) for key, item in value.items()}
+        if isinstance(value, list):
+            return [self._value(item, scope) for item in value]
+        return self.layout.resolve(value, scope)
+
     def _element(self, node: dict, scope) -> list:
         layout = self.layout
         node = dict(node)
@@ -259,7 +274,7 @@ class Drawing:
         elif kind == "Text" and not isinstance(value, dict):
             drawn = layout.text_of(layout.resolve(value, scope))
         else:
-            drawn = layout.resolve(value, scope)
+            drawn = self._value(value, scope)
         return [{kind: drawn, **worn}]
 
     def _rows(self, node: dict, scope) -> list[list]:
@@ -333,7 +348,7 @@ class Drawing:
             elif key == "modifiers" and isinstance(value, list):
                 out[key] = [self._arguments(kind, entry, scope) if isinstance(entry, dict) else entry for entry in value]
             else:
-                out[key] = layout.resolve(value, scope)
+                out[key] = self._value(value, scope)
         return out
 
     def _titled(self, items, scope) -> list[dict]:

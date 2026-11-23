@@ -124,6 +124,23 @@ def test_views_inside_arguments_are_drawn_and_what_folds_or_binds_shows_where_it
     ]}
 
 
+def test_a_value_written_as_a_choice_is_the_value_of_the_branch_taken():
+    view = {"VStack": [
+        {"Button": "Go", "action": {"open": "$link"}, "tint": {"If": "done", "then": "green", "else": "gray"},
+         "frame": {"width": {"If": "$wide", "then": {"If": "small > 100", "then": 300, "else": "${small * 2}"}, "else": 80}},
+         "modifiers": [{"opacity": {"If": "!done", "then": 1}}, {"padding": {"If": "done", "then": 8}}]},
+        {"Image": {"If": "${done}", "then": "checkmark", "else": {"symbol": "circle", "variable": "$level"}}},
+        {"Chart": [{"type": "bar", "data": "$points", "x": "day", "y": "n", "color": {"If": "count(points) > 1", "then": "blue", "else": "gray"}}]},
+    ]}
+    data = {"done": False, "wide": True, "small": 90, "level": 0.5, "link": "https://example.org", "points": [{"day": "Mon", "n": 2}]}
+    assert drawing().of({"view": view, "data": data})["view"] == {"VStack": [
+        {"Button": "Go", "action": {"open": "https://example.org"}, "tint": "gray", "frame": {"width": 180},
+         "modifiers": [{"opacity": 1}, {"padding": None}]},
+        {"Image": {"symbol": "circle", "variable": 0.5}},
+        {"Chart": [{"type": "bar", "data": [{"day": "Mon", "n": 2}], "x": "day", "y": "n", "color": "gray"}]},
+    ]}
+
+
 def test_the_history_holds_a_patched_card_as_it_stands(tmp_path):
     preparation = home(tmp_path)
     bill = {"op": "say", "id": "bill", "conversation": "main", "text": "Pay?", "components": {"Bill": {"body": "x"}},
