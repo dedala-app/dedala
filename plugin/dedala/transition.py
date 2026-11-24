@@ -37,7 +37,7 @@ import tomllib
 import urllib.parse
 from contextlib import contextmanager
 from datetime import datetime, timezone
-from functools import lru_cache, partial
+from functools import cached_property, lru_cache, partial
 from pathlib import Path
 
 from . import grammar, scripts, twin
@@ -85,6 +85,32 @@ def whole(value):
     return value
 
 
+
+CLOCK = """
+var changes = CHANGES, R = __RealDate, P = R.prototype
+function off(ms) { var held = changes[0][1]; for (var i = 1; i < changes.length && changes[i][0] <= ms; i++) held = changes[i][1]; return held * 1000 }
+function instant(wall) { return wall - off(wall - off(wall)) }
+function shown(date) { return new R(date.getTime() + off(date.getTime())) }
+;['FullYear', 'Month', 'Date', 'Day', 'Hours', 'Minutes', 'Seconds', 'Milliseconds'].forEach(function (part) {
+  P['get' + part] = function () { return shown(this)['getUTC' + part]() }
+  if (part !== 'Day') P['set' + part] = function () { var wall = shown(this); wall['setUTC' + part].apply(wall, arguments); this.setTime(instant(wall.getTime())); return this.getTime() }
+})
+P.getTimezoneOffset = function () { return -off(this.getTime()) / 60000 }
+function Local() {
+  var given = arguments
+  if (given.length === 0) return new R()
+  if (given.length > 1) return new R(instant(R.UTC.apply(null, given)))
+  return typeof given[0] === 'string' ? new R(Local.parse(given[0])) : new R(given[0])
+}
+Local.prototype = P
+Local.UTC = R.UTC
+Local.now = R.now
+Local.parse = function (text) { return /^\\d{4}-\\d\\d-\\d\\dT\\d\\d:\\d\\d(:\\d\\d(\\.\\d+)?)?$/.test(text) ? instant(R.parse(text + 'Z')) : R.parse(text) }
+__RealDate = Local
+Date.parse = Local.parse
+"""
+
+
 class Drawing:
     """What a card or a page draws at one moment over the stores it is given:
     a view walked the way the app's renderer walks it (Hermes/UI/Tree.swift),
@@ -109,6 +135,21 @@ class Drawing:
     @property
     def offset(self) -> int:
         return int(self.moment.astimezone(self.zone).utcoffset().total_seconds())
+
+    @cached_property
+    def clock(self) -> str:
+        """The phone's clock for a script, as a module loaded before it: the
+        script engine here has no time zone and would read every local hour
+        and day in UTC, where the phone read them in its own. The offsets are
+        those of the phone's zone, ten years back and two ahead."""
+        start = int(self.moment.timestamp()) // 3600 * 3600 - 3650 * 86400
+        at = lambda seconds: int(datetime.fromtimestamp(seconds, self.zone).utcoffset().total_seconds())
+        changes, held = [[0, at(start)]], at(start)
+        for hour in range(1, 4380 * 24 + 1):
+            if (offset := at(start + hour * 3600)) != held:
+                changes.append([(start + hour * 3600) * 1000, offset])
+                held = offset
+        return CLOCK.replace("CHANGES", json.dumps(changes))
 
     def of(self, spec: dict) -> dict:
         """{"view": the literal tree, "state": the state it was drawn with},
@@ -185,7 +226,7 @@ class Drawing:
         named = {dotted or quoted for dotted, quoted in scripts.STORES.findall(source)}
         given = {"data": data, "state": state, "now": self.moment.astimezone(self.zone).isoformat(timespec="seconds"), **self.live,
                  "stores": {name: value for name, value in self.stores.items() if name in named}}
-        results = scripts.run(source, [(derive[name], given) for name in names], self.modules) if names else []
+        results = scripts.run(source, [(derive[name], given) for name in names], {**self.modules, "__clock": self.clock}) if names else []
         for name, result in zip(names, results):
             if "error" in result:
                 raise Undrawn(f"the derived value {name} ({derive[name]}) fails: {result['error']}")

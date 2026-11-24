@@ -285,3 +285,21 @@ async def test_the_gateway_prepares_when_it_starts_and_when_it_stops(relay, tmp_
     server.link.app.write("page", "tasks", {"view": "Nothing to do"})
     await server.stop()
     assert json.loads((server.transition.folder / "pages" / "tasks" / "expected.json").read_text()) == {"view": "Nothing to do", "state": {}}
+
+
+def test_a_script_reads_the_hours_and_the_days_of_the_phone_s_time_zone():
+    script = """
+function stamp({now}) { return h.day(now) + ' ' + h.time(now) }
+function summer() { var d = new Date('2026-07-01T22:30:00Z'); return d.getDate() + ' ' + d.getHours() + ' ' + d.getTimezoneOffset() }
+function midnight({now}) { return h.startOfDay(now) }
+function written() { return new Date(2026, 10, 24, 9, 30).toISOString() + ' ' + new Date('2026-11-24T09:30').toISOString() + ' ' + new Date('2026-11-24').toISOString() }
+function tomorrow({now}) { var d = new Date(now); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + 1); return d.toISOString() }
+"""
+    page = {"script": script, "derive": {name: name for name in ("stamp", "summer", "midnight", "written", "tomorrow")},
+            "view": {"VStack": ["$stamp", "$summer", "$midnight", "$written", "$tomorrow"]}}
+    late = datetime(2026, 11, 23, 23, 30, tzinfo=timezone.utc)
+    paris = Drawing({}, LIVE, {}, {}, late, {"timeZone": "Europe/Paris", "utcOffset": 3600})
+    assert paris.of(page)["view"] == {"VStack": [
+        "Tue 24 Nov 00:30", "2 0 -120", "2026-11-23T23:00:00.000Z",
+        "2026-11-24T08:30:00.000Z 2026-11-24T08:30:00.000Z 2026-11-24T00:00:00.000Z", "2026-11-24T23:00:00.000Z"]}
+    assert Drawing({}, LIVE, {}, {}, late, {"utcOffset": 0}).of(page)["view"]["VStack"][:3] == ["Mon 23 Nov 23:30", "1 22 0", "2026-11-23T00:00:00.000Z"]
